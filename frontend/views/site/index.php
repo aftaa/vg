@@ -12,8 +12,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php foreach ($categories as $category): ?>
             <div class="col col-sm-4">
                 <h3>
-                    <a href="/category/<?= $category->id ?>"><?= $category->name ?></a>
-                    <span class="small">(<?= rand(10, 1000) ?>)</span>
+                    <a href="/category/?id=<?= $category->id ?>"><?= $category->name ?></a>
+                    <small><sup>(<?= rand(10, 1000) ?>)</sup></small>
                 </h3>
             </div>
         <?php endforeach ?>
