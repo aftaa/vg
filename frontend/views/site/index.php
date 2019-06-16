@@ -1,9 +1,25 @@
 <?php
 
 /* @var $this yii\web\View */
+/* @var $categories common\models\ProductCategory[] */
 
 $this->title = 'Каталог компаний услуг и товаров России';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<div class="container">
+    <div class="row">
+        <?php foreach ($categories as $category): ?>
+            <div class="col col-sm-4">
+                <h3>
+                    <a href="/category/<?= $category->id ?>"><?= $category->name ?></a>
+                    <span class="small">(<?= rand(10, 1000) ?>)</span>
+                </h3>
+            </div>
+        <?php endforeach ?>
+    </div>
+</div>
+
 <!--<div class="site-index">-->
 <!---->
 <!--    <div class="jumbotron">-->

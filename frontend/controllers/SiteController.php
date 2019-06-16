@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\ProductCategoryQuery;
 use common\vg\Controller;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
@@ -75,7 +76,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $categories = (new ProductCategoryQuery)
+            ->orderBy('sort')
+            ->parentId(0)
+            ->all();
+
+        return $this->render('index', [
+            'categories' => $categories,
+        ]);
     }
 
     /**

@@ -11,5 +11,4 @@ return [
         ],
     ],
     'name' => 'В сети города',
-//    'logo' => '/png/logo.png',
 ];

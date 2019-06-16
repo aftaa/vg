@@ -15,6 +15,14 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
     }*/
 
     /**
+     * ProductCategoryQuery constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct(ProductCategory::class);
+    }
+
+    /**
      * {@inheritdoc}
      * @return ProductCategory[]|array
      */
@@ -30,5 +38,14 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
     public function one($db = null)
     {
         return parent::one($db);
+    }
+
+    /**
+     * @param int $parentId
+     * @return \yii\db\ActiveQuery
+     */
+    public function parentId(int $parentId)
+    {
+        return parent::where(['parent_id' => $parentId]);
     }
 }
