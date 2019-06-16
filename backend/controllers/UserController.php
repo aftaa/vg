@@ -3,30 +3,32 @@
 namespace backend\controllers;
 
 use Yii;
+use common\vg\BackendController;
 use backend\models\User;
 use backend\models\UserSearch;
-use common\vg\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
  * UserController implements the CRUD actions for User model.
  */
-class UserController extends Controller
+class UserController extends BackendController
 {
     /**
      * {@inheritdoc}
      */
     public function behaviors()
     {
-        return [
+        $behaviors = parent::behaviors();
+        $behaviors = array_merge($behaviors, [
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
                 ],
             ],
-        ];
+        ]);
+        return $behaviors;
     }
 
     /**

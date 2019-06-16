@@ -49,16 +49,12 @@ class User extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '№',
-            'username' => 'Логин',
-            'auth_key' => 'Auth Key',
-            'password_hash' => 'Password Hash',
-            'password_reset_token' => 'Password Reset Token',
-            'email' => 'E-mail',
-            'status' => 'Статус',
+            'id'         => '№',
+            'username'   => 'Логин',
+            'email'      => 'E-mail',
+            'status'     => 'Статус',
             'created_at' => 'Создан',
             'updated_at' => 'Изменён',
-            'verification_token' => 'Verification Token',
         ];
     }
 
