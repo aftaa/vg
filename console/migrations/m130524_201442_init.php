@@ -13,16 +13,16 @@ class m130524_201442_init extends Migration
         }
 
         $this->createTable('{{%user}}', [
-            'id' => $this->primaryKey(),
-            'username' => $this->string()->notNull()->unique(),
+            'id' => $this->primaryKey()->comment('№'),
+            'username' => $this->string()->notNull()->unique()->comment('Логин'),
             'auth_key' => $this->string(32)->notNull(),
             'password_hash' => $this->string()->notNull(),
             'password_reset_token' => $this->string()->unique(),
-            'email' => $this->string()->notNull()->unique(),
+            'email' => $this->string()->notNull()->unique()->comment('E-mail'),
 
-            'status' => $this->smallInteger()->notNull()->defaultValue(10),
-            'created_at' => $this->integer()->notNull(),
-            'updated_at' => $this->integer()->notNull(),
+            'status' => $this->smallInteger()->notNull()->defaultValue(10)->comment('Статус'),
+            'created_at' => $this->integer()->notNull()->comment('Создан'),
+            'updated_at' => $this->integer()->notNull()->comment('Изменён'),
         ], $tableOptions);
     }
 
