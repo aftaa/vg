@@ -9,16 +9,10 @@ use Yii;
 
 class CategoryController extends FrontendController
 {
-    public function actionIndex()
+    public function actionIndex(int $categoryId)
     {
-        $categoryId = Yii::$app->request->get('id');
-
-        $categories = (new ProductCategoryQuery)
-            ->orderBy('sort')
-            ->parentId($categoryId)
-            ->all();
-
         $category = ProductCategory::findOne(['id' => $categoryId]);
+        $categories = $category->categories;
 
         return $this->render('index', [
             'categories' => $categories,

@@ -1,5 +1,7 @@
 <?php
 
+use yii\helpers\Url;
+
 /* @var $this yii\web\View */
 /* @var $categories common\models\ProductCategory[] */
 
@@ -7,17 +9,17 @@ $this->title = 'Каталог компаний услуг и товаров Р�
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<div class="container">
-    <div class="row">
-        <?php foreach ($categories as $category): ?>
-            <div class="col col-sm-4">
-                <h3>
-                    <a href="/category/?id=<?= $category->id ?>"><?= $category->name ?></a>
-                    <small><sup>(<?= rand(10, 1000) ?>)</sup></small>
-                </h3>
-            </div>
-        <?php endforeach ?>
-    </div>
+<h1><?= $this->title ?></h1>
+
+<div class="row">
+    <?php foreach ($categories as $category): ?>
+        <div class="col col-md-4">
+            <h3>
+                <a href="<?= Url::to(['category/index', 'categoryId' => $category->id]) ?>"><?= $category->name ?></a>
+                <small><sup>(<?= rand(10, 1000) ?>)</sup></small>
+            </h3>
+        </div>
+    <?php endforeach ?>
 </div>
 
 <!--<div class="site-index">-->
