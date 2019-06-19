@@ -18,17 +18,17 @@ class m190617_232436_create_member_table extends Migration
     {
         $this->createTable('{{%member}}', [
             'id' => $this->primaryKey()->comment('№'),
-            'user_id' => $this->integer()->notNull()->comment('№ клиента'),
-            'first_name' => $this->string(50)->notNull()->comment('Имя'),
-            'last_name' => $this->string(50)->notNull()->comment('Фамилия'),
+            'user_id' => $this->integer()->notNull()->comment('№ пользователя'),
+            'first_name' => $this->string(50)->null()->comment('Имя'),
+            'last_name' => $this->string(50)->null()->comment('Фамилия'),
             'middle_name' => $this->string(50)->null()->comment('Отчество'),
+            'position' => $this->string(50)->null()->comment('Должность'),
 
 //            'country_code' => $this->char(2)->notNull()->comment('Код страны'),
 //            'country_name' => $this->string(50)->notNull()->comment('Страна'),
 //            'postal_code' => $this->string(10)->null()->comment('Почтовый индекс'),
 //            'city' => $this->string(10)->notNull()->comment('Город'),
-
-            'address' => $this->text()->null()->comment('Адрес'),
+//            'address' => $this->text()->null()->comment('Адрес'),
             'phone' => $this->string(20)->null()->comment('Телефон'),
 
             'balance' => $this->decimal(10,2)->notNull()->defaultValue(.0)->comment('Баланс'),

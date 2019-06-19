@@ -8,11 +8,11 @@ use Yii;
  * This is the model class for table "member".
  *
  * @property int $id №
- * @property int $user_id № клиента
+ * @property int $user_id № пользователя
  * @property string $first_name Имя
  * @property string $last_name Фамилия
  * @property string $middle_name Отчество
- * @property string $address Адрес
+ * @property string $position Должность
  * @property string $phone Телефон
  * @property string $balance Баланс
  * @property string $user_pic Аватар
@@ -35,11 +35,10 @@ class Member extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'first_name', 'last_name'], 'required'],
+            [['user_id'], 'required'],
             [['user_id'], 'integer'],
-            [['address'], 'string'],
             [['balance'], 'number'],
-            [['first_name', 'last_name', 'middle_name'], 'string', 'max' => 50],
+            [['first_name', 'last_name', 'middle_name', 'position'], 'string', 'max' => 50],
             [['phone'], 'string', 'max' => 20],
             [['user_pic'], 'string', 'max' => 100],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
@@ -53,11 +52,11 @@ class Member extends \yii\db\ActiveRecord
     {
         return [
             'id' => '№',
-            'user_id' => '№ клиента',
+            'user_id' => '№ пользователя',
             'first_name' => 'Имя',
             'last_name' => 'Фамилия',
             'middle_name' => 'Отчество',
-            'address' => 'Адрес',
+            'position' => 'Должность',
             'phone' => 'Телефон',
             'balance' => 'Баланс',
             'user_pic' => 'Аватар',
