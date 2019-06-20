@@ -3,11 +3,11 @@
 namespace common\models;
 
 /**
- * This is the ActiveQuery class for [[ProductCategory]].
+ * This is the ActiveQuery class for [[Area]].
  *
- * @see ProductCategory
+ * @see Area
  */
-class ProductCategoryQuery extends \yii\db\ActiveQuery
+class AreaQuery extends \yii\db\ActiveQuery
 {
     /*public function active()
     {
@@ -16,7 +16,7 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return ProductCategory[]|array
+     * @return Area[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return ProductCategory|array|null
+     * @return Area|array|null
      */
     public function one($db = null)
     {

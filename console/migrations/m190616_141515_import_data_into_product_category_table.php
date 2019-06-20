@@ -9,6 +9,8 @@ use yii\db\Query;
  */
 class m190616_141515_import_data_into_product_category_table extends Migration
 {
+    const METALL = 269;
+
     /**
      * {@inheritdoc}
      */
@@ -21,32 +23,67 @@ class m190616_141515_import_data_into_product_category_table extends Migration
             ->from('aw_category')
             ->all($db);
 
-        foreach ($categories as $category) {
-            $productCategory = new ProductCategory;
-            $productCategory->id = $category['catid'];
-            $productCategory->name = $category['catname'];
-            $productCategory->meta_keywords = $category['keywords'];
-            $productCategory->meta_description = $category['description'];
-            $productCategory->parent_id = $category['parentid'];
-            $productCategory->sort = $category['catorder'];
-            $productCategory->icon = $category['catimg'];
-            $productCategory->save();
-        }
+        try {
+            foreach ($categories as $category) {
+                $productCategory = new ProductCategory;
+                $productCategory->id = $category['catid'];
+                $productCategory->name = $category['catname'];
+                $productCategory->meta_keywords = $category['keywords'];
+                $productCategory->meta_description = $category['description'];
+                $productCategory->sort = $category['catorder'];
+                $productCategory->icon = $category['catimg'];
+                if (!$productCategory->save()) {
+                    print_r($productCategory->errors);
+                }
+            }
 
-        $categories3 = (new Query)
-            ->select('*')
-            ->from('aw_category3')
-            ->all($db);
+            foreach ($categories as $category) {
+                $productCategory = ProductCategory::findOne($category['catid']);
+                $productCategory->parent_id = $category['parentid'] ? $category['parentid'] : null;
 
-        foreach ($categories3 as $category) {
-            $productCategory = new ProductCategory;
-            $productCategory->id = $category['id'];
-            $productCategory->name = $category['catname'];
-            $productCategory->meta_keywords = $category['keywords'];
-            $productCategory->meta_description = $category['description'];
-            $productCategory->parent_id = (int)$category['parentid'];
-            $productCategory->sort = $category['catorder'];
-            $productCategory->save();
+                if (!ProductCategory::findOne($category['parentid'])) {
+                    $productCategory->parent_id = null;
+                }
+
+                if (!$productCategory->save()) {
+                    echo "$productCategory->name\n";
+                    print_r($productCategory->errors);
+                }
+            }
+
+            $categories3 = (new Query)
+                ->select('*')
+                ->from('aw_category3')
+                ->all($db);
+            foreach ($categories3 as $category) {
+                $productCategory = new ProductCategory;
+                $productCategory->id = $category['catid'];
+                $productCategory->name = $category['catname'];
+                $productCategory->meta_keywords = $category['keywords'];
+                $productCategory->meta_description = $category['description'];
+                $productCategory->sort = $category['catorder'];
+                $productCategory->save();
+                if (!$productCategory->save()) {
+                    echo "$productCategory->name\n";
+                    print_r($productCategory->errors);
+                }
+            }
+
+            foreach ($categories3 as $category) {
+                $productCategory = ProductCategory::findOne($category['catid']);
+                $productCategory->parent_id = $category['parentid'] ? $category['parentid'] : null;
+
+                if (!ProductCategory::findOne($category['parentid'])) {
+                    $productCategory->parent_id = null;
+                }
+
+                if (!$productCategory->save()) {
+                    print_r($productCategory->errors);
+                }
+            }
+
+        } catch (Exception $e) {
+            print_r($e->getMessage());
         }
     }
 
@@ -55,9 +92,7 @@ class m190616_141515_import_data_into_product_category_table extends Migration
      */
     public function safeDown()
     {
-        // TODO Truncate table
-
-        return false;
+        Yii::$app->db->createCommand('TRUNCATE TABLE product_category')->execute();
     }
 
     /*

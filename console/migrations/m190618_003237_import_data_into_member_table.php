@@ -68,7 +68,8 @@ class m190618_003237_import_data_into_member_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('member');
+        Yii::$app->db->createCommand('TRUNCATE TABLE member')->execute();
+        Yii::$app->db->createCommand('DELETE FROM user WHERE id > 1')->execute();
     }
 
     /*

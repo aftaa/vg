@@ -16,7 +16,7 @@ do {
             'categoryId' => $category->id,
         ])
     ];
-    $category = $category->category;
+    $category = $category->parent;
 } while ($category);
 
 unset($this->params['breadcrumbs'][0]['url']);

@@ -15,6 +15,9 @@ use Yii;
  * @property string $icon Иконка
  * @property string $meta_keywords Meta Keywords
  * @property string $meta_description Meta Description
+ *
+ * @property ProductCategory $parent
+ * @property ProductCategory[] $productCategories
  */
 class ProductCategory extends \yii\db\ActiveRecord
 {
@@ -36,7 +39,8 @@ class ProductCategory extends \yii\db\ActiveRecord
             [['name'], 'required'],
             [['description', 'meta_keywords', 'meta_description'], 'string'],
             [['name'], 'string', 'max' => 100],
-            [['icon'], 'string', 'max' => 20],
+            [['icon'], 'string', 'max' => 30],
+            [['parent_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductCategory::className(), 'targetAttribute' => ['parent_id' => 'id']],
         ];
     }
 
@@ -58,21 +62,27 @@ class ProductCategory extends \yii\db\ActiveRecord
     }
 
     /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getParent()
+    {
+        return $this->hasOne(ProductCategory::className(), ['id' => 'parent_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductCategories()
+    {
+        return $this->hasMany(ProductCategory::className(), ['parent_id' => 'id']);
+    }
+
+    /**
      * {@inheritdoc}
      * @return ProductCategoryQuery the active query used by this AR class.
      */
     public static function find()
     {
         return new ProductCategoryQuery(get_called_class());
-    }
-
-    public function getCategories()
-    {
-        return $this->hasMany(self::class, ['parent_id' => 'id']);
-    }
-
-    public function getCategory()
-    {
-        return $this->hasOne(self::class, ['id' => 'parent_id']);
     }
 }
