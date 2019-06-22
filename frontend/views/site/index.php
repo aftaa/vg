@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col col-md-3">
             <h4>
                 <a href="<?= Url::to(['company/category', 'categoryId' => $category->id]) ?>"><?= $category->name ?></a>
-                <small><sup>(<?= rand(10, 1000) ?>)</sup></small>
+                <small><sup>(<?= rand(10, 100) ?>)</sup></small>
             </h4>
         </div>
     <?php endforeach ?>
