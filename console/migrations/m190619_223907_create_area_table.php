@@ -8,7 +8,7 @@ use yii\db\Migration;
 class m190619_223907_create_area_table extends Migration
 {
     const TABLE_NAME = 'area';
-    const FK_AREA_PARENT_ID = 'fk-area-id';
+    const FK_AREA_PARENT_ID = 'fk-area-parent-id';
     const IDX_AREA_PARENT_ID = 'idx-area-parent-id';
     const PARENT_ID_COLUMN = 'parent_id';
 

@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `{{%company_param}}`.
  */
-class m190622_134159_create_company_param_table extends Migration
+class m190622_134136_create_company_param_table extends Migration
 {
     const IDX_SORT = 'idx-sort';
     const TABLE_NAME = 'company_param';
@@ -29,7 +29,7 @@ class m190622_134159_create_company_param_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropIndex(self::IDX_SORT, self::TABLE_NAME);W
+        $this->dropIndex(self::IDX_SORT, self::TABLE_NAME);
         $this->dropTable('{{%company_param}}');
     }
 }

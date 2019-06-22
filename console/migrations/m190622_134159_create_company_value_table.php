@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `{{%company_value}}`.
  */
-class m190622_134136_create_company_value_table extends Migration
+class m190622_134159_create_company_value_table extends Migration
 {
     const TABLE_NAME = 'company_param_value';
     const COMPANY_ID_COLUMN = 'company_id';
