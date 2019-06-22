@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `{{%company_category}}`.
  */
-class m190620_014546_create_company_category_table extends Migration
+class m190620_195936_create_company_category_table extends Migration
 {
     const TABLE_NAME = 'company_category';
     const IDX_PARENT_ID = 'idx-parent-id';
@@ -19,8 +19,8 @@ class m190620_014546_create_company_category_table extends Migration
     {
         $this->createTable('{{%company_category}}', [
             'id'                   => $this->primaryKey()->comment('№'),
-            self::PARENT_ID_COLUMN => $this->integer()->comment('Родительская категория'),
-            'name'                 => $this->string(150)->notNull()->comment('Категория'),
+            self::PARENT_ID_COLUMN => $this->integer()->null()->comment('Родительская категория'),
+            'name'                 => $this->string(50)->notNull()->comment('Категория компании'),
             'sort'                 => $this->integer()->unsigned()->notNull()->defaultValue(0)->comment('Порядок'),
             'icon'                 => $this->string(30)->null()->comment('Иконка'),
             'meta_keywords'        => $this->text()->null()->comment('Meta Keywords'),

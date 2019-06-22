@@ -4,6 +4,7 @@ use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $categories common\models\ProductCategory[] */
+/* @var $companyCategories common\models\CompanyCategory */
 
 $this->title = 'Каталог компаний услуг и товаров России';
 $this->params['breadcrumbs'][] = $this->title;
@@ -21,6 +22,20 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     <?php endforeach ?>
 </div>
+
+<h2>Компании</h2>
+
+<div class="row">
+    <?php foreach ($companyCategories as $category): ?>
+        <div class="col col-md-3">
+            <h4>
+                <a href="<?= Url::to(['company/category', 'categoryId' => $category->id]) ?>"><?= $category->name ?></a>
+                <small><sup>(<?= rand(10, 1000) ?>)</sup></small>
+            </h4>
+        </div>
+    <?php endforeach ?>
+</div>
+
 
 <!--<div class="site-index">-->
 <!---->

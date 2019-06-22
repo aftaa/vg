@@ -4,7 +4,6 @@ namespace frontend\controllers;
 
 use common\models\ProductCategory;
 use common\vg\FrontendController;
-use Yii;
 
 class CategoryController extends FrontendController
 {

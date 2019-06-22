@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\CompanyCategory;
 use common\models\ProductCategory;
 use common\models\ProductCategoryQuery;
 use common\vg\Controller;
@@ -82,8 +83,14 @@ class SiteController extends Controller
             ->where('parent_id IS NULL')
             ->all();
 
+        $companyCategories = CompanyCategory::find()
+            ->where('parent_id IS NULL')
+            ->orderBy('sort')
+            ->all();
+
         return $this->render('index', [
             'categories' => $categories,
+            'companyCategories' => $companyCategories,
         ]);
     }
 
