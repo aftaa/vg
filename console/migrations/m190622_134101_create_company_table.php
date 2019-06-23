@@ -42,7 +42,7 @@ class m190622_134101_create_company_table extends Migration
             $this->createIndex(self::IDX_CATEGORY_ID, self::TABLE_NAME, self::CATEGORY_ID_COLUMN);
             $this->createIndex('idx-area-id', self::TABLE_NAME, self::AREA_ID_COLUMN);
 
-            $this->addForeignKey(self::FK_OWNER_ID, self::TABLE_NAME, self::OWNER_ID_COLUMN, 'user', 'id');
+            $this->addForeignKey(self::FK_OWNER_ID, self::TABLE_NAME, self::OWNER_ID_COLUMN, 'member', 'id');
             $this->addForeignKey(self::FK_COMPANY_CATEGORY_ID, self::TABLE_NAME, self::CATEGORY_ID_COLUMN, 'company_category', 'id');
             $this->addForeignKey(self::FK_AREA_ID, self::TABLE_NAME, self::AREA_ID_COLUMN, 'area', 'id');
         } catch (Exception $e) {

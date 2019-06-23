@@ -22,6 +22,8 @@ use yii\web\IdentityInterface;
  * @property integer $created_at
  * @property integer $updated_at
  * @property string $password write-only password
+ *
+ * @property Member $member
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -225,5 +227,13 @@ class User extends ActiveRecord implements IdentityInterface
             self::STATUS_INACTIVE => 'Отключён',
             self::STATUS_DELETED => 'Удалён',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getMember()
+    {
+        return $this->hasOne(Member::class, ['user_id' => 'id']);
     }
 }
