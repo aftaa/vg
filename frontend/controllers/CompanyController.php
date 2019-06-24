@@ -16,7 +16,7 @@ class CompanyController extends FrontendController
 
         return $this->render('index', [
             'categories' => $categories,
-            'category' => $category,
+            'currentCategory' => $category,
         ]);
     }
 

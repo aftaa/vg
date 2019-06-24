@@ -15,6 +15,7 @@ use Yii;
  * @property string $meta_keywords Meta Keywords
  * @property string $meta_description Meta Description
  *
+ * @property Company[] $companies
  * @property CompanyCategory $parent
  * @property CompanyCategory[] $companyCategories
  */
@@ -57,6 +58,14 @@ class CompanyCategory extends \yii\db\ActiveRecord
             'meta_keywords' => 'Meta Keywords',
             'meta_description' => 'Meta Description',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCompanies()
+    {
+        return $this->hasMany(Company::className(), ['company_category_id' => 'id']);
     }
 
     /**

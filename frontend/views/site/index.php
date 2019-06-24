@@ -10,8 +10,6 @@ $this->title = 'Каталог компаний услуг и товаров Р�
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<h1><?= $this->title ?></h1>
-
 <div class="row">
     <?php foreach ($categories as $category): ?>
         <div class="col col-md-4">
@@ -30,7 +28,9 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col col-md-3">
             <h4>
                 <a href="<?= Url::to(['company/category', 'categoryId' => $category->id]) ?>"><?= $category->name ?></a>
-                <small><sup>(<?= rand(10, 100) ?>)</sup></small>
+                <?php if ($category->companies): ?>
+                    <small><sup>(<?= count($category->companies) ?>)</sup></small>
+                <? endif ?>
             </h4>
         </div>
     <?php endforeach ?>

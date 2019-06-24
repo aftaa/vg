@@ -4,20 +4,20 @@ use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $categories common\models\CompanyCategory[] */
-/* @var $category common\models\CompanyCategory */
+/* @var $currentCategory common\models\CompanyCategory */
 
-$this->title = $category->name;
+$this->title = $currentCategory->name;
 
+$category = $currentCategory;
 do {
     $this->params['breadcrumbs'][] = [
         'label' => $category->name,
         'url'   => Url::to([
-            'category/index',
+            'company/category',
             'categoryId' => $category->id,
         ])
     ];
-    $category = $category->parent;
-} while ($category);
+} while ($category = $category->parent);
 
 unset($this->params['breadcrumbs'][0]['url']);
 
@@ -28,15 +28,43 @@ array_unshift($this->params['breadcrumbs'], [
 
 ?>
 
-<h1><?= $this->title ?></h1>
-
 <div class="row">
     <?php foreach ($categories as $category): ?>
         <div class="col col-md-4">
             <h3>
                 <a href="<?= Url::to(['company/category', 'categoryId' => $category->id]) ?>"><?= $category->name ?></a>
-                <span class="small">(<?= rand(10, 100) ?>)</span>
+                <?php if ($category->companies): ?>
+                    <small><sup>(<?= count($category->companies) ?>)</sup></small>
+                <? endif ?>
             </h3>
         </div>
     <?php endforeach ?>
 </div>
+
+<?php if ($currentCategory->companies): ?>
+    <div class="row">
+        <?php foreach ($currentCategory->companies as $company): ?>
+            <div class="col col-lg-12">
+
+                <h2>
+                    <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>">
+                        <?= $company->name ?>
+                    </a>
+                </h2>
+                <div>
+<!--                    <a "--><?//= Url::to(['area/index', 'areaId' => $company->area->id ]) ?><!--" class="bg-warning">--><?//= $company->area->name ?><!--</a>-->
+                    <a href="<?= Url::to(['area/all']) ?>" class="bg-warning"><?= $company->area->name ?></a>
+                </div>
+                <?php if ($company->introduce): ?>
+                    <p>
+                        <?php if (mb_strlen(strip_tags($company->introduce)) > 300): ?>
+                            <?= mb_substr(strip_tags($company->introduce), 0, 300) ?>
+                            ...
+                        <?php endif ?>
+                    </p>
+                <?php endif ?>
+            </div>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>
+

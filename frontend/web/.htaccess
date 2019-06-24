@@ -1,3 +1,6 @@
+Deny From All
+Allow From 127.0.0.1
+
 Options +FollowSymLinks
 IndexIgnore */*
 

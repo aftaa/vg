@@ -25,10 +25,9 @@ $this->params['breadcrumbs'] = array_reverse($this->params['breadcrumbs']);
 
 ?>
 
-<h1><?= $this->title ?></h1>
-
 <div class="row">
     <?php foreach ($categories as $category): ?>
+    
         <div class="col col-md-4">
             <h3>
                 <a href="<?= Url::to(['category/index', 'categoryId' => $category->id]) ?>"><?= $category->name ?></a>
