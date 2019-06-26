@@ -20,8 +20,9 @@ use Yii;
  *
  * @property Area $area
  * @property CompanyCategory $companyCategory
- * @property User $owner
+ * @property Member $owner
  * @property CompanyParamValue[] $companyParamValues
+ * @property Product[] $products
  */
 class Company extends \yii\db\ActiveRecord
 {
@@ -45,7 +46,7 @@ class Company extends \yii\db\ActiveRecord
             [['name', 'thumb'], 'string', 'max' => 100],
             [['area_id'], 'exist', 'skipOnError' => true, 'targetClass' => Area::className(), 'targetAttribute' => ['area_id' => 'id']],
             [['company_category_id'], 'exist', 'skipOnError' => true, 'targetClass' => CompanyCategory::className(), 'targetAttribute' => ['company_category_id' => 'id']],
-            [['owner_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['owner_id' => 'id']],
+            [['owner_id'], 'exist', 'skipOnError' => true, 'targetClass' => Member::className(), 'targetAttribute' => ['owner_id' => 'id']],
         ];
     }
 
@@ -89,7 +90,7 @@ class Company extends \yii\db\ActiveRecord
      */
     public function getOwner()
     {
-        return $this->hasOne(User::className(), ['id' => 'owner_id']);
+        return $this->hasOne(Member::className(), ['id' => 'owner_id']);
     }
 
     /**
@@ -98,6 +99,14 @@ class Company extends \yii\db\ActiveRecord
     public function getCompanyParamValues()
     {
         return $this->hasMany(CompanyParamValue::className(), ['company_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProducts()
+    {
+        return $this->hasMany(Product::className(), ['company_id' => 'id']);
     }
 
     /**

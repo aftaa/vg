@@ -12,7 +12,7 @@ class m190626_024105_import_into_product_table extends Migration
      */
     public function safeUp()
     {
-
+        $db = Yii::$app->dbVsetigInfoCom;
     }
 
     /**
@@ -20,9 +20,6 @@ class m190626_024105_import_into_product_table extends Migration
      */
     public function safeDown()
     {
-        echo "m190626_024105_import_into_product_table cannot be reverted.\n";
-
-        return false;
     }
 
     /*
