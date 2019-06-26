@@ -47,12 +47,9 @@ array_unshift($this->params['breadcrumbs'], [
             <div class="col col-lg-12">
 
                 <h2>
-                    <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>">
-                        <?= $company->name ?>
-                    </a>
+                    <?= $company->name ?>
                 </h2>
-                <div>
-<!--                    <a "--><?//= Url::to(['area/index', 'areaId' => $company->area->id ]) ?><!--" class="bg-warning">--><?//= $company->area->name ?><!--</a>-->
+                <div class="bg-danger">
                     <a href="<?= Url::to(['area/all']) ?>" class="bg-warning"><?= $company->area->name ?></a>
                 </div>
                 <?php if ($company->introduce): ?>

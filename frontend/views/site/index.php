@@ -5,6 +5,7 @@ use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $categories common\models\ProductCategory[] */
 /* @var $companyCategories common\models\CompanyCategory */
+/* @var $companyWithThumb common\models\Company[] */
 
 $this->title = 'Каталог компаний услуг и товаров России';
 $this->params['breadcrumbs'][] = $this->title;
@@ -21,12 +22,24 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php endforeach ?>
 </div>
 
+<hr size="1">
+
 <h2>Компании</h2>
 
 <?= $this->render('/company/_categories', [
     'companyCategories' => $companyCategories,
 ]) ?>
 
+<hr size="1">
+
+<div class="row">
+    <?php foreach ($companyWithThumb as $company): ?>
+        <div class="col col-md-3 p-5 m-5" style="text-align: center;">
+            <img alr="<?= htmlspecialchars( $company->name ) ?>" src="<?= $company->thumb ?>" class="col-md-4">
+        </div>
+    <?php endforeach ?>
+</div>
+<br><br><br><br><br><br>
 
 <!--<div class="site-index">-->
 <!---->

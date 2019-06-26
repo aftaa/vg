@@ -13,7 +13,7 @@ do {
     $this->params['breadcrumbs'][] = [
         'label' => $category->name,
         'url'   => Url::to([
-            'category/index',
+            'company/category',
             'categoryId' => $category->id,
         ])
     ];
@@ -39,11 +39,9 @@ array_unshift($this->params['breadcrumbs'], [
             <div class="col col-lg-12">
 
                 <h2>
-                    <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>">
-                        <?= $company->name ?>
-                    </a>
+                    <?= $company->name ?>
                 </h2>
-                <span class="bg-warning">
+                <span class="bg-warning p-5">
                     <?= $company->area->name ?>
                 </span>
                 <?php if ($company->introduce): ?>

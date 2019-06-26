@@ -22,25 +22,25 @@ class m190622_120859_import_data_into_company_category_table extends Migration
             ->all($db);
 
         foreach ($aw_com_cat as $aw_cat) {
-            $companyCategoty = new CompanyCategory;
-            $companyCategoty->id = $aw_cat['catid'];
-            $companyCategoty->name = $aw_cat['catname'];
-            $companyCategoty->sort = $aw_cat['catorder'];
-            $companyCategoty->icon = $aw_cat['catimg'];
-            $companyCategoty->meta_description = $aw_cat['description'];
-            $companyCategoty->meta_keywords = $aw_cat['keywords'];
+            $companyCategory = new CompanyCategory;
+            $companyCategory->id = $aw_cat['catid'];
+            $companyCategory->name = $aw_cat['catname'];
+            $companyCategory->sort = $aw_cat['catorder'];
+            $companyCategory->icon = $aw_cat['catimg'];
+            $companyCategory->meta_description = $aw_cat['description'];
+            $companyCategory->meta_keywords = $aw_cat['keywords'];
 
-            if (!$companyCategoty->save()) {
-                print_r($companyCategoty->errors);
+            if (!$companyCategory->save()) {
+                print_r($companyCategory->errors);
             }
         }
 
         foreach ($aw_com_cat as $aw_cat) {
-            $companyCategoty = CompanyCategory::findOne($aw_cat['catid']);
-            $companyCategoty->parent_id = $aw_cat['parentid'] ? $aw_cat['parentid'] : null;
-            if (!$companyCategoty->save()) {
-                echo "$companyCategoty->name\n";
-                print_r($companyCategoty->errors);
+            $companyCategory = CompanyCategory::findOne($aw_cat['catid']);
+            $companyCategory->parent_id = $aw_cat['parentid'] ? $aw_cat['parentid'] : null;
+            if (!$companyCategory->save()) {
+                echo "$companyCategory->name\n";
+                print_r($companyCategory->errors);
             }
         }
     }

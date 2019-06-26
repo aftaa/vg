@@ -77,7 +77,7 @@ class m190622_190911_import_company_data extends Migration
             $company->area_id = $com['areaid'];
             $company->name = $com['comname'];
             $company->introduce = $com['introduce'];
-            $company->thumb = $com['thumb'];
+            $company->thumb = $this->modifyThumb($com['thumb']);
             $company->checked = $com['is_check'];
             $company->meta_keywords = $com['keywords'];
             $company->meta_description = $com['description'];
@@ -110,6 +110,18 @@ class m190622_190911_import_company_data extends Migration
         Yii::$app->db->createCommand('TRUNCATE TABLE company_param')->execute();
         Yii::$app->db->createCommand('TRUNCATE TABLE company')->execute();
         Yii::$app->db->createCommand('SET foreign_key_checks = 1')->execute();
+    }
+
+    /**
+     * @param string $thumb
+     * @return string
+     */
+    private function modifyThumb(string $thumb): string
+    {
+        if (preg_match('/^data/', $thumb)) {
+            $thumb = 'http://vseti-goroda.ru/' . $thumb;
+        }
+        return $thumb;
     }
 
     /*

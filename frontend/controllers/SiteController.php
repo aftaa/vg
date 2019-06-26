@@ -2,6 +2,7 @@
 
 namespace frontend\controllers;
 
+use common\models\Company;
 use common\models\CompanyCategory;
 use common\models\ProductCategory;
 use common\models\ProductCategoryQuery;
@@ -88,9 +89,12 @@ class SiteController extends Controller
             ->orderBy('sort')
             ->all();
 
+        $companyWithThumb = Company::find()->withThumb();
+
         return $this->render('index', [
             'categories'        => $categories,
             'companyCategories' => $companyCategories,
+            'companyWithThumb'  => $companyWithThumb,
         ]);
     }
 

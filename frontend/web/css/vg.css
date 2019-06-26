@@ -3,6 +3,10 @@
     min-height: 55px;
 }
 
+nav {
+    opacity: .9;
+}
+
 #w0,
 #w0 a {
     color: #fff;
@@ -21,3 +25,4 @@ footer img {
     margin-top: -5px;
     margin-right: 5px;
 }
+
