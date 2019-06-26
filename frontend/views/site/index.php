@@ -23,18 +23,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <h2>Компании</h2>
 
-<div class="row">
-    <?php foreach ($companyCategories as $category): ?>
-        <div class="col col-md-3">
-            <h4>
-                <a href="<?= Url::to(['company/category', 'categoryId' => $category->id]) ?>"><?= $category->name ?></a>
-                <?php if ($category->companies): ?>
-                    <small><sup>(<?= count($category->companies) ?>)</sup></small>
-                <? endif ?>
-            </h4>
-        </div>
-    <?php endforeach ?>
-</div>
+<?= $this->render('/company/_categories', [
+    'companyCategories' => $companyCategories,
+]) ?>
 
 
 <!--<div class="site-index">-->

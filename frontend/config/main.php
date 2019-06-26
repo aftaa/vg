@@ -40,13 +40,15 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName'  => false,
             'rules'           => [
-                'area/all' => 'area/all',
-                'area/<areaId>' => 'area/index',
-                'category/<categoryId>' => 'category/index',
+                'category/<categoryId>'         => 'category/index',
                 'company/category/<categoryId>' => 'company/category',
-                'company/<companyId>' => 'company/index',
+//                'company/category/<categoryId>' => 'company/index',
+
+                //                'area/all' => 'area/all',
+                //                'area/<areaId>' => 'area/index',
+
             ],
         ],
     ],
-    'params' => $params,
+    'params'              => $params,
 ];

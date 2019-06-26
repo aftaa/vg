@@ -5,6 +5,12 @@ namespace frontend\controllers;
 use common\models\ProductCategory;
 use common\vg\FrontendController;
 
+/**
+ * Class CategoryController
+ * @package frontend\controllers
+ *
+ * Категории продукции/услуг.
+ */
 class CategoryController extends FrontendController
 {
     public function actionIndex(int $categoryId)
