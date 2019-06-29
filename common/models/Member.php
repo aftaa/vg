@@ -17,6 +17,7 @@ use Yii;
  * @property string $balance Баланс
  * @property string $user_pic Аватар
  *
+ * @property Company[] $companies
  * @property User $user
  */
 class Member extends \yii\db\ActiveRecord
@@ -61,6 +62,14 @@ class Member extends \yii\db\ActiveRecord
             'balance' => 'Баланс',
             'user_pic' => 'Аватар',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCompanies()
+    {
+        return $this->hasMany(Company::className(), ['owner_id' => 'id']);
     }
 
     /**
