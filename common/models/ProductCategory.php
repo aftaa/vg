@@ -16,6 +16,7 @@ use Yii;
  * @property string $meta_keywords Meta Keywords
  * @property string $meta_description Meta Description
  *
+ * @property Product[] $products
  * @property ProductCategory $parent
  * @property ProductCategory[] $productCategories
  */
@@ -59,6 +60,14 @@ class ProductCategory extends \yii\db\ActiveRecord
             'meta_keywords' => 'Meta Keywords',
             'meta_description' => 'Meta Description',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProducts()
+    {
+        return $this->hasMany(Product::className(), ['category_id' => 'id']);
     }
 
     /**

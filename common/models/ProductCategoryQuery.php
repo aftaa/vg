@@ -31,4 +31,22 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
     {
         return parent::one($db);
     }
+
+    /**
+     * @param ProductCategory $category
+     * @return int
+     */
+    public function getProductCount(ProductCategory $category): int
+    {
+        set_time_limit(0);
+        $productCount = count($category->products);
+
+        if ($category->productCategories) {
+            foreach ($category->productCategories as $productCategory) {
+                $productCount += $this->getProductCount($productCategory);
+            }
+        }
+
+        return $productCount;
+    }
 }

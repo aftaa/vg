@@ -13,7 +13,7 @@ class Helper
      * @return Member
      * @throws MemberNotFoundException
      */
-    public static function getMemberIdByInfoComTableName(string $tableName): Member
+    public static function getMemberByInfoComTableName(string $tableName): Member
     {
         $memberId = (int)str_replace('aw_info', '', $tableName);
         $member = Member::find()

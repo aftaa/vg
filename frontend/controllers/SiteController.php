@@ -89,7 +89,7 @@ class SiteController extends Controller
             ->orderBy('sort')
             ->all();
 
-        $companyWithThumb = Company::find()->withThumb();
+        $companyWithThumb = Company::find()->withThumb(24);
 
         return $this->render('index', [
             'categories'        => $categories,

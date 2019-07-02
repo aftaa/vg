@@ -32,6 +32,10 @@ class CompanyCategoryQuery extends \yii\db\ActiveQuery
         return parent::one($db);
     }
 
+    /**
+     * @param CompanyCategory $category
+     * @return int
+     */
     public function getCompanyCount(CompanyCategory $category)
     {
         $companyCount = count($category->companies);
