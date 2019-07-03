@@ -1,8 +1,6 @@
 <?php
 
-
-namespace common\vg;
-
+namespace common\vg\controllers;
 
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;

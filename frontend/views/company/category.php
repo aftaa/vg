@@ -1,14 +1,15 @@
 <?php
 
+use common\vg\models\VgCompanyCategory;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $categories common\models\CompanyCategory[] */
-/* @var $currentCategory common\models\CompanyCategory */
+/* @var $companyCategory VgCompanyCategory */
 
-$this->title = $currentCategory->name;
+$this->title = $companyCategory->name;
 
-$category = $currentCategory;
+$category = $companyCategory;
 do {
     $this->params['breadcrumbs'][] = [
         'label' => $category->name,
@@ -30,7 +31,7 @@ array_unshift($this->params['breadcrumbs'], [
 ?>
 
 <?= $this->render('/company/_categories', [
-    'companyCategories' => $categories,
+    'companyCategory' => $companyCategory,
 ]) ?>
 
 <?php if ($currentCategory->companies): ?>

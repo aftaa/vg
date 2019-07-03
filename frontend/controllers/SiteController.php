@@ -2,11 +2,8 @@
 
 namespace frontend\controllers;
 
-use common\models\Company;
-use common\models\CompanyCategory;
-use common\models\ProductCategory;
-use common\models\ProductCategoryQuery;
-use common\vg\Controller;
+use common\vg\controllers\FrontendController;
+use common\vg\manager\CompanyCategoryManager;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -23,7 +20,7 @@ use frontend\models\ContactForm;
 /**
  * Site controller
  */
-class SiteController extends Controller
+class SiteController extends FrontendController
 {
     /**
      * {@inheritdoc}
@@ -76,25 +73,23 @@ class SiteController extends Controller
      * Displays homepage.
      *
      * @return mixed
+     * @throws \Throwable
      */
     public function actionIndex()
     {
-        $categories = (new ProductCategoryQuery(ProductCategory::class))
-            ->orderBy('sort')
-            ->where('parent_id IS NULL')
-            ->all();
+//        $productCategories = (new ProductCategoryQuery(ProductCategory::class))
+//            ->orderBy('sort')
+//            ->where('parent_id IS NULL')
+//            ->all();
 
-        $companyCategories = CompanyCategory::find()
-            ->where(['parent_id' => null])
-            ->orderBy('sort')
-            ->all();
+        $companyCategories = CompanyCategoryManager::getByParentId();
 
-        $companyWithThumb = Company::find()->withThumb(24);
+//        $companyWithThumbs = Company::find()->withThumbs(24);
 
         return $this->render('index', [
-            'categories'        => $categories,
+//            'productCategories' => $productCategories,
             'companyCategories' => $companyCategories,
-            'companyWithThumb'  => $companyWithThumb,
+//            'companyWithThumbs' => $companyWithThumbs,
         ]);
     }
 

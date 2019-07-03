@@ -2,10 +2,14 @@
 
 namespace common\models;
 
+use common\vg\models\VgCompanyCategory;
+use Yii;
+use yii\db\Exception;
+
 /**
  * This is the ActiveQuery class for [[CompanyCategory]].
  *
- * @see CompanyCategory
+ * @see CompanyCategoryManager
  */
 class CompanyCategoryQuery extends \yii\db\ActiveQuery
 {
@@ -13,6 +17,8 @@ class CompanyCategoryQuery extends \yii\db\ActiveQuery
     {
         return $this->andWhere('[[status]]=1');
     }*/
+    const COMPANY_CATEGORY_MAX_ID = 'companyCategoryMaxId';
+    const COMPANY_CATEGORY_ = 'companyCategoryCount';
 
     /**
      * {@inheritdoc}
@@ -33,19 +39,30 @@ class CompanyCategoryQuery extends \yii\db\ActiveQuery
     }
 
     /**
-     * @param CompanyCategory $category
+     * @param VgCompanyCategory[] $companyCategories
      * @return int
      */
-    public function getCompanyCount(CompanyCategory $category)
+    private function byParentIdRecursive(array $companyCategories): int
     {
-        $companyCount = count($category->companies);
-
-        if ($category->companyCategories) {
-            foreach ($category->companyCategories as $companyCategory) {
-                $companyCount += $this->getCompanyCount($companyCategory);
+        $companyCount = 0;
+        if ($companyCategories) {
+            foreach ($companyCategories as $companyCategory) {
+                $companyCategory->companyCount = count($companyCategory->companies);
+                $companyCount = $this->byParentIdRecursive($companyCategory->companyCategories);
+                $companyCategory->companyCount += $companyCount;
             }
         }
-
         return $companyCount;
+    }
+
+    /**
+     * @param int|null $companyCategoryParentId
+     * @return VgCompanyCategory[]
+     */
+    public function byParentId(?int $companyCategoryParentId): array
+    {
+        $companyCategories = VgCompanyCategory::find(['parent_id' => $companyCategoryParentId])->all();
+        $this->byParentIdRecursive($companyCategories);
+        return $companyCategories;
     }
 }

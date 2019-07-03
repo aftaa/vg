@@ -1,22 +1,22 @@
 <?php
 
-use common\models\CompanyCategory;
+use common\vg\models\VgCompanyCategory;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-/* @var $companyCategories common\models\CompanyCategory */
+/* @var $companyCategory VgCompanyCategory */
 
 ?>
 
 <div class="row">
-    <?php foreach ($companyCategories as $category): ?>
-        <?php if ($companyCount = CompanyCategory::find()->getCompanyCount($category)): ?>
+    <?php foreach ($companyCategory->companyCategories as $category): ?>
+        <?php if (true): ?>
             <div class="col col-md-3">
                 <h4>
                     <a href="<?= Url::to(['company/category', 'categoryId' => $category->id]) ?>"><?= $category->name ?></a>
-                    <small><sup>(<?= $companyCount ?>)</sup></small>
+                    <small><sup>(<?= $category->companyCount ?>)</sup></small>
                 </h4>
             </div>
-        <? endif ?>
+        <?php endif ?>
     <?php endforeach ?>
 </div>

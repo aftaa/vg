@@ -36,7 +36,7 @@ class CompanyQuery extends \yii\db\ActiveQuery
      * @param int $limit
      * @return array
      */
-    public function withThumb(int $limit = 12): array
+    public function withThumbs(int $limit = 12): array
     {
         $companies = parent::where('thumb <> ""')
             ->orderBy('RAND()')
