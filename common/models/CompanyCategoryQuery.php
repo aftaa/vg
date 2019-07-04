@@ -17,8 +17,8 @@ class CompanyCategoryQuery extends \yii\db\ActiveQuery
     {
         return $this->andWhere('[[status]]=1');
     }*/
-    const COMPANY_CATEGORY_MAX_ID = 'companyCategoryMaxId';
-    const COMPANY_CATEGORY_ = 'companyCategoryCount';
+    const CACHE_KEY_COMPANY_CATEGORY_MAX_ID_ = 'companyCategoryMaxId';
+    const CACHE_KEY_COMPANY_CATEGORIES_ = 'companyCategories';
 
     /**
      * {@inheritdoc}
@@ -42,15 +42,16 @@ class CompanyCategoryQuery extends \yii\db\ActiveQuery
      * @param VgCompanyCategory[] $companyCategories
      * @return int
      */
-    private function byParentIdRecursive(array $companyCategories): int
+    private function categoriesByParentIdRecursive(array & $companyCategories): int
     {
         $companyCount = 0;
-        if ($companyCategories) {
-            foreach ($companyCategories as $companyCategory) {
-                $companyCategory->companyCount = count($companyCategory->companies);
-                $companyCount = $this->byParentIdRecursive($companyCategory->companyCategories);
-                $companyCategory->companyCount += $companyCount;
-            }
+        foreach ($companyCategories as &$companyCategory) {
+            $companyCategory->companyCount = count($companyCategory->companies); //own companies
+            $subCompanyCount = $this->categoriesByParentIdRecursive($companyCategory->companyCategories); //sub companies
+
+            $companyCount += $subCompanyCount; //total companies count
+            $companyCount += $companyCategory->companyCount;
+            $companyCategory->companyCount += $subCompanyCount;
         }
         return $companyCount;
     }
@@ -58,11 +59,27 @@ class CompanyCategoryQuery extends \yii\db\ActiveQuery
     /**
      * @param int|null $companyCategoryParentId
      * @return VgCompanyCategory[]
+     * @throws Exception
      */
-    public function byParentId(?int $companyCategoryParentId): array
+    public function categoriesByParentId(?int $companyCategoryParentId): array
     {
-        $companyCategories = VgCompanyCategory::find(['parent_id' => $companyCategoryParentId])->all();
-        $this->byParentIdRecursive($companyCategories);
+        $checkKey = self::CACHE_KEY_COMPANY_CATEGORY_MAX_ID_ . $companyCategoryParentId;
+        $valueKey = self::CACHE_KEY_COMPANY_CATEGORIES_ . $companyCategoryParentId;
+
+        $maxId = VgCompanyCategory::getDb()->createCommand('SELECT MAX(id) FROM company_category')->queryScalar();
+        $cache = Yii::$app->cache;
+
+        if ($cache->get($checkKey) != $maxId) {
+            $companyCategories = VgCompanyCategory::find()->where(['parent_id' => $companyCategoryParentId])->all();
+            $this->categoriesByParentIdRecursive($companyCategories);
+
+            //store in cache
+            $cache->set($checkKey, $maxId);
+            $cache->set($valueKey, $companyCategories);
+        } else {
+            //get from cache
+            $companyCategories = $cache->get($valueKey);
+        }
         return $companyCategories;
     }
 }

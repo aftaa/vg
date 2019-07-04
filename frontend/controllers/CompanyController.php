@@ -2,8 +2,9 @@
 
 namespace frontend\controllers;
 
+use common\models\CompanyCategory;
 use common\vg\controllers\FrontendController;
-use common\vg\services\CompanyCategoryManager;
+use common\vg\manager\CompanyCategoryManager;
 
 /**
  * Class CompanyController
@@ -12,18 +13,11 @@ use common\vg\services\CompanyCategoryManager;
 class CompanyController extends FrontendController
 {
     /**
-     * @param int $categoryId
      * @return string
-     * @throws \Throwable
      */
-    public function actionIndex(int $categoryId): string
+    public function actionIndex(): string
     {
-        $category = CompanyCategoryManager::getById($categoryId);
-
-        return $this->render('index', [
-            'categories'      => $category->companyCategories,
-            'currentCategory' => $category,
-        ]);
+        return '';
     }
 
     /**
@@ -33,11 +27,12 @@ class CompanyController extends FrontendController
      */
     public function actionCategory(int $categoryId): string
     {
-        $category = CompanyCategoryManager::getById($categoryId);
+        $companyCategories = CompanyCategoryManager::getCategoriesByParentId($categoryId);
+        $currentCategory = CompanyCategory::findOne($categoryId);
 
         return $this->render('category', [
-            'categories'      => $category->companyCategories,
-            'companyCategory' => $category,
+            'companyCategories' => $companyCategories,
+            'currentCategory'   => $currentCategory,
         ]);
     }
 

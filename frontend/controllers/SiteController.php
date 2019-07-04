@@ -2,8 +2,10 @@
 
 namespace frontend\controllers;
 
+use common\models\ProductCategory;
 use common\vg\controllers\FrontendController;
 use common\vg\manager\CompanyCategoryManager;
+use common\vg\manager\ProductCategoryManager;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -77,17 +79,13 @@ class SiteController extends FrontendController
      */
     public function actionIndex()
     {
-//        $productCategories = (new ProductCategoryQuery(ProductCategory::class))
-//            ->orderBy('sort')
-//            ->where('parent_id IS NULL')
-//            ->all();
-
-        $companyCategories = CompanyCategoryManager::getByParentId();
+        $productCategories = ProductCategoryManager::getCategoriesByParentId();
+        $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
 //        $companyWithThumbs = Company::find()->withThumbs(24);
 
         return $this->render('index', [
-//            'productCategories' => $productCategories,
+            'productCategories' => $productCategories,
             'companyCategories' => $companyCategories,
 //            'companyWithThumbs' => $companyWithThumbs,
         ]);

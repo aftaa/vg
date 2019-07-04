@@ -2,12 +2,14 @@
 
 namespace common\models;
 
+use yii\db\ActiveQuery;
+
 /**
  * This is the ActiveQuery class for [[Product]].
  *
  * @see Product
  */
-class ProductQuery extends \yii\db\ActiveQuery
+class ProductQuery extends ActiveQuery
 {
     /*public function active()
     {
@@ -31,4 +33,6 @@ class ProductQuery extends \yii\db\ActiveQuery
     {
         return parent::one($db);
     }
+
+    public function categoriesByParentId()
 }

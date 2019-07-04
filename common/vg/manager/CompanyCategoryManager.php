@@ -3,16 +3,18 @@
 namespace common\vg\manager;
 
 use common\vg\models\VgCompanyCategory;
+use yii\db\Exception;
 
 class CompanyCategoryManager
 {
     /**
      * @param int|null $companyCategoryParentId
      * @return VgCompanyCategory[]
+     * @throws Exception
      */
-    public static function getByParentId(int $companyCategoryParentId = null): array
+    public static function getCategoriesByParentId(int $companyCategoryParentId = null): array
     {
-        $category = VgCompanyCategory::find()->byParentId($companyCategoryParentId);
-        return $category;
+        $categories = VgCompanyCategory::find()->categoriesByParentId($companyCategoryParentId);
+        return $categories;
     }
 }
