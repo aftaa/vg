@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use common\vg\models\VgProductCategory;
 use yii\db\ActiveQuery;
 
 /**
@@ -33,6 +34,4 @@ class ProductQuery extends ActiveQuery
     {
         return parent::one($db);
     }
-
-    public function categoriesByParentId()
 }

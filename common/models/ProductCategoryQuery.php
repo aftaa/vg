@@ -2,6 +2,10 @@
 
 namespace common\models;
 
+use common\vg\models\VgProductCategory;
+use Yii;
+use yii\db\Exception;
+
 /**
  * This is the ActiveQuery class for [[ProductCategory]].
  *
@@ -9,6 +13,8 @@ namespace common\models;
  */
 class ProductCategoryQuery extends \yii\db\ActiveQuery
 {
+    const CACHE_KEY_PRODUCT_CATEGORY_MAX_ID_ = 'productCategoryMaxId';
+    const CACHE_KEY_PRODUCT_CATEGORIES_ = 'productCategories';
     /*public function active()
     {
         return $this->andWhere('[[status]]=1');
@@ -33,20 +39,52 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
     }
 
     /**
-     * @param ProductCategory $category
+     * @param VgProductCategory[] $productCategories
      * @return int
+     * @throws Exception
      */
-    public function getProductCount(ProductCategory $category): int
+    private function categoriesByParentIdRecursive(array & $productCategories): int
     {
-        set_time_limit(0);
-        $productCount = count($category->products);
+        $productCount = 0;
+        foreach ($productCategories as& $productCategory) {
+            $sql = "SELECT COUNT(*) FROM product WHERE category_id=$productCategory->id";
+            $productCategory->productCount = VgProductCategory::getDb()->createCommand($sql)->queryScalar();
+            $subProductCount = $this->categoriesByParentIdRecursive($productCategory->productCategories); //sub products
 
-        if ($category->productCategories) {
-            foreach ($category->productCategories as $productCategory) {
-                $productCount += $this->getProductCount($productCategory);
-            }
+            $productCount += $subProductCount; //total products count
+            $productCount += $productCategory->productCount;
+            $productCategory->productCount += $subProductCount;
         }
-
         return $productCount;
+    }
+
+    /**
+     * @param int|null $productCategoryParentId
+     * @return VgProductCategory[]
+     * @throws Exception
+     */
+    public function categoriesByParentId(?int $productCategoryParentId): array
+    {
+        $checkKey = self::CACHE_KEY_PRODUCT_CATEGORY_MAX_ID_ . $productCategoryParentId;
+        $valueKey = self::CACHE_KEY_PRODUCT_CATEGORIES_ . $productCategoryParentId;
+
+        $sql = 'SELECT MAX(id) FROM product';
+        $maxId = VgProductCategory::getDb()->createCommand($sql)->queryScalar();
+        $cache = Yii::$app->cache;
+
+        if ($cache->get($checkKey) != $maxId) {
+            $productCategories = VgProductCategory::find()
+                ->select('id, parent_id, name')
+                ->where(['parent_id' => $productCategoryParentId])
+                ->all();
+            $this->categoriesByParentIdRecursive($productCategories);
+
+            //store in cache
+            $cache->set($checkKey, $maxId);
+            $cache->set($valueKey, $productCategories);
+        } else {
+            $productCategories = $cache->get($valueKey);
+        }
+        return $productCategories;
     }
 }

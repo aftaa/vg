@@ -5,7 +5,7 @@ use common\models\ProductCategory;
 use common\vg\models\VgCompanyCategory;
 
 /* @var $this yii\web\View */
-/* @var $productCategories ProductCategory[] */
+/* @var $productCategories VgProductCategory[] */
 /* @var $companyCategories VgCompanyCategory[] */
 /* @var $companyWithThumbs Company[] */
 
@@ -16,11 +16,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <hr size="1">
 
-<h2>Компании</h2>
+<?= $this->render('/product/_categories', [
+    'productCategories' => $productCategories,
+]) ?>
 
-<? //= $this->render('/category/_categories', [
-//    'productCategories' => $productCategories,
-//]) ?>
+<h2>Компании</h2>
 
 <hr size="1">
 
