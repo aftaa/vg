@@ -29,32 +29,26 @@ array_unshift($this->params['breadcrumbs'], [
     'label' => 'Компании',
 ]);
 
+
+$this->registerMetaTag([
+    'name'    => 'description',
+    'content' => $currentCategory->meta_description,
+]);
+
+$this->registerMetaTag([
+    'name'    => 'keywords',
+    'content' => $currentCategory->meta_keywords,
+]);
+
+
+
 ?>
 
 <?= $this->render('/company/_categories', [
     'companyCategories' => $companyCategories,
 ]) ?>
 
-<?php if ($currentCategory->companies): ?>
-    <div class="row">
-        <?php foreach ($currentCategory->companies as $company): ?>
-            <div class="col col-lg-12">
+<?= $this->render('/company/_companies', [
+    'companies' => $currentCategory->companies
+]) ?>
 
-                <h2>
-                    <?= $company->name ?>
-                </h2>
-                <span class="bg-warning p-5">
-                    <?= $company->area->name ?>
-                </span>
-                <?php if ($company->introduce): ?>
-                    <p>
-                        <?php if (mb_strlen(strip_tags($company->introduce)) > 300): ?>
-                            <?= mb_substr(strip_tags($company->introduce), 0, 300) ?>
-                            ...
-                        <?php endif ?>
-                    </p>
-                <?php endif ?>
-            </div>
-        <?php endforeach ?>
-    </div>
-<?php endif ?>

@@ -19,4 +19,14 @@ class VgProductCategory extends ProductCategory
     {
         return $this->hasMany(VgProductCategory::class, ['parent_id' => 'id']);
     }
+
+    /**
+     * @return string
+     */
+    public function getProductCount(): string
+    {
+        $productCount = $this->productCount;
+        $productCount = number_format($productCount,0, '', ' ');
+        return $productCount;
+    }
 }

@@ -18,4 +18,13 @@ class VgCompanyCategory extends CompanyCategory
         return $this->hasMany(VgCompanyCategory::class, ['parent_id' => 'id']);
     }
 
+    /**
+     * @return string
+     */
+    public function getCompanyCount(): string
+    {
+        $companyCount = $this->companyCount;
+        $companyCount = number_format($companyCount,0, '', ' ');
+        return $companyCount;
+    }
 }

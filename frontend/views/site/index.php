@@ -14,21 +14,17 @@ $this->params['breadcrumbs'][] = $this->title;
 
 ?>
 
-<hr size="1">
-
-<?= $this->render('/product/_categories', [
-    'productCategories' => $productCategories,
-]) ?>
+<div style="); background-tra" class="container container-fluid">
+    <?= $this->render('/product/_categories', [
+        'productCategories' => $productCategories,
+    ]) ?>
+</div>
 
 <h2>Компании</h2>
-
-<hr size="1">
 
 <?= $this->render('/company/_categories', [
     'companyCategories' => $companyCategories,
 ]) ?>
-
-<hr size="1">
 
 <!--<div class="row">-->
 <!--    --><?php //foreach ($companyWithThumbs as $company): ?>

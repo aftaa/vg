@@ -4,17 +4,17 @@ use common\vg\models\VgProductCategory;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-/* @var $currentCategory VgProductCategory */
+/* @var $productCategory VgProductCategory */
 /* @var $productCategories VgProductCategory[] */
 
-$this->title = $currentCategory->name;
+$this->title = $productCategory->name;
 
-$category = $currentCategory;
+$category = $productCategory;
 do {
     $this->params['breadcrumbs'][] = [
         'label' => $category->name,
         'url'   => Url::to([
-            'company/category',
+            'category',
             'categoryId' => $category->id,
         ])
     ];
@@ -33,4 +33,3 @@ array_unshift($this->params['breadcrumbs'], [
 <?= $this->render('/product/_categories', [
     'productCategories' => $productCategories,
 ]) ?>
-
