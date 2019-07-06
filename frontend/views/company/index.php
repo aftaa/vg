@@ -1,14 +1,16 @@
 <?php
 
+use common\models\CompanyParam;
+use common\vg\models\VgCompany;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-/* @var $categories common\models\CompanyCategory[] */
-/* @var $currentCategory common\models\CompanyCategory */
+/* @var $company VgCompany */
+/* @var $params CompanyParam[] */
 
-$this->title = $currentCategory->name;
+$this->title = $company->name;
 
-$category = $currentCategory;
+$category = $company->companyCategory;
 do {
     $this->params['breadcrumbs'][] = [
         'label' => $category->name,
@@ -19,8 +21,6 @@ do {
     ];
 } while ($category = $category->parent);
 
-unset($this->params['breadcrumbs'][0]['url']);
-
 $this->params['breadcrumbs'] = array_reverse($this->params['breadcrumbs']);
 array_unshift($this->params['breadcrumbs'], [
     'label' => 'Компании',
@@ -28,40 +28,23 @@ array_unshift($this->params['breadcrumbs'], [
 
 ?>
 
-<div class="row">
-    <?php foreach ($categories as $category): ?>
-        <div class="col col-md-4">
-            <h3>
-                <a href="<?= Url::to(['company/category', 'categoryId' => $category->id]) ?>"><?= $category->name ?></a>
-                <?php if ($category->companies): ?>
-                    <small><sup>(<?= count($category->companies) ?>)</sup></small>
-                <? endif ?>
-            </h3>
-        </div>
-    <?php endforeach ?>
-</div>
 
-<?php if ($currentCategory->companies): ?>
+<div class="container company">
     <div class="row">
-        <?php foreach ($currentCategory->companies as $company): ?>
-            <div class="col col-lg-12">
+        <div class="col col-sm col-lg-3"></div>
+        <div class="col col-sm col-lg-9">
+            <ul>
+                <?php foreach ($params as $param): ?>
+                    <li>
+                        <?= $param->name ?>:
+                        <b>
+                            <?= $param->companyParamValues[0]->value ?>
+                        </b>
+                    </li>
+                <?php endforeach ?>
+            </ul>
 
-                <h2>
-                    <?= $company->name ?>
-                </h2>
-                <div class="bg-danger">
-                    <a href="<?= Url::to(['area/all']) ?>" class="bg-warning"><?= $company->area->name ?></a>
-                </div>
-                <?php if ($company->introduce): ?>
-                    <p>
-                        <?php if (mb_strlen(strip_tags($company->introduce)) > 300): ?>
-                            <?= mb_substr(strip_tags($company->introduce), 0, 300) ?>
-                            ...
-                        <?php endif ?>
-                    </p>
-                <?php endif ?>
-            </div>
-        <?php endforeach ?>
+        </div>
     </div>
-<?php endif ?>
+</div>
 

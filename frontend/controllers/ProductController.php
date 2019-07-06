@@ -4,17 +4,17 @@
 namespace frontend\controllers;
 
 
-use common\models\Product;
 use common\models\ProductCategory;
 use common\vg\controllers\FrontendController;
 use common\vg\manager\ProductCategoryManager;
 use common\vg\manager\ProductManager;
+use common\vg\models\VgProduct;
 
 class ProductController extends FrontendController
 {
     public function actionIndex(int $productId)
     {
-        $product = Product::findOne($productId);
+        $product = VgProduct::findOne($productId);
         return $this->render('index', [
             'product' => $product,
         ]);
