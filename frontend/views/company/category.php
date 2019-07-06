@@ -49,6 +49,6 @@ $this->registerMetaTag([
 ]) ?>
 
 <?= $this->render('/company/_companies', [
-    'companies' => $currentCategory->companies
+    'companies' => $currentCategory->getCompanies()->orderBy('name')->all()
 ]) ?>
 

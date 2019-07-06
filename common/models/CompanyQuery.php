@@ -34,7 +34,7 @@ class CompanyQuery extends \yii\db\ActiveQuery
 
     /**
      * @param int $limit
-     * @return array
+     * @return Company[]
      */
     public function withThumbs(int $limit = 12): array
     {
@@ -42,7 +42,7 @@ class CompanyQuery extends \yii\db\ActiveQuery
             ->orderBy('RAND()')
             ->limit($limit)
             ->all();
-//        $companies = array_chunk($companies, 4);
+        $companies = array_chunk($companies, 4);
         return $companies;
     }
 }

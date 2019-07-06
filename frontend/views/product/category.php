@@ -1,11 +1,17 @@
 <?php
 
+use common\models\Product;
 use common\vg\models\VgProductCategory;
+use yii\data\Pagination;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $productCategory VgProductCategory */
 /* @var $productCategories VgProductCategory[] */
+
+/** @var $products Product[] */
+/** @var $pages Pagination */
+
 
 $this->title = $productCategory->name;
 
@@ -25,11 +31,16 @@ unset($this->params['breadcrumbs'][0]['url']);
 
 $this->params['breadcrumbs'] = array_reverse($this->params['breadcrumbs']);
 array_unshift($this->params['breadcrumbs'], [
-    'label' => 'Компании',
+    'label' => 'Товары',
 ]);
 
 ?>
 
 <?= $this->render('/product/_categories', [
     'productCategories' => $productCategories,
+]) ?>
+
+<?= $this->render('/product/_products', [
+    'products' => $products,
+    'pages'    => $pages,
 ]) ?>

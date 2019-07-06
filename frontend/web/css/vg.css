@@ -98,3 +98,11 @@ main .company h2 a {
 main .company h2 a:hover {
     font-weight: normal;
 }
+
+h2 a:hover {
+    color: purple;
+}
+
+.products h2 {
+    font-weight: normal;
+}

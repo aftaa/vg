@@ -2,6 +2,7 @@
 
 namespace frontend\controllers;
 
+use common\models\Company;
 use common\models\ProductCategory;
 use common\vg\controllers\FrontendController;
 use common\vg\manager\CompanyCategoryManager;
@@ -82,12 +83,9 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
-//        $companyWithThumbs = Company::find()->withThumbs(24);
-
         return $this->render('index', [
             'productCategories' => $productCategories,
             'companyCategories' => $companyCategories,
-//            'companyWithThumbs' => $companyWithThumbs,
         ]);
     }
 

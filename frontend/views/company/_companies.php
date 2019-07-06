@@ -37,7 +37,7 @@ use yii\web\View;
                         </a>
                     </div>
 
-                    <?php if (false && count($company->products)): ?>
+                    <?php if (count($company->products)): ?>
                         <div>
                             <span class="font-weight-bold">Представлено товаров: </span>
                             <?= count($company->products) ?>

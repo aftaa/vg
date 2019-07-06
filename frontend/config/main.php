@@ -46,6 +46,8 @@ return [
                 'company/<companyId>'           => 'company/index',
 
                 'category/<categoryId>' => 'product/category',
+                'product/<productId>' => 'product/index',
+
 
 
                 //                'area/all' => 'area/all',
