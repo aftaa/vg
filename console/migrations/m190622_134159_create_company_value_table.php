@@ -25,7 +25,7 @@ class m190622_134159_create_company_value_table extends Migration
             'id'                    => $this->primaryKey()->comment('№'),
             self::COMPANY_ID_COLUMN => $this->integer()->notNull()->comment('Компания'),
             self::PARAM_ID_COLUMN   => $this->integer()->notNull()->comment('Параметр'),
-            self::VALUE_COLUMN      => $this->text()->notNull(),
+            self::VALUE_COLUMN      => $this->text()->notNull()->comment('Значение'),
         ]);
 
         $this->createIndex(self::IDX_COMPANY_ID, self::TABLE_NAME, self::COMPANY_ID_COLUMN);

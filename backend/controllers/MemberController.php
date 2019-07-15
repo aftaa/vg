@@ -5,7 +5,7 @@ namespace backend\controllers;
 use Yii;
 use common\models\Member;
 use common\models\MemberSearch;
-use common\vg\BackendController;
+use common\vg\controllers\BackendController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 

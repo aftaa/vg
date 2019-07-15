@@ -17,7 +17,8 @@ class m190622_134136_create_company_param_table extends Migration
     {
         $this->createTable('{{%company_param}}', [
             'id' => $this->primaryKey()->comment('№'),
-            'name' => $this->string('50')->notNull()->comment('Параметр'),
+            'code' => $this->string(30)->notNull()->comment('Код'),
+            'name' => $this->string(50)->notNull()->comment('Параметр'),
             'sort' => $this->integer()->notNull()->comment('Порядок'),
         ]);
 

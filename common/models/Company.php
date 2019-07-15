@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\db\ActiveQuery;
 
 /**
  * This is the model class for table "company".
@@ -70,7 +71,7 @@ class Company extends \yii\db\ActiveRecord
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getArea()
     {
@@ -78,7 +79,7 @@ class Company extends \yii\db\ActiveRecord
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getCompanyCategory()
     {
@@ -86,7 +87,7 @@ class Company extends \yii\db\ActiveRecord
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getOwner()
     {
@@ -94,15 +95,17 @@ class Company extends \yii\db\ActiveRecord
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getCompanyParamValues()
     {
-        return $this->hasMany(CompanyParamValue::className(), ['company_id' => 'id']);
+        return $this->hasMany(CompanyParamValue::class, ['company_id' => 'id'])
+            ->with('param')
+            ->indexBy('param.code');
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getProducts()
     {

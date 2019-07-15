@@ -35,8 +35,8 @@ class ProductController extends FrontendController
             'productCategories' => $companyCategories,
             'productCategory'   => $currentCategory,
 
-            'products' => $products,
-            'pages'    => $pages,
+            'allProducts' => $products,
+            'pages'       => $pages,
         ]);
     }
 

@@ -41,13 +41,6 @@ array_unshift($this->params['breadcrumbs'], [
                 <?= $product->description ?>
             </p>
 
-            <h4>Характеристики:</h4>
-            <ul>
-            <?php foreach ($params as $param): ?>
-                <li><?= $param->name ?>
-            <?php endforeach ?>
-            </ul>
-
             <?php if ($product->price): ?>
                 <big>Стоимость: <?= $product->getPrice() ?> ₽</big>
             <?php endif ?>

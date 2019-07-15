@@ -1,12 +1,17 @@
 <?php
 
-use common\models\CompanyParam;
+use common\models\CompanyParamValue;
+use common\models\Product;
 use common\vg\models\VgCompany;
+use yii\data\Pagination;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $company VgCompany */
-/* @var $params CompanyParam[] */
+/* @var $params CompanyParamValue[] */
+
+/** @var $allProducts Product[][] */
+/** @var $pages Pagination */
 
 $this->title = $company->name;
 
@@ -28,23 +33,45 @@ array_unshift($this->params['breadcrumbs'], [
 
 ?>
 
-
 <div class="container company">
     <div class="row">
-        <div class="col col-sm col-lg-3"></div>
-        <div class="col col-sm col-lg-9">
-            <ul>
-                <?php foreach ($params as $param): ?>
-                    <li>
-                        <?= $param->name ?>:
-                        <b>
-                            <?= $param->companyParamValues[0]->value ?>
-                        </b>
-                    </li>
-                <?php endforeach ?>
-            </ul>
+        <div class="col col-sm col-lg-2">
+            <br><br>
+            <img alt="" src="<?= $company->thumb ?>" style="max-width: 100%">
+        </div>
+        <div class="col col-sm col-lg-4">
+            <h3><?= $company->name ?></h3>
+
+            <?php if ($params['sait']): ?>
+                <h4><a href="<?= $params['sait']->value ?>" target="_blank"
+                      rel="nofollow"><?= $params['sait']->value ?></a>
+                </h4>
+            <?php endif ?>
+
+            <p><?= $company->introduce ?></p>
+        </div>
+        <div class="col col-sm col-lg-1"></div>
+        <div class="col col-sm col-lg-4">
+            <h3><?= $params['phone']->value ?></h3>
+            <h4><a href="mailto:<?= $params['email']->value ?>"><?= $params['email']->value ?></a></h4>
+            <p><?= nl2br($params['address']->value) ?></p>
+
+<!--            <ul type="none">-->
+<!--                --><?php //foreach ($params as $param): ?>
+<!--                    <li>-->
+<!--                        --><?//= $param->param->name ?><!--:-->
+<!--                        --><?//= $param->value ?>
+<!--                    </li>-->
+<!--                --><?php //endforeach ?>
+<!--            </ul>-->
 
         </div>
+        <div class="col col-sm col-lg-1"></div>
     </div>
+    <div class="row"><br></div>
 </div>
 
+<?= $this->render('/product/_products', [
+    'allProducts' => $allProducts,
+    'pages'       => $pages,
+]) ?>

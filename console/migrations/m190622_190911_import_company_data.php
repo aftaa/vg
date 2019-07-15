@@ -47,12 +47,11 @@ class m190622_190911_import_company_data extends Migration
         foreach ($params as $oldParam => $param) {
             $companyParam = new CompanyParam;
             $companyParam->sort = $i++;
+            $companyParam->code = $oldParam;
             $companyParam->name = $param;
             $companyParam->save();
             $paramId[$oldParam] = $companyParam->id;
         }
-
-        //print_r($paramId);
 
         $db = Yii::$app->dbVsetigTest;
 

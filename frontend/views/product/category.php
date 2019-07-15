@@ -9,7 +9,7 @@ use yii\helpers\Url;
 /* @var $productCategory VgProductCategory */
 /* @var $productCategories VgProductCategory[] */
 
-/** @var $products Product[] */
+/** @var $allProducts Product[][] */
 /** @var $pages Pagination */
 
 
@@ -41,6 +41,6 @@ array_unshift($this->params['breadcrumbs'], [
 ]) ?>
 
 <?= $this->render('/product/_products', [
-    'products' => $products,
+    'allProducts' => $allProducts,
     'pages'    => $pages,
 ]) ?>

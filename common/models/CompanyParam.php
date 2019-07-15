@@ -52,7 +52,7 @@ class CompanyParam extends \yii\db\ActiveRecord
      */
     public function getCompanyParamValues()
     {
-        return $this->hasMany(CompanyParamValue::className(), ['param_id' => 'id']);
+        return $this->hasMany(CompanyParamValue::className(), ['param_id' => 'id'])->indexBy('code');
     }
 
     /**

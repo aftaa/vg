@@ -35,4 +35,33 @@ class ProductManager
             $pages,
         ];
     }
+
+    /**
+     * @param int $companyId
+     * @return array[Products[], Pagination]
+     */
+    public static function getProductsByCompanyIdWithPagination(int $companyId): array
+    {
+        $query = Product::find()->where([
+            'checked'     => true,
+            'company_id' => $companyId,
+        ]);
+        $countQuery = clone $query;
+        $pages = new Pagination([
+            'totalCount' => $countQuery->count(),
+        ]);
+        $pages->setPageSize(256);
+
+        $products = $query->offset($pages->offset)
+            ->limit($pages->limit)
+            ->orderBy('thumb, price DESC')
+            ->all();
+
+        $products = array_chunk($products, 4);
+
+        return [
+            $products,
+            $pages,
+        ];
+    }
 }

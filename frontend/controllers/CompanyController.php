@@ -5,8 +5,9 @@ namespace frontend\controllers;
 use common\models\CompanyCategory;
 use common\vg\controllers\FrontendController;
 use common\vg\manager\CompanyCategoryManager;
+use common\vg\manager\ProductManager;
 use common\vg\models\VgCompany;
-use yii\base\InvalidConfigException;
+use Exception;
 
 /**
  * Class CompanyController
@@ -17,23 +18,27 @@ class CompanyController extends FrontendController
     /**
      * @param int $companyId
      * @return string
-     * @throws InvalidConfigException
      */
     public function actionIndex(int $companyId): string
     {
         $company = VgCompany::findOne($companyId);
-        $params = $company->getParams($companyId    );
+        $params = $company->companyParamValues;
+
+        [$products, $pages] = ProductManager::getProductsByCompanyIdWithPagination($companyId);
 
         return $this->render('index', [
             'company' => $company,
             'params'  => $params,
+
+            'allProducts' => $products,
+            'pages'       => $pages,
         ]);
     }
 
     /**
      * @param int $categoryId
      * @return string
-     * @throws \Throwable
+     * @throws Exception
      */
     public function actionCategory(int $categoryId): string
     {

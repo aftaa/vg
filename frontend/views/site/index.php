@@ -23,3 +23,5 @@ $this->params['breadcrumbs'][] = $this->title;
 <?= $this->render('/company/_categories', [
     'companyCategories' => $companyCategories,
 ]) ?>
+
+<h2>Регионы</h2>

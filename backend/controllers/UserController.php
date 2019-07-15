@@ -3,11 +3,10 @@
 namespace backend\controllers;
 
 use Yii;
-use common\vg\BackendController;
+use common\vg\controllers\BackendController;
 use backend\models\User;
 use backend\models\UserSearch;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 
 /**
  * UserController implements the CRUD actions for User model.
@@ -96,6 +95,8 @@ class UserController extends BackendController
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
+     * @throws \Throwable
+     * @throws \yii\db\StaleObjectException
      */
     public function actionDelete($id)
     {

@@ -5,23 +5,19 @@ namespace common\vg\models;
 
 
 use common\models\Company;
-use common\models\CompanyParam;
 use common\models\CompanyParamValue;
-use yii\base\InvalidConfigException;
-use yii\db\ActiveRecord;
+use yii\db\ActiveQuery;
 
 class VgCompany extends Company
 {
     /**
-     * @param int $companyId
-     * @return array|ActiveRecord[]
-     * @throws InvalidConfigException
+     * @return ActiveQuery
      */
-    public function getParams()
+    public function getCompanyParamValues()
     {
-        $params = $this->hasMany(CompanyParamValue::class, ['id' => 'company_id'])
-            ->viaTable('company_param', ['param_id' => 'id'])
-            ->all();
-        return $params;
+        return $this->hasMany(CompanyParamValue::class, ['company_id' => 'id'])
+            ->with('param')
+            ->indexBy('param.code');
     }
+
 }
