@@ -49,7 +49,7 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Регистрация', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Войти', 'url' => ['/site/login']];
     } else {
-        //$menuItems[] = ['label' => 'Управление сайтом', 'url' => 'http://back.vg/'];
+        $menuItems[] = ['label' => 'Профиль', 'url' => '/profile'];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(

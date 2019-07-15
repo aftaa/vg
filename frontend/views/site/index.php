@@ -24,4 +24,4 @@ $this->params['breadcrumbs'][] = $this->title;
     'companyCategories' => $companyCategories,
 ]) ?>
 
-<h2>Регионы</h2>
+<!--<h2>Регионы</h2>-->
