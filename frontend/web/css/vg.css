@@ -106,3 +106,12 @@ h2 a:hover {
 .products h2 {
     font-weight: normal;
 }
+
+.site-login {
+    color: #fff;
+    color: ##22b66e;
+}
+
+body a, td a {
+    text-decoration: underline;
+}

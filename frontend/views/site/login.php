@@ -8,10 +8,9 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Войти';
-$this->params['breadcrumbs'][] = $this->title;
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
 
 <!--    <p>Please fill out the following fields to login:</p>-->
 
@@ -25,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'rememberMe')->checkbox() ?>
 
-                <div style="color:#999;margin:1em 0">
+                <div style="margin:1em 0">
                     <?= Html::a('Забыли пароль', ['site/request-password-reset']) ?>?
                     <br>
                     Не пришло письмо с активацией? <?= Html::a('Выслать ещё', ['site/resend-verification-email']) ?>!
