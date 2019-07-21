@@ -13,6 +13,7 @@ use Yii;
  * @property string $last_name Фамилия
  * @property string $middle_name Отчество
  * @property string $position Должность
+ * @property string $old_password Старый пароль
  * @property string $phone Телефон
  * @property string $balance Баланс
  * @property string $user_pic Аватар
@@ -40,6 +41,7 @@ class Member extends \yii\db\ActiveRecord
             [['user_id'], 'integer'],
             [['balance'], 'number'],
             [['first_name', 'last_name', 'middle_name', 'position'], 'string', 'max' => 50],
+            [['old_password'], 'string', 'max' => 32],
             [['phone'], 'string', 'max' => 20],
             [['user_pic'], 'string', 'max' => 100],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
@@ -58,6 +60,7 @@ class Member extends \yii\db\ActiveRecord
             'last_name' => 'Фамилия',
             'middle_name' => 'Отчество',
             'position' => 'Должность',
+            'old_password' => 'Старый пароль',
             'phone' => 'Телефон',
             'balance' => 'Баланс',
             'user_pic' => 'Аватар',

@@ -52,18 +52,20 @@ class m190618_003237_import_data_into_member_table extends Migration
 
             $member->id = $aw_member['userid'];
             $member->user_id = $aw_member['userid'];
+            $member->old_password = $aw_member['password'];
             $member->first_name = $aw_member['ferstname'];
             $member->last_name = $aw_member['family'];
             $member->middle_name = $aw_member['lastname'];
-            $member->position = $aw_member['unpy'];
+            $member->position = $aw_member['unp'];
             $member->phone = $aw_member['phone'];
             $member->balance = $aw_member['money'];
             $member->user_pic = $aw_member['avatar'];
             if (!$member->save()) {
                 print_r($member->errors);
+                return false;
             }
         }
-
+        return true;
     }
 
     /**

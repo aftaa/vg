@@ -2,17 +2,22 @@
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+/* @var $model common\vg\forms\VgLoginForm */
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Войти';
+//$this->title = 'Войти';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<br>
+<br>
+
 <div class="site-login">
 
-<!--    <p>Please fill out the following fields to login:</p>-->
+    <p>Для входа на сайт введите следующие данные:</p>
+    <br>
 
     <div class="row">
         <div class="col-lg-5">

@@ -1,9 +1,10 @@
 <?php
 namespace backend\controllers;
 
+use common\vg\forms\VgLoginForm;
 use Yii;
 use common\vg\controllers\BackendController;
-use common\models\LoginForm;
+
 
 /**
  * Site controller
@@ -31,7 +32,7 @@ class SiteController extends BackendController
             return $this->goHome();
         }
 
-        $model = new LoginForm();
+        $model = new VgLoginForm;
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         } else {

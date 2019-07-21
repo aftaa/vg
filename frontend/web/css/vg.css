@@ -4,7 +4,6 @@
 }
 
 nav {
-    /*opacity: .9;*/
     background: #2196f3 !important;
 }
 
@@ -107,9 +106,12 @@ h2 a:hover {
     font-weight: normal;
 }
 
-.site-login {
-    color: #fff;
-    color: ##22b66e;
+main {
+    color: #aaa;
+}
+
+main a {
+    color: #2196f3;
 }
 
 body a, td a {
