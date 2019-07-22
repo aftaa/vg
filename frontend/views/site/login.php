@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
-/* @var $model common\vg\forms\VgLoginForm */
+/* @var $formModel common\vg\forms\VgLoginForm */
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
@@ -23,11 +23,11 @@ use yii\bootstrap\ActiveForm;
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
-                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+                <?= $form->field($formModel, 'username')->textInput(['autofocus' => true]) ?>
 
-                <?= $form->field($model, 'password')->passwordInput() ?>
+                <?= $form->field($formModel, 'password')->passwordInput() ?>
 
-                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                <?= $form->field($formModel, 'rememberMe')->checkbox() ?>
 
                 <div style="margin:1em 0">
                     <?= Html::a('Забыли пароль', ['site/request-password-reset']) ?>?

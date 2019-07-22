@@ -2,9 +2,8 @@
 
 namespace frontend\controllers;
 
-use common\models\Company;
-use common\models\ProductCategory;
 use common\vg\controllers\FrontendController;
+use common\vg\forms\VgLoginForm;
 use common\vg\manager\CompanyCategoryManager;
 use common\vg\manager\ProductCategoryManager;
 use frontend\models\ResendVerificationEmailForm;
@@ -14,7 +13,6 @@ use yii\base\InvalidArgumentException;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
@@ -100,14 +98,14 @@ class SiteController extends FrontendController
             return $this->goHome();
         }
 
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+        $formModel = new VgLoginForm;
+        if ($formModel->load(Yii::$app->request->post()) && $formModel->login()) {
             return $this->goBack();
         } else {
-            $model->password = '';
+            $formModel->password = '';
 
             return $this->render('login', [
-                'model' => $model,
+                'formModel' => $formModel,
             ]);
         }
     }
