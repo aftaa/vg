@@ -15,7 +15,6 @@ class VgMember extends Member
     public function validatePassword($password)
     {
         $password = md5($password);
-        echo '<pre>'; print_r([$this->old_password, $password]); echo '</pre>'; exit(0);
         $result = $this->old_password == $password;
         return $result;
     }

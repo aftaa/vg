@@ -34,7 +34,7 @@ class m190618_003237_import_data_into_member_table extends Migration
 
             $user = User::findOne(['username' => $aw_member['username']]);
             if ($user) {
-                echo "Username $aw_member[username] не уникальный\n";
+                echo "Пользователь $aw_member[username] не уникальный\n";
                 continue;
             }
 
