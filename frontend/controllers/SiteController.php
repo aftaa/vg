@@ -132,9 +132,9 @@ class SiteController extends FrontendController
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                Yii::$app->session->setFlash('success', 'Спасибо за ваше сообщение! Мы постараемся связаться с вами как можно быстрее!');
             } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+                Yii::$app->session->setFlash('error', 'Ошибка при отправке сообщения.');
             }
 
             return $this->refresh();
@@ -164,7 +164,7 @@ class SiteController extends FrontendController
     {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
+            Yii::$app->session->setFlash('success', 'Спасибо за регистрацию, проверьте электронную почту для ее подтверждения.');
             return $this->goHome();
         }
 
@@ -238,7 +238,7 @@ class SiteController extends FrontendController
         }
         if ($user = $model->verifyEmail()) {
             if (Yii::$app->user->login($user)) {
-                Yii::$app->session->setFlash('success', 'Your email has been confirmed!');
+                Yii::$app->session->setFlash('success', 'Электронная почта успешно подтверждена!');
                 return $this->goHome();
             }
         }

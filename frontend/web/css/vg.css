@@ -117,3 +117,18 @@ main a {
 body a, td a {
     text-decoration: underline;
 }
+
+.site-about {
+    font-size: 1.1em;
+}
+
+#search {
+    border: 1px solid red;
+    float: left;
+    margin-top: 4%;
+}
+
+#search input {
+    float: left;
+    color: #2196f3;
+}

@@ -1,8 +1,11 @@
 <?php
 return [
-    'adminEmail' => 'admin@example.com',
-    'supportEmail' => 'support@example.com',
-    'senderEmail' => 'noreply@example.com',
-    'senderName' => 'Example.com mailer',
+    'adminEmail' => [
+        'admin@vseti-goroda.ru',
+        'after@ya.ru',
+    ],
+    'supportEmail' => 'support@vseti-goroda.ru',
+    'senderEmail' => 'noreply@vseti-goroda.ru',
+    'senderName' => 'Каталог vseti-goroda.ru',
     'user.passwordResetTokenExpire' => 3600,
 ];

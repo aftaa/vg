@@ -33,17 +33,17 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandImage' => '/png/logo.png',
-        'brandLabel' => Yii::$app->name,
-        //        'headerContent' => $this->title,
-        'brandUrl'   => Yii::$app->homeUrl,
-        'options'    => [
+        'brandLabel' => '',//'vseti-goroda.ru',//Yii::$app->name,
+        'headerContent' => $this->render('_search.php'), //$this->title,
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
 //        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'О компании', 'url' => ['#/site/about']],
-        ['label' => 'Контакты', 'url' => ['#/site/contact']],
+        ['label' => 'О проекте', 'url' => ['/site/about']],
+        ['label' => 'Контакты', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Регистрация', 'url' => ['/site/signup']];
@@ -61,7 +61,7 @@ AppAsset::register($this);
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items'   => $menuItems,
+        'items' => $menuItems,
     ]);
     NavBar::end();
     ?>
