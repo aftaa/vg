@@ -2,7 +2,7 @@
 
 namespace common\vg\forms;
 
-use common\models\LoginForm;
+use common\forms\LoginForm;
 use common\models\User;
 use common\vg\models\VgMember;
 
@@ -35,6 +35,10 @@ class VgLoginForm extends LoginForm
      */
     protected function oldAuthorization(string $attribute, ?User $user): void
     {
+        if (!$user) {
+            $this->addError($attribute, self::ERROR_MESSAGE);
+            return;
+        }
         $member = VgMember::find($user->getId())->limit(1)->one();
         if (!$member || !$member->validatePassword($this->password)) {
             $this->addError($attribute, self::ERROR_MESSAGE);

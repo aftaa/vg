@@ -3,16 +3,18 @@
 
 namespace frontend\controllers;
 
+
 use common\vg\controllers\FrontendController;
 
-class ProfileController extends FrontendController
+class PasswordController extends FrontendController
 {
-    /**
-     * @return string
-     */
     public function actionIndex()
     {
-        return $this->render('index');
+        echo $this->render('index');
     }
 
+    public function actionChange()
+    {
+
+    }
 }

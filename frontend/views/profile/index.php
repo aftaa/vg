@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\web\View;
 
 $identity = Yii::$app->user->getIdentity();
@@ -18,6 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <li><a data-toggle="tab" href="#tab2">Мои компании</a></li>
     <li><a data-toggle="tab" href="#tab3">Мои товары</a></li>
     <li><a data-toggle="tab" href="#tab4">Загрузка товаров</a></li>
+    <li><a href="<?= Url::to(['password/index']) ?>">Сменить пароль</a></li>
 
 </ul>
 
