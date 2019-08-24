@@ -7,7 +7,7 @@ use yii\helpers\Url;
 use yii\web\View;
 
 $identity = Yii::$app->user->getIdentity();
-$this->title = 'Профиль ' . $identity->username;
+$this->title = 'Профиль';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 

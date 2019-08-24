@@ -2,7 +2,7 @@
 
 namespace common\vg\forms;
 
-use common\forms\LoginForm;
+use common\models\LoginForm;
 use common\models\User;
 use common\vg\models\VgMember;
 

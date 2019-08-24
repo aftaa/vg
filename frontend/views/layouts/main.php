@@ -85,6 +85,7 @@ AppAsset::register($this);
 <?= $this->render('_footer') ?>
 
 <?php $this->endBody() ?>
+<script type="text/javascript" src="/js/vg.js"></script>
 </body>
 </html>
 <?php $this->endPage() ?>

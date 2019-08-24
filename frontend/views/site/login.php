@@ -7,8 +7,8 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-//$this->title = 'Войти';
-//$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Логин';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <br>
@@ -16,8 +16,8 @@ use yii\bootstrap\ActiveForm;
 
 <div class="site-login">
 
-    <p>Для входа на сайт введите следующие данные:</p>
-    <br>
+<!--    <p>Для входа на сайт введите следующие данные:</p>-->
+<!--    <br>-->
 
     <div class="row">
         <div class="col-lg-5">
