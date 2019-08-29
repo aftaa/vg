@@ -1,46 +1,67 @@
 <?php
 
-/* @var $this yii\web\View */
+/** @var $this yii\web\View */
+/** @var $success bool */
 
+use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
-use yii\helpers\Url;
-use yii\web\View;
+
 
 $identity = Yii::$app->user->getIdentity();
 $this->title = 'Профиль';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<br><br>
+<table class="table">
+    <thead>
+    <tr>
+        <td>№</td>
+        <td>Логин</td>
+        <td>E-mail</td>
+        <td>Статус</td>
+        <td>Регистрация</td>
+<!--        <td>Обновление</td>-->
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><?= $identity->getId() ?></td>
+        <td><?= $identity->username ?></td>
+        <td><?= $identity->email ?></td>
+        <td><?= $identity->attributeLabels()[$identity->status] ?></td>
+        <td><?= date('d.m.Y H:i', $identity->created_at) ?></td>
+<!--        <td>--><?//= date('d.m.Y H:i', $identity->updated_at) ?><!--</td>-->
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="99"></td>
+    </tr>
+    </tfoot>
+</table>
 
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#main">Основные данные</a></li>
-    <li><a data-toggle="tab" href="#tab1">Тариф и баланс</a></li>
-    <li><a data-toggle="tab" href="#tab2">Мои компании</a></li>
-    <li><a data-toggle="tab" href="#tab3">Мои товары</a></li>
-    <li><a data-toggle="tab" href="#tab4">Загрузка товаров</a></li>
-    <li><a href="<?= Url::to(['password/index']) ?>">Сменить пароль</a></li>
+<?php if ($success): ?>
+    <div class="alert alert-success" role="alert">
+        Данных сохранены.
+    </div>
+<?php endif ?>
 
-</ul>
+<div class="profile-member">
+    <div class="row">
+        <div class="col-lg-5">
+            <?php $form = ActiveForm::begin(['id' => 'member-form']); ?>
 
-<div class="tab-content">
-    <div class="container tab-pane fade in active" id="main">
-        <br>
-        <div class="row">
-            <div class="col-sx">
-                Логин: <?= $identity->username ?>
+            <?= $form->field($model, 'first_name')->input(['autofocus' => true]) ?>
+            <?= $form->field($model, 'last_name') ?>
+            <?= $form->field($model, 'middle_name') ?>
+            <?= $form->field($model, 'position') ?>
+            <?= $form->field($model, 'phone') ?>
+
+            <div class="form-group">
+                <?= Html::submitButton('Обновить', ['class' => 'btn btn-primary', 'name' => 'member-button']) ?>
             </div>
-            <div class="col-sx">
-                E-mail: <?= $identity->email ?>
-            </div>
-            <div class="col-sx">
-                Регистрация: <?= date('d.m.Y H:i', $identity->created_at) ?>
-            </div>
+
+            <?php ActiveForm::end(); ?>
         </div>
     </div>
-
-    <div class="tab-pane fade" id="tab1"></div>
-    <div class="tab-pane fade" id="tab2"></div>
-    <div class="tab-pane fade" id="tab3"></div>
-    <div class="tab-pane fade" id="tab4"></div>
 </div>

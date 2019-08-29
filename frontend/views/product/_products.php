@@ -18,16 +18,16 @@ use yii\widgets\LinkPager;
             <?php foreach ($products as $product): ?>
 
                 <div class="col col-md-3">
-                    <h2>
+                    <strong>
                         <a href="<?= Url::to(['product/index', 'productId' => $product->id ]) ?>"><?= $product->name ?></a>
-                    </h2>
+                    </strong>
+                    <div class="alert-danger">
+                        <?php if ($product->price) echo $product->price, ' ₽' ?>
+                    </div>
                     <div class="center-block" style="text-align: center; min-height: 200px;">
                         <img alt="" src="<?= $product->thumb ?>" style="max-width: 200px; max-height: 200px;">
                     </div>
 
-                    <big>
-                        <?php if ($product->price) echo $product->price, ' ₽' ?>
-                    </big>
 
                     <div style="background: #eee;">
                         <a href="<?= Url::to(['company/index', 'companyId' => $product->company_id ]) ?>"><?= $product->company->name ?></a>
@@ -35,7 +35,6 @@ use yii\widgets\LinkPager;
                     <small><?= $product->company->area->name ?></small>
 
                 </div>
-
             <?php endforeach ?>
         </div>
     <?php endforeach ?>

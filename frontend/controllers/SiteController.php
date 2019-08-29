@@ -100,7 +100,7 @@ class SiteController extends FrontendController
 
         $formModel = new VgLoginForm;
         if ($formModel->load(Yii::$app->request->post()) && $formModel->login()) {
-            return $this->goBack();
+            $this->redirect('/profile');
         } else {
             $formModel->password = '';
 

@@ -2,7 +2,9 @@
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
-/* @var $formModel common\vg\forms\VgPasswordForm */
+/* @var $model common\vg\forms\VgPasswordForm */
+
+/* @var $success bool */
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
@@ -11,7 +13,7 @@ use yii\helpers\Url;
 $this->title = 'Пароль';
 $this->params['breadcrumbs'][] = array(
     'label' => 'Профиль ',
-    'url' => Url::to('/profile/index'),
+    'url'   => Url::to('/profile'),
 );
 $this->params['breadcrumbs'][] = $this->title;
 
@@ -20,26 +22,28 @@ $this->params['breadcrumbs'][] = $this->title;
 <br>
 <br>
 
+<?php if ($success): ?>
+    <div class="alert alert-success" role="alert">
+        Пароль изменен
+    </div>
+<?php endif ?>
+
 <div class="site-login">
-
-    <p>Для сменый пароля введите следующие данные:</p>
-    <br>
-
     <div class="row">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'password-form']); ?>
 
-            <?= $form->field($formModel, 'oldPassword')->passwordInput(['autofocus' => true]) ?>
+            <?= $form->field($model, 'oldPassword')->passwordInput(['autofocus' => true]) ?>
 
             <hr size="1">
 
-            <?= $form->field($formModel, 'newPassword1')->passwordInput() ?>
+            <?= $form->field($model, 'newPassword1')->passwordInput() ?>
 
-            <?= $form->field($formModel, 'newPassword2')->passwordInput() ?>
+            <?= $form->field($model, 'newPassword2')->passwordInput() ?>
 
 
             <div class="form-group">
-                <?= Html::submitButton('Сменить', ['class' => 'btn btn-danger', 'name' => 'password-button']) ?>
+                <?= Html::submitButton('Сменить', ['class' => 'btn btn-primary', 'name' => 'password-button']) ?>
             </div>
 
             <?php ActiveForm::end(); ?>

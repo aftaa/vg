@@ -48,6 +48,12 @@ return [
                 'category/<categoryId>' => 'product/category',
                 'product/<productId>' => 'product/index',
 
+                // TODO не подсвечиваются ссылки в главном меню
+                'profile/' => 'profile/index',
+                'profile/password' => 'password/index',
+                'profile/company/<companyId>' => 'profile/company',
+
+
 
 
                 //                'area/all' => 'area/all',

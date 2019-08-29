@@ -3,32 +3,30 @@
 
 namespace frontend\controllers;
 
-
-use common\vg\controllers\FrontendController;
-use common\vg\forms\VgPasswordForm;
-use phpDocumentor\Reflection\Types\Self_;
 use Yii;
+use common\vg\manager\PasswordManager;
+use common\vg\controllers\FrontendController;
 
 class PasswordController extends FrontendController
 {
+    /**
+     * @return string
+     * @throws \Throwable
+     */
     public function actionIndex()
     {
-        if (Yii::$app->user->isGuest) {
+        $user = Yii::$app->getUser();
+
+        if ($user->isGuest) {
             return $this->goHome();
         }
 
-        $formModel = new VgPasswordForm();
+        $passwordManager = new PasswordManager($user->getIdentity());
+        $changeResult = $passwordManager->changePassword(Yii::$app->request->post());
 
-        if ($formModel->load(Yii::$app->request->post()) && $formModel->change()) {
-            return $this->goBack();
-        } else {
-            $formModel->oldPassword = '';
-            $formModel->newPassword1 = '';
-            $formModel->newPassword2 = '';
-
-            return $this->render('index', [
-                'formModel' => $formModel,
-            ]);
-        }
+        return $this->render('index', [
+            'model'   => $passwordManager->getModel(),
+            'success' => $changeResult,
+        ]);
     }
 }

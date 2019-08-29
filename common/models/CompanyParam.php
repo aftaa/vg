@@ -3,11 +3,13 @@
 namespace common\models;
 
 use Yii;
+use yii\db\ActiveQuery;
 
 /**
  * This is the model class for table "company_param".
  *
  * @property int $id №
+ * @property string $code Код
  * @property string $name Параметр
  * @property int $sort Порядок
  *
@@ -29,8 +31,9 @@ class CompanyParam extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'sort'], 'required'],
+            [['code', 'name', 'sort'], 'required'],
             [['sort'], 'integer'],
+            [['code'], 'string', 'max' => 30],
             [['name'], 'string', 'max' => 50],
         ];
     }
@@ -42,13 +45,14 @@ class CompanyParam extends \yii\db\ActiveRecord
     {
         return [
             'id' => '№',
+            'code' => 'Код',
             'name' => 'Параметр',
             'sort' => 'Порядок',
         ];
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getCompanyParamValues()
     {

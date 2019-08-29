@@ -5,7 +5,6 @@ namespace common\vg\forms;
 
 
 use common\models\User;
-use Yii;
 use yii\base\Model;
 
 class VgPasswordForm extends Model
@@ -16,6 +15,18 @@ class VgPasswordForm extends Model
     public $newPassword1 = '';
     /** @var string */
     public $newPassword2 = '';
+    /** @var User */
+    private $user;
+
+    /**
+     * VgPasswordForm constructor.
+     * @param User $user
+     */
+    public function __construct(User $user)
+    {
+        $this->user = $user;
+    }
+
 
     /**
      * @inheritDoc
@@ -23,23 +34,37 @@ class VgPasswordForm extends Model
     public function rules()
     {
         return [
-//            [['oldPassword', 'newPassword1', 'newPassword2'], 'required'],
+            [['oldPassword', 'newPassword1', 'newPassword2'], 'required'],
+            ['oldPassword', 'checkPassword'],
+            [['newPassword1', 'newPassword2'], 'checkPasswords'],
         ];
     }
 
-    public function change()
+    /**
+     * @return bool
+     */
+    public function checkPassword()
     {
-        /** @var User $user */
-        $user = Yii::$app->getUser()->getIdentity();
-
-        if (!$user->validatePassword($this->oldPassword)) {
-            die;
+        if (!$this->user->validatePassword($this->oldPassword)) {
             $this->addError('oldPassword', 'Пароль не верен');
+            $this->oldPassword = '';
+            return false;
         }
-
-        return !$this->hasErrors();
+        return true;
     }
 
+    /**
+     * @return bool
+     */
+    public function checkPasswords()
+    {
+        if ($this->newPassword1 != $this->newPassword2) {
+            $this->addError('newPassword1', 'Пароли не совпадают');
+            $this->newPassword1 = $this->newPassword2 = '';
+            return false;
+        }
+        return true;
+    }
 
     /**
      * @inheritDoc
@@ -49,9 +74,7 @@ class VgPasswordForm extends Model
         return [
             'oldPassword'  => 'Старый пароль',
             'newPassword1' => 'Новый пароль',
-            'newPassword2' => 'Ещё раз',
+            'newPassword2' => 'Повторите пароль',
         ];
     }
-
-
 }

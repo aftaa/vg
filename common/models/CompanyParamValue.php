@@ -2,7 +2,8 @@
 
 namespace common\models;
 
-use Yii;
+use yii\db\ActiveQuery;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "company_param_value".
@@ -14,8 +15,10 @@ use Yii;
  *
  * @property CompanyParam $param
  * @property Company $company
+ *
+ * @property CompanyParamValue[] $companyParamValues
  */
-class CompanyParamValue extends \yii\db\ActiveRecord
+class CompanyParamValue extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -34,8 +37,8 @@ class CompanyParamValue extends \yii\db\ActiveRecord
             [['company_id', 'param_id', 'value'], 'required'],
             [['company_id', 'param_id'], 'integer'],
             [['value'], 'string'],
-            [['param_id'], 'exist', 'skipOnError' => true, 'targetClass' => CompanyParam::className(), 'targetAttribute' => ['param_id' => 'id']],
-            [['company_id'], 'exist', 'skipOnError' => true, 'targetClass' => Company::className(), 'targetAttribute' => ['company_id' => 'id']],
+            [['param_id'], 'exist', 'skipOnError' => true, 'targetClass' => CompanyParam::class, 'targetAttribute' => ['param_id' => 'id']],
+            [['company_id'], 'exist', 'skipOnError' => true, 'targetClass' => Company::class, 'targetAttribute' => ['company_id' => 'id']],
         ];
     }
 
@@ -53,19 +56,27 @@ class CompanyParamValue extends \yii\db\ActiveRecord
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getParam()
     {
-        return $this->hasOne(CompanyParam::className(), ['id' => 'param_id']);
+        return $this->hasOne(CompanyParam::class, ['id' => 'param_id']);
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getCompany()
     {
-        return $this->hasOne(Company::className(), ['id' => 'company_id']);
+        return $this->hasOne(Company::class, ['id' => 'company_id']);
+    }
+
+    /**
+     * @return ActiveQuery
+     */
+    public function getCompanyParamValues()
+    {
+        return $this->hasMany(CompanyParamValue::class, ['param_id' => 'id'])->indexBy('code');
     }
 
     /**
