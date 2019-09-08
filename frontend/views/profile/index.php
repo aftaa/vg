@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php if ($success): ?>
     <div class="alert alert-success" role="alert">
-        Данных сохранены.
+        Информация обновлена
     </div>
 <?php endif ?>
 

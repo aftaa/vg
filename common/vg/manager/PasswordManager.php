@@ -20,7 +20,7 @@ class PasswordManager
     public function __construct(User $user)
     {
         $this->user = $user;
-        $this->model = new VgPasswordForm($user);
+        $this->model = new VgPasswordForm;
     }
 
     /**

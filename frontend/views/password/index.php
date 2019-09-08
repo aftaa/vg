@@ -33,10 +33,6 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'password-form']); ?>
 
-            <?= $form->field($model, 'oldPassword')->passwordInput(['autofocus' => true]) ?>
-
-            <hr size="1">
-
             <?= $form->field($model, 'newPassword1')->passwordInput() ?>
 
             <?= $form->field($model, 'newPassword2')->passwordInput() ?>
