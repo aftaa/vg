@@ -33,9 +33,9 @@ $companyCategories = CompanyCategory::find()->select(['name', 'id'])->indexBy('i
 <?= $this->render('/site/_flash', ['flash' => $flash]) ?>
 
 <div class="profile-company">
+    <?php $form = ActiveForm::begin(['id' => 'profile-company']); ?>
     <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'profile-company']); ?>
+        <div class="col-lg-6">
 
             <?= $form->field($company, 'name')->label('Название компании') ?>
             <?= $form->field($company, 'company_category_id')->dropDownList($companyCategories, ['prompt' => '']) ?>
@@ -48,8 +48,19 @@ $companyCategories = CompanyCategory::find()->select(['name', 'id'])->indexBy('i
                 <?= Html::submitButton('Обновить', ['class' => 'btn btn-primary', 'name' => 'company-button']) ?>
             </div>
 
-            <?php ActiveForm::end(); ?>
+
+        </div>
+        <div class="col-lg-6">
+            <?= $form->field($params, 'linkman') ?>
+            <?= $form->field($params, 'phone') ?>
+            <?= $form->field($params, 'icq') ?>
+            <?= $form->field($params, 'msn') ?>
+            <?= $form->field($params, 'email') ?>
+            <?= $form->field($params, 'fax') ?>
+
+
         </div>
     </div>
+    <?php ActiveForm::end(); ?>
 </div>
 

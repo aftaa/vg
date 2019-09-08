@@ -1,3 +1,11 @@
+.tariff {
+    opacity: .8;
+    padding: .5em 0 1em 0;
+}
+.tariff:hover {
+    opacity: 1;
+}
+
 /*.navbar-inverse {*/
 /*    background: #123;*/
 /*}*/

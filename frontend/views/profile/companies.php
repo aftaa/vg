@@ -18,12 +18,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?= $this->render('/site/_flash', ['flash' => $flash]) ?>
 
-<table class="table">
+<table class="table table-hover table-striped">
     <thead>
     <tr>
         <td>№</td>
         <td>Компания</td>
         <td>Категория</td>
+        <td>Тариф</td>
         <td>Регион</td>
         <td>Описание</td>
         <td>meta keywords</td>
@@ -38,6 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <td><?= $company->id ?></td>
                 <td><a href="<?= Url::to(['profile/company', 'companyId' => $company->id] ) ?>"><?= $company->name ?></a></td>
                 <td><?= $company->getCompanyCategory()->one()->name ?></td>
+                <td><a href="<?= Url::to(['#', 'companyId' => $company->id] ) ?>"><?= $company->old_tarif ?? 'Начало' ?></a></td>
                 <td><?= $company->getArea()->one()->name ?></td>
                 <td><?= $company->introduce ?></td>
                 <td><?= $company->meta_keywords ?></td>

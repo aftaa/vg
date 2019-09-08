@@ -41,20 +41,18 @@ AppAsset::register($this);
         ],
     ]);
     $menuItems = [
-//        ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'Каталог', 'url' => ['/']],
         ['label' => 'О проекте', 'url' => ['/site/about']],
-        ['label' => 'Тарифы', 'url' => ['#']],
+        ['label' => 'Тарифы', 'url' => ['/tariffs']],
         ['label' => 'Контакты', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Регистрация', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Войти', 'url' => ['/site/login']];
     } else {
-        $menuItems[] = ['label' => '|']; // TODO сделать иконку пользователя
         $menuItems[] = ['label' => 'Профиль', 'url' => ['/profile']];
         $menuItems[] = ['label' => 'Компании', 'url' => ['/profile/companies']];
         $menuItems[] = ['label' => 'Продукция', 'url' => ['/profile/products']];
-//        $menuItems[] = ['label' => 'Тариф', 'url' => ['/profile/tariff']];
         $menuItems[] = ['label' => 'Баланс', 'url' => ['/profile/balance']];
         $menuItems[] = ['label' => 'Импорт', 'url' => ['/profile/import']];
         $menuItems[] = ['label' => 'Пароль', 'url' => ['/profile/password']];

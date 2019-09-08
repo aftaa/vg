@@ -4,9 +4,11 @@
 namespace frontend\controllers;
 
 use common\models\Company;
+use common\models\CompanyParamValue;
 use common\models\Member;
 use common\models\User;
 use common\vg\controllers\FrontendController;
+use common\vg\forms\VgCompanyParamValueForm;
 use Yii;
 use yii\helpers\Url;
 
@@ -82,8 +84,19 @@ class ProfileController extends FrontendController
     public function actionCompany($companyId)
     {
         $company = Company::findOne($companyId);
+
+        $paramsForm = new VgCompanyParamValueForm($companyId);
+        //$paramValues = $company->getCompanyParamValues()->all();
+
+
+        
         if ($company->load($this->app->request->post()) && $company->validate()) {
             $company->save();
+
+//            $companyParamValue = new CompanyParamValue;
+//            $companyParamValue->load($this->app->request->post());
+            // TODO saving
+
             $this->app->session->setFlash('companyUpdated', 'Данные компании обновлены');
             return $this->redirect(Url::to([
                 '/profile/company',
@@ -93,6 +106,7 @@ class ProfileController extends FrontendController
 
         return $this->render('company', [
             'company' => $company,
+            'params' => $paramsForm,
             'flash' => $this->app->session->getFlash('companyUpdated'),
         ]);
     }

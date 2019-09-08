@@ -267,4 +267,9 @@ class SiteController extends FrontendController
             'model' => $model
         ]);
     }
+
+    public function actionTariffs()
+    {
+        return $this->render('tariffs');
+    }
 }

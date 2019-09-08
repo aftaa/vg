@@ -40,6 +40,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName'  => false,
             'rules'           => [
+                '/' => 'site/index',
                 'area/<areaId>' => 'area/index',
 
                 'company/category/<categoryId>' => 'company/category',
@@ -48,15 +49,13 @@ return [
                 'category/<categoryId>' => 'product/category',
                 'product/<productId>' => 'product/index',
 
-                // TODO не подсвечиваются ссылки в главном меню
+                // TODO не подсвечиваются ссылки в главном меню (профиль, пароль)
                 'profile/' => 'profile/index',
                 'profile/password' => 'password/index',
                 'profile/company/<companyId>' => 'profile/company',
 
-
-
-
-                //                'area/all' => 'area/all',
+                'tariffs' => 'site/tariffs'
+//                'area/all' => 'area/all',
 
 
             ],
