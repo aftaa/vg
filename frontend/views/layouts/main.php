@@ -49,7 +49,7 @@ AppAsset::register($this);
             ['label' => 'Контакты', 'url' => ['/site/contact']],
         ];
     } else {
-        $menuItems[] = ['label' => 'Под пользователем', 'url' => ['/site/switch-identity']];
+        $menuItems[] = ['label' => 'В пользователя', 'url' => ['/switch-identity']];
     }
 
     if (Yii::$app->user->isGuest) {

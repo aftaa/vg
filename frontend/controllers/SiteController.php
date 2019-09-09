@@ -2,14 +2,17 @@
 
 namespace frontend\controllers;
 
+use common\models\User;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgLoginForm;
 use common\vg\manager\CompanyCategoryManager;
 use common\vg\manager\ProductCategoryManager;
+use common\vg\models\VgMember;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\db\Query;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -271,5 +274,13 @@ class SiteController extends FrontendController
     public function actionTariffs()
     {
         return $this->render('tariffs');
+    }
+
+    /**
+     * @return string
+     */
+    public function actionOffline()
+    {
+        return $this->render('offline');
     }
 }
