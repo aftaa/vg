@@ -32,6 +32,8 @@ class m190622_120859_import_data_into_company_category_table extends Migration
 
             if (!$companyCategory->save()) {
                 print_r($companyCategory->errors);
+            } else {
+                echo "Company category: $companyCategory->name added\n";
             }
         }
 
@@ -41,30 +43,32 @@ class m190622_120859_import_data_into_company_category_table extends Migration
             if (!$companyCategory->save()) {
                 echo "$companyCategory->name\n";
                 print_r($companyCategory->errors);
+            } else {
+                echo "Company category: $companyCategory->name added\n";
             }
         }
+
+        /**
+         * {@inheritdoc}
+         */
+        public
+        function safeDown()
+        {
+            Yii::$app->db->createCommand('TRUNCATE TABLE company_category')->execute();
+        }
+
+        /*
+        // Use up()/down() to run migration code without a transaction.
+        public function up()
+        {
+
+        }
+
+        public function down()
+        {
+            echo "m190622_120859_import_data_into_company_category_table cannot be reverted.\n";
+
+            return false;
+        }
+        */
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function safeDown()
-    {
-        Yii::$app->db->createCommand('TRUNCATE TABLE company_category')->execute();
-    }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190622_120859_import_data_into_company_category_table cannot be reverted.\n";
-
-        return false;
-    }
-    */
-}

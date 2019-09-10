@@ -19,10 +19,9 @@ class m190618_003237_import_data_into_member_table extends Migration
 
         $members = (new Query)
             ->select('*')
-            ->from('aw_member')
-            ->all($db);
+            ->from('aw_member');
 
-        foreach ($members as $aw_member) {
+        foreach ($members->each(10) as $aw_member) {
             $member = new Member;
 
             $user = User::findOne(['email' => $aw_member['email']]);
@@ -50,7 +49,7 @@ class m190618_003237_import_data_into_member_table extends Migration
                 print_r($user->errors);
                 return false;
             } else {
-                echo $user->username, " added\n";
+                echo "User: $user->username added\n";
             }
 
             $member->id = $aw_member['userid'];
@@ -67,7 +66,7 @@ class m190618_003237_import_data_into_member_table extends Migration
                 print_r($member->errors);
                 return false;
             } else {
-                echo "member:", $user->username, " added\n";
+                echo "Member: $user->username added\n";
             }
         }
         return true;
