@@ -30,6 +30,8 @@ class m190619_224733_import_data_into_area_table extends Migration
 
                 if (!$area->save()) {
                     print_r($area->errors);
+                } else {
+                    echo "Area: $area->name added\n";
                 }
             }
 
@@ -39,6 +41,8 @@ class m190619_224733_import_data_into_area_table extends Migration
                 if (!$area->save()) {
                     echo "$area->name\n";
                     print_r($area->errors);
+                } else {
+                    echo "Area: $user->username added\n";
                 }
             }
         } catch (Exception $e) {
