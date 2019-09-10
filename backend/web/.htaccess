@@ -1,3 +1,5 @@
+Deny From All
+
 Options +FollowSymLinks
 IndexIgnore */*
 
