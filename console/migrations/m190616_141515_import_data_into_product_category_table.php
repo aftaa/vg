@@ -34,6 +34,8 @@ class m190616_141515_import_data_into_product_category_table extends Migration
                 $productCategory->icon = $category['catimg'];
                 if (!$productCategory->save()) {
                     print_r($productCategory->errors);
+                } else {
+                    echo $productCategory->name, " added\n";
                 }
             }
 
@@ -48,6 +50,8 @@ class m190616_141515_import_data_into_product_category_table extends Migration
                 if (!$productCategory->save()) {
                     echo "$productCategory->name\n";
                     print_r($productCategory->errors);
+                } else {
+                    echo $productCategory->name, " added\n";
                 }
             }
 
@@ -66,6 +70,8 @@ class m190616_141515_import_data_into_product_category_table extends Migration
                 if (!$productCategory->save()) {
                     echo "$productCategory->name\n";
                     print_r($productCategory->errors);
+                } else {
+                    echo $productCategory->name, " added\n";
                 }
             }
 
@@ -79,6 +85,8 @@ class m190616_141515_import_data_into_product_category_table extends Migration
 
                 if (!$productCategory->save()) {
                     print_r($productCategory->errors);
+                } else {
+                    echo $productCategory->name, " added\n";
                 }
             }
 

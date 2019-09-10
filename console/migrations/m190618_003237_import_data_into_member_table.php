@@ -34,6 +34,7 @@ class m190618_003237_import_data_into_member_table extends Migration
 
             $user = User::findOne(['username' => $aw_member['username']]);
             if ($user) {
+                //TODO записывать в файл
                 echo "Пользователь $aw_member[username] не уникальный\n";
                 continue;
             }
@@ -48,6 +49,8 @@ class m190618_003237_import_data_into_member_table extends Migration
             if (!$user->save()) {
                 print_r($user->errors);
                 return false;
+            } else {
+                echo $user->username, " added\n";
             }
 
             $member->id = $aw_member['userid'];
@@ -63,6 +66,8 @@ class m190618_003237_import_data_into_member_table extends Migration
             if (!$member->save()) {
                 print_r($member->errors);
                 return false;
+            } else {
+                echo "member:", $user->username, " added\n";
             }
         }
         return true;
