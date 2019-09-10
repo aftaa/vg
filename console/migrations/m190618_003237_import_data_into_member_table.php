@@ -21,7 +21,7 @@ class m190618_003237_import_data_into_member_table extends Migration
             ->select('*')
             ->from('aw_member');
 
-        foreach ($members->each(10) as $aw_member) {
+        foreach ($members->each(50, $db) as $aw_member) {
             $member = new Member;
 
             $user = User::findOne(['email' => $aw_member['email']]);
