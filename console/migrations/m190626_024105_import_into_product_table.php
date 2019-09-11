@@ -89,7 +89,7 @@ class m190626_024105_import_into_product_table extends Migration
         $importedRows = 0;
         $notImportedRows = 0;
 
-        foreach ($aw_products_query->batch(10, $oldDb) as $aw_products) {
+        foreach ($aw_products_query->batch(1000, $oldDb) as $aw_products) {
             foreach ($aw_products as $aw_product) {
                 $product = new Product;
                 $this->productSetFieldValues($member, $product, $aw_product);

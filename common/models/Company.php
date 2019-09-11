@@ -17,8 +17,6 @@ use Yii;
  * @property int $checked Проверена
  * @property string $meta_keywords Meta Keywords
  * @property string $meta_description Meta Description
- * @property int $tariff_id Тарифный план
- * @property string $old_tarif Тариф по старой базе
  *
  * @property Area $area
  * @property CompanyCategory $companyCategory
@@ -43,10 +41,9 @@ class Company extends \yii\db\ActiveRecord
     {
         return [
             [['owner_id', 'company_category_id', 'area_id', 'name'], 'required'],
-            [['owner_id', 'company_category_id', 'area_id', 'checked', 'tariff_id'], 'integer'],
+            [['owner_id', 'company_category_id', 'area_id', 'checked'], 'integer'],
             [['introduce', 'meta_keywords', 'meta_description'], 'string'],
             [['name', 'thumb'], 'string', 'max' => 100],
-            [['old_tarif'], 'string', 'max' => 255],
             [['area_id'], 'exist', 'skipOnError' => true, 'targetClass' => Area::className(), 'targetAttribute' => ['area_id' => 'id']],
             [['company_category_id'], 'exist', 'skipOnError' => true, 'targetClass' => CompanyCategory::className(), 'targetAttribute' => ['company_category_id' => 'id']],
             [['owner_id'], 'exist', 'skipOnError' => true, 'targetClass' => Member::className(), 'targetAttribute' => ['owner_id' => 'id']],
@@ -69,8 +66,6 @@ class Company extends \yii\db\ActiveRecord
             'checked' => 'Проверена',
             'meta_keywords' => 'Meta Keywords',
             'meta_description' => 'Meta Description',
-            'tariff_id' => 'Тарифный план',
-            'old_tarif' => 'Тариф по старой базе',
         ];
     }
 
@@ -103,9 +98,7 @@ class Company extends \yii\db\ActiveRecord
      */
     public function getCompanyParamValues()
     {
-        return $thi->hasMany(CompanyParamValue::class, ['company_id' => 'id'])
-            ->with('param')
-            ->indexBy('param.code');
+        return $this->hasMany(CompanyParamValue::className(), ['company_id' => 'id']);
     }
 
     /**

@@ -31,18 +31,4 @@ class CompanyQuery extends \yii\db\ActiveQuery
     {
         return parent::one($db);
     }
-
-    /**
-     * @param int $limit
-     * @return Company[]
-     */
-    public function withThumbs(int $limit = 12): array
-    {
-        $companies = parent::where('thumb <> ""')
-            ->orderBy('RAND()')
-            ->limit($limit)
-            ->all();
-        $companies = array_chunk($companies, 4);
-        return $companies;
-    }
 }
