@@ -15,50 +15,16 @@ class TransferController extends Controller
 
     /**
      * @return int
-     * @throws InvalidConfigException
      */
-    public function actionIndex()
+    public function actionPrepare()
     {
         try {
             $db = Yii::$app->getDb();
             $this->prepareDatabase($db);
-
-            /** @var Connection $sbSource */
-            $dbSource = Yii::$app->dbSource;
-
-
-            $vsetigDatabases = [
-                'dbVsetigTest',
-                'dbVsetigInfoCom',
-                'dbVsetigCat'
-            ];
-
-            foreach ($vsetigDatabases as $databaseName) {
-                /** @var Connection $vsetigDb */
-                $vsetigDb = Yii::$app->get($databaseName);
-                $sourceDbName = str_replace('mysql:host=vsetig.beget.tech;dbname=', '', $vsetigDb->dsn);
-
-                $vsetigTableNames = $vsetigDb->createCommand('SHOW TABLES')->queryColumn();
-
-                echo "\nБаза данных: $databaseName.\n\n";
-
-
-                foreach ($vsetigTableNames as $sourceTableName) {
-//                    echo "$sourceTableName ";
-
-                    $dbSource
-                        ->createCommand("CREATE TABLE vsetig.$sourceTableName LIKE $sourceDbName.$sourceTableName")
-                        ->execute();
-
-                }
-                echo "\n\n";
-            }
-
-
             return 1;
 
         } catch (Exception $e) {
-            echo "{$e->getMessage()}\n.";
+            echo "{$e->getMessage()}\n";
             return 0;
         }
     }
