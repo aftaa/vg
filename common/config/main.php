@@ -18,31 +18,23 @@ return [
             'charset'  => 'utf8',
         ],
 
-        'dbSource' => [
+        'dbVsetigTest'    => [
             'class'    => 'yii\db\Connection',
             'dsn'      => 'mysql:host=localhost;dbname=vsetig',
             'username' => 'vg',
             'password' => 'vg',
             'charset'  => 'utf8',
         ],
-
-        'dbVsetigTest'    => [
-            'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=localhost;dbname=vg',
-            'username' => 'vg',
-            'password' => 'vg',
-            'charset'  => 'utf8',
-        ],
         'dbVsetigInfoCom' => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=localhost;dbname=vg',
+            'dsn'      => 'mysql:host=localhost;dbname=vsetig',
             'username' => 'vg',
             'password' => 'vg',
             'charset'  => 'utf8',
         ],
         'dbVsetigCat'     => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=localhost;dbname=vg',
+            'dsn'      => 'mysql:host=localhost;dbname=vsetig',
             'username' => 'vg',
             'password' => 'vg',
             'charset'  => 'utf8',
