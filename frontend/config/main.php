@@ -41,6 +41,11 @@ return [
             'showScriptName'  => false,
             'rules'           => [
                 '/' => 'site/index',
+
+                'login' => 'site/login',
+                'logout' => 'site/logout',
+                'signup' => 'site/signup',
+
                 'area/<areaId>' => 'area/index',
 
                 'company/category/<categoryId>' => 'company/category',

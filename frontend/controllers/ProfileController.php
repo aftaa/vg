@@ -9,7 +9,7 @@ use common\models\Member;
 use common\models\User;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgCompanyParamValueForm;
-use Yii;
+use yii\filters\AccessControl;
 use yii\helpers\Url;
 
 class ProfileController extends FrontendController
@@ -17,20 +17,21 @@ class ProfileController extends FrontendController
     /**
      * @inheritDoc
      */
-//    public function behaviors()
-//    {
-//        return [
-//            'access' => [
-//                'class' => AccessControl::class,
-//                'rules' => [
-//                    [
-//                        'actions' => ['index'],
-//                        'allow' => false,
-//                    ],
-//                ],
-//            ],
-//        ];
-//    }
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+        ];
+    }
+
     /**
      * @inheritDoc
      */
