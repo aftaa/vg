@@ -40,12 +40,18 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    $menuItems = [
-        ['label' => 'Каталог', 'url' => ['/']],
-        ['label' => 'О проекте', 'url' => ['/site/about']],
-        ['label' => 'Тарифы', 'url' => ['/tariffs']],
-        ['label' => 'Контакты', 'url' => ['/site/contact']],
-    ];
+
+    if (1 != Yii::$app->getUser()->getIdentity()->getId()) {
+        $menuItems = [
+            ['label' => 'Каталог', 'url' => ['/']],
+            ['label' => 'О проекте', 'url' => ['/site/about']],
+            ['label' => 'Тарифы', 'url' => ['/tariffs']],
+            ['label' => 'Контакты', 'url' => ['/site/contact']],
+        ];
+    } else {
+        $menuItems[] = ['label' => 'В пользователя', 'url' => ['/switch-identity']];
+    }
+
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Регистрация', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Войти', 'url' => ['/site/login']];

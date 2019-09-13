@@ -40,6 +40,9 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName'  => false,
             'rules'           => [
+
+//                'catchAll' => ['site/offline'],
+
                 '/' => 'site/index',
 
                 'login' => 'site/login',
@@ -59,9 +62,9 @@ return [
                 'profile/password' => 'password/index',
                 'profile/company/<companyId>' => 'profile/company',
 
-                'tariffs' => 'site/tariffs'
-//                'area/all' => 'area/all',
+                'tariffs' => 'site/tariffs',
 
+                //'switch-identity/by-first-letter/<letter>' => 'switch-identity/by-first-letter',
 
             ],
         ],
