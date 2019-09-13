@@ -41,7 +41,7 @@ AppAsset::register($this);
         ],
     ]);
 
-    if (1 != Yii::$app->getUser()->getIdentity()->getId()) {
+    if (Yii::$app->user->isGuest || 1 == Yii::$app->getUser()->getIdentity()->getId()) {
         $menuItems = [
             ['label' => 'Каталог', 'url' => ['/']],
             ['label' => 'О проекте', 'url' => ['/site/about']],
