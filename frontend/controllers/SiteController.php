@@ -271,7 +271,10 @@ class SiteController extends FrontendController
         ]);
     }
 
-    public function actionTariffs()
+    /**
+     * @return string
+     */
+    public function actionTariffs(): string
     {
         return $this->render('tariffs');
     }
@@ -279,7 +282,7 @@ class SiteController extends FrontendController
     /**
      * @return string
      */
-    public function actionOffline()
+    public function actionOffline(): string
     {
         return $this->render('offline');
     }

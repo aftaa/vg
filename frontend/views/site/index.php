@@ -8,7 +8,7 @@ use common\vg\models\VgProductCategory;
 /* @var $companyCategories VgCompanyCategory[] */
 
 $this->title = 'Каталог компаний услуг и товаров России';
-$this->params['breadcrumbs'][] = $this->title;
+//$this->params['breadcrumbs'][] = $this->title;
 
 ?>
 

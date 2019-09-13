@@ -3,8 +3,11 @@
 namespace frontend\controllers;
 
 use common\models\User;
+use common\vg\models\VgUser;
+use Yii;
 use yii\db\Query;
 use yii\web\Controller;
+use yii\web\Response;
 
 class SwitchIdentityController extends Controller
 {
@@ -31,6 +34,35 @@ class SwitchIdentityController extends Controller
      */
     public function actionByFirstLetter(string $letter): string
     {
-        return $this->render('by-first-letter', []);
+        $users = User::find()
+            ->select('username, id')
+            ->indexBy('id')
+            ->where("username LIKE '$letter%'")
+            ->orderBy('username')
+            ->column();
+
+        return $this->render('by-first-letter', [
+            'letter' => $letter,
+            'users' => $users,
+        ]);
+    }
+
+    /**
+     * @param int $userId
+     * @return Response
+     */
+    public function actionSwitchTo(int $userId)
+    {
+        VgUser::setOtherUser();
+
+        $user = User::findOne($userId);
+        Yii::$app->getUser()->switchIdentity($user);
+        return $this->redirect('/profile');
+    }
+
+    public function actionReturn()
+    {
+        VgUser::returnToSuperUser();
+        return $this->redirect('/switch-identity');
     }
 }

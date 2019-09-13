@@ -40,9 +40,6 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName'  => false,
             'rules'           => [
-
-//                'catchAll' => ['site/offline'],
-
                 '/' => 'site/index',
 
                 'login' => 'site/login',
@@ -64,7 +61,8 @@ return [
 
                 'tariffs' => 'site/tariffs',
 
-                //'switch-identity/by-first-letter/<letter>' => 'switch-identity/by-first-letter',
+                'switch-identity/by-first-letter/<letter>' => 'switch-identity/by-first-letter',
+                'switch-identity/switch-to/<userId:\d+>' => 'switch-identity/switch-to',
 
             ],
         ],

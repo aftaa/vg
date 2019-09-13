@@ -1,8 +1,10 @@
 <?php
 
 /* @var $this View */
+
 /* @var $content string */
 
+use common\vg\models\VgUser;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
@@ -24,7 +26,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/vg.css?<?= rand(100, 999) ?>">
+    <link rel="stylesheet" type="text/css" href="/css/vg.css">
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -41,15 +43,25 @@ AppAsset::register($this);
         ],
     ]);
 
-    if (Yii::$app->user->isGuest || 1 == Yii::$app->getUser()->getIdentity()->getId()) {
+    if (Yii::$app->user->isGuest) {
         $menuItems = [
             ['label' => 'Каталог', 'url' => ['/']],
             ['label' => 'О проекте', 'url' => ['/site/about']],
             ['label' => 'Тарифы', 'url' => ['/tariffs']],
             ['label' => 'Контакты', 'url' => ['/site/contact']],
         ];
-    } else {
-        $menuItems[] = ['label' => 'В пользователя', 'url' => ['/switch-identity']];
+    }
+
+    if (VgUser::isSuperUser()) {
+        $menuItems[] = ['label' => 'В пользователя', 'url' => ['/switch-identity'], 'class' => 'super-user'];
+    }
+
+    if (VgUser::isUnderOtherUser()) {
+        $menuItems[] = [
+            'label' => 'Выйти из пользователя',
+            'url'   => ['/switch-identity/return'],
+            'class' => 'super-user'
+        ];
     }
 
     if (Yii::$app->user->isGuest) {
@@ -79,7 +91,17 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
+
     <div class="container">
+        <header>
+            <div class="alert-danger align-right"><?php if (!Yii::$app->user->isGuest): ?>
+                    Привет, наш дорогой <?= Yii::$app->user->identity->id ?>-й
+                    пользователь <a href="/profile/"><?= Yii::$app->user->identity->username ?></a>!
+                <?php endif ?>
+            </div>
+        </header>
+
+
         <?php if ($this->title): ?>
             <h1><?= $this->title ?></h1>
         <?php endif ?>

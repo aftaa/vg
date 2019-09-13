@@ -20,6 +20,10 @@ $this->params['breadcrumbs'][] = [
 <br clear="both">
 
 <?php foreach ($letters as $letter): ?>
-    <div class="h1 col-xs-1"><a href="<?= Url::to(['by-first-letter', 'letter' => $letter]) ?>"><?= $letter['letter'] ?></a></div>
+    <div class="h1 col-xs-1">
+        <a href="<?= Url::to(['switch-identity/by-first-letter/' . $letter['letter']]) ?>">
+            <?= mb_strtoupper($letter['letter']) ?>
+        </a>
+    </div>
 <?php endforeach ?>
-<?= $count ?>
+
