@@ -139,15 +139,17 @@ class m190626_024105_import_into_product_table extends Migration
      */
     protected function productSetFieldValues(Member $member, Product $product, $aw_product): void
     {
-        $product->company_id = $member->companies[0]->id;
-        $product->category_id = $aw_product['catid'] ?? null;
-        $product->name = $aw_product['title'];
-        $product->description = $aw_product['content'];
-        $product->thumb = $aw_product['thumb'];
-        $product->checked = $aw_product['is_check'];
-        $product->meta_description = $aw_product['description'];
-        $product->meta_keywords = $aw_product['keywords'];
-        $product->price = $aw_product['price'];
+        if (isset($member->companies[0])) {
+            $product->company_id = $member->companies[0]->id;
+            $product->category_id = $aw_product['catid'] ?? null;
+            $product->name = $aw_product['title'];
+            $product->description = $aw_product['content'];
+            $product->thumb = $aw_product['thumb'];
+            $product->checked = $aw_product['is_check'];
+            $product->meta_description = $aw_product['description'];
+            $product->meta_keywords = $aw_product['keywords'];
+            $product->price = $aw_product['price'];
+        }
     }
 
     /*

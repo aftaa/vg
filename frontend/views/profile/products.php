@@ -3,7 +3,9 @@
 use common\models\Company;
 use yii\data\ActiveDataProvider;
 use yii\grid\GridView;
+use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\widgets\Pjax;
 
 /** @var $company Company */
 /** @var $provider ActiveDataProvider */
@@ -28,19 +30,63 @@ $this->params['breadcrumbs'][] = array(
 
 ?>
 
-
 <?= GridView::widget([
     'dataProvider' => $provider,
-    'columns' => [
+    'layout'       => "{pager}\n{summary}\n{items}\n{summary}\n{pager}",
+    'columns'      => [
+        ['class' => 'yii\grid\SerialColumn'],
         'id',
         'category.name',
-        'name',
-        'description',
-        'thumb'
+
+        [
+            'attribute'      => 'name',
+            'contentOptions' => ['style' => 'white-space: normal;'],
+            'content'        => function ($data) {
+                return $data->name;
+            }
+        ],
+        [
+            'attribute'      => 'price',
+            'contentOptions' => ['style' => 'text-align: right;'],
+            'content'        => function ($data) {
+                return number_format($data->price, 0, '', ' ') . ' ₽';
+            }
+        ],
+        [
+            'attribute'      => 'checked',
+            'contentOptions' => ['style' => 'text-align: center'],
+            'content'        => function ($data) {
+                if ($data['checked']) {
+                    return 'да';
+                } else {
+                    return '—';
+                }
+            }
+        ],
+        [
+            'attribute'      => 'thumb',
+            'contentOptions' => ['style' => 'text-align: center'],
+            'content'        => function ($data) {
+                if ($data['thumb']) {
+                    return Html::a('указано', $data->thumb, ['target' => '_blank']);
+                } else {
+                    return '—';
+                }
+            }
+        ],
+        [
+            'attribute' => 'created_at',
+            'content' => function ($data){
+                $html =  'создан: ' . datetime($data->created_at) . '<br>';
+                $html .=  'изменён: ' . datetime($data->updated_at) . '<br>';
+                return $html;
+            }
+        ]
+        //['class' => 'yii\grid\ActionColumn'],
+    ],
+    'tableOptions' => [
+        'class' => 'table table-hover'
     ],
 ]) ?>
-
-
-
 
 

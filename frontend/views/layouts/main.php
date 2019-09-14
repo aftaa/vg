@@ -103,8 +103,8 @@ AppAsset::register($this);
 
     <div class="container">
         <header>
-            <div class="alert-danger align-right"><?php if (!Yii::$app->user->isGuest): ?>
-                    Привет, наш дорогой <?= Yii::$app->user->identity->id ?>-й
+            <div class="alert-warning align-right"><?php if (!Yii::$app->user->isGuest): ?>
+                    Привет, наш <?= Yii::$app->user->identity->id ?>-й
                     пользователь <a href="/profile/"><?= Yii::$app->user->identity->username ?></a>!
                 <?php endif ?>
             </div>

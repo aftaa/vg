@@ -167,12 +167,12 @@ class ProfileController extends FrontendController
         /** @var Company $company */
         $company = $this->getUserIdentity()->member->getCompanies()->where("id=$companyId")->one();
 
-        $activeQuery = $company->getProducts()->orderBy('');
+        $activeQuery = $company->getProducts()->orderBy('')->with('category');
 
         $provider = new ActiveDataProvider([
             'query' => $activeQuery,
             'pagination' => [
-                'pageSize' => 50,
+                'pageSize' => 100,
             ],
             'sort' => [
                 'defaultOrder' => [
