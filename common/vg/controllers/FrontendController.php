@@ -2,13 +2,24 @@
 
 namespace common\vg\controllers;
 
+use common\models\User;
 use Yii;
-use yii\web\Application;
 
 class FrontendController extends Controller
 {
     /**
-     * @return int|string|null
+     * @return User
+     * @throws \Throwable
+     */
+    public function getUserIdentity()
+    {
+        $user = Yii::$app->getUser();
+        return $user->isGuest ? null : $user->getIdentity();
+    }
+
+    /**
+     * @return int|null
+     * @throws \Throwable
      */
     public function getUserId()
     {
@@ -18,7 +29,7 @@ class FrontendController extends Controller
             return null; // TODO exception (m.b. optional)
         }
 
-        $userId = $user->getId();
+        $userId = $user->getIdentity()->getId();
         return $userId;
     }
 }

@@ -37,7 +37,15 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php foreach ($companies as $company): ?>
             <tr>
                 <td><?= $company->id ?></td>
-                <td><a href="<?= Url::to(['profile/company', 'companyId' => $company->id] ) ?>"><?= $company->name ?></a></td>
+                <td>
+                    <h4><?= $company->name ?></h4>
+                    
+                    <div class="text-muted">
+                        <a href="<?= Url::to(['profile/products', 'companyId' => $company->id]) ?>">
+                            каталог
+                        </a>
+                    </div>
+                </td>
                 <td><?= $company->getCompanyCategory()->one()->name ?></td>
                 <td><a href="<?= Url::to(['#', 'companyId' => $company->id] ) ?>"><?= $company->old_tarif ?? 'Начало' ?></a></td>
                 <td><?= $company->getArea()->one()->name ?></td>

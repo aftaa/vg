@@ -57,7 +57,8 @@ return [
                 // TODO не подсвечиваются ссылки в главном меню (профиль, пароль)
                 'profile/' => 'profile/index',
                 'profile/password' => 'password/index',
-                'profile/company/<companyId>' => 'profile/company',
+                'profile/company/<companyId:\d+>' => 'profile/company',
+                'profile/products/<companyId:\d+>' => 'profile/products',
 
                 'tariffs' => 'site/tariffs',
 

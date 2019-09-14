@@ -68,12 +68,21 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Регистрация', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Войти', 'url' => ['/site/login']];
     } else {
-        $menuItems[] = ['label' => 'Профиль', 'url' => ['/profile']];
-        $menuItems[] = ['label' => 'Компании', 'url' => ['/profile/companies']];
-        $menuItems[] = ['label' => 'Продукция', 'url' => ['/profile/products']];
-        $menuItems[] = ['label' => 'Баланс', 'url' => ['/profile/balance']];
-        $menuItems[] = ['label' => 'Импорт', 'url' => ['/profile/import']];
-        $menuItems[] = ['label' => 'Пароль', 'url' => ['/profile/password']];
+        $menuItems[] = [
+            'label' => 'Профиль', 'url' => ['/profile'], 'items' => [
+                ['label' => 'Анкета', 'url' => ['/profile']],
+                ['label' => 'Каталог', 'url' => ['/profile/companies']],
+//                ['label' => 'Продукция', 'url' => ['/profile/products/all']],
+                ['label' => 'Баланс', 'url' => ['/profile/balance']],
+                ['label' => 'Импорт', 'url' => ['/profile/import']],
+                ['label' => 'Пароль', 'url' => ['/profile/password']],
+            ],
+        ];
+//        $menuItems[] = ['label' => 'Компании', 'url' => ['/profile/companies']];
+//        $menuItems[] = ['label' => 'Продукция', 'url' => ['/profile/products']];
+//        $menuItems[] = ['label' => 'Баланс', 'url' => ['/profile/balance']];
+//        $menuItems[] = ['label' => 'Импорт', 'url' => ['/profile/import']];
+//        $menuItems[] = ['label' => 'Пароль', 'url' => ['/profile/password']];
 
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')

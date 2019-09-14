@@ -6,11 +6,15 @@ namespace frontend\controllers;
 use common\models\Company;
 use common\models\CompanyParamValue;
 use common\models\Member;
+use common\models\ProductQuery;
 use common\models\User;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgCompanyParamValueForm;
+use Yii;
+use yii\data\ActiveDataProvider;
 use yii\filters\AccessControl;
 use yii\helpers\Url;
+use yii\web\Response;
 
 class ProfileController extends FrontendController
 {
@@ -72,9 +76,9 @@ class ProfileController extends FrontendController
     public function actionCompanies()
     {
         /** @var User $user */
-        $user = User::find($this->getUserId())->one();
-        $member = $user->getMember()->one();
-        $companies = $member->getCompanies()->all();
+        $user = Yii::$app->getUser()->getIdentity();
+        $member = $user->member;
+        $companies = $member->companies;
 
         return $this->render('companies', [
             'companies' => $companies,
@@ -113,7 +117,8 @@ class ProfileController extends FrontendController
     }
 
     /**
-     * @return string
+     * @return string|Response
+     * @throws \Throwable
      */
     public function actionCreateCompany()
     {
@@ -145,6 +150,7 @@ class ProfileController extends FrontendController
 
     /**
      * @return string
+     * @throws \Throwable
      */
     public function actionBalance()
     {
@@ -156,13 +162,33 @@ class ProfileController extends FrontendController
         ]);
     }
 
-    public function actionProducts()
+    public function actionProducts(int $companyId): string
     {
-        return $this->render('/site/blank');
+        /** @var Company $company */
+        $company = $this->getUserIdentity()->member->getCompanies()->where("id=$companyId")->one();
+
+        $activeQuery = $company->getProducts()->orderBy('');
+
+        $provider = new ActiveDataProvider([
+            'query' => $activeQuery,
+            'pagination' => [
+                'pageSize' => 50,
+            ],
+            'sort' => [
+                'defaultOrder' => [
+                    'updated_at' => SORT_DESC,
+                ]
+            ],
+        ]);
+
+        return $this->render('products',[
+            'company' => $company,
+            'provider' => $provider,
+        ]);
     }
 
     public function actionImport()
     {
-        return $this->render('/site/blank');
+        return $this->render('site/blank');
     }
 }
