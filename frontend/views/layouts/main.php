@@ -92,6 +92,7 @@ AppAsset::register($this);
             )
             . Html::endForm()
             . '</li>';
+        $menuItems[] = ['label' => "$_SERVER[SERVER_NAME]"];
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
