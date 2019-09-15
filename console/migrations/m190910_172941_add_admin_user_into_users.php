@@ -23,6 +23,7 @@ class m190910_172941_add_admin_user_into_users extends Migration
         $admin->username = 'admin';
         $admin->setPassword('vsetigoroda');
         $admin->email = 'admin@vseti-goroda.ru';
+        $admin->status = User::STATUS_ACTIVE;
         $admin->save();
     }
 
