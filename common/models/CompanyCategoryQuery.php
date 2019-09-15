@@ -42,7 +42,7 @@ class CompanyCategoryQuery extends \yii\db\ActiveQuery
      * @param VgCompanyCategory[] $companyCategories
      * @return int
      */
-    private function categoriesByParentIdRecursive(array & $companyCategories): int
+    private function categoriesByParentIdRecursive(array $companyCategories): int
     {
         $companyCount = 0;
         foreach ($companyCategories as &$companyCategory) {

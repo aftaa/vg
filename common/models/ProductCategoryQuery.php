@@ -43,7 +43,7 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
      * @return int
      * @throws Exception
      */
-    private function categoriesByParentIdRecursive(array & $productCategories): int
+    private function categoriesByParentIdRecursive(array $productCategories): int
     {
         $productCount = 0;
         foreach ($productCategories as& $productCategory) {
