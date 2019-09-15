@@ -72,7 +72,7 @@ AppAsset::register($this);
             'label' => 'Профиль', 'url' => ['/profile'], 'items' => [
                 ['label' => 'Анкета', 'url' => ['/profile']],
                 ['label' => 'Каталог', 'url' => ['/profile/companies']],
-//                ['label' => 'Продукция', 'url' => ['/profile/products/all']],
+                //                ['label' => 'Продукция', 'url' => ['/profile/products/all']],
                 ['label' => 'Баланс', 'url' => ['/profile/balance']],
                 ['label' => 'Импорт', 'url' => ['/profile/import']],
                 ['label' => 'Пароль', 'url' => ['/profile/password']],
@@ -92,9 +92,9 @@ AppAsset::register($this);
             )
             . Html::endForm()
             . '</li>';
-        ];
+
     }
-    $menuItems[] = ['label' => "$_SERVER[SERVER_NAME]"
+    $menuItems[] = ['label' => "$_SERVER[SERVER_NAME]"];
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items'   => $menuItems,
