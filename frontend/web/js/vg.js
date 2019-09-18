@@ -31,10 +31,12 @@ if (false) {
 $(function () {
     $('.uc').on('hover',
         function () {
-            $(this).animate({height: '300px'}, 'slow')
+            // $(this).animate({height: '300px'}, 'slow')
+            console.log('enter')
         },
         function () {
-            $(this).animate({height: '100px'}, 'slow')
+            // $(this).animate({height: '100px'}, 'slow')
+            console.log('out')
         }
     );
 })
