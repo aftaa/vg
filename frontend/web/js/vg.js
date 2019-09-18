@@ -29,14 +29,12 @@ if (false) {
 
 
 $(function () {
-    $('.uc').on('hover',
-        function () {
-            // $(this).animate({height: '300px'}, 'slow')
-            console.log('enter')
-        },
-        function () {
-            // $(this).animate({height: '100px'}, 'slow')
-            console.log('out')
-        }
-    );
+    $('div.uc').on('mouseenter', function () {
+        $(this).animate({'height': '300px'});
+        $('p', this).show();
+    })
+    $('div.uc').on('mouseout', function () {
+        $(this).animate({'height': '100px'});
+        $('p', this).hide();
+})
 })

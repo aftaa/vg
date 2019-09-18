@@ -15,7 +15,9 @@ $this->title = 'Каталог компаний, услуг и товаров Р
 
 ?>
 
-<h1 class="display-1">Ведутся технические работы</h1>
+<h1 class="display-1 text-center alert-danger">Ведутся технические работы
+
+</h1>
 
 <?= $this->render('/product/_categories', [
     'productCategories' => $productCategories,
