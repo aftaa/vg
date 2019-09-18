@@ -10,7 +10,7 @@ use yii\helpers\Url;
 /* @var $companyCategories VgCompanyCategory[] */
 /* @var $areas Area[] */
 
-$this->title = 'Каталог компаний услуг и товаров России';
+$this->title = 'Каталог компаний, услуг и товаров России';
 //$this->params['breadcrumbs'][] = $this->title;
 
 ?>
@@ -20,10 +20,10 @@ $this->title = 'Каталог компаний услуг и товаров Р�
     'productCategories' => $productCategories,
 ]) ?>
 
+<br>
+<div class="uc h2" id="index-top-products">топовые товары / новые товары</div>
 
-<div style="border: 1px solid #555; height: 100px; cursor: pointer;" id="products">
-
-</div>
+<div class="text-right">посмотрите <a href="#">новые товары</a></div>
 
 
 <h2>Компании</h2>
@@ -32,9 +32,12 @@ $this->title = 'Каталог компаний услуг и товаров Р�
     'companyCategories' => $companyCategories,
 ]) ?>
 
-<h2>Регионы присутствия</h2>
+<div class="uc h2" id="index-companies">топовые фирмы / новые фирмы</div>
+<div class="text-right">ознакомьтесь с <a href="#">новыми компаниями</a></div>
 
 <?php if (false): ?>
+    <h2>Регионы присутствия</h2>
+
     <div class="row">
         <?php foreach ($areas as $area): ?>
             <div class="col col-md-3 col-sm-6">
@@ -46,17 +49,3 @@ $this->title = 'Каталог компаний услуг и товаров Р�
         <?php endforeach ?>
     </div>
 <?php endif ?>
-
-
-<script>
-    $(function(){
-        $('#products').on('hover',
-            function(){
-                $(this).animate('height', '+100px', 'slow')
-            },
-            function(){
-                $(this).animate('height', '-100px', 'slow')
-            }
-        );
-    })
-</script>

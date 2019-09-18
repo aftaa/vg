@@ -1,4 +1,3 @@
-
 if (false) {
 
     function lockScreen() {
@@ -27,3 +26,15 @@ if (false) {
     });
 
 }
+
+
+$(function () {
+    $('.uc').on('hover',
+        function () {
+            $(this).animate({height: '300px'}, 'slow')
+        },
+        function () {
+            $(this).animate({height: '100px'}, 'slow')
+        }
+    );
+})
