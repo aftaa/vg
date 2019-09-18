@@ -83,29 +83,9 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
-        $checkKey = 'areaMaxId';
-        $valueKey = 'areaAreas';
-
-        $maxId = Area::getDb()->createCommand('SELECT MAX(id) FROM area')->queryScalar();
-        $cache = Yii::$app->cache;
-
-        if ($cache->get($checkKey) != $maxId) {
-            $areas = Area::find()
-                ->where('parent_id IS NULL')
-                ->all();
-
-            $cache->set($checkKey, $maxId);
-            $cache->set($valueKey, $areas);
-
-        } else {
-            //get from cache
-            $areas = $cache->get($valueKey);
-        }
-
         return $this->render('index', [
             'productCategories' => $productCategories,
             'companyCategories' => $companyCategories,
-            'areas' => $areas,
         ]);
     }
 
