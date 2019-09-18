@@ -67,6 +67,7 @@ class SiteController extends FrontendController
             'error'   => [
                 'class' => 'yii\web\ErrorAction',
             ],
+
             'captcha' => [
                 'class'           => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
@@ -85,6 +86,7 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
+        $areas = [new Area];
 
 //        $checkKey = 'CACHE_KEY_AREAS_MAX_ID_0';
 //        $valueKey = 'CACHE_KEY_AREAS_0';

@@ -34,16 +34,18 @@ $this->title = 'Каталог компаний услуг и товаров Р�
 
 <h2>Регионы присутствия</h2>
 
-<div class="row">
-    <?php foreach ($areas as $area): ?>
-        <div class="col col-md-3 col-sm-6">
-            <h4>
-                <a href="<?= Url::to(['#', 'categoryId' => $area->id]) ?>"><?= $area->name ?></a>
-                <small><sup><?= //count($area->areas) ?></sup></small>
-            </h4>
-        </div>
-    <?php endforeach ?>
-</div>
+<?php if (false): ?>
+    <div class="row">
+        <?php foreach ($areas as $area): ?>
+            <div class="col col-md-3 col-sm-6">
+                <h4>
+                    <a href="<?= Url::to(['#', 'categoryId' => $area->id]) ?>"><?= $area->name ?></a>
+                    <small><sup><?= //count($area->areas)  ?></sup></small>
+                </h4>
+            </div>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>
 
 
 <script>
