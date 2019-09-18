@@ -3,17 +3,14 @@
 namespace frontend\controllers;
 
 use common\models\Area;
-use common\models\User;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgLoginForm;
 use common\vg\manager\CompanyCategoryManager;
 use common\vg\manager\ProductCategoryManager;
-use common\vg\models\VgMember;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
-use yii\db\Query;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -86,10 +83,8 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
-        $areas = [new Area];
-
-        $checkKey = 'CACHE_KEY_AREAS_MAX_ID_0';
-        $valueKey = 'CACHE_KEY_AREAS_0';
+        $checkKey = 'areaMaxId';
+        $valueKey = 'areaAreas';
 
         $maxId = Area::getDb()->createCommand('SELECT MAX(id) FROM area')->queryScalar();
         $cache = Yii::$app->cache;
@@ -98,6 +93,7 @@ class SiteController extends FrontendController
             $areas = Area::find()
                 ->where('parent_id IS NULL')
                 ->all();
+
             $cache->set($checkKey, $maxId);
             $cache->set($valueKey, $areas);
 

@@ -40,6 +40,9 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName'  => false,
             'rules'           => [
+                
+                'catchAll' => 'site/index',
+                
                 '/' => 'site/index',
 
                 'login' => 'site/login',
