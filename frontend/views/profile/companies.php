@@ -62,4 +62,4 @@ $this->params['breadcrumbs'][] = $this->title;
     </tbody>
 </table>
 
-<a href="<?= Url::to(['create-company']) ?>" class="btn btn-success">Создать компанию</a>
+<!--<a href="--><?//= Url::to(['create-company']) ?><!--" class="btn btn-success">Создать компанию</a>-->

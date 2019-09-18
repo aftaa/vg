@@ -123,15 +123,26 @@ class ProfileController extends FrontendController
     public function actionCreateCompany()
     {
         $company = new Company();
-        $company->owner_id = $this->getUserId();
 
-        if ($this->app->request->post()) {
-            if ($company->load($this->app->request->post()) && $company->validate()) {
-                $company->save();
-                $this->app->session->setFlash('companyCreated', 'Компания создана');
-                return $this->redirect(Url::to(['/profile/companies']));
+        try {
+            if ($this->app->request->post()) {
+                if ($company->load($this->app->request->post()) && $company->validate()) {
+                    $company->owner_id = $this->getUserId();
+                    $company->checked = false;
 
+                    $saveResult = $company->save();
+                    echo $saveResult;
+                    die;
+
+                    if ($saveResult) {
+                        $this->app->session->setFlash('companyCreated', 'Компания создана');
+                        return $this->redirect(Url::to('/profile/companies'));
+                    }
+                }
             }
+        } catch (\Throwable $e) {
+            echo $e->getMessage();
+            die;
         }
 
         return $this->render('create-company', [

@@ -2,6 +2,7 @@
 
 namespace frontend\controllers;
 
+use common\models\Area;
 use common\models\User;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgLoginForm;
@@ -84,9 +85,29 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
+
+//        $checkKey = 'CACHE_KEY_AREAS_MAX_ID_0';
+//        $valueKey = 'CACHE_KEY_AREAS_0';
+//
+//        $maxId = Area::getDb()->createCommand('SELECT MAX(id) FROM area')->queryScalar();
+//        $cache = Yii::$app->cache;
+//
+//        if ($cache->get($checkKey) != $maxId) {
+//            $areas = Area::find()
+//                ->where('parent_id IS NULL')
+//                ->all();
+//            $cache->set($checkKey, $maxId);
+//            $cache->set($valueKey, $areas);
+//
+//        } else {
+//            //get from cache
+//            $areas = $cache->get($valueKey);
+//        }
+
         return $this->render('index', [
             'productCategories' => $productCategories,
             'companyCategories' => $companyCategories,
+            'areas' => $areas,
         ]);
     }
 
