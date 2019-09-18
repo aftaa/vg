@@ -42,7 +42,6 @@ $this->title = 'Каталог компаний, услуг и товаров Р
 <div class="row h5 pl-5">
     <?php foreach ($areas as $area): ?>
         <div style="float: left; margin: 0 20px 30px 0; line-height: 30px;"><a href="<?= Url::to(['#', 'areaId' => $area->id]) ?>"><?= $area->name ?></a>
-            <small><sup><?= $area->childCount ?></sup></small>
         </div>
     <?php endforeach ?>
 </div>
