@@ -40,7 +40,7 @@ $this->title = 'Каталог компаний услуг и товаров Р�
             <div class="col col-md-3 col-sm-6">
                 <h4>
                     <a href="<?= Url::to(['#', 'categoryId' => $area->id]) ?>"><?= $area->name ?></a>
-                    <small><sup><?= //count($area->areas)  ?></sup></small>
+                    <small><sup></sup></small>
                 </h4>
             </div>
         <?php endforeach ?>
