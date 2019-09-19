@@ -27,6 +27,13 @@ AppAsset::register($this);
     <?php $this->head() ?>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/vg.css">
+    <?php
+    $theme = $_COOKIE['theme'] ?? 'light';
+    ?>
+
+    <?php if ('dark' == $theme): ?>
+        <link rel="stylesheet" type="text/css" href="/css/dark.css">
+    <?php endif ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -92,8 +99,13 @@ AppAsset::register($this);
             )
             . Html::endForm()
             . '</li>';
-
     }
+
+    $menuItems[] = [
+        'label' => $theme == 'dark' ? 'Зажечь' : 'Погасить',
+        'url' => $theme == 'dark' ? '/light' : '/dark',
+    ];
+
     $menuItems[] = ['label' => "$_SERVER[SERVER_NAME]"];
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
@@ -104,13 +116,15 @@ AppAsset::register($this);
 
 
     <div class="container">
-        <header>
-            <div class="alert-warning align-right"><?php if (!Yii::$app->user->isGuest): ?>
-                    Привет, наш <?= Yii::$app->user->identity->id ?>-й
-                    пользователь <a href="/profile/"><?= Yii::$app->user->identity->username ?></a>!
-                <?php endif ?>
-            </div>
-        </header>
+        <?php if (!Yii::$app->user->isGuest): ?>
+            <header>
+                <div class="alert-warning align-right"><?php if (!Yii::$app->user->isGuest): ?>
+                        Привет, наш <?= Yii::$app->user->identity->id ?>-й
+                        пользователь <a href="/profile/"><?= Yii::$app->user->identity->username ?></a>!
+                    <?php endif ?>
+                </div>
+            </header>
+        <?php endif ?>
 
 
         <?php if ($this->title): ?>

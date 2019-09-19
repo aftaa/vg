@@ -15,7 +15,7 @@ $this->title = 'Каталог компаний, услуг и товаров Р
 
 ?>
 
-<h1 class="display-1 text-center alert-danger">Ведутся технические работы
+<h1 class="display-1 text-center alert-info" style="padding: .23em;">Ведутся технические работы
 
 </h1>
 

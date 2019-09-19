@@ -32,9 +32,13 @@ $(function () {
     $('div.uc').on('mouseenter', function () {
         $(this).animate({'height': '300px'});
         $('p', this).show();
-    })
+    });
     $('div.uc').on('mouseout', function () {
         $(this).animate({'height': '100px'});
         $('p', this).hide();
-})
+    });
+    $('a.product-categories').click(function () {
+        alert(this.href);
+        return false;
+    })
 })

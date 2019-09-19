@@ -9,7 +9,7 @@ use yii\helpers\Html;
         <p class="col col-md-4">&copy; 2016&ndash;<?= date('Y') ?> <?= Html::encode(Yii::$app->name) ?></p>
 
 
-        <p class="col col-md-4" class="social">
+        <p class="col col-md-4" id="social-footer">
             <a rel="nofollow" target="_blank" href="http://ok.ru/group/53075399540914">
                 <img alt="Группа в одноклассниках" src="/png/social/ok.png"></a>
             <a rel="nofollow" target="_blank" href="https://vk.com/vseti_goroda">

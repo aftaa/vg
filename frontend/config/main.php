@@ -66,6 +66,9 @@ return [
                 'switch-identity/by-first-letter/<letter>' => 'switch-identity/by-first-letter',
                 'switch-identity/switch-to/<userId:\d+>' => 'switch-identity/switch-to',
 
+                'dark' => 'theme/dark',
+                'light' => 'theme/light',
+
             ],
         ],
     ],
