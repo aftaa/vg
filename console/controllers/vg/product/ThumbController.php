@@ -27,7 +27,7 @@ class ThumbController extends Controller
             ->select('id, thumb')
             ->where('thumb IS NOT NULL')
             ->indexBy('id')
-            ->limit(10)
+//            ->limit(10)
         ;
 //            ->all();
 
@@ -37,7 +37,13 @@ class ThumbController extends Controller
         foreach ($products->each(100) as $id => $product) {
 
             $url = $product->thumb;
-            $url = $this->correctUrl($url);
+            $correctUrl = $this->correctUrl($url);
+
+            $updateVGurl = false;
+            if ($correctUrl != $url) {
+                $updateVGurl = true;
+                $url = $correctUrl;
+            }
 
             if (null === $url) {
                 Product::updateAll(['thumb' => self::THUMB_NOT_FOUND], "id=$id");
@@ -72,6 +78,8 @@ class ThumbController extends Controller
 
                     if (200 != $httpResponseCode) {
                         Product::updateAll(['thumb' => self::THUMB_NOT_FOUND], "id=$id");
+                    } elseif ($updateVGurl) { // +vseti-goroda.ru at begin of URL
+                        Product::updateAll(['thumb' => $url], "id=$id");
                     }
                 }
                 curl_close($ch);
