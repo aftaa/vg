@@ -27,7 +27,7 @@ class ThumbController extends Controller
             ->select('id, thumb')
             ->where('thumb IS NOT NULL')
             ->indexBy('id')
-            ->limit(10)
+//            ->limit(10)
         ;
 //            ->all();
 
