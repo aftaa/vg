@@ -7,7 +7,8 @@ use yii\console\Controller;
 
 class ThumbController extends Controller
 {
-    const THUMB_NOT_FOUND = '/img/thumb_missing.jpg';
+//    const THUMB_NOT_FOUND = '/img/thumb_missing.jpg';
+    const THUMB_NOT_FOUND = null;
 
     public function actionIndex()
     {
