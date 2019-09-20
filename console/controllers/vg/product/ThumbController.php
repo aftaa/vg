@@ -7,7 +7,7 @@ use yii\console\Controller;
 
 class ThumbController extends Controller
 {
-
+    const THUMB_NOT_FOUND = '/img/thumb_missing.jpg';
 
     public function actionIndex()
     {
@@ -39,7 +39,7 @@ class ThumbController extends Controller
             $url = $this->correctUrl($url);
 
             if (null === $url) {
-                Product::updateAll(['thumb' => null], "id=$id");
+                Product::updateAll(['thumb' => self::THUMB_NOT_FOUND], "id=$id");
                 continue;
             }
 
@@ -61,12 +61,16 @@ class ThumbController extends Controller
                     $results['error'][] = $error . ": URL='$url'";
                     echo "$url: $error\n";
 
-                    Product::updateAll(['thumb' => null], "id=$id");
+                    Product::updateAll(['thumb' => self::THUMB_NOT_FOUND], "id=$id");
 
                 } else {
                     $httpResponseCode = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
                     $results[$httpResponseCode]++;
                     echo "$url: $httpResponseCode\n";
+
+                    if (200 != $httpResponseCode) {
+                        Product::updateAll(['thumb' => self::THUMB_NOT_FOUND], "id=$id")
+                    }
                 }
                 curl_close($ch);
             }
