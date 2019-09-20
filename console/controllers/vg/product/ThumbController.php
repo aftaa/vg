@@ -59,14 +59,14 @@ class ThumbController extends Controller
                 if (false === $response) {
                     $error = curl_error($ch);
 
-                    $results['error'][] = $error . ": URL='$url'";
+                    @$results['error'][] = $error . ": URL='$url'";
                     echo "$url: $error\n";
 
                     Product::updateAll(['thumb' => self::THUMB_NOT_FOUND], "id=$id");
 
                 } else {
                     $httpResponseCode = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
-                    $results[$httpResponseCode]++;
+                    @$results[$httpResponseCode]++;
                     echo "$url: $httpResponseCode\n";
 
                     if (200 != $httpResponseCode) {
