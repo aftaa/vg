@@ -20,21 +20,21 @@ return [
 
         'dbVsetigTest'    => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
+            'dsn'      => 'mysql:host=localhost;dbname=vsetig',
             'username' => 'vg',
             'password' => 'vg',
             'charset'  => 'utf8',
         ],
         'dbVsetigInfoCom' => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
+            'dsn'      => 'mysql:host=localhost;dbname=vsetig',
             'username' => 'vg',
             'password' => 'vg',
             'charset'  => 'utf8',
         ],
         'dbVsetigCat'     => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
+            'dsn'      => 'mysql:host=localhost;dbname=vsetig',
             'username' => 'vg',
             'password' => 'vg',
             'charset'  => 'utf8',
