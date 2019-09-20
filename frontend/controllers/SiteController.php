@@ -89,6 +89,11 @@ class SiteController extends FrontendController
         ]);
     }
 
+    public function actionIAgree()
+    {
+        setcookie('I-agree', true, time() + time() + 3600 * 24 * 365, '/');
+    }
+
     /**
      * Logs in a user.
      *
@@ -134,7 +139,7 @@ class SiteController extends FrontendController
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Спасибо за ваше сообщение! Мы постараемся связаться с вами как можно быстрее!');
+                Yii::$app->session->setFlash('success', 'Спасибо за&nbsp;ваше сообщение и&nbsp;ыы&nbsp;постараемся связаться с&nbsp;вами как можно быстрее!');
             } else {
                 Yii::$app->session->setFlash('error', 'Ошибка при отправке сообщения.');
             }

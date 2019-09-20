@@ -42,3 +42,33 @@ header > div {
 #social-footer img:hover {
     background-color: #000;
 }
+
+#cookie {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    opacity: 0.95;
+    width: 100%;
+    padding: .7em 0;
+    color: #345;
+    background-color: #f2dede;
+}
+
+#cookie p {
+    width: 95%;
+    margin: 0 auto;
+    z-index: 99;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+#cookie a {
+    text-decoration: underline;
+}
+
+#cookie button {
+    margin: .3em 0;
+    border: none;
+    border-radius: 5px;
+}
