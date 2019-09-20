@@ -72,3 +72,24 @@ header > div {
     border: none;
     border-radius: 5px;
 }
+
+.look-product-category {
+    text-decoration: none;
+}
+
+.look-product-category:hover {
+    background: #f5f5f5;
+    border-radius: .5em;
+    text-decoration: none;
+    padding-left: 4px;
+    margin-left: -4px;
+}
+
+.look-product-category:active,
+.look-product-category:visited {
+    text-decoration: none;
+}
+
+.product-child-category {
+    display: none;
+}

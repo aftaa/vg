@@ -31,6 +31,12 @@ class ProductController extends FrontendController
         $currentCategory = ProductCategory::findOne($categoryId);
         [$products, $pages] = ProductManager::getProductsByCategoryIdWithPagination($categoryId);
 
+        if ($this->app->request->isAjax) {
+            return $this->renderPartial('_child_categories', [
+                'productCategories' => $companyCategories,
+            ]);
+        }
+
         return $this->render('category', [
             'productCategories' => $companyCategories,
             'productCategory'   => $currentCategory,
