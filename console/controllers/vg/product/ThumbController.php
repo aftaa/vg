@@ -52,13 +52,13 @@ class ThumbController extends Controller
 
             if ($url) {
                 $ch = curl_init($url);
-                curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
+                curl_setopt($ch, CURLOPT_MAXREDIRS, 3);
                 curl_setopt($ch, CURLOPT_FRESH_CONNECT, true);
                 curl_setopt($ch, CURLOPT_HEADER, true);
                 curl_setopt($ch, CURLOPT_POST, false);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
-                curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 3);
+                curl_setopt($ch, CURLOPT_TIMEOUT, 3);
                 curl_setopt($ch, CURLOPT_DEFAULT_PROTOCOL, 'http');
 
                 $response = curl_exec($ch);
