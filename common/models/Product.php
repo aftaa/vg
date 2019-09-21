@@ -13,6 +13,7 @@ use Yii;
  * @property string $name Товар
  * @property string $description Описание
  * @property string $thumb Изображение
+ * @property int $thumb_checked Изображение проверено
  * @property int $checked Проверен
  * @property string $price Стоимость
  * @property string $meta_keywords Meta Keywords
@@ -41,7 +42,7 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             [['company_id', 'category_id', 'name', 'created_at'], 'required'],
-            [['company_id', 'category_id', 'checked'], 'integer'],
+            [['company_id', 'category_id', 'thumb_checked', 'checked'], 'integer'],
             [['description', 'meta_keywords', 'meta_description'], 'string'],
             [['price'], 'number'],
             [['created_at', 'updated_at', 'deleted_at'], 'safe'],
@@ -64,6 +65,7 @@ class Product extends \yii\db\ActiveRecord
             'name' => 'Товар',
             'description' => 'Описание',
             'thumb' => 'Изображение',
+            'thumb_checked' => 'Изображение проверено',
             'checked' => 'Проверен',
             'price' => 'Стоимость',
             'meta_keywords' => 'Meta Keywords',

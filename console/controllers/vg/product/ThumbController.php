@@ -25,7 +25,8 @@ class ThumbController extends Controller
 
         $products = Product::find()
             ->select('id, thumb')
-            ->where('thumb IS NOT NULL')
+//            ->where('thumb IS NOT NULL')
+            ->where('thumb_checked=FALSE')
             ->indexBy('id')
 //            ->limit(10)
         ;
@@ -46,7 +47,7 @@ class ThumbController extends Controller
             }
 
             if (null === $url) {
-                Product::updateAll(['thumb' => self::THUMB_NOT_FOUND], "id=$id");
+                Product::updateAll(['thumb' => self::THUMB_NOT_FOUND, 'thumb_checked' => true], "id=$id");
                 continue;
             }
 
@@ -67,19 +68,21 @@ class ThumbController extends Controller
                     $error = curl_error($ch);
 
                     @$results['error'][] = $error . ": URL='$url'";
-                    echo "$url: $error\n";
+                    echo "$i) $url: $error\n";
 
-                    Product::updateAll(['thumb' => self::THUMB_NOT_FOUND], "id=$id");
+                    Product::updateAll(['thumb' => self::THUMB_NOT_FOUND, 'thumb_checked' => true], "id=$id");
 
                 } else {
                     $httpResponseCode = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
                     @$results[$httpResponseCode]++;
-                    echo "$url: $httpResponseCode\n";
+                    echo "$i) $url: $httpResponseCode\n";
 
                     if (200 != $httpResponseCode) {
-                        Product::updateAll(['thumb' => self::THUMB_NOT_FOUND], "id=$id");
+                        Product::updateAll(['thumb' => self::THUMB_NOT_FOUND, 'thumb_checked' => true], "id=$id");
                     } elseif ($updateVGurl) { // +vseti-goroda.ru at begin of URL
-                        Product::updateAll(['thumb' => $url], "id=$id");
+                        Product::updateAll(['thumb' => $url, 'thumb_checked' => true], "id=$id");
+                    } else {
+                        Product::updateAll(['thumb_checked' => true], "id=$id");
                     }
                 }
                 curl_close($ch);
