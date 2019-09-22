@@ -149,6 +149,7 @@ class m190626_024105_import_into_product_table extends Migration
             $product->meta_description = $aw_product['description'];
             $product->meta_keywords = $aw_product['keywords'];
             $product->price = $aw_product['price'];
+            $product->thumb_checked = null === $aw_product['thumb'] ? false : true;
         }
     }
 
