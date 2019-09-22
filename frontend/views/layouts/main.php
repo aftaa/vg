@@ -132,6 +132,10 @@ AppAsset::register($this);
         <?php endif ?>
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            'homeLink' => [
+                'label' => 'В сети города',
+                'url'   => '/',
+            ],
         ]) ?>
         <?= Alert::widget() ?>
 
