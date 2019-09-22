@@ -37,13 +37,13 @@ AppAsset::register($this);
         ],
     ]);
 
-    if (!Yii::$app->user->isGuest) {
-        $menuItems = [
-            ['label' => 'Пользователи', 'url' => ['/user/index']],
-            ['label' => 'Клиенты', 'url' => ['/member/index']],
-            ['label' => 'Категории товаров', 'url' => ['/product-category/index']],
-        ];
-    }
+//    if (!Yii::$app->user->isGuest) {
+//        $menuItems = [
+//            ['label' => 'Пользователи', 'url' => ['/user/index']],
+//            ['label' => 'Клиенты', 'url' => ['/member/index']],
+//            ['label' => 'Категории товаров', 'url' => ['/product-category/index']],
+//        ];
+//    }
 
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Войти', 'url' => ['/site/login']];
@@ -69,7 +69,7 @@ AppAsset::register($this);
         <?= Breadcrumbs::widget([
             'links'    => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             'homeLink' => [
-                'label' => 'Первая',
+                'label' => 'Настройки',
                 'url'   => '/',
             ],
         ]) ?>

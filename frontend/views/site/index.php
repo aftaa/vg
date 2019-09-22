@@ -1,9 +1,7 @@
 <?php
 
-use common\models\Area;
 use common\vg\models\VgCompanyCategory;
 use common\vg\models\VgProductCategory;
-use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $productCategories VgProductCategory[] */
@@ -11,13 +9,9 @@ use yii\helpers\Url;
 ///* @var $areas Area[] */
 
 $this->title = 'Каталог компаний, услуг и товаров России';
-//$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = $this->title;
 
 ?>
-
-<h1 class="display-1 text-center alert-info" style="padding: .23em;">Ведутся технические работы
-
-</h1>
 
 <?= $this->render('/product/_categories', [
     'productCategories' => $productCategories,
