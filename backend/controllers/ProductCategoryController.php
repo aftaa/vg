@@ -5,14 +5,14 @@ namespace backend\controllers;
 use Yii;
 use common\models\ProductCategory;
 use common\models\ProductCategorySearch;
-use common\vg\controllers\BackendController;
+use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
  * ProductCategoryController implements the CRUD actions for ProductCategory model.
  */
-class ProductCategoryController extends BackendController
+class ProductCategoryController extends Controller
 {
     /**
      * {@inheritdoc}

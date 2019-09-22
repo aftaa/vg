@@ -22,6 +22,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'position')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'old_password')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'balance')->textInput(['maxlength' => true]) ?>

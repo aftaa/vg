@@ -21,7 +21,7 @@ class BackendController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index'],
+                        //'actions' => ['logout', 'index'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],

@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\MemberSearch */
+/* @var $model common\models\CompanySearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="member-search">
+<div class="company-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -20,23 +20,23 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'user_id') ?>
+    <?= $form->field($model, 'owner_id') ?>
 
-    <?= $form->field($model, 'first_name') ?>
+    <?= $form->field($model, 'company_category_id') ?>
 
-    <?= $form->field($model, 'last_name') ?>
+    <?= $form->field($model, 'area_id') ?>
 
-    <?= $form->field($model, 'middle_name') ?>
+    <?= $form->field($model, 'name') ?>
 
-    <?php // echo $form->field($model, 'position') ?>
+    <?php // echo $form->field($model, 'introduce') ?>
 
-    <?php // echo $form->field($model, 'old_password') ?>
+    <?php // echo $form->field($model, 'thumb') ?>
 
-    <?php // echo $form->field($model, 'phone') ?>
+    <?php // echo $form->field($model, 'checked') ?>
 
-    <?php // echo $form->field($model, 'balance') ?>
+    <?php // echo $form->field($model, 'meta_keywords') ?>
 
-    <?php // echo $form->field($model, 'user_pic') ?>
+    <?php // echo $form->field($model, 'meta_description') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

@@ -4,14 +4,14 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Member */
+/* @var $model common\models\CompanyCategory */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Members', 'url' => ['index']];
+$this->title = $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Company Categories', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="member-view">
+<div class="company-category-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -30,15 +30,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'user_id',
-            'first_name',
-            'last_name',
-            'middle_name',
-            'position',
-            'old_password',
-            'phone',
-            'balance',
-            'user_pic',
+            'parent_id',
+            'name',
+            'sort',
+            'icon',
+            'meta_keywords:ntext',
+            'meta_description:ntext',
         ],
     ]) ?>
 

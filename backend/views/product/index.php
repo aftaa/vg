@@ -4,18 +4,18 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\MemberSearch */
+/* @var $searchModel common\models\ProductSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Members';
+$this->title = 'Products';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="member-index">
+<div class="product-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Member', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Product', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -28,15 +28,19 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'user_id',
-            'first_name',
-            'last_name',
-            'middle_name',
-            //'position',
-            //'old_password',
-            //'phone',
-            //'balance',
-            //'user_pic',
+            'company_id',
+            'category_id',
+            'name',
+            'description:ntext',
+            //'thumb',
+            //'thumb_checked',
+            //'checked',
+            //'price',
+            //'meta_keywords:ntext',
+            //'meta_description:ntext',
+            //'created_at',
+            //'updated_at',
+            //'deleted_at',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

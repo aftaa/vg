@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\Member;
-use common\models\MemberSearch;
+use common\models\CompanyCategory;
+use common\models\CompanyCategorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * MemberController implements the CRUD actions for Member model.
+ * CompanyCategoryController implements the CRUD actions for CompanyCategory model.
  */
-class MemberController extends Controller
+class CompanyCategoryController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,12 +30,12 @@ class MemberController extends Controller
     }
 
     /**
-     * Lists all Member models.
+     * Lists all CompanyCategory models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new MemberSearch();
+        $searchModel = new CompanyCategorySearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class MemberController extends Controller
     }
 
     /**
-     * Displays a single Member model.
+     * Displays a single CompanyCategory model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class MemberController extends Controller
     }
 
     /**
-     * Creates a new Member model.
+     * Creates a new CompanyCategory model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Member();
+        $model = new CompanyCategory();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -76,7 +76,7 @@ class MemberController extends Controller
     }
 
     /**
-     * Updates an existing Member model.
+     * Updates an existing CompanyCategory model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class MemberController extends Controller
     }
 
     /**
-     * Deletes an existing Member model.
+     * Deletes an existing CompanyCategory model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class MemberController extends Controller
     }
 
     /**
-     * Finds the Member model based on its primary key value.
+     * Finds the CompanyCategory model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Member the loaded model
+     * @return CompanyCategory the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Member::findOne($id)) !== null) {
+        if (($model = CompanyCategory::findOne($id)) !== null) {
             return $model;
         }
 

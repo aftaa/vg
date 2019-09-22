@@ -23,6 +23,7 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <link rel="stylesheet" type="text/css" href="/css/inside.css">
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -37,13 +38,38 @@ AppAsset::register($this);
         ],
     ]);
 
-//    if (!Yii::$app->user->isGuest) {
-//        $menuItems = [
-//            ['label' => 'Пользователи', 'url' => ['/user/index']],
-//            ['label' => 'Клиенты', 'url' => ['/member/index']],
-//            ['label' => 'Категории товаров', 'url' => ['/product-category/index']],
-//        ];
-//    }
+    if (!Yii::$app->user->isGuest) {
+        $menuItems = [
+            [
+                'label' => 'Пользователи', 'items' =>
+                [
+                    ['label' => 'Доступы', 'url' => ['/user/index']],
+                    ['label' => 'Клиенты', 'url' => ['/member/index']],
+                ]
+            ],
+            ['label' => 'Товары', 'url' => ['/product/index']],
+            ['label' => 'Компании', 'url' => ['/company/index']],
+            [
+                'label' => 'Категории', 'items' =>
+                [
+                    ['label' => 'Компаний', 'url' => ['/company-category/index']],
+                    ['label' => 'Товаров', 'url' => ['/product-category/index']],
+                ]
+            ],
+            [
+                'label' => 'Свойства', 'items' =>
+                [
+                    ['label' => 'Компаний', 'url' => ['/company-param/index']],
+                ]
+            ],
+            [
+                'label' => 'Справочники', 'items' =>
+                [
+                    ['label' => 'Регионы', 'url' => ['/area/index']],
+                ]
+            ],
+        ];
+    }
 
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Войти', 'url' => ['/site/login']];
