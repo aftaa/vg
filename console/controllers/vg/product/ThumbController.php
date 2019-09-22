@@ -26,7 +26,7 @@ class ThumbController extends Controller
         $products = Product::find()
             ->select('id, thumb')
 //            ->where('thumb IS NOT NULL')
-            ->where('thumb_checked=FALSE')
+//            ->where('thumb_checked=FALSE')
             ->indexBy('id')
 //            ->limit(10)
         ;
