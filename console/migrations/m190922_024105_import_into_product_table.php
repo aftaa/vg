@@ -96,6 +96,8 @@ class m190922_024105_import_into_product_table extends Migration
                 $this->setCreatedAt($aw_product, $product);
                 if (!$product->save()) {
                     echo "\nno imported rows, userid: $aw_product[userid], id: $aw_product[id]\n";
+                    print_r($product->errors);
+                    sleep(10);
                     $notImportedRows++;
                 } else {
                     $importedRows++;
@@ -149,7 +151,7 @@ class m190922_024105_import_into_product_table extends Migration
             $product->meta_description = $aw_product['description'];
             $product->meta_keywords = $aw_product['keywords'];
             $product->price = $aw_product['price'];
-            $product->thumb_checked = null === $aw_product['thumb'] ? false : true;
+            $product->thumb_checked = (int)(null === $aw_product['thumb'] ? false : true);
         }
     }
 
