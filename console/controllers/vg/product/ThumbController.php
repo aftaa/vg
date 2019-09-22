@@ -98,7 +98,7 @@ class ThumbController extends Controller
      * @param string $url
      * @return string|null
      */
-    private function correctUrl(string $url)
+    private function correctUrl(?string $url)
     {
         if ('' == trim($url)) {
             return null;
