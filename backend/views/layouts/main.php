@@ -1,6 +1,7 @@
 <?php
 
 /* @var $this \yii\web\View */
+
 /* @var $content string */
 
 use backend\assets\AppAsset;
@@ -30,16 +31,20 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
+        'brandUrl'   => Yii::$app->homeUrl,
+        'options'    => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    $menuItems = [
-        ['label' => 'Пользователи', 'url' => ['/user/index']],
-        ['label' => 'Клиенты', 'url' => ['/member/index']],
-        ['label' => 'Категории товаров', 'url' => ['/product-category/index']],
-    ];
+
+//    if (!Yii::$app->user->isGuest) {
+//        $menuItems = [
+//            ['label' => 'Пользователи', 'url' => ['/user/index']],
+//            ['label' => 'Клиенты', 'url' => ['/member/index']],
+//            ['label' => 'Категории товаров', 'url' => ['/product-category/index']],
+//        ];
+//    }
+
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Войти', 'url' => ['/site/login']];
     } else {
@@ -54,14 +59,19 @@ AppAsset::register($this);
     }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
+        'items'   => $menuItems,
     ]);
     NavBar::end();
+
     ?>
 
     <div class="container">
         <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            'links'    => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            'homeLink' => [
+                'label' => 'Настройки',
+                'url'   => '/',
+            ],
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>

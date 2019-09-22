@@ -11,7 +11,7 @@ function productChildCategories() {
 
 $(function () {
     // index page blocks
-    let animateEnabled = false;
+    let animateEnabled = true;
     $('div.uc').on('mouseenter', function () {
         if (animateEnabled) {
             $(this).animate({'height': '300px'});

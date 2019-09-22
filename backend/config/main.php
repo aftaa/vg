@@ -7,6 +7,7 @@ $params = array_merge(
 );
 
 return [
+    'name' => 'Настройки',
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
@@ -44,6 +45,5 @@ return [
             ],
         ],
     ],
-    'name' => 'Управление сайтом',
     'params' => $params,
 ];

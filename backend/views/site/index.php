@@ -6,76 +6,76 @@ $this->title = 'Управление сайтом';
 
 use yii\helpers\Url; ?>
 
-<div class="container">
-    <div class="row">
-        <div class="col col-sm-3">
-            <h3><a href="<?= Url::to(['user/index']) ?>">Пользователи</a></h3>
-            <ul>
-                <li>
-                    <a href="<?= Url::to(['user/manager']) ?>">Администраторы</a>
-                </li>
-                <li>
-                    <a href="<?= Url::to(['user/client']) ?>">Клиенты</a>
-                </li>
-                <li>
-                    <a href="<?= Url::to(['user/customer']) ?>">Другие</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="col col-sm-3">
-            <h3><a href="<?= Url::to(['user/index']) ?>">Товары</a></h3>
-            <ul>
-                <li>
-                    <a href="<?= Url::to(['user/manager']) ?>">Категории</a>
-                </li>
-                <li>
-                    <a href="<?= Url::to(['user/client']) ?>">Свойства товаров</a>
-                </li>
-                <li>
-                    <a href="<?= Url::to(['user/customer']) ?>">Свойства категорий</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="col col-sm-3">
-            <h3><a href="<?= Url::to(['user/index']) ?>">Компании</a></h3>
-            <ul>
-                <li>
-                    <a href="<?= Url::to(['user/client']) ?>">Свойства</a>
-                </li>
-                <li>
-                    <a href="<?= Url::to(['user/client']) ?>">Отзывы</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="col col-sm-3">
-            <h3><a href="<?= Url::to(['user/index']) ?>">Тарифы</a></h3>
-            <ul>
-                <li>
-                    <a href="<?= Url::to(['user/manager']) ?>">Поступления средств</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col col-sm-3">
-            <h3><a href="<?= Url::to(['user/index']) ?>">Импорт</a></h3>
-            <ul>
-                <li>
-                    <a href="<?= Url::to(['user/manager']) ?>">CSV</a>
-                </li>
-                <li>
-                    <a href="<?= Url::to(['user/manager']) ?>">XML</a>
-                </li>
-                <li>
-                    <a href="<?= Url::to(['user/manager']) ?>">Excel</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col col-sm-3">-->
+<!--            <h3><a href="--><?//= Url::to(['user/index']) ?><!--">Пользователи</a></h3>-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/manager']) ?><!--">Администраторы</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/client']) ?><!--">Клиенты</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/customer']) ?><!--">Другие</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col col-sm-3">-->
+<!--            <h3><a href="--><?//= Url::to(['user/index']) ?><!--">Товары</a></h3>-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/manager']) ?><!--">Категории</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/client']) ?><!--">Свойства товаров</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/customer']) ?><!--">Свойства категорий</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col col-sm-3">-->
+<!--            <h3><a href="--><?//= Url::to(['user/index']) ?><!--">Компании</a></h3>-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/client']) ?><!--">Свойства</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/client']) ?><!--">Отзывы</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col col-sm-3">-->
+<!--            <h3><a href="--><?//= Url::to(['user/index']) ?><!--">Тарифы</a></h3>-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/manager']) ?><!--">Поступления средств</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="row">-->
+<!--        <div class="col col-sm-3">-->
+<!--            <h3><a href="--><?//= Url::to(['user/index']) ?><!--">Импорт</a></h3>-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/manager']) ?><!--">CSV</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/manager']) ?><!--">XML</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?//= Url::to(['user/manager']) ?><!--">Excel</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
     <!--<div class="site-index">-->
     <!---->
