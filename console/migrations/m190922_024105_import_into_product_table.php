@@ -13,7 +13,7 @@ use yii\db\Query;
 /**
  * Class m190626_024105_import_into_product_table
  */
-class m190626_024105_import_into_product_table extends Migration
+class m190922_024105_import_into_product_table extends Migration
 {
     /**
      * @return bool|void
