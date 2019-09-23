@@ -1,15 +1,15 @@
 <?php
 
-namespace common\models;
+namespace backend\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\Member;
+use common\models\CompanyCategory;
 
 /**
- * MemberSearch represents the model behind the search form of `common\models\Member`.
+ * CompanyCategorySearch represents the model behind the search form of `common\models\CompanyCategory`.
  */
-class MemberSearch extends Member
+class CompanyCategorySearch extends CompanyCategory
 {
     /**
      * {@inheritdoc}
@@ -17,9 +17,8 @@ class MemberSearch extends Member
     public function rules()
     {
         return [
-            [['id', 'user_id'], 'integer'],
-            [['first_name', 'last_name', 'middle_name', 'position', 'phone', 'user_pic'], 'safe'],
-            [['balance'], 'number'],
+            [['id', 'parent_id', 'sort'], 'integer'],
+            [['name', 'icon', 'meta_keywords', 'meta_description'], 'safe'],
         ];
     }
 
@@ -41,7 +40,7 @@ class MemberSearch extends Member
      */
     public function search($params)
     {
-        $query = Member::find();
+        $query = CompanyCategory::find();
 
         // add conditions that should always apply here
 
@@ -60,16 +59,14 @@ class MemberSearch extends Member
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'user_id' => $this->user_id,
-            'balance' => $this->balance,
+            'parent_id' => $this->parent_id,
+            'sort' => $this->sort,
         ]);
 
-        $query->andFilterWhere(['like', 'first_name', $this->first_name])
-            ->andFilterWhere(['like', 'last_name', $this->last_name])
-            ->andFilterWhere(['like', 'middle_name', $this->middle_name])
-            ->andFilterWhere(['like', 'position', $this->position])
-            ->andFilterWhere(['like', 'phone', $this->phone])
-            ->andFilterWhere(['like', 'user_pic', $this->user_pic]);
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'icon', $this->icon])
+            ->andFilterWhere(['like', 'meta_keywords', $this->meta_keywords])
+            ->andFilterWhere(['like', 'meta_description', $this->meta_description]);
 
         return $dataProvider;
     }

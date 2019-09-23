@@ -3,11 +3,12 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\MemberSearch */
+/* @var $searchModel backend\models\MemberSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Members';
+$this->title = Yii::t('app', 'Members');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="member-index">
@@ -15,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Member', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Member'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -23,19 +24,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
+        'filterModel'  => $searchModel,
+        'columns'      => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'user_id',
+//            'id',
+            'user.username',
             'first_name',
             'last_name',
             'middle_name',
-            //'position',
+            'position',
             //'old_password',
-            //'phone',
-            //'balance',
+            'phone',
+            'balance',
             //'user_pic',
 
             ['class' => 'yii\grid\ActionColumn'],

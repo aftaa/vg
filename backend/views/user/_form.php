@@ -5,36 +5,29 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\User */
+/* @var $model common\models\User */
 /* @var $form yii\widgets\ActiveForm */
+
+$labels = (new User)->attributeLabels();
+$statuses = [
+        User::STATUS_ACTIVE => $labels[User::STATUS_ACTIVE],
+        User::STATUS_DELETED => $labels[User::STATUS_DELETED],
+        User::STATUS_INACTIVE => $labels[User::STATUS_INACTIVE],
+];
+
 ?>
 
 <div class="user-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
-
-    <? //= $form->field($model, 'auth_key')->textInput(['maxlength' => true]) ?>
-
-    <? //= $form->field($model, 'password_hash')->textInput(['maxlength' => true]) ?>
-
-    <? //= $form->field($model, 'password_reset_token')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'status')->dropDownList([
-            User::STATUS_ACTIVE => 'активный',
-            User::STATUS_INACTIVE => 'отключённый',
+    <?= $form->field($model, 'email')->textInput([
+            'type' => 'email'
     ]) ?>
-    <? //= $form->field($model, 'created_at')->textInput() ?>
-
-    <? //= $form->field($model, 'updated_at')->textInput() ?>
-
-    <? //= $form->field($model, 'verification_token')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'status')->dropDownList($statuses) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

@@ -44,12 +44,15 @@ AppAsset::register($this);
                 'label' => 'Пользователи', 'items' =>
                 [
                     ['label' => 'Доступы', 'url' => ['/user/index']],
-                    ['label' => 'Клиенты', 'url' => ['/member/index']],
+                    ['label' => 'Пользователи', 'url' => ['/member/index']],
                 ]
             ],
-            ['label' => 'Товары', 'url' => ['/product/index']],
             ['label' => 'Компании', 'url' => ['/company/index']],
+            ['label' => 'Товары', 'url' => ['/product/index']],
             [
+                ['label' => 'Товары', 'url' => ['/product/index']],
+
+
                 'label' => 'Категории', 'items' =>
                 [
                     ['label' => 'Компаний', 'url' => ['/company-category/index']],

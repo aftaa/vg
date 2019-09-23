@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\CompanyCategory */
 
-$this->title = 'Create Company Category';
-$this->params['breadcrumbs'][] = ['label' => 'Company Categories', 'url' => ['index']];
+$this->title = Yii::t('app', 'Create Company Category');
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Company Categories'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="company-category-create">

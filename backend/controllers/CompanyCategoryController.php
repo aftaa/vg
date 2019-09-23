@@ -4,7 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\CompanyCategory;
-use common\models\CompanyCategorySearch;
+use backend\models\CompanyCategorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -122,6 +122,6 @@ class CompanyCategoryController extends Controller
             return $model;
         }
 
-        throw new NotFoundHttpException('The requested page does not exist.');
+        throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
     }
 }

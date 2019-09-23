@@ -3,24 +3,30 @@
 namespace backend\controllers;
 
 use Yii;
-use common\vg\controllers\BackendController;
-use backend\models\User;
+use common\models\User;
 use backend\models\UserSearch;
+use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\filters\VerbFilter;
 
 /**
  * UserController implements the CRUD actions for User model.
  */
-class UserController extends BackendController
+class UserController extends Controller
 {
     /**
      * {@inheritdoc}
      */
     public function behaviors()
     {
-        $behaviors = parent::behaviors();
-        $behaviors['verbs']['actions']['delete'] = ['POST'];
-        return $behaviors;
+        return [
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'delete' => ['POST'],
+                ],
+            ],
+        ];
     }
 
     /**
@@ -33,7 +39,7 @@ class UserController extends BackendController
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
-            'searchModel'  => $searchModel,
+            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
@@ -95,8 +101,6 @@ class UserController extends BackendController
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
-     * @throws \Throwable
-     * @throws \yii\db\StaleObjectException
      */
     public function actionDelete($id)
     {
@@ -118,6 +122,6 @@ class UserController extends BackendController
             return $model;
         }
 
-        throw new NotFoundHttpException('The requested page does not exist.');
+        throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
     }
 }

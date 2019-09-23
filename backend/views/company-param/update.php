@@ -5,10 +5,12 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\CompanyParam */
 
-$this->title = 'Update Company Param: ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Company Params', 'url' => ['index']];
+$this->title = Yii::t('app', 'Update Company Param: {name}', [
+    'name' => $model->name,
+]);
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Company Params'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = Yii::t('app', 'Update');
 ?>
 <div class="company-param-update">
 

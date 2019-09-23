@@ -1,13 +1,14 @@
 <?php
 
+use common\models\CompanyCategory;
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\CompanyCategorySearch */
+/* @var $searchModel backend\models\CompanyCategorySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Company Categories';
+$this->title = Yii::t('app', 'Company Categories');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="company-category-index">
@@ -15,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Company Category', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Company Category'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>
@@ -27,8 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'parent_id',
+//            'id',
+            'parent.name',
             'name',
             'sort',
             'icon',

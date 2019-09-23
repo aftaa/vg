@@ -5,10 +5,12 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\ProductCategory */
 
-$this->title = 'Update Product Category: ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Product Categories', 'url' => ['index']];
+$this->title = Yii::t('app', 'Update Product Category: {name}', [
+    'name' => $model->name,
+]);
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Product Categories'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = Yii::t('app', 'Update');
 ?>
 <div class="product-category-update">
 

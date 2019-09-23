@@ -4,7 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Member;
-use common\models\MemberSearch;
+use backend\models\MemberSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -122,6 +122,6 @@ class MemberController extends Controller
             return $model;
         }
 
-        throw new NotFoundHttpException('The requested page does not exist.');
+        throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
     }
 }

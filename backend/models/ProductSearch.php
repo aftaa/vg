@@ -1,15 +1,15 @@
 <?php
 
-namespace common\models;
+namespace backend\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\ProductCategory;
+use common\models\Product;
 
 /**
- * ProductCategorySearch represents the model behind the search form of `common\models\ProductCategory`.
+ * ProductSearch represents the model behind the search form of `common\models\Product`.
  */
-class ProductCategorySearch extends ProductCategory
+class ProductSearch extends Product
 {
     /**
      * {@inheritdoc}
@@ -17,8 +17,9 @@ class ProductCategorySearch extends ProductCategory
     public function rules()
     {
         return [
-            [['id', 'parent_id', 'sort'], 'integer'],
-            [['name', 'description', 'icon', 'meta_keywords', 'meta_description'], 'safe'],
+            [['id', 'company_id', 'category_id', 'thumb_checked', 'checked'], 'integer'],
+            [['name', 'description', 'thumb', 'meta_keywords', 'meta_description', 'created_at', 'updated_at', 'deleted_at'], 'safe'],
+            [['price'], 'number'],
         ];
     }
 
@@ -40,7 +41,7 @@ class ProductCategorySearch extends ProductCategory
      */
     public function search($params)
     {
-        $query = ProductCategory::find();
+        $query = Product::find();
 
         // add conditions that should always apply here
 
@@ -59,13 +60,19 @@ class ProductCategorySearch extends ProductCategory
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'parent_id' => $this->parent_id,
-            'sort' => $this->sort,
+            'company_id' => $this->company_id,
+            'category_id' => $this->category_id,
+            'thumb_checked' => $this->thumb_checked,
+            'checked' => $this->checked,
+            'price' => $this->price,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
+            'deleted_at' => $this->deleted_at,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'description', $this->description])
-            ->andFilterWhere(['like', 'icon', $this->icon])
+            ->andFilterWhere(['like', 'thumb', $this->thumb])
             ->andFilterWhere(['like', 'meta_keywords', $this->meta_keywords])
             ->andFilterWhere(['like', 'meta_description', $this->meta_description]);
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace common\models;
+namespace backend\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\CompanyCategory;
+use common\models\Area;
 
 /**
- * CompanyCategorySearch represents the model behind the search form of `common\models\CompanyCategory`.
+ * AreaSearch represents the model behind the search form of `common\models\Area`.
  */
-class CompanyCategorySearch extends CompanyCategory
+class AreaSearch extends Area
 {
     /**
      * {@inheritdoc}
@@ -18,7 +18,7 @@ class CompanyCategorySearch extends CompanyCategory
     {
         return [
             [['id', 'parent_id', 'sort'], 'integer'],
-            [['name', 'icon', 'meta_keywords', 'meta_description'], 'safe'],
+            [['name'], 'safe'],
         ];
     }
 
@@ -40,7 +40,7 @@ class CompanyCategorySearch extends CompanyCategory
      */
     public function search($params)
     {
-        $query = CompanyCategory::find();
+        $query = Area::find();
 
         // add conditions that should always apply here
 
@@ -63,10 +63,7 @@ class CompanyCategorySearch extends CompanyCategory
             'sort' => $this->sort,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'icon', $this->icon])
-            ->andFilterWhere(['like', 'meta_keywords', $this->meta_keywords])
-            ->andFilterWhere(['like', 'meta_description', $this->meta_description]);
+        $query->andFilterWhere(['like', 'name', $this->name]);
 
         return $dataProvider;
     }
