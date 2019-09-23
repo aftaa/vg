@@ -11,6 +11,7 @@ use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\db\Query;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -61,7 +62,7 @@ class SiteController extends FrontendController
     public function actions()
     {
         return [
-            'error'   => [
+            'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
 
@@ -83,9 +84,36 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
+        $areas = (new Query)
+            ->select('t1.*, COUNT(t2.parent_id) AS cnt')
+            ->from('area AS t1')
+            ->join('JOIN', 'area AS t2', 't1.id=t2.parent_id')
+            ->where('t1.parent_id IS NULL')
+            ->groupBy('t1.id')
+            ->indexBy('id')
+            ->orderBy('RAND()')
+            ->all();
+
+        foreach ($areas as & $area) {
+            if ($area['cnt'] >= 100) {
+                $area['class'] = 'h2';
+            } elseif ($area['cnt'] >= 70) {
+                $area['class'] = 'h2';
+            } elseif ($area['cnt'] >= 60) {
+                   $area['class'] = 'h3';
+            } elseif ($area['cnt'] >= 50) {
+                   $area['class'] = 'h3';
+            } elseif ($area['cnt'] >= 40) {
+                   $area['class'] = 'h4';
+            } else {
+                $area['class'] = 'h4';
+            }
+        }
+
         return $this->render('index', [
             'productCategories' => $productCategories,
             'companyCategories' => $companyCategories,
+            'areas'             => $areas,
         ]);
     }
 

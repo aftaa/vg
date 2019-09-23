@@ -60,12 +60,12 @@ AppAsset::register($this);
     }
 
     if (VgUser::isSuperUser()) {
-        $menuItems[] = ['label' => 'В пользователя', 'url' => ['/switch-identity'], 'class' => 'super-user'];
+        $menuItems[] = ['label' => '→ В пользователя', 'url' => ['/switch-identity'], 'class' => 'super-user'];
     }
 
     if (VgUser::isUnderOtherUser()) {
         $menuItems[] = [
-            'label' => 'Выйти из пользователя',
+            'label' => 'Из пользователя →',
             'url'   => ['/switch-identity/return'],
             'class' => 'super-user'
         ];
@@ -73,7 +73,7 @@ AppAsset::register($this);
 
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Регистрация', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Войти', 'url' => ['/site/login']];
+        $menuItems[] = ['label' => '» Войти', 'url' => ['/site/login']];
     } else {
         $menuItems[] = [
             'label' => 'Профиль', 'url' => ['/profile'], 'items' => [
@@ -94,17 +94,19 @@ AppAsset::register($this);
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
-                'Выйти',
+                'Выйти »',
                 ['class' => 'btn btn-link logout']
             )
             . Html::endForm()
             . '</li>';
     }
 
-    $menuItems[] = [
-        'label' => $theme == 'dark' ? 'Зажечь' : 'Погасить',
-        'url'   => $theme == 'dark' ? '/light' : '/dark',
-    ];
+    if (false) {
+        $menuItems[] = [
+            'label' => $theme == 'dark' ? 'Зажечь' : 'Погасить',
+            'url'   => $theme == 'dark' ? '/light' : '/dark',
+        ];
+    }
 
     $menuItems[] = ['label' => "$_SERVER[SERVER_NAME]"];
     echo Nav::widget([

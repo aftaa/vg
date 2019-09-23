@@ -10,7 +10,9 @@ function productChildCategories() {
 }
 
 $(function () {
-    // index page blocks
+    productChildCategories();
+
+    // index page blocks under construction
     let animateEnabled = true;
     $('div.uc').on('mouseenter', function () {
         if (animateEnabled) {
@@ -24,8 +26,6 @@ $(function () {
             $('p', this).hide();
         }
     });
-
-    productChildCategories();
 
     // cookie agree
     let $cookie;
@@ -42,4 +42,9 @@ $(function () {
             });
         });
     }
+
+    // index areas
+    $('div.a-index-area').on('click', function () {
+        return false;
+    });
 })
