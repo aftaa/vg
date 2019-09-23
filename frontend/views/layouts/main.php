@@ -41,7 +41,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandImage'    => '/png/logo.png',
+        'brandImage'    => '/img/logo.png',
         'brandLabel'    => 'vseti-goroda.ru',//Yii::$app->name,
         'headerContent' => $this->render('_search.php'), //$this->title,
         'brandUrl'      => Yii::$app->homeUrl,
@@ -103,7 +103,7 @@ AppAsset::register($this);
 
     $menuItems[] = [
         'label' => $theme == 'dark' ? 'Зажечь' : 'Погасить',
-        'url' => $theme == 'dark' ? '/light' : '/dark',
+        'url'   => $theme == 'dark' ? '/light' : '/dark',
     ];
 
     $menuItems[] = ['label' => "$_SERVER[SERVER_NAME]"];
@@ -116,6 +116,13 @@ AppAsset::register($this);
 
 
     <div class="container">
+
+        <div class="text-center" id="logo-cropped">
+            <?php if ('/' != $_SERVER['REQUEST_URI']): ?><a href="/"><?php endif ?>
+                <img alt="В сети города" src="/img/logo_cropped.png" width="355" height="50">
+            <?php if ('/' != $_SERVER['REQUEST_URI']): ?></a><?php endif ?>
+        </div>
+
         <?php if (!Yii::$app->user->isGuest): ?>
             <header>
                 <div class="alert-warning align-right"><?php if (!Yii::$app->user->isGuest): ?>
@@ -131,7 +138,7 @@ AppAsset::register($this);
             <h1><?= $this->title ?></h1>
         <?php endif ?>
         <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            'links'    => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             'homeLink' => [
                 'label' => 'В сети города',
                 'url'   => '/',

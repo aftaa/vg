@@ -74,7 +74,7 @@ header > div {
 }
 
 .look-product-category {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .look-product-category:hover {
@@ -92,4 +92,8 @@ header > div {
 
 .product-child-category {
     display: none;
+}
+
+#logo-cropped img:hover {
+    opacity: .83;
 }
