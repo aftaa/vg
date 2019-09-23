@@ -94,7 +94,7 @@ AppAsset::register($this);
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
-                'Выход',
+                'Выйти',
                 ['class' => 'btn btn-link logout']
             )
             . Html::endForm()
@@ -117,11 +117,13 @@ AppAsset::register($this);
 
     <div class="container">
 
-        <div class="text-center" id="logo-cropped">
-            <?php if ('/' != $_SERVER['REQUEST_URI']): ?><a href="/"><?php endif ?>
-                <img alt="В сети города" src="/img/logo_cropped.png" width="355" height="50">
-            <?php if ('/' != $_SERVER['REQUEST_URI']): ?></a><?php endif ?>
-        </div>
+        <?php if (empty($this->params['hideLogo'])): ?>
+            <div class="text-center" id="logo-cropped">
+                <?php if ('/' != $_SERVER['REQUEST_URI']): ?><a href="/"><?php endif ?>
+                    <img alt="В сети города" src="/img/logo_cropped.png" width="355" height="50">
+                <?php if ('/' != $_SERVER['REQUEST_URI']): ?></a><?php endif ?>
+            </div>
+        <?php endif ?>
 
         <?php if (!Yii::$app->user->isGuest): ?>
             <header>

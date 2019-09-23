@@ -49,6 +49,8 @@ class ProfileController extends FrontendController
             $member->save();
         }
 
+        $this->view->params['hideLogo'] = true;
+
         return parent::beforeAction($action);
     }
 

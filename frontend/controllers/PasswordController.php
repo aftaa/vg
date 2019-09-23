@@ -34,7 +34,8 @@ class PasswordController extends FrontendController
      */
     public function actionIndex()
     {
-            $user = Yii::$app->getUser();
+        $this->view->params['hideLogo'] = true;
+        $user = Yii::$app->getUser();
 
         $passwordManager = new PasswordManager($user->getIdentity());
         $changeResult = $passwordManager->changePassword(Yii::$app->request->post());
