@@ -51,12 +51,10 @@ AppAsset::register($this);
     ]);
 
     if (Yii::$app->user->isGuest) {
-        $menuItems = [
-            ['label' => 'Каталог', 'url' => ['/']],
-            ['label' => 'О проекте', 'url' => ['/site/about']],
-            ['label' => 'Тарифы', 'url' => ['/tariffs']],
-            ['label' => 'Контакты', 'url' => ['/site/contact']],
-        ];
+        $menuItems[] = ['label' => 'Каталог', 'url' => ['/']];
+        $menuItems[] = ['label' => 'О проекте', 'url' => ['/site/about']];
+        $menuItems[] = ['label' => 'Тарифы', 'url' => ['/tariffs']];
+        $menuItems[] = ['label' => 'Контакты', 'url' => ['/site/contact']];
     }
 
     if (VgUser::isSuperUser()) {
@@ -123,7 +121,7 @@ AppAsset::register($this);
             <div class="text-center" id="logo-cropped">
                 <?php if ('/' != $_SERVER['REQUEST_URI']): ?><a href="/"><?php endif ?>
                     <img alt="В сети города" src="/img/logo_cropped.png" width="355" height="50">
-                <?php if ('/' != $_SERVER['REQUEST_URI']): ?></a><?php endif ?>
+                    <?php if ('/' != $_SERVER['REQUEST_URI']): ?></a><?php endif ?>
             </div>
         <?php endif ?>
 
