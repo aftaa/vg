@@ -3,14 +3,34 @@
 namespace frontend\controllers;
 
 use common\models\User;
+use common\vg\controllers\FrontendController;
 use common\vg\models\VgUser;
 use Yii;
 use yii\db\Query;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
 
-class SwitchIdentityController extends Controller
+class SwitchIdentityController extends FrontendController
 {
+    /**
+     * @inheritDoc
+     */
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+        ];
+    }
+
     public function beforeAction($action)
     {
         $this->view->params['hideLogo'] = true;

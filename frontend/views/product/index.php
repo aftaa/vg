@@ -30,22 +30,52 @@ array_unshift($this->params['breadcrumbs'], [
 
 <div class="container company">
     <div class="row">
-        <div class="col-md-3">
-
+        <div class="col-md-4">
+            <img alt="" src="<?= $product->thumb ?>" style="max-width: 100%;">
+            <?php if ($product->price): ?>
+                <br>
+                <br>
+                <br>
+                <div class="btn btn-info" style="float: right;">Стоимость: <?= $product->getPrice() ?> ₽</div>
+            <br><br><br>
+            <?php endif ?>
         </div>
 
-        <div class="col-md-9">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-6">
 
-            <p>
-                Описание:
-                <?= $product->description ?>
-            </p>
-
-            <?php if ($product->price): ?>
-                <big>Стоимость: <?= $product->getPrice() ?> ₽</big>
+            <?php if ($product->description): ?>
+                <p>
+                    Описание:
+                    <?= $product->description ?>
+                </p>
+            <?php else: ?>
+                <p>
+                    <?= $product->company->introduce ?? '' ?>
+                </p>
             <?php endif ?>
 
+
             <br><br>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Компания</th>
+                        <th>Регион</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="<?= Url::to(['company/index', 'companyId' => $product->company_id]) ?>"><?= $product->company->name ?></a>
+                        </td>
+                    <td>
+                        <?= $product->company->area->name ?>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
         <div>

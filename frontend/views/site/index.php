@@ -65,7 +65,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 </div>
 
-<div id="index-products-switcher">
+<div id="index-products-switcher" class="alert-warning">
     <div class="text-right" id="look-new-products">посмотрите <a href="#">новые товары</a></div>
     <div class="text-right" id="look-top-products" style="display: none;">посмотрите <a href="#">популярные товары</a></div>
 </div>
