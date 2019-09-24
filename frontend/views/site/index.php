@@ -49,8 +49,8 @@ $this->params['breadcrumbs'][] = $this->title;
     'companyCategories' => $companyCategories,
 ]) ?>
 
-<div class="uc h2" id="index-companies">топовые фирмы / новые фирмы</div>
-<div class="text-right">познакомьтесь с <a href="#">новыми компаниями</a></div>
+<!--<div class="uc h2" id="index-companies">топовые фирмы / новые фирмы</div>-->
+<!--<div class="text-right">познакомьтесь с <a href="#">новыми компаниями</a></div>-->
 
 
 <div style="margin: 3em auto;">

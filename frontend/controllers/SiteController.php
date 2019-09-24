@@ -94,7 +94,7 @@ class SiteController extends FrontendController
             ->andWhere('thumb IS NOT NULL')
 //            ->andWhere('price <> 0.0 ')
             ->limit(16)
-//            ->orderBy('RAND()')
+            ->orderBy('RAND()')
             ->all();
         $newProducts = Product::find()
             ->select('id,thumb,name,price')
@@ -102,7 +102,7 @@ class SiteController extends FrontendController
             ->andWhere('thumb IS NOT NULL')
 //            ->andWhere('price <> 0.0 ')
             ->limit(16)
-//            ->orderBy('RAND()')
+            ->orderBy('RAND()')
             ->all();
 
 
