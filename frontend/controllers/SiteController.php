@@ -86,7 +86,7 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
-        $areas = $this->getAreas($area);
+        $areas = $this->getAreas();
 
         $topProducts = Product::find()
             ->select('id,thumb,name')
