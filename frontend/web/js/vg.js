@@ -12,8 +12,18 @@ function productChildCategories() {
 $(function () {
     productChildCategories();
 
+    // index top & new products
+    $('#look-new-products a, #look-top-products a').on('click', function () {
+        $('#index-top-products').toggle();
+        $('#index-new-products').toggle();
+
+        $(this.parentNode).slideUp('slow');
+        $('#index-products-switcher > div:hidden').slideDown('slow');
+        return false;
+    });
+
     // index page blocks under construction
-    let animateEnabled = true;
+    let animateEnabled = false;
     $('div.uc').on('mouseenter', function () {
         if (animateEnabled) {
             $(this).animate({'height': '300px'});

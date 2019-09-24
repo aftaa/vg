@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = [
             ничего
         </div>
         <div class="col col-lg-4">
-            <h2>в другом</h2>
+            <h2>в категориях</h2>
             ничего
         </div>
     </div>

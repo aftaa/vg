@@ -38,7 +38,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
+<div class="wrap<?php if (VgUser::isUnderOtherUser()) echo ' other-user' ?>">
     <?php
     NavBar::begin([
         'brandImage'    => '/img/logo.png',

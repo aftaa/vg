@@ -1,9 +1,10 @@
 .uc {
-    height: 100px;
-    cursor: pointer;
-    background: #efefef;
+    height: 600px;
+    /*cursor: pointer;*/
+    /*background: #efefef;*/
     text-align: center;
-    line-height: 100px;
+    /*line-height: 100px;*/
+    overflow: hidden;
 }
 
 .uc p {
@@ -23,6 +24,10 @@ header > div {
 
 .super-user {
     font-weight: bold !important;
+}
+
+.other-user {
+    background: #e1e3e6;
 }
 
 .tariff {

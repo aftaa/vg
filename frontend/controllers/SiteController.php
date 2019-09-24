@@ -3,6 +3,8 @@
 namespace frontend\controllers;
 
 use common\models\Area;
+use common\models\Product;
+use common\models\ProductQuery;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgLoginForm;
 use common\vg\manager\CompanyCategoryManager;
@@ -84,34 +86,30 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
-        $areas = (new Query)
-            ->select('t1.*, COUNT(t2.parent_id) AS cnt')
-            ->from('area AS t1')
-            ->join('JOIN', 'area AS t2', 't1.id=t2.parent_id')
-            ->where('t1.parent_id IS NULL')
-            ->groupBy('t1.id')
-            ->indexBy('id')
+        $areas = $this->getAreas($area);
+
+        $topProducts = Product::find()
+            ->select('id,thumb,name')
+            ->where('thumb_checked=TRUE')
+            ->andWhere('thumb IS NOT NULL')
+//            ->andWhere('price <> 0.0 ')
+            ->limit(16)
+            ->orderBy('RAND()')
+            ->all();
+        $newProducts = Product::find()
+            ->select('id,thumb,name')
+            ->where('thumb_checked=TRUE')
+            ->andWhere('thumb IS NOT NULL')
+//            ->andWhere('price <> 0.0 ')
+            ->limit(16)
             ->orderBy('RAND()')
             ->all();
 
-        foreach ($areas as & $area) {
-            if ($area['cnt'] >= 100) {
-                $area['class'] = 'h2';
-            } elseif ($area['cnt'] >= 70) {
-                $area['class'] = 'h2';
-            } elseif ($area['cnt'] >= 60) {
-                   $area['class'] = 'h3';
-            } elseif ($area['cnt'] >= 50) {
-                   $area['class'] = 'h3';
-            } elseif ($area['cnt'] >= 40) {
-                   $area['class'] = 'h4';
-            } else {
-                $area['class'] = 'h4';
-            }
-        }
 
         return $this->render('index', [
             'productCategories' => $productCategories,
+            'topProducts'       => $topProducts,
+            'newProducts'       => $newProducts,
             'companyCategories' => $companyCategories,
             'areas'             => $areas,
         ]);
@@ -317,5 +315,38 @@ class SiteController extends FrontendController
     public function actionOffline(): string
     {
         return $this->render('offline');
+    }
+
+    /**
+     * @return array|Area[]
+     */
+    private function getAreas(): array
+    {
+        $areas = (new Query)
+            ->select('t1.*, COUNT(t2.parent_id) AS cnt')
+            ->from('area AS t1')
+            ->join('JOIN', 'area AS t2', 't1.id=t2.parent_id')
+            ->where('t1.parent_id IS NULL')
+            ->groupBy('t1.id')
+            ->indexBy('id')
+            ->orderBy('RAND()')
+            ->all();
+
+        foreach ($areas as & $area) {
+            if ($area['cnt'] >= 100) {
+                $area['class'] = 'h2';
+            } elseif ($area['cnt'] >= 70) {
+                $area['class'] = 'h2';
+            } elseif ($area['cnt'] >= 60) {
+                $area['class'] = 'h3';
+            } elseif ($area['cnt'] >= 50) {
+                $area['class'] = 'h3';
+            } elseif ($area['cnt'] >= 40) {
+                $area['class'] = 'h4';
+            } else {
+                $area['class'] = 'h4';
+            }
+        }
+        return $areas;
     }
 }
