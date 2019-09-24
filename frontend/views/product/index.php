@@ -37,7 +37,7 @@ array_unshift($this->params['breadcrumbs'], [
                 <br>
                 <br>
                 <div class="btn btn-info" style="float: right;">Стоимость: <?= $product->getPrice() ?> ₽</div>
-            <br><br><br>
+                <br><br><br>
             <?php endif ?>
         </div>
 
@@ -45,31 +45,28 @@ array_unshift($this->params['breadcrumbs'], [
         </div>
         <div class="col-md-6">
 
-            <?php if ($product->description): ?>
-                <p>
-                    Описание:
+            <p>
+                <?php if ($product->description): ?>
                     <?= $product->description ?>
-                </p>
-            <?php else: ?>
-                <p>
+                <?php else: ?>
                     <?= $product->company->introduce ?? '' ?>
-                </p>
-            <?php endif ?>
+                <?php endif ?>
+            </p>
 
 
             <br><br>
             <table class="table table-striped">
                 <thead>
-                    <tr>
-                        <th>Компания</th>
-                        <th>Регион</th>
-                    </tr>
+                <tr>
+                    <th>Компания</th>
+                    <th>Регион</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
-                            <a href="<?= Url::to(['company/index', 'companyId' => $product->company_id]) ?>"><?= $product->company->name ?></a>
-                        </td>
+                <tr>
+                    <td>
+                        <a href="<?= Url::to(['company/index', 'companyId' => $product->company_id]) ?>"><?= $product->company->name ?></a>
+                    </td>
                     <td>
                         <?= $product->company->area->name ?>
                     </td>

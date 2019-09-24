@@ -89,7 +89,7 @@ class SiteController extends FrontendController
         $areas = $this->getAreas();
 
         $topProducts = Product::find()
-            ->select('id,thumb,name')
+            ->select('id,thumb,name,price')
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
 //            ->andWhere('price <> 0.0 ')
@@ -97,7 +97,7 @@ class SiteController extends FrontendController
 //            ->orderBy('RAND()')
             ->all();
         $newProducts = Product::find()
-            ->select('id,thumb,name')
+            ->select('id,thumb,name,price')
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
 //            ->andWhere('price <> 0.0 ')
