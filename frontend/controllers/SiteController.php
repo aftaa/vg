@@ -308,7 +308,7 @@ class SiteController extends FrontendController
     private function getAreas(): array
     {
         $areas = (new Query)
-            ->select('t1.*, COUNT(t2.parent_id) AS cnt')
+            ->select('t1.*, COUNT(t2.id) AS cnt')
             ->from('area AS t1')
             ->join('LEFT JOIN', 'area AS t2', 't1.id=t2.parent_id')
             ->where('t1.parent_id IS NULL')
