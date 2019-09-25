@@ -311,9 +311,10 @@ class SiteController extends FrontendController
             ->select('t1.*, t1.id AS id1, COUNT(t2.id) AS cnt')
             ->from('area AS t1')
             ->join('JOIN', 'area AS t2', 't1.id=t2.parent_id')
-            ->where('t1.parent_id IS NULL')
+//            ->where('t1.parent_id IS NULL')
             ->groupBy('t1.id')
-            ->orderBy('RAND()')
+            ->having('t1.parent_id IS NULL')
+           ->orderBy('RAND()')
             ->indexBy('id1')
             ->all();
 
