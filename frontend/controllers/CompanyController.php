@@ -27,9 +27,8 @@ class CompanyController extends FrontendController
         [$products, $pages] = ProductManager::getProductsByCompanyIdWithPagination($companyId);
 
         return $this->render('index', [
-            'company' => $company,
-            'params'  => $params,
-
+            'company'     => $company,
+            'params'      => $params,
             'allProducts' => $products,
             'pages'       => $pages,
         ]);

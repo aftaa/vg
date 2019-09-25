@@ -17,21 +17,23 @@ use yii\widgets\LinkPager;
         <div class="row">
             <?php foreach ($products as $product): ?>
 
-                <div class="col col-md-3">
-                    <strong>
-                        <a href="<?= Url::to(['product/index', 'productId' => $product->id ]) ?>"><?= $product->name ?></a>
-                    </strong>
-                    <div class="alert-danger">
-                        <?php if ($product->price) echo $product->price, ' ₽' ?>
-                    </div>
+                <div class="col col-md-3 col-lg-4 col-sm-2">
+
+                    <div style="height: 3em; overflow: hidden;"><a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>">
+                            <strong>
+                                <?= $product->name ?>
+                            </strong>
+                        </a></div>
+
                     <div class="center-block" style="text-align: center; min-height: 200px;">
                         <img alt="" src="<?= $product->thumb ?>" style="max-width: 200px; max-height: 200px;">
                     </div>
-                    <div style="background: #eee;">
-                        <a href="<?= Url::to(['company/index', 'companyId' => $product->company_id ]) ?>"><?= $product->company->name ?></a>
-                    </div>
-                    <small><?= $product->company->area->name ?></small>
 
+                    <?php if ((int)$product->price): ?>
+                        <div class="alert-danger index-product-price">
+                            <?= $product->price . '₽' ?>
+                        </div>
+                    <?php endif ?>
                 </div>
             <?php endforeach ?>
         </div>

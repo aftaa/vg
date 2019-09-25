@@ -43,26 +43,24 @@ class ProductManager
      */
     public static function getProductsByCompanyIdWithPagination(int $companyId): array
     {
-        $query = Product::find()->where([
-            'checked'     => true,
-            'company_id' => $companyId,
-        ]);
+        $query = Product::find();
         $countQuery = clone $query;
         $pages = new Pagination([
             'totalCount' => $countQuery->count(),
         ]);
-        $pages->setPageSize(256);
+        $pages->setPageSize(16);
 
         $products = $query->offset($pages->offset)
             ->limit($pages->limit)
             ->where('checked = TRUE')
+            ->andWhere("company_id=$companyId")
             ->andWhere('thumb_checked = TRUE')
             ->orderBy([new Expression(
-                'thumb IS NULL DESC'
+                'thumb IS NULL'
             )])
             ->all();
 
-        $products = array_chunk($products, 4);
+//        $products = array_chunk($products, 4);
 
         return [
             $products,
