@@ -310,7 +310,7 @@ class SiteController extends FrontendController
         $areas = (new Query)
             ->select('t1.*, COUNT(t2.parent_id) AS cnt')
             ->from('area AS t1')
-            ->join('JOIN', 'area AS t2', 't1.id=t2.parent_id')
+            ->join('LEFT JOIN', 'area AS t2', 't1.id=t2.parent_id')
             ->where('t1.parent_id IS NULL')
             ->groupBy('t1.id')
             ->indexBy('id')
