@@ -55,16 +55,6 @@ array_unshift($this->params['breadcrumbs'], [
             <h3><?= $params['phone']->value ?></h3>
             <h4><a href="mailto:<?= $params['email']->value ?>"><?= $params['email']->value ?></a></h4>
             <p><?= nl2br($params['address']->value) ?></p>
-
-<!--            <ul type="none">-->
-<!--                --><?php //foreach ($params as $param): ?>
-<!--                    <li>-->
-<!--                        --><?//= $param->param->name ?><!--:-->
-<!--                        --><?//= $param->value ?>
-<!--                    </li>-->
-<!--                --><?php //endforeach ?>
-<!--            </ul>-->
-
         </div>
         <div class="col col-sm col-lg-1"></div>
     </div>
