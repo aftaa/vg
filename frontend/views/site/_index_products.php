@@ -1,5 +1,6 @@
 <?php
 
+use common\models\Product;
 use yii\helpers\Url;
 
 /** @var $products array|Product[] */

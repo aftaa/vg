@@ -7,14 +7,16 @@
 .uc p {
 }
 
-#index-products-switcher {
+#index-products-switcher,
+#index-companies-switcher {
     display: inline-block;;
     padding: 5px;
     border-radius: 4px;
     float: right;
 }
 
-#index-new-products {
+#index-new-products,
+#index-new-companies {
     display: none;
 }
 

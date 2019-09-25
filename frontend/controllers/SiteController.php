@@ -3,8 +3,8 @@
 namespace frontend\controllers;
 
 use common\models\Area;
+use common\models\Company;
 use common\models\Product;
-use common\models\ProductQuery;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgLoginForm;
 use common\vg\manager\CompanyCategoryManager;
@@ -90,12 +90,29 @@ class SiteController extends FrontendController
         $topProducts = $this->getTopProducts();
         $newProducts = $this->getNewProducts();
 
+        $topCompanies = Company::find()
+            ->select('*')
+            ->where('thumb_checked=TRUE')
+            ->andWhere('thumb IS NOT NULL')
+            ->limit(16)
+            ->orderBy('RAND()')
+            ->all();
+
+        $newCompanies = Company::find()
+            ->select('*')
+            ->where('thumb_checked=TRUE')
+            ->andWhere('thumb IS NOT NULL')
+            ->limit(16)
+            ->orderBy('RAND()')
+            ->all();
 
         return $this->render('index', [
             'productCategories' => $productCategories,
             'topProducts'       => $topProducts,
             'newProducts'       => $newProducts,
             'companyCategories' => $companyCategories,
+            'topCompanies'      => $topCompanies,
+            'newCompanies'      => $newCompanies,
             'areas'             => $areas,
         ]);
     }
@@ -346,7 +363,7 @@ class SiteController extends FrontendController
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
             ->limit($limit)
-            ->orderBy('RAND()')
+//            ->orderBy('RAND()')
             ->all();
     }
 
@@ -361,7 +378,7 @@ class SiteController extends FrontendController
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
             ->limit($limit)
-            ->orderBy('RAND()')
+  //          ->orderBy('RAND()')
             ->all();
     }
 }

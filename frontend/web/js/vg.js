@@ -22,6 +22,16 @@ $(function () {
         return false;
     });
 
+    // index top & new companies
+    $('#look-new-companies a, #look-top-companies a').on('click', function () {
+        $('#index-top-companies').toggle();
+        $('#index-new-companies').toggle();
+
+        $(this.parentNode).slideUp('slow');
+        $('#index-companies-switcher > div:hidden').slideDown('slow');
+        return false;
+    });
+
     // index page blocks under construction
     let animateEnabled = false;
     $('div.uc').on('mouseenter', function () {
