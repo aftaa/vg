@@ -87,23 +87,8 @@ class SiteController extends FrontendController
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
         $areas = $this->getAreas();
-
-        $topProducts = Product::find()
-            ->select('id,thumb,name,price')
-            ->where('thumb_checked=TRUE')
-            ->andWhere('thumb IS NOT NULL')
-//            ->andWhere('price <> 0.0 ')
-            ->limit(16)
-            ->orderBy('RAND()')
-            ->all();
-        $newProducts = Product::find()
-            ->select('id,thumb,name,price')
-            ->where('thumb_checked=TRUE')
-            ->andWhere('thumb IS NOT NULL')
-//            ->andWhere('price <> 0.0 ')
-            ->limit(16)
-            ->orderBy('RAND()')
-            ->all();
+        $topProducts = $this->getTopProducts();
+        $newProducts = $this->getNewProducts();
 
 
         return $this->render('index', [
@@ -332,7 +317,7 @@ class SiteController extends FrontendController
             ->orderBy('RAND()')
             ->all();
 
-        foreach ($areas as & $area) {
+        foreach ($areas as &$area) {
             if ($area['cnt'] >= 100) {
                 $area['class'] = 'h2';
             } elseif ($area['cnt'] >= 70) {
@@ -348,5 +333,35 @@ class SiteController extends FrontendController
             }
         }
         return $areas;
+    }
+
+    /**
+     * @param int $limit
+     * @return array|Product[]
+     */
+    private function getTopProducts(int $limit = 16)
+    {
+        return Product::find()
+            ->select('id,thumb,name,price')
+            ->where('thumb_checked=TRUE')
+            ->andWhere('thumb IS NOT NULL')
+            ->limit($limit)
+            ->orderBy('RAND()')
+            ->all();
+    }
+
+    /**
+     * @param int $limit
+     * @return array|Product[]
+     */
+    private function getNewProducts(int $limit = 16)
+    {
+        return Product::find()
+            ->select('id,thumb,name,price')
+            ->where('thumb_checked=TRUE')
+            ->andWhere('thumb IS NOT NULL')
+            ->limit($limit)
+            ->orderBy('RAND()')
+            ->all();
     }
 }

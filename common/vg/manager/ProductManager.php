@@ -4,6 +4,7 @@ namespace common\vg\manager;
 
 use common\models\Product;
 use yii\data\Pagination;
+use yii\db\Expression;
 
 class ProductManager
 {
@@ -54,7 +55,11 @@ class ProductManager
 
         $products = $query->offset($pages->offset)
             ->limit($pages->limit)
-            ->orderBy('thumb, price DESC')
+            ->where('checked = TRUE')
+            ->andWhere('thumb_checked = TRUE')
+            ->orderBy([new Expression(
+                'thumb IS NULL DESC'
+            )])
             ->all();
 
         $products = array_chunk($products, 4);
