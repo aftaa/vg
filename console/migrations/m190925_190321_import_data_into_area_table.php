@@ -46,7 +46,7 @@ class m190925_190321_import_data_into_area_table extends Migration
                     echo "$area->name\n";
                     print_r($area->errors);
                 } else {
-                    echo "Area: $user->name added\n";
+                    echo "Area: $area->name added\n";
                 }
             }
         } catch (Exception $e) {
