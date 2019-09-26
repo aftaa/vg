@@ -90,21 +90,8 @@ class SiteController extends FrontendController
         $topProducts = $this->getTopProducts();
         $newProducts = $this->getNewProducts();
 
-        $topCompanies = Company::find()
-            ->select('*')
-            ->where('thumb_checked=TRUE')
-            ->andWhere('thumb IS NOT NULL')
-            ->limit(16)
-            ->orderBy('RAND()')
-            ->all();
-
-        $newCompanies = Company::find()
-            ->select('*')
-            ->where('thumb_checked=TRUE')
-            ->andWhere('thumb IS NOT NULL')
-            ->limit(16)
-            ->orderBy('RAND()')
-            ->all();
+        $topCompanies = $this->getTopCompanies();
+        $newCompanies = $this->getNewCompanies();
 
         return $this->render('index', [
             'productCategories' => $productCategories,
@@ -363,7 +350,7 @@ class SiteController extends FrontendController
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
             ->limit($limit)
-//            ->orderBy('RAND()')
+            ->orderBy('RAND()')
             ->all();
     }
 
@@ -378,7 +365,30 @@ class SiteController extends FrontendController
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
             ->limit($limit)
-  //          ->orderBy('RAND()')
+            ->orderBy('RAND()')
             ->all();
+    }
+
+    /**
+     * @param int $limit
+     * @return array|Company[]
+     */
+    private function getTopCompanies(int $limit = 16)
+    {
+        return Company::find()
+            ->select('*')
+            ->where('thumb_checked=TRUE')
+            ->andWhere('thumb IS NOT NULL')
+            ->limit($limit)
+            ->orderBy('RAND()')
+            ->all();
+    }
+
+    /**
+     * @param int $limit
+     * @return array|Company[]
+     */
+    private function getNewCompanies(int $limit = 16) {
+        return $this->getTopCompanies($limit);
     }
 }
