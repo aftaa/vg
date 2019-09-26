@@ -38,7 +38,7 @@ use yii\widgets\LinkPager;
         <?php endforeach ?>
     </div>
 
-    <?php (if(!empty($allProducts)) && count($allProducts)) LinkPager::widget([
+    <?php if(!empty($allProducts) && count($allProducts)) LinkPager::widget([
         'pagination'     => $pages,
         'maxButtonCount' => 20,
     ]) ?>
