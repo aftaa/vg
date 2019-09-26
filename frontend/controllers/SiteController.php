@@ -317,7 +317,7 @@ class SiteController extends FrontendController
             ->join('JOIN', 'area AS t2', 't1.id=t2.parent_id')
             ->where('t1.parent_id IS NULL')
             ->groupBy('t1.id')
-            ->orderBy('RAND()')
+            ->orderBy('t1.name')
             ->indexBy('id1')
             ->all();
 
@@ -345,13 +345,17 @@ class SiteController extends FrontendController
      */
     private function getTopProducts(int $limit = 16)
     {
-        return Product::find()
+        $products = Product::find()
             ->select('id,thumb,name,price')
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
-            ->limit($limit)
-            ->orderBy('RAND()')
-            ->all();
+            ->limit($limit);
+
+        if ('vg' != $_SERVER['SERVER_NAME']) {
+            $products->orderBy('RAND()');
+        }
+
+        return $products->all();
     }
 
     /**
@@ -360,13 +364,7 @@ class SiteController extends FrontendController
      */
     private function getNewProducts(int $limit = 16)
     {
-        return Product::find()
-            ->select('id,thumb,name,price')
-            ->where('thumb_checked=TRUE')
-            ->andWhere('thumb IS NOT NULL')
-            ->limit($limit)
-            ->orderBy('RAND()')
-            ->all();
+        return $this->getTopProducts($limit);
     }
 
     /**

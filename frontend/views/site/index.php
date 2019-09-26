@@ -68,11 +68,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </div>
 
-<!--<div id="index-companies-switcher" class="alert-danger">-->
-<!--    <div class="text-right" id="look-top-companies">познакомьтесь с <a href="#">новыми компаниями</a></div>-->
-<!--    <div class="text-right" id="look-new-companies" style="display: none;">посмотрите <a href="#">популярные-->
-<!--            компании</a></div>-->
-<!--</div>-->
+<div id="index-companies-switcher" class="alert-danger">
+    <div class="text-right" id="look-top-companies">ознакомьтесь с <a href="#">новыми компаниями</a></div>
+    <div class="text-right" id="look-new-companies" style="display: none;">посмотрите <a href="#">популярные
+            компании</a></div>
+</div>
 
 <div style="margin: 3em auto;">
     <h2>Регионы присутствия</h2>
