@@ -42,7 +42,7 @@ array_unshift($this->params['breadcrumbs'], [
         <div class="col col-sm col-lg-4">
             <h3><?= $company->name ?></h3>
 
-            <?php if ($params['sait']): ?>
+            <?php if (!empty($params['sait'])): ?>
                 <h4><a href="<?= $params['sait']->value ?>" target="_blank"
                       rel="nofollow"><?= $params['sait']->value ?></a>
                 </h4>
