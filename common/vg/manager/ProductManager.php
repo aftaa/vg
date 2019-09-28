@@ -14,22 +14,24 @@ class ProductManager
      */
     public static function getProductsByCategoryIdWithPagination($productCategoryId): array
     {
-        $query = Product::find()->where([
-            'checked'     => true,
-            'category_id' => $productCategoryId,
-        ]);
+        $query = Product::find()
+            ->where([
+                'checked'     => true,
+                'category_id' => $productCategoryId,
+            ]);
+
         $countQuery = clone $query;
         $pages = new Pagination([
             'totalCount' => $countQuery->count(),
         ]);
-        $pages->setPageSize(256);
 
+        $pages->setPageSize(128);
         $products = $query->offset($pages->offset)
             ->limit($pages->limit)
-            ->orderBy('thumb, price DESC')
+            ->orderBy(new Expression(
+                'thumb IS NULL'
+            ))
             ->all();
-
-        $products = array_chunk($products, 4);
 
         return [
             $products,
@@ -55,9 +57,11 @@ class ProductManager
             ->where('checked = TRUE')
             ->andWhere("company_id=$companyId")
             ->andWhere('thumb_checked = TRUE')
-            ->orderBy([new Expression(
-                'thumb IS NULL'
-            )])
+            ->orderBy([
+                new Expression(
+                    'thumb IS NULL'
+                )
+            ])
             ->all();
 
 //        $products = array_chunk($products, 4);

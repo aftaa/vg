@@ -323,13 +323,13 @@ class SiteController extends FrontendController
 
         foreach ($areas as &$area) {
             if ($area['cnt'] >= 100) {
-                $area['class'] = 'h2';
+                $area['class'] = 'h3';
             } elseif ($area['cnt'] >= 70) {
-                $area['class'] = 'h2';
+                $area['class'] = 'h3';
             } elseif ($area['cnt'] >= 60) {
                 $area['class'] = 'h3';
             } elseif ($area['cnt'] >= 50) {
-                $area['class'] = 'h3';
+                $area['class'] = 'h4';
             } elseif ($area['cnt'] >= 40) {
                 $area['class'] = 'h4';
             } else {

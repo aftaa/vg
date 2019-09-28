@@ -51,7 +51,7 @@ AppAsset::register($this);
     ]);
 
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Каталог', 'url' => ['/']];
+//        $menuItems[] = ['label' => 'Каталог', 'url' => ['/']];
         $menuItems[] = ['label' => 'О проекте', 'url' => ['/site/about']];
         $menuItems[] = ['label' => 'Тарифы', 'url' => ['/tariffs']];
         $menuItems[] = ['label' => 'Контакты', 'url' => ['/site/contact']];
@@ -106,7 +106,9 @@ AppAsset::register($this);
         ];
     }
 
-    $menuItems[] = ['label' => "$_SERVER[SERVER_NAME]"];
+    if (false) {
+        $menuItems[] = ['label' => "$_SERVER[SERVER_NAME]"];
+    }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items'   => $menuItems,

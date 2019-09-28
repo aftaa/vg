@@ -76,11 +76,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div style="margin: 3em auto;">
     <h2>Регионы присутствия</h2>
+    <hr size="1">
     <?php foreach ($areas as $areaId => $area): ?>
         <div class="a-index-area <?= $area['class'] ?>">
-            <a href="#">
+<!--            <a href="#">-->
                 <?= $area['name'] ?>
-            </a>
+<!--            </a>-->
             <small>
                 <sup>
                     <?= $area['cnt'] ?>
