@@ -61,6 +61,8 @@ array_unshift($this->params['breadcrumbs'], [
     <div class="row"><br></div>
 </div>
 
+<hr size="1">
+
 <?= $this->render('/product/_products', [
     'allProducts' => $allProducts,
     'pages'       => $pages,
