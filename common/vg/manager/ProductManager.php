@@ -3,6 +3,7 @@
 namespace common\vg\manager;
 
 use common\models\Product;
+use common\vg\models\VgProduct;
 use yii\data\Pagination;
 use yii\db\Expression;
 
@@ -10,27 +11,23 @@ class ProductManager
 {
     /**
      * @param int $productCategoryId
-     * @return array[Products[], Pagination]
+     * @return array[array|VgProducts[], Pagination]
      */
     public static function getProductsByCategoryIdWithPagination($productCategoryId): array
     {
-        $query = Product::find()
-            ->where([
-                'checked'     => true,
-                'category_id' => $productCategoryId,
-            ]);
-
+        $query = VgProduct::find()->where([
+            'checked'     => true,
+            'category_id' => $productCategoryId,
+        ]);
         $countQuery = clone $query;
         $pages = new Pagination([
             'totalCount' => $countQuery->count(),
         ]);
+        $pages->setPageSize(256);
 
-        $pages->setPageSize(128);
         $products = $query->offset($pages->offset)
             ->limit($pages->limit)
-            ->orderBy(new Expression(
-                'thumb IS NULL'
-            ))
+            ->orderBy(new Expression('thumb IS NULL'))
             ->all();
 
         return [
@@ -57,11 +54,9 @@ class ProductManager
             ->where('checked = TRUE')
             ->andWhere("company_id=$companyId")
             ->andWhere('thumb_checked = TRUE')
-            ->orderBy([
-                new Expression(
-                    'thumb IS NULL'
-                )
-            ])
+            ->orderBy([new Expression(
+                'thumb IS NULL'
+            )])
             ->all();
 
 //        $products = array_chunk($products, 4);

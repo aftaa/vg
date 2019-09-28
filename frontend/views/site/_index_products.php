@@ -1,13 +1,13 @@
 <?php
 
-use common\models\Product;
+use common\vg\models\VgUserProduct;
 use yii\helpers\Url;
 
-/** @var $products array|Product[] */
+/** @var $products array|VgUserProduct[] */
 /** @var $divId string */
 
 ?>
-
+dasdasdsadasdasda
 <div class="row" id="<?= $divId ?>">
     <?php foreach ($products as $product): ?>
         <div class="col col-xs-6 col-sm-4 col-lg-3" class="index-product-row">
@@ -22,7 +22,7 @@ use yii\helpers\Url;
                 </a>
             </div>
             <div class="index-product-price alert-info">
-                <?php echo $product->price, '₽' ?>
+                <?php echo $product->getPrice(), '₽' ?>
             </div>
         </div>
     <?php endforeach ?>

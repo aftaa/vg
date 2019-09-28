@@ -9,7 +9,7 @@ use yii\helpers\Url;
 /* @var $productCategory VgProductCategory */
 /* @var $productCategories VgProductCategory[] */
 
-/** @var $allProducts Product[][] */
+/** @var $allProducts VgProduct[][] */
 /** @var $pages Pagination */
 
 

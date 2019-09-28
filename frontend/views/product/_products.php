@@ -1,13 +1,12 @@
 <?php
 
-use common\models\Product;
 use yii\data\Pagination;
 use yii\helpers\Url;
 use yii\web\View;
 use yii\widgets\LinkPager;
 
 /** @var $this View */
-/** @var $allProducts Product[] */
+/** @var $allProducts VgProduct[] */
 /** @var $pages Pagination */
 
 ?>
@@ -25,13 +24,19 @@ use yii\widgets\LinkPager;
                         </strong>
                     </a></div>
 
-                <div class="center-block" style="text-align: center; min-height: 200px;">
-                    <img alt="" src="<?= $product->thumb ?>" style="max-width: 200px; max-height: 200px;">
-                </div>
+                <?php if ($product->thumb): ?>
+                    <div class="center-block" style="text-align: center; min-height: 200px;">
+                        <img alt="" src="<?= $product->thumb ?>" style="max-width: 200px; max-height: 200px;">
+                    </div>
+                <?php else: ?>
+                    <div class="center-block" style="text-align: center; min-height: 200px;">
+                        <img alt="" src="/img/thumb_missing.jpg" style="max-width: 200px; max-height: 200px; border-radius: 1em;">
+                    </div>
+                <?php endif ?>
 
                 <?php if ((int)$product->price): ?>
-                    <div class="alert-danger index-product-price">
-                        <?= $product->price . '₽' ?>
+                    <div class="alert-info index-product-price">
+                        <?= $product->getPrice() . '₽' ?>
                     </div>
                 <?php endif ?>
             </div>

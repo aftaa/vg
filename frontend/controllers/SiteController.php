@@ -9,6 +9,7 @@ use common\vg\controllers\FrontendController;
 use common\vg\forms\VgLoginForm;
 use common\vg\manager\CompanyCategoryManager;
 use common\vg\manager\ProductCategoryManager;
+use common\vg\models\VgProduct;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -341,11 +342,11 @@ class SiteController extends FrontendController
 
     /**
      * @param int $limit
-     * @return array|Product[]
+     * @return array|VgProduct[]
      */
     private function getTopProducts(int $limit = 16)
     {
-        $products = Product::find()
+        $products = VgProduct::find()
             ->select('id,thumb,name,price')
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
