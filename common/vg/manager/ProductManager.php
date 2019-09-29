@@ -27,6 +27,7 @@ class ProductManager
         $products = $query->offset($pages->offset)
             ->limit($pages->limit)
             ->orderBy(new Expression('thumb IS NULL'))
+            ->with('company')
             ->all();
 
         return [
@@ -55,7 +56,9 @@ class ProductManager
             ->limit($pages->limit)
             ->orderBy([new Expression(
                 'thumb IS NULL'
-            )])->all();
+            )])
+            ->with('company')
+            ->all();
 
 //        $products = array_chunk($products, 4);
 

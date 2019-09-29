@@ -15,14 +15,15 @@ use yii\widgets\LinkPager;
     <div class="row">
         <?php foreach ($allProducts as $product): ?>
 
-            <div class="col col-md-4 col-lg-3 col-sm-6">
+            <div class="col col-md-4 col-lg-3 col-sm-6 text-center">
 
-                <div style="height: 3em; overflow: hidden;"><a
-                            href="<?= Url::to(['product/index', 'productId' => $product['id']]) ?>">
+                <div style="height: 3em; overflow: hidden;" class="text-center">
+                    <a href="<?= Url::to(['product/index', 'productId' => $product['id']]) ?>">
                         <strong>
                             <?= $product->name ?>
                         </strong>
-                    </a></div>
+                    </a>
+                </div>
 
                 <?php if ($product->thumb): ?>
                     <div class="center-block" style="text-align: center; min-height: 200px;">
@@ -33,6 +34,10 @@ use yii\widgets\LinkPager;
                         <img alt="" src="/img/thumb_missing.jpg" style="max-width: 200px; max-height: 200px; border-radius: 1em;">
                     </div>
                 <?php endif ?>
+
+                <small>
+                    <a href="<?= Url::to(['company/index', 'companyId' => $product->company_id]) ?>"><?= $product->company->name ?></a>
+                </small>
 
                 <?php if ((int)$product->price): ?>
                     <div class="alert-info index-product-price">
