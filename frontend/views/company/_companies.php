@@ -1,6 +1,7 @@
 <?php
 
 use common\models\Company;
+use common\vg\models\VgCompany;
 use yii\helpers\Url;
 use yii\web\View;
 
@@ -19,7 +20,7 @@ use yii\web\View;
                     <img alt="<?= $company->name ?>" src="<?= $company->thumb ?>"
                          style="max-width: 100px; max-height: 100px;">
                 <?php else: ?>
-                    <img alt="" src="<?= '/img/thumb_missing.jpg' ?>" style="max-width: 150px; max-height: 150px;">
+                    <img alt="" src="<?= VgCompany::NO_LOGO ?>" style="max-width: 150px; max-height: 150px;">
                 <?php endif ?>
             </div>
 
