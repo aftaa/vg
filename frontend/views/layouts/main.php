@@ -50,12 +50,14 @@ AppAsset::register($this);
         ],
     ]);
 
-    if (Yii::$app->user->isGuest) {
-//        $menuItems[] = ['label' => 'Каталог', 'url' => ['/']];
-        $menuItems[] = ['label' => 'О проекте', 'url' => ['/site/about']];
-        $menuItems[] = ['label' => 'Тарифы', 'url' => ['/tariffs']];
-        $menuItems[] = ['label' => 'Контакты', 'url' => ['/site/contact']];
-    }
+    $menuItems[] = [
+        'label' => 'В сети города', 'url' => ['/'], 'items' => [
+            ['label' => 'Главная', 'url' => ['/']],
+            ['label' => 'Проект', 'url' => ['/site/about']],
+            ['label' => 'Тарифы', 'url' => ['/tariffs']],
+            ['label' => 'Контакт', 'url' => ['/site/contact']],
+        ]
+    ];
 
     if (VgUser::isSuperUser()) {
         $menuItems[] = ['label' => '→ В пользователя', 'url' => ['/switch-identity'], 'class' => 'super-user'];
