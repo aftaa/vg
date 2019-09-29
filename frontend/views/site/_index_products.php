@@ -7,7 +7,7 @@ use yii\helpers\Url;
 /** @var $divId string */
 
 ?>
-dasdasdsadasdasda
+
 <div class="row" id="<?= $divId ?>">
     <?php foreach ($products as $product): ?>
         <div class="col col-xs-6 col-sm-4 col-lg-3" class="index-product-row">
