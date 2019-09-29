@@ -1,6 +1,7 @@
 <?php
 
 use common\models\Area;
+use common\models\Company;
 use common\models\CompanyCategory;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
@@ -17,11 +18,25 @@ $this->params['breadcrumbs'][] = array(
 );
 $this->params['breadcrumbs'][] = $this->title;
 
-$areas = Area::find()->select(['name', 'id'])->indexBy('id')->column();
-$companyCategories = CompanyCategory::find()->select(['name', 'id'])->indexBy('id')->column();
+$areas = Area::find()
+    ->select(['name', 'id', 'parent_id'])
+    ->where('parent_id IS NULL')
+    ->orderBy('name')
+    ->indexBy('id')->column();
+
+$companyCategories = CompanyCategory::find()
+    ->select(['name', 'id', 'parent_id'])
+    ->where('parent_id IS NULL')
+    ->orderBy('name')
+    ->indexBy('id')->column();
+
+/** @var $company Company */
 
 ?>
 
+<?php if ($company->errors): ?>
+    <?php print($company->errors) ?>
+<?php endif ?>
 
 <div class="profile-company">
     <div class="row">

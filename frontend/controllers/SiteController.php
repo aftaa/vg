@@ -4,12 +4,14 @@ namespace frontend\controllers;
 
 use common\models\Area;
 use common\models\Company;
+use common\models\Member;
 use common\models\Product;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgLoginForm;
 use common\vg\manager\CompanyCategoryManager;
 use common\vg\manager\ProductCategoryManager;
 use common\vg\models\VgProduct;
+use common\vg\models\VgUser;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -22,6 +24,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use yii\web\Response;
 
 /**
  * Site controller
@@ -111,9 +114,8 @@ class SiteController extends FrontendController
     }
 
     /**
-     * Logs in a user.
-     *
-     * @return mixed
+     * @return string|Response
+     * @throws \Throwable
      */
     public function actionLogin()
     {
@@ -123,6 +125,13 @@ class SiteController extends FrontendController
 
         $formModel = new VgLoginForm;
         if ($formModel->load(Yii::$app->request->post()) && $formModel->login()) {
+
+            if (VgUser::isSuperUser() && !Member::find(['user_id' => $this->getUserId()])) {
+                $member = new Member();
+                $member->user_id = $this->getUserId();
+                $member->save(false);
+            }
+
             $this->redirect('/profile');
         } else {
             $formModel->password = '';
@@ -249,7 +258,7 @@ class SiteController extends FrontendController
      * Verify email address
      *
      * @param string $token
-     * @return yii\web\Response
+     * @return Response
      * @throws BadRequestHttpException
      */
     public function actionVerifyEmail($token)

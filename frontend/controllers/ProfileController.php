@@ -4,9 +4,7 @@
 namespace frontend\controllers;
 
 use common\models\Company;
-use common\models\CompanyParamValue;
 use common\models\Member;
-use common\models\ProductQuery;
 use common\models\User;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgCompanyParamValueForm;
@@ -57,6 +55,7 @@ class ProfileController extends FrontendController
 
     /**
      * @return string
+     * @throws \Throwable
      */
     public function actionIndex()
     {
@@ -75,6 +74,10 @@ class ProfileController extends FrontendController
         ]);
     }
 
+    /**
+     * @return string
+     * @throws \Throwable
+     */
     public function actionCompanies()
     {
         /** @var User $user */
@@ -84,7 +87,7 @@ class ProfileController extends FrontendController
 
         return $this->render('companies', [
             'companies' => $companies,
-            'flash' => $this->app->session->getFlash('companyCreated'),
+            'flash'     => $this->app->session->getFlash('companyCreated'),
         ]);
     }
 
@@ -96,7 +99,6 @@ class ProfileController extends FrontendController
         //$paramValues = $company->getCompanyParamValues()->all();
 
 
-        
         if ($company->load($this->app->request->post()) && $company->validate()) {
             $company->save();
 
@@ -113,8 +115,8 @@ class ProfileController extends FrontendController
 
         return $this->render('company', [
             'company' => $company,
-            'params' => $paramsForm,
-            'flash' => $this->app->session->getFlash('companyUpdated'),
+            'params'  => $paramsForm,
+            'flash'   => $this->app->session->getFlash('companyUpdated'),
         ]);
     }
 
@@ -124,27 +126,20 @@ class ProfileController extends FrontendController
      */
     public function actionCreateCompany()
     {
-        $company = new Company();
-
-        try {
-            if ($this->app->request->post()) {
-                if ($company->load($this->app->request->post()) && $company->validate()) {
-                    $company->owner_id = $this->getUserId();
-                    $company->checked = false;
-
-                    $saveResult = $company->save();
-                    echo $saveResult;
-                    die;
-
-                    if ($saveResult) {
-                        $this->app->session->setFlash('companyCreated', 'Компания создана');
-                        return $this->redirect(Url::to('/profile/companies'));
-                    }
+        if ($this->app->request->post('Company')) {
+            $company = new Company($this->app->request->post('Company'));
+            $company->owner_id = $this->getUserIdentity()->member->id;
+            $company->checked = 0;
+            if ($company->validate()) {
+                if ($company->save()) {
+                    $this->app->session->setFlash('companyCreated', 'Компания создана');
+                    return $this->redirect(Url::to('/profile/companies'));
                 }
+            } else {
+                echo '<pre>'; print_r($company->getErrorSummary(true)); echo '</pre>'; die;
             }
-        } catch (\Throwable $e) {
-            echo $e->getMessage();
-            die;
+        } else {
+            $company = new Company();
         }
 
         return $this->render('create-company', [
@@ -183,19 +178,19 @@ class ProfileController extends FrontendController
         $activeQuery = $company->getProducts()->orderBy('')->with('category');
 
         $provider = new ActiveDataProvider([
-            'query' => $activeQuery,
+            'query'      => $activeQuery,
             'pagination' => [
                 'pageSize' => 100,
             ],
-            'sort' => [
+            'sort'       => [
                 'defaultOrder' => [
                     'updated_at' => SORT_DESC,
                 ]
             ],
         ]);
 
-        return $this->render('products',[
-            'company' => $company,
+        return $this->render('products', [
+            'company'  => $company,
             'provider' => $provider,
         ]);
     }
