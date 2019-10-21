@@ -1,7 +1,12 @@
 <?php
 
+use common\vg\models\VgCompany;
+use common\vg\models\VgProduct;
+use common\vg\models\VgProductCategory;
+use yii\data\Pagination;
 use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\widgets\LinkPager;
 
 /** @var string $s */
 $s = Yii::$app->request->get('s');
@@ -9,45 +14,113 @@ $s = Yii::$app->request->get('s');
 $this->title = 'Поиск';
 $this->params['breadcrumbs'][] = [
     'label' => $this->title,
-    'url' => Url::to(['/search'])
+    'url'   => Url::to(['/search'])
 ];
 $this->params['breadcrumbs'][] = [
-    'label' => Html::encode($s)
+    'label' => Html::encode($s),
+    'url'   => empty($_GET['page']) ? '' : "/search?s=$s",
 ];
+
+/** @var $productCategories VgProductCategory[] */
+/** @var $products VgProduct[] */
+/** @var $companies VgCompany[] */
+/** @var $pages Pagination */
+
 ?>
 
-<div class="container">
-    <form method="get">
-        <input type="search" name="s" value="<?= Html::encode($s) ?>" placeholder="Искать..." id="search"
-               class="form-control">
-        <br>
-        <input type="submit" value="Искать" class="btn btn-success">
-    </form>
+    <div class="container">
+        <form method="get">
+            <input type="search" name="s" value="<?= Html::encode($s) ?>" placeholder="Искать..." id="search"
+                   class="form-control">
+            <br>
+            <input type="submit" value="Искать" class="btn btn-success">
+        </form>
 
-    <hr size="1">
+        <?php if (!Yii::$app->request->get('pages')): ?>
+            <div class="row">
+                <?php if ($companies): ?>
 
-    <div class="w-100"></div>
+                    <h2>мы нашли в компаниях:</h2>
+                    <?php foreach ($companies as $company): ?>
+                        <div class="col col-lg-6">
+                            <div style="margin-bottom: 3px; min-height: 55px;">
 
-    <div class="row">
-        <div class="col-lg-12">
-            <p class="h4">
-                По запросу «<?= $s ?>» найдено:
-            </p>
-        </div>
+                                <?php if ($company->thumb): ?>
+                                    <img src="<?= $company->thumb ?>" style="max-width: 50px; max-height: 50px;">
+                                <?php else: ?>
+                                    <img src="<?= VgCompany::NO_LOGO ?>" style="max-width: 50px; max-height: 50px;">
+                                <?php endif ?>
 
-        <div class="col col-lg-4">
-            <h2>в товарах</h2>
-            ничего
+                                <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>"
+                                   target="_blank" class="warning">
+                                    <?= strip_tags($company->name) ?>
+                                </a>
+                                <small class="default">
+                                    (<?= $company->area->name ?>)
+                                </small>
+
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+
+                <?php endif ?>
+
+                <div class="col col-lg-4 lead">
+                    <?php if ($productCategories): ?>
+                        <h2>в категориях мы нашли:</h2>
+                        <?php foreach ($productCategories as $category): ?>
+                            <div style="margin-bottom: 3px;">
+                                <a href="<?= Url::to(['product/category', 'categoryId' => $category->id]) ?>"
+                                   target="_blank">
+                                    <?= $category->name ?>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif ?>
+                </div>
+            </div>
+        <?php endif ?>
+
+
+        <div class="row">
+            <h2>мы поискали в товарах и...</h2>
+            <?php if ($products): ?>
+            <?php foreach ($products as $product): ?>
+                <div class="col col-lg-6" style="margin-top: 5px;">
+                    <?php if ($product->thumb): ?>
+                        <div class="enter-block" style="float: left;">
+                            <img alt="" src="<?= $product->thumb ?>" style="max-width: 50px; max-height: 50px;">
+                        </div>
+                        <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
+                            <?= $product->name ?>
+                        </a>
+                        <div style="clear: left;"></div>
+                    <?php else: ?>
+                        <div class="center-block" style="float: left;">
+                            <img alt="" src="<?= VgProduct::NO_PRODUCT ?>"
+                                 style="max-width: 50px; max-height: 50px; border-radius: 1em; margin-right: 5px;">
+                        </div>
+                        <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
+                            <?= $product->name ?>
+                        </a>
+                        <span class="">
+                            <a href="<?= Url::to(['company/index', 'companyId' => $product->company->id]) ?>"
+                               target="_blank" style="font-weight: bold; font-size: 11px;">
+                                <?= $product->company->name ?>
+                            </a>
+                        </span>
+                        <span class="bg-info"><?= $product->getPrice() ?>₽</span>
+                        <div style="clear: left;"></div>
+                    <?php endif ?>
+                </div>
+            <?php endforeach; ?>
         </div>
-        <div class="col col-lg-4">
-            <h2>в компаниях</h2>
-            ничего
-        </div>
-        <div class="col col-lg-4">
-            <h2>в категориях</h2>
-            ничего
-        </div>
+    <?php else: ?>
+        ничего не нашли :(
+    <?php endif ?>
     </div>
 
-
-</div>
+<?= LinkPager::widget([
+    'pagination'     => $pages,
+    'maxButtonCount' => 20,
+]) ?>

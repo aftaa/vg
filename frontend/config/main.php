@@ -69,6 +69,8 @@ return [
                 'dark' => 'theme/dark',
                 'light' => 'theme/light',
 
+//                'search/<s>' => 'search/index',
+
             ],
         ],
     ],
