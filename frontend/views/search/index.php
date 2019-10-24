@@ -6,6 +6,7 @@ use common\vg\models\VgProductCategory;
 use yii\data\Pagination;
 use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\web\View;
 use yii\widgets\LinkPager;
 
 /** @var string $s */
@@ -21,6 +22,7 @@ $this->params['breadcrumbs'][] = [
     'url'   => empty($_GET['page']) ? '' : "/search?s=$s",
 ];
 
+/** @var $this View */
 /** @var $productCategories VgProductCategory[] */
 /** @var $products VgProduct[] */
 /** @var $companies VgCompany[] */
@@ -29,17 +31,9 @@ $this->params['breadcrumbs'][] = [
 ?>
 
     <div class="container">
-        <form method="get">
-            <input type="search" name="s" value="<?= Html::encode($s) ?>" placeholder="Искать..." id="search"
-                   class="form-control">
-            <br>
-            <input type="submit" value="Искать" class="btn btn-success">
-        </form>
-
         <?php if (!Yii::$app->request->get('pages')): ?>
             <div class="row">
                 <?php if ($companies): ?>
-
                     <h2>мы нашли в компаниях:</h2>
                     <?php foreach ($companies as $company): ?>
                         <div class="col col-lg-6">
@@ -65,7 +59,7 @@ $this->params['breadcrumbs'][] = [
 
                 <?php endif ?>
 
-                <div class="col col-lg-4 lead">
+                <div class="col lead">
                     <?php if ($productCategories): ?>
                         <h2>в категориях мы нашли:</h2>
                         <?php foreach ($productCategories as $category): ?>
@@ -86,7 +80,7 @@ $this->params['breadcrumbs'][] = [
             <h2>мы поискали в товарах и...</h2>
             <?php if ($products): ?>
             <?php foreach ($products as $product): ?>
-                <div class="col col-lg-6" style="margin-top: 5px;">
+                <div class="col col-lg-6" style="margin-top: 15px;">
                     <?php if ($product->thumb): ?>
                         <div class="enter-block" style="float: left;">
                             <img alt="" src="<?= $product->thumb ?>" style="max-width: 50px; max-height: 50px;">
@@ -109,7 +103,7 @@ $this->params['breadcrumbs'][] = [
                                 <?= $product->company->name ?>
                             </a>
                         </span>
-                        <span class="bg-info"><?= $product->getPrice() ?>₽</span>
+                        <span class="bg-info" style="float: right"><?= $product->getPrice() ?>₽</span>
                         <div style="clear: left;"></div>
                     <?php endif ?>
                 </div>
@@ -123,4 +117,6 @@ $this->params['breadcrumbs'][] = [
 <?= LinkPager::widget([
     'pagination'     => $pages,
     'maxButtonCount' => 20,
+//    'perPage'        => 'per-page',
+    'disabledPageCssClass' => true,
 ]) ?>

@@ -15,13 +15,13 @@ use yii\sphinx\Query;
 
 class SearchController extends FrontendController
 {
-    public function actionIndex()
+    public function actionIndex(string $searchString, int $page, int $perPage)
     {
-        $s = Yii::$app->request->get('s');
+        //$s = Yii::$app->request->get('s');
 
-        $productCategories = $this->getProductCategories($s);
-        $companies = $this->getCompanies($s);
-        [$pages, $products] = $this->getProducts($s);
+        $productCategories = $this->getProductCategories($searchString);
+        $companies = $this->getCompanies($searchString);
+        [$pages, $products] = $this->getProducts($searchString);
 
         return $this->render('index', [
             'productCategories' => $productCategories,

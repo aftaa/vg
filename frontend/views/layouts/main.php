@@ -41,23 +41,18 @@ AppAsset::register($this);
 <div class="wrap<?php if (VgUser::isUnderOtherUser()) echo ' other-user' ?>">
     <?php
     NavBar::begin([
-        'brandImage'    => '/img/logo.png',
-        'brandLabel'    => 'vseti-goroda.ru',//Yii::$app->name,
-        'headerContent' => $this->render('_search.php'), //$this->title,
-        'brandUrl'      => Yii::$app->homeUrl,
-        'options'       => [
+        'brandImage' => '/img/logo.png',
+        'brandLabel' => 'vseti-goroda.ru',//Yii::$app->name,
+        'brandUrl'   => Yii::$app->homeUrl,
+        'options'    => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
 
-    $menuItems[] = [
-        'label' => 'В сети города', 'url' => ['/'], 'items' => [
-            ['label' => 'Главная', 'url' => ['/']],
-            ['label' => 'Проект', 'url' => ['/site/about']],
-            ['label' => 'Тарифы', 'url' => ['/tariffs']],
-            ['label' => 'Контакт', 'url' => ['/site/contact']],
-        ]
-    ];
+    $menuItems[] = ['label' => 'Главная', 'url' => ['/']];
+    $menuItems[] = ['label' => 'Проект', 'url' => ['/site/about']];
+    $menuItems[] = ['label' => 'Тарифы', 'url' => ['/tariffs']];
+    $menuItems[] = ['label' => 'Контакт', 'url' => ['/site/contact']];
 
     if (VgUser::isSuperUser()) {
         $menuItems[] = ['label' => '→ В пользователя', 'url' => ['/switch-identity'], 'class' => 'super-user'];
@@ -108,9 +103,6 @@ AppAsset::register($this);
         ];
     }
 
-    if (false) {
-        $menuItems[] = ['label' => "$_SERVER[SERVER_NAME]"];
-    }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items'   => $menuItems,
@@ -120,6 +112,8 @@ AppAsset::register($this);
 
 
     <div class="container">
+
+        <?= $this->render('/search/_search_form') ?>
 
         <?php if (empty($this->params['hideLogo'])): ?>
             <div class="text-center" id="logo-cropped">

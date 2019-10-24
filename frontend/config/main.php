@@ -69,7 +69,7 @@ return [
                 'dark' => 'theme/dark',
                 'light' => 'theme/light',
 
-//                'search/<s>' => 'search/index',
+                'search/<searchString>/page/<page>/per-page/<perPage>' => 'search/index',
 
             ],
         ],
