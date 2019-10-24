@@ -27,96 +27,105 @@ $this->params['breadcrumbs'][] = [
 /** @var $products VgProduct[] */
 /** @var $companies VgCompany[] */
 /** @var $pages Pagination */
+/** @var $showFull boolean */
 
 ?>
 
+
     <div class="container">
-        <?php if (!Yii::$app->request->get('pages')): ?>
-            <div class="row">
-                <?php if ($companies): ?>
-                    <h2>мы нашли в компаниях:</h2>
-                    <?php foreach ($companies as $company): ?>
-                        <div class="col col-lg-6">
-                            <div style="margin-bottom: 3px; min-height: 55px;">
+<?php if (!Yii::$app->request->get('pages')): ?>
 
-                                <?php if ($company->thumb): ?>
-                                    <img src="<?= $company->thumb ?>" style="max-width: 50px; max-height: 50px;">
-                                <?php else: ?>
-                                    <img src="<?= VgCompany::NO_LOGO ?>" style="max-width: 50px; max-height: 50px;">
-                                <?php endif ?>
+    <?php if ($showFull): ?>
+        <div class="row">
+        <?php if ($companies): ?>
+            <h2>мы нашли в компаниях:</h2>
+            <?php foreach ($companies as $company): ?>
+                <div class="col col-lg-6">
+                    <div style="margin-bottom: 3px; min-height: 55px;">
 
-                                <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>"
-                                   target="_blank" class="warning">
-                                    <?= strip_tags($company->name) ?>
-                                </a>
-                                <small class="default">
-                                    (<?= $company->area->name ?>)
-                                </small>
+                        <?php if ($company->thumb): ?>
+                            <img src="<?= $company->thumb ?>" style="max-width: 50px; max-height: 50px;">
+                        <?php else: ?>
+                            <img src="<?= VgCompany::NO_LOGO ?>" style="max-width: 50px; max-height: 50px;">
+                        <?php endif ?>
 
-                            </div>
-                        </div>
-                    <?php endforeach ?>
+                        <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>"
+                           target="_blank" class="warning">
+                            <?= strip_tags($company->name) ?>
+                        </a>
+                        <small class="default">
+                            (<?= $company->area->name ?>)
+                        </small>
 
-                <?php endif ?>
-
-                <div class="col lead">
-                    <?php if ($productCategories): ?>
-                        <h2>в категориях мы нашли:</h2>
-                        <?php foreach ($productCategories as $category): ?>
-                            <div style="margin-bottom: 3px;">
-                                <a href="<?= Url::to(['product/category', 'categoryId' => $category->id]) ?>"
-                                   target="_blank">
-                                    <?= $category->name ?>
-                                </a>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php endif ?>
+                    </div>
                 </div>
+            <?php endforeach ?>
+
+
+            <div class="col lead">
+                <?php if ($productCategories): ?>
+                    <h2>в категориях мы нашли:</h2>
+                    <?php foreach ($productCategories as $category): ?>
+                        <div style="margin-bottom: 3px;">
+                            <a href="<?= Url::to(['product/category', 'categoryId' => $category->id]) ?>"
+                               target="_blank">
+                                <?= $category->name ?>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif ?>
+            </div>
             </div>
         <?php endif ?>
+    <?php endif ?>
 
 
-        <div class="row">
-            <h2>мы поискали в товарах и...</h2>
-            <?php if ($products): ?>
-            <?php foreach ($products as $product): ?>
-                <div class="col col-lg-6" style="margin-top: 15px;">
-                    <?php if ($product->thumb): ?>
-                        <div class="enter-block" style="float: left;">
-                            <img alt="" src="<?= $product->thumb ?>" style="max-width: 50px; max-height: 50px;">
-                        </div>
-                        <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
-                            <?= $product->name ?>
-                        </a>
-                        <div style="clear: left;"></div>
-                    <?php else: ?>
-                        <div class="center-block" style="float: left;">
-                            <img alt="" src="<?= VgProduct::NO_PRODUCT ?>"
-                                 style="max-width: 50px; max-height: 50px; border-radius: 1em; margin-right: 5px;">
-                        </div>
-                        <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
-                            <?= $product->name ?>
-                        </a>
-                        <span class="">
+    <div class="row">
+
+    <?php if ($showFull): ?>
+        <h2>мы поискали в товарах и...</h2>
+    <?php endif ?>
+
+    <?php if ($products): ?>
+        <?php foreach ($products as $product): ?>
+            <div class="col col-lg-6" style="margin-top: 15px;">
+                <?php if ($product->thumb): ?>
+                    <div class="enter-block" style="float: left;">
+                        <img alt="" src="<?= $product->thumb ?>" style="max-width: 50px; max-height: 50px;">
+                    </div>
+                    <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
+                        <?= $product->name ?>
+                    </a>
+                    <div style="clear: left;"></div>
+                <?php else: ?>
+                    <div class="center-block" style="float: left;">
+                        <img alt="" src="<?= VgProduct::NO_PRODUCT ?>"
+                             style="max-width: 50px; max-height: 50px; border-radius: 1em; margin-right: 5px;">
+                    </div>
+                    <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
+                        <?= $product->name ?>
+                    </a>
+                    <span class="">
                             <a href="<?= Url::to(['company/index', 'companyId' => $product->company->id]) ?>"
                                target="_blank" style="font-weight: bold; font-size: 11px;">
                                 <?= $product->company->name ?>
                             </a>
                         </span>
-                        <span class="bg-info" style="float: right"><?= $product->getPrice() ?>₽</span>
-                        <div style="clear: left;"></div>
-                    <?php endif ?>
-                </div>
-            <?php endforeach; ?>
+                    <span class="bg-info" style="float: right"><?= $product->getPrice() ?>₽</span>
+                    <div style="clear: left;"></div>
+                <?php endif ?>
+            </div>
+        <?php endforeach; ?>
         </div>
     <?php else: ?>
         ничего не нашли :(
     <?php endif ?>
     </div>
+<?php endif ?>
 
 <?= LinkPager::widget([
-    'pagination'     => $pages,
-    'maxButtonCount' => 20,
-//    'perPage'        => 'per-page',
+    'pagination'           => $pages,
+    'maxButtonCount'       => 20,
+    //    'perPage'        => 'per-page',
     'disabledPageCssClass' => true,
 ]) ?>

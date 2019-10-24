@@ -29,6 +29,13 @@ return [
     'dark'  => 'theme/dark',
     'light' => 'theme/light',
 
+//    'search/<searchString>'                                => 'search/index',
+//    'search/<searchString>/page/<page>'                    => 'search/index',
+//    'search/<searchString>/page/<page>/per-page/<perPage>' => 'search/index',
+
+    'search' => 'search/index'
+
+
     //                'search/<s>' => 'search/index',
 
 ];
