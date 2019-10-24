@@ -52,7 +52,7 @@ AppAsset::register($this);
     $menuItems[] = ['label' => 'Главная', 'url' => ['/']];
     $menuItems[] = ['label' => 'Проект', 'url' => ['/site/about']];
     $menuItems[] = ['label' => 'Тарифы', 'url' => ['/tariffs']];
-    $menuItems[] = ['label' => 'Контакт', 'url' => ['/site/contact']];
+    $menuItems[] = ['label' => 'Контакты', 'url' => ['/site/contact']];
 
     if (VgUser::isSuperUser()) {
         $menuItems[] = ['label' => '→ В пользователя', 'url' => ['/switch-identity'], 'class' => 'super-user'];

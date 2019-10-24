@@ -1,29 +1,40 @@
 <?php
-/* @var $this yii\web\View */
 
+use common\models\Area;
 use yii\helpers\Url;
+use yii\web\View;
 
-/* @var $areas common\models\Area[] */
+/** @var $this View */
+/** @var $area Area */
 
-$this->title = 'Регионы и населенные пункты';
+$this->title = "$area->name: продукция и услуги";
+
 $this->params['breadcrumbs'][] = [
     'label' => $this->title,
 ];
+
 ?>
 
 <div class="container">
-    <div class="row">
-        <div class="col">
+    <?php if ($areas = $area->getAreas()->orderBy('name')->all()): ?>
+
+        <div class="row">
             <?php foreach ($areas as $area): ?>
-                <h2><?= $area->name ?></h2>
-                <?php foreach ($area->areas as $area1): ?>
-                    <a href="<?= Url::to(['area/index', 'areaId' => $area1->id ]) ?>" class="bg-info"><?= $area1->name ?></a>&nbsp;&nbsp;&nbsp;
-                    <?php foreach ($area1->areas as $area2): ?>
-                        <span class="bg-alert"><?= $area2->name ?></span>&nbsp;&nbsp;&nbsp;
-                    <?php endforeach ?>
-                <?php endforeach ?>
+                <?php if (!$area->companies) continue ?>
+                <div class="col-lg-2 col-md-3 col-sx-6">
+                    <a href="<?= Url::to(['area/index', 'areaId' => $area->id]) ?>"><?= $area->name ?></a>
+                    <small>
+                        <sup>
+                            <?= count($area->companies) ?>
+                        </sup>
+                    </small>
+                </div>
             <?php endforeach ?>
         </div>
-
-    </div>
+    <?php endif ?>
 </div>
+
+<?php if ($area->companies): ?>
+    <hr size="1">
+    <?= $this->render('/company/_companies', ['companies' => $area->getCompanies()->all()]) ?>
+<?php endif ?>

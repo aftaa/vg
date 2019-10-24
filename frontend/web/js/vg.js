@@ -62,9 +62,4 @@ $(function () {
             });
         });
     }
-
-    // index areas
-    $('div.a-index-area').on('click', function () {
-        return false;
-    });
-})
+});

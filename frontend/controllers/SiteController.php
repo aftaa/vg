@@ -317,7 +317,7 @@ class SiteController extends FrontendController
     }
 
     /**
-     * @return array|Area[]
+     * @return array
      */
     private function getAreas(): array
     {

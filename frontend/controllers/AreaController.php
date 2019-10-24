@@ -3,19 +3,16 @@
 namespace frontend\controllers;
 
 use common\models\Area;
-use common\vg\FrontendController;
+use common\vg\controllers\FrontendController;
 
 class AreaController extends FrontendController
 {
-    public function actionAll()
+    public function actionIndex(int $areaId)
     {
-        $areas = Area::find()
-            ->where(['parent_id' => null])
-            ->orderBy('sort ASC')
-            ->all();
+        $area = Area::findOne($areaId);
 
         return $this->render('index', [
-            'areas' => $areas,
+            'area' => $area,
         ]);
     }
 

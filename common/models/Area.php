@@ -14,6 +14,7 @@ use Yii;
  *
  * @property Area $parent
  * @property Area[] $areas
+ * @property Company[] $companies
  */
 class Area extends \yii\db\ActiveRecord
 {
@@ -44,10 +45,10 @@ class Area extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '№',
-            'parent_id' => 'Родительский регион',
-            'name' => 'Область/населенный пункт',
-            'sort' => 'Порядок',
+            'id' => Yii::t('app', '№'),
+            'parent_id' => Yii::t('app', 'Родительский регион'),
+            'name' => Yii::t('app', 'Область/населенный пункт'),
+            'sort' => Yii::t('app', 'Порядок'),
         ];
     }
 
@@ -65,6 +66,14 @@ class Area extends \yii\db\ActiveRecord
     public function getAreas()
     {
         return $this->hasMany(Area::className(), ['parent_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCompanies()
+    {
+        return $this->hasMany(Company::className(), ['area_id' => 'id']);
     }
 
     /**

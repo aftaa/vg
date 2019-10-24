@@ -29,6 +29,8 @@ $this->params['breadcrumbs'][] = [
 /** @var $pages Pagination */
 /** @var $showFull boolean */
 
+$this->title = Html::encode($s);
+
 ?>
 
 
@@ -61,9 +63,9 @@ $this->params['breadcrumbs'][] = [
                 </div>
             <?php endforeach ?>
 
-
             <div class="col lead">
                 <?php if ($productCategories): ?>
+                <hr size="1">
                     <h2>в категориях мы нашли:</h2>
                     <?php foreach ($productCategories as $category): ?>
                         <div style="margin-bottom: 3px;">
@@ -75,7 +77,6 @@ $this->params['breadcrumbs'][] = [
                     <?php endforeach; ?>
                 <?php endif ?>
             </div>
-            </div>
         <?php endif ?>
     <?php endif ?>
 
@@ -83,7 +84,7 @@ $this->params['breadcrumbs'][] = [
     <div class="row">
 
     <?php if ($showFull): ?>
-        <h2>мы поискали в товарах и...</h2>
+        <h2>мы поискали в товарах и услугах...</h2>
     <?php endif ?>
 
     <?php if ($products): ?>
