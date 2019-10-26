@@ -65,7 +65,7 @@ $this->title = Html::encode($s);
 
             <div class="col lead">
                 <?php if ($productCategories): ?>
-                <hr size="1">
+                    <hr size="1">
                     <h2>в категориях мы нашли:</h2>
                     <?php foreach ($productCategories as $category): ?>
                         <div style="margin-bottom: 3px;">
@@ -84,43 +84,43 @@ $this->title = Html::encode($s);
     <div class="row">
 
     <?php if ($showFull): ?>
-        <h2>мы поискали в товарах и услугах...</h2>
+        <h2 style="clear: both;" class="container">мы поискали в товарах и услугах...</h2>
     <?php endif ?>
 
     <?php if ($products): ?>
-        <?php foreach ($products as $product): ?>
-            <div class="col col-lg-6" style="margin-top: 15px;">
-                <?php if ($product->thumb): ?>
-                    <div class="enter-block" style="float: left;">
-                        <img alt="" src="<?= $product->thumb ?>" style="max-width: 50px; max-height: 50px;">
-                    </div>
-                    <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
-                        <?= $product->name ?>
-                    </a>
-                    <div style="clear: left;"></div>
-                <?php else: ?>
-                    <div class="center-block" style="float: left;">
-                        <img alt="" src="<?= VgProduct::NO_PRODUCT ?>"
-                             style="max-width: 50px; max-height: 50px; border-radius: 1em; margin-right: 5px;">
-                    </div>
-                    <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
-                        <?= $product->name ?>
-                    </a>
-                    <span class="">
+    <?php foreach ($products as $product): ?>
+        <div class="col col-lg-6" style="margin-top: 15px;">
+            <?php if ($product->thumb): ?>
+                <div class="enter-block" style="float: left;">
+                    <img alt="" src="<?= $product->thumb ?>" style="max-width: 50px; max-height: 50px;">
+                </div>
+                <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
+                    <?= $product->name ?>
+                </a>
+                <div style="clear: left;"></div>
+            <?php else: ?>
+                <div class="center-block" style="float: left;">
+                    <img alt="" src="<?= VgProduct::NO_PRODUCT ?>"
+                         style="max-width: 50px; max-height: 50px; border-radius: 1em; margin-right: 5px;">
+                </div>
+                <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
+                    <?= $product->name ?>
+                </a>
+                <span class="">
                             <a href="<?= Url::to(['company/index', 'companyId' => $product->company->id]) ?>"
                                target="_blank" style="font-weight: bold; font-size: 11px;">
                                 <?= $product->company->name ?>
                             </a>
                         </span>
-                    <span class="bg-info" style="float: right"><?= $product->getPrice() ?>₽</span>
-                    <div style="clear: left;"></div>
-                <?php endif ?>
-            </div>
-        <?php endforeach; ?>
+                <span class="bg-info" style="float: right"><?= $product->getPrice() ?>₽</span>
+                <div style="clear: left;"></div>
+            <?php endif ?>
         </div>
-    <?php else: ?>
-        ничего не нашли :(
-    <?php endif ?>
+    <?php endforeach; ?>
+    </div>
+<?php else: ?>
+    <div class="container">и ничего не нашли</div>
+<?php endif ?>
     </div>
 <?php endif ?>
 

@@ -19,6 +19,7 @@ class SearchController extends FrontendController
     public function actionIndex()
     {
         $s = Yii::$app->request->get('s');
+        $s = Yii::$app->sphinx->escapeMatchValue($s);
 
         $productCategories = $this->getProductCategories($s);
         $companies = $this->getCompanies($s);
@@ -60,7 +61,11 @@ class SearchController extends FrontendController
             ->column();
 
 
-        $products = VgProduct::find()->where(['id' => $productIds])->with('company')->all();
+        $products = VgProduct::find()
+            ->where(['id' => $productIds])
+            ->with('company')
+            ->orderBy('RAND()')
+            ->all();
         return [$pages, $products];
     }
 

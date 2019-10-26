@@ -59,20 +59,20 @@ class Product extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '№',
-            'company_id' => 'Компания',
-            'category_id' => 'Категория',
-            'name' => 'Товар',
-            'description' => 'Описание',
-            'thumb' => 'Изображение',
-            'thumb_checked' => 'Изображение проверено',
-            'checked' => 'Проверен',
-            'price' => 'Стоимость',
-            'meta_keywords' => 'Meta Keywords',
-            'meta_description' => 'Meta Description',
-            'created_at' => 'Создан',
-            'updated_at' => 'Изменен',
-            'deleted_at' => 'Удалён',
+            'id' => Yii::t('app', '№'),
+            'company_id' => Yii::t('app', 'Компания'),
+            'category_id' => Yii::t('app', 'Категория'),
+            'name' => Yii::t('app', 'Товар'),
+            'description' => Yii::t('app', 'Описание'),
+            'thumb' => Yii::t('app', 'Изображение'),
+            'thumb_checked' => Yii::t('app', 'Изображение проверено'),
+            'checked' => Yii::t('app', 'Проверен'),
+            'price' => Yii::t('app', 'Стоимость'),
+            'meta_keywords' => Yii::t('app', 'Meta Keywords'),
+            'meta_description' => Yii::t('app', 'Meta Description'),
+            'created_at' => Yii::t('app', 'Создан'),
+            'updated_at' => Yii::t('app', 'Изменен'),
+            'deleted_at' => Yii::t('app', 'Удалён'),
         ];
     }
 

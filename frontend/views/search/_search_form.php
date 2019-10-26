@@ -6,7 +6,7 @@ use yii\helpers\Html;
 <form method="get" action="/search">
     <div class="container">
         <div class="row">
-            <div class="col-xs-11">
+            <div class="col-xs-9">
                 <input type="search" name="s" value="<?= empty($_REQUEST['s']) ? '' : Html::encode($_REQUEST['s']) ?>" placeholder="Искать..." id="search"
                        class="form-control" onclick="this.select()">
             </div>

@@ -16,7 +16,7 @@ use yii\helpers\Url;
 /** @var $newCompanies Company[] */
 /** @var $areas Area[] */
 
-$this->title = 'Каталог компаний, услуг и товаров России';
+$this->title = 'Каталог компаний, услуг и товаров России';
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>

@@ -16,6 +16,7 @@ use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\db\Expression;
 use yii\db\Query;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
@@ -359,11 +360,8 @@ class SiteController extends FrontendController
             ->select('id,thumb,name,price')
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
+            ->orderBy('name')
             ->limit($limit);
-
-        if ('vg' != $_SERVER['SERVER_NAME']) {
-            $products->orderBy('RAND()');
-        }
 
         return $products->all();
     }
@@ -396,7 +394,8 @@ class SiteController extends FrontendController
      * @param int $limit
      * @return array|Company[]
      */
-    private function getNewCompanies(int $limit = 16) {
+    private function getNewCompanies(int $limit = 16)
+    {
         return $this->getTopCompanies($limit);
     }
 }

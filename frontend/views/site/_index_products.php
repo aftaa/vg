@@ -22,7 +22,7 @@ use yii\helpers\Url;
                 </a>
             </div>
             <div class="index-product-price alert-info">
-                <?php echo $product->getPrice(), '₽' ?>
+                <?php echo $product->getPrice(), ' ₽' ?>
             </div>
         </div>
     <?php endforeach ?>
