@@ -16,7 +16,6 @@ use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
-use yii\db\Expression;
 use yii\db\Query;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
@@ -328,7 +327,6 @@ class SiteController extends FrontendController
             ->join('JOIN', 'area AS t2', 't1.id=t2.parent_id')
             ->where('t1.parent_id IS NULL')
             ->groupBy('t1.id')
-            ->orderBy('RAND()')
             ->indexBy('id1')
             ->all();
 
@@ -360,7 +358,7 @@ class SiteController extends FrontendController
             ->select('id,thumb,name,price')
             ->where('thumb_checked=TRUE')
             ->andWhere('thumb IS NOT NULL')
-            ->orderBy('name')
+            ->orderBy('RAND()')
             ->limit($limit);
 
         return $products->all();
@@ -372,7 +370,14 @@ class SiteController extends FrontendController
      */
     private function getNewProducts(int $limit = 16)
     {
-        return $this->getTopProducts($limit);
+        $products = VgProduct::find()
+            ->select('id,thumb,name,price')
+            ->where('thumb_checked=TRUE')
+            ->andWhere('thumb IS NOT NULL')
+            ->orderBy('RAND()')
+            ->limit($limit);
+
+        return $products->all();
     }
 
     /**
@@ -396,6 +401,12 @@ class SiteController extends FrontendController
      */
     private function getNewCompanies(int $limit = 16)
     {
-        return $this->getTopCompanies($limit);
+        return Company::find()
+            ->select('*')
+            ->where('thumb_checked=TRUE')
+            ->andWhere('thumb IS NOT NULL')
+            ->limit($limit)
+            ->orderBy('RAND()')
+            ->all();
     }
 }

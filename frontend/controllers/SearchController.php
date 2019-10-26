@@ -60,7 +60,6 @@ class SearchController extends FrontendController
             ->offset($pages->offset)
             ->column();
 
-
         $products = VgProduct::find()
             ->where(['id' => $productIds])
             ->with('company')

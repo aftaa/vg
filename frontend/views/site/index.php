@@ -75,7 +75,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 <div style="margin: 3em auto;">
-    <h2>Регионы присутствия <small><sup class="info">(сверху справа — количество населенных пунктов региона)</sup></small></h2>
+    <h2>Регионы присутствия</h2>
     <hr size="1">
     <?php foreach ($areas as $areaId => $area): ?>
         <div class="a-index-area <?= $area['class'] ?>">

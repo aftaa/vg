@@ -1,14 +1,14 @@
 <?php
 return [
-    'name' => 'В сети города',
-    'language' => 'ru-RU',
+    'name'       => 'В сети города',
+    'language'   => 'ru-RU',
     'aliases'    => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
-        'i18n'            => [
+        'i18n'  => [
             'translations' => [
                 '*' => [
                     'class'          => 'yii\i18n\PhpMessageSource',
@@ -21,38 +21,37 @@ return [
                 ],
             ],
         ],
-        'cache'           => [
+        'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-        'db'              => [
+        'db'    => [
             'class'    => 'yii\db\Connection',
             'dsn'      => 'mysql:host=localhost;dbname=vg',
             'username' => 'vg',
             'password' => 'vg',
             'charset'  => 'utf8',
         ],
-
-        //        'dbVsetigTest'    => [
-        //            'class'    => 'yii\db\Connection',
-        //            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
-        //            'username' => 'vg',
-        //            'password' => 'vg',
-        //            'charset'  => 'utf8',
-        //        ],
-        //        'dbVsetigInfoCom' => [
-        //            'class'    => 'yii\db\Connection',
-        //            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
-        //            'username' => 'vg',
-        //            'password' => 'vg',
-        //            'charset'  => 'utf8',
-        //        ],
-        //        'dbVsetigCat'     => [
-        //            'class'    => 'yii\db\Connection',
-        //            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
-        //            'username' => 'vg',
-        //            'password' => 'vg',
-        //            'charset'  => 'utf8',
-        //        ],
+        'dbVsetigTest'    => [
+            'class'    => 'yii\db\Connection',
+            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
+            'username' => 'vg',
+            'password' => 'vg',
+            'charset'  => 'utf8',
+        ],
+        'dbVsetigInfoCom' => [
+            'class'    => 'yii\db\Connection',
+            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
+            'username' => 'vg',
+            'password' => 'vg',
+            'charset'  => 'utf8',
+        ],
+        'dbVsetigCat'     => [
+            'class'    => 'yii\db\Connection',
+            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
+            'username' => 'vg',
+            'password' => 'vg',
+            'charset'  => 'utf8',
+        ],
         'dbVsetigTest'    => [
             'class'    => 'yii\db\Connection',
             'dsn'      => 'mysql:host=vsetig.beget.tech;dbname=vsetig_test',
