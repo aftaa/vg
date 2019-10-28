@@ -172,15 +172,16 @@ class ProfileController extends FrontendController
 
     public function actionProducts(int $companyId): string
     {
+        set_time_limit(24 * 3600);
         /** @var Company $company */
         $company = $this->getUserIdentity()->member->getCompanies()->where("id=$companyId")->one();
 
-        $activeQuery = $company->getProducts()->orderBy('')->with('category');
+        $activeQuery = $company->getProducts()->orderBy('id')->with('category');
 
         $provider = new ActiveDataProvider([
             'query'      => $activeQuery,
             'pagination' => [
-                'pageSize' => 100,
+                'pageSize' => 50,
             ],
             'sort'       => [
                 'defaultOrder' => [

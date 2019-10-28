@@ -1,3 +1,11 @@
+.b {
+    font-weight: bold;
+}
+
+.company-products {
+    border-radius: 20px;
+}
+
 .uc {
     height: 690px;
     text-align: center;
@@ -195,4 +203,40 @@ form.nav-search input[type=search] {
     height: 33px;
     padding-left: 1em;
     outline: 0;
+}
+
+/* http://vg/company/476 */
+
+.company-param-name {
+    font-size: 16px;
+    border-bottom: 1px dotted #0b72b8;
+    display: inline-block;
+}
+.company-products-count {
+    font-size: 18px;
+    display: inline-block;
+    /*border-bottom: 1px dotted #0b72b8;*/
+}
+.company-introduce {
+    font-size: 17px;
+    margin-bottom: 2em;
+}
+
+/* pagination */
+ul.pagination li span,
+ul.pagination li a {
+    border: 0 !important;
+    border-radius: .5em;
+}
+
+/* header */
+#w0 {
+    background: #2e8ac1;
+}
+
+#w0 a {
+    color: #fff;
+}
+#w0 a:hover {
+    background: #5cb85c;
 }

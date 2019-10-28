@@ -37,6 +37,7 @@ class SearchController extends FrontendController
             'companies'         => $companies,
             'pages'             => $pages,
             'showFull'          => !$page,
+            's'                 => $s
         ]);
     }
 

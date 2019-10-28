@@ -43,24 +43,24 @@ class ProductManager
     public static function getProductsByCompanyIdWithPagination(int $companyId): array
     {
         $query = VgProduct::find()
-            ->where('checked = TRUE')
             ->andWhere("company_id=$companyId")
-            ->andWhere('thumb_checked = TRUE');
+            ->andWhere('checked = TRUE');
+//            ->andWhere('thumb_checked = TRUE');
+
         $countQuery = clone $query;
         $pages = new Pagination([
             'totalCount' => $countQuery->count(),
         ]);
         $pages->setPageSize(16);
 
-        $products = $query->offset($pages->offset)
+        $products = $query
+            ->offset($pages->offset)
             ->limit($pages->limit)
-            ->orderBy([new Expression(
-                'thumb IS NULL'
-            )])
+            ->orderBy(new Expression(
+                'thumb = "" DESC'
+            ))
             ->with('company')
             ->all();
-
-//        $products = array_chunk($products, 4);
 
         return [
             $products,
