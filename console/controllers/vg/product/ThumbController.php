@@ -2,6 +2,7 @@
 
 namespace console\controllers\vg\product;
 
+use common\models\Company;
 use common\models\Product;
 use yii\console\Controller;
 
@@ -113,4 +114,31 @@ class ThumbController extends Controller
         }
         return $url;
     }
-}
+
+    /**
+     *
+     */
+    public function actionJsonImport()
+    {
+        $url = 'http://wifi-acer.aftaa.ru/product/thumb/';
+        $products = Product::find()
+            ->select('id')
+            ->all();
+        foreach ($products as $product) {
+            $jsonUrl = $url . $product->id;
+            echo "URL: $jsonUrl\n";
+
+            $json = file_get_contents($jsonUrl);
+            echo "JSON: $json\n";
+
+            $data = json_decode($json);
+
+            $product->thumb = $data['thumb'];
+            $product->thumb_checked = $data['thumb_checked'];
+            if ($product->save()) {
+                echo "Product with id {$product->id} thumb's data was updated\n";
+            } else {
+                echo "Product with id {$product->id} thumb's data was NOT updated\n";
+            }
+        }
+    }}

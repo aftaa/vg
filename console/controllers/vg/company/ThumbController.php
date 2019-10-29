@@ -99,4 +99,32 @@ class ThumbController extends Controller
         }
         return $url;
     }
+
+    /**
+     *
+     */
+    public function actionJsonImport()
+    {
+        $url = 'http://wifi-acer.aftaa.ru/company/thumb/';
+        $companies = Company::find()
+            ->select('id')
+            ->all();
+        foreach ($companies as $company) {
+            $jsonUrl = $url . $company->id;
+            echo "URL: $jsonUrl\n";
+
+            $json = file_get_contents($jsonUrl);
+            echo "JSON: $json\n";
+
+            $data = json_decode($json);
+
+            $company->thumb = $data['thumb'];
+            $company->thumb_checked = $data['thumb_checked'];
+            if ($company->save()) {
+                echo "Company with id {$company->id} thumb's data was updated\n";
+            } else {
+                echo "Company with id {$company->id} thumb's data was NOT updated\n";
+            }
+        }
+    }
 }

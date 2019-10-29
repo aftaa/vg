@@ -2,12 +2,15 @@
 
 namespace frontend\controllers;
 
+use common\models\Company;
 use common\models\CompanyCategory;
 use common\vg\controllers\FrontendController;
 use common\vg\manager\CompanyCategoryManager;
 use common\vg\manager\ProductManager;
 use common\vg\models\VgCompany;
 use Exception;
+use Yii;
+use yii\web\Response;
 
 /**
  * Class CompanyController
@@ -49,5 +52,22 @@ class CompanyController extends FrontendController
             'currentCategory'   => $currentCategory,
         ]);
     }
+    /**
+     * @param int $companyId
+     * @return \yii\console\Response|Response
+     */
+    public function actionThumb(int $companyId)
+    {
+        $company = Company::findOne($companyId);
 
+        $response = Yii::$app->response;
+        $response->format = Response::FORMAT_JSON;
+        $response->data = [
+            'id'            => $company->id,
+            'thumb'         => $company->thumb,
+            'thumb_checked' => $company->thumb_checked,
+        ];
+
+        return $response;
+    }
 }

@@ -14,6 +14,7 @@ use Yii;
  * @property string $name Компания
  * @property string $introduce Описание
  * @property string $thumb Картинка
+ * @property int $thumb_checked Изображение проверено
  * @property int $checked Проверена
  * @property string $meta_keywords Meta Keywords
  * @property string $meta_description Meta Description
@@ -41,7 +42,7 @@ class Company extends \yii\db\ActiveRecord
     {
         return [
             [['owner_id', 'company_category_id', 'area_id', 'name'], 'required'],
-            [['owner_id', 'company_category_id', 'area_id', 'checked'], 'integer'],
+            [['owner_id', 'company_category_id', 'area_id', 'thumb_checked', 'checked'], 'integer'],
             [['introduce', 'meta_keywords', 'meta_description'], 'string'],
             [['name', 'thumb'], 'string', 'max' => 100],
             [['area_id'], 'exist', 'skipOnError' => true, 'targetClass' => Area::className(), 'targetAttribute' => ['area_id' => 'id']],
@@ -56,16 +57,17 @@ class Company extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '№',
-            'owner_id' => 'Владелец',
-            'company_category_id' => 'Категория',
-            'area_id' => 'Регион',
-            'name' => 'Компания',
-            'introduce' => 'Описание',
-            'thumb' => 'Картинка',
-            'checked' => 'Проверена',
-            'meta_keywords' => 'Meta Keywords',
-            'meta_description' => 'Meta Description',
+            'id' => Yii::t('app', '№'),
+            'owner_id' => Yii::t('app', 'Владелец'),
+            'company_category_id' => Yii::t('app', 'Категория'),
+            'area_id' => Yii::t('app', 'Регион'),
+            'name' => Yii::t('app', 'Компания'),
+            'introduce' => Yii::t('app', 'Описание'),
+            'thumb' => Yii::t('app', 'Картинка'),
+            'thumb_checked' => Yii::t('app', 'Изображение проверено'),
+            'checked' => Yii::t('app', 'Проверена'),
+            'meta_keywords' => Yii::t('app', 'Meta Keywords'),
+            'meta_description' => Yii::t('app', 'Meta Description'),
         ];
     }
 
