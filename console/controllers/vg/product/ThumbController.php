@@ -131,7 +131,7 @@ class ThumbController extends Controller
             $json = file_get_contents($jsonUrl);
             echo "JSON: $json\n";
 
-            $data = json_decode($json);
+            $data = json_decode($json, true);
 
             $product->thumb = $data['thumb'];
             $product->thumb_checked = $data['thumb_checked'];
