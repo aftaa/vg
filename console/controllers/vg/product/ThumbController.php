@@ -133,13 +133,17 @@ class ThumbController extends Controller
 
             $data = json_decode($json, true);
 
-            $product->thumb = $data['thumb'];
-            $product->thumb_checked = $data['thumb_checked'];
-            if ($product->save()) {
-                echo "Product with id {$product->id} thumb's data was updated\n";
+            if ($data['thumb_checked'] !== null) {
+                $product->thumb = $data['thumb'];
+                $product->thumb_checked = $data['thumb_checked'];
+                if ($product->save()) {
+                    echo "Product with id {$product->id} thumb's data was updated\n";
+                } else {
+                    echo "Product with id {$product->id} thumb's data was NOT updated\n";
+                    print_r($product->errors);
+                }
             } else {
-                echo "Product with id {$product->id} thumb's data was NOT updated\n";
-                print_r($product->errors);
+                echo "Product {$product->id} skipped.\n"
             }
         }
     }}
