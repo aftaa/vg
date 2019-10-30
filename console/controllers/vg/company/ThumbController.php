@@ -129,7 +129,7 @@ class ThumbController extends Controller
                     exit(1);
                 }
             } else {
-                echo "Company {$company->id} skipped.\n"
+                echo "Company {$company->id} skipped.\n";
             }
         }
         exit(0);
