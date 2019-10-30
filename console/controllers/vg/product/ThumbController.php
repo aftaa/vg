@@ -139,6 +139,7 @@ class ThumbController extends Controller
                 echo "Product with id {$product->id} thumb's data was updated\n";
             } else {
                 echo "Product with id {$product->id} thumb's data was NOT updated\n";
+                print_r($product->errors);
             }
         }
     }}
