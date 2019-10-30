@@ -29,64 +29,45 @@ class SitemapController extends Controller
     {
         set_time_limit(0);
 
-        $frontendFolder = realpath(__DIR__ . '../../../../frontend');
+        $frontendFolder = realpath(__DIR__ . '../../../../frontend/web');
         if (file_exists($frontendFolder) && is_dir($frontendFolder) && is_writable($frontendFolder)) {
-            "Folder: $frontendFolder exists and writable.\n";
+            echo "Folder: $frontendFolder exists and writable.\n";
         }
 
         $filename = "$frontendFolder/sitemap.txt";
+        $f = fopen($filename, 'w');
+        flock($f, LOCK_EX);
 
-        try {
-//            file_put_contents($filename, "\n");
-            $file = new SplFileObject($filename);
-        } catch (RuntimeException $e) {
-            echo $e->getMessage();
-            return 1;
-        }
-
-        if (!$file->flock(LOCK_EX)) {
-            echo "Cannot get exclusive access to $filename.\n";
-            echo "Program was terminated.\n";
-            return 1;
-        } else {
-            echo "File $filename was created\n\n";
-        }
-
-        try {
-            $added = 0;
-            $productsQuery = $this->getProductsQuery();
-            foreach ($productsQuery->batch() as $products) {
-                foreach ($products as $product) {
-                    $file->fwrite($this->getProductLink($product));
-                    $file->fwrite(self::LINE_SEPARATOR);
-                    $added++;
-                }
+        $added = 0;
+        $productsQuery = $this->getProductsQuery();
+        foreach ($productsQuery->batch() as $products) {
+            foreach ($products as $product) {
+                $productLink = $this->getProductLink($product);
+                fwrite($f, $productLink);
+                fwrite($f, self::LINE_SEPARATOR);
+                $added++;
             }
-            echo "Added products: $added\n";
-
-
-
-            $added = 0;
-            $companiesQuery = $this->getCompaniesQuery();
-            foreach ($companiesQuery->batch() as $companies) {
-                foreach ($companies as $company) {
-                    $file->fwrite($this->getCompanyLink($company));
-                    $file->fwrite(self::LINE_SEPARATOR);
-                    $added++;
-                }
-            }
-            echo "Added companies: $added\n";
-        } catch (Exception $e) {
-            $message = $e->getMessage();
-            $message = iconv('windows-1251', 'utf-8', $message);
-            echo $message;
-            echo "File: ", $e->getFile(), self::LINE_SEPARATOR;
-            echo "Line: ", $e->getLine(), self::LINE_SEPARATOR;
-            return 1;
         }
+        echo "Added products: $added\n";
 
-        $file->flock(LOCK_UN);
+
+        $added = 0;
+        $companiesQuery = $this->getCompaniesQuery();
+        foreach ($companiesQuery->batch() as $companies) {
+            foreach ($companies as $company) {
+                $companyLink = $this->getCompanyLink($company);
+                echo $companyLink, self::LINE_SEPARATOR;
+                fwrite($f, $companyLink);
+                fwrite($f, self::LINE_SEPARATOR);
+                $added++;
+            }
+        }
+        echo "Added companies: $added\n";
+
+        flock($f, LOCK_UN);
+        fclose($f);
         return 0;
+
     }
 
     /**
@@ -95,7 +76,7 @@ class SitemapController extends Controller
      */
     private function getProductLink(VgProduct $product)
     {
-        return Url::to(['product/index', 'productId' => $product->id]);
+        return "/product/$product->id";
     }
 
     /**
@@ -104,7 +85,7 @@ class SitemapController extends Controller
      */
     private function getCompanyLink(VgCompany $company)
     {
-        return Url::to(['company/index', 'companyId' => $company->id]);
+        return "/company/$company->id";
     }
 
     /**
@@ -113,7 +94,7 @@ class SitemapController extends Controller
     protected function getProductsQuery()
     {
         $products = VgProduct::find()
-            ->where(['checked' => TRUE])
+            ->where(['checked' => true])
             ->orderBy(
                 new Expression('thumb IS NULL DESC')
             );
@@ -126,7 +107,7 @@ class SitemapController extends Controller
     protected function getCompaniesQuery()
     {
         $companies = VgCompany::find()
-            ->where(['checked' => TRUE])
+            ->where(['checked' => true])
             ->orderBy(
                 new Expression('thumb IS NULL DESC')
             );
