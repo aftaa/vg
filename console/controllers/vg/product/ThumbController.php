@@ -120,30 +120,23 @@ class ThumbController extends Controller
      */
     public function actionJsonImport()
     {
-        $url = 'http://wifi-acer.aftaa.ru/product/thumb/';
+        $url = 'http://wifi-acer.aftaa.ru/product/thumbs';
+        $data = file_get_contents($url);
+        $json = json_decode($data, true);
+
         $products = Product::find()
             ->select('*')
             ->all();
+
         foreach ($products as $product) {
-            $jsonUrl = $url . $product->id;
-            echo "URL: $jsonUrl\n";
-
-            $json = file_get_contents($jsonUrl);
-            echo "JSON: $json\n";
-
-            $data = json_decode($json, true);
-
-            if ($data['thumb_checked'] !== null) {
-                $product->thumb = $data['thumb'];
-                $product->thumb_checked = $data['thumb_checked'];
-                if ($product->save()) {
-                    echo "Product with id {$product->id} thumb's data was updated\n";
-                } else {
-                    echo "Product with id {$product->id} thumb's data was NOT updated\n";
+            if (array_key_exists($product->id, $json)) {
+                $product->thumb_checked = $json[$product->id]['thumb_checked'];
+                $product->thumb = $json[$product->id]['thumb'];
+                if (!$product->save()) {
                     print_r($product->errors);
+                    exit(1);
                 }
-            } else {
-                echo "Product {$product->id} skipped.\n"
             }
         }
+        exit(0);
     }}

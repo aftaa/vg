@@ -14,8 +14,8 @@ return [
     'company/<companyId>'           => 'company/index',
     'category/<categoryId>'         => 'product/category',
 
-    'product/thumb/<productId>' => 'product/thumb',
-    'product/<productId>'       => 'product/index',
+    'product/thumbs'      => 'product/thumbs',
+    'product/<productId>' => 'product/index',
     // TODO не подсвечиваются ссылки в главном меню (профиль, пароль)
 
     'profile/'                         => 'profile/index',

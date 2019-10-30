@@ -55,16 +55,20 @@ class ProductController extends FrontendController
      */
     public function actionThumb(int $productId)
     {
-        $product = Product::findOne($productId);
+        $products = Product::find()
+            ->select(['id', 'thumb', 'thumb_checked'])
+            ->all();
 
         $response = Yii::$app->response;
         $response->format = Response::FORMAT_JSON;
-        $response->data = [
-            'id'            => $product->id,
-            'thumb'         => $product->thumb,
-            'thumb_checked' => $product->thumb_checked,
-        ];
-
+        foreach ($products as $product) {
+            $response->data = [
+                $product->id = [
+                    'thumb'         => $product->thumb,
+                    'thumb_checked' => $product->thumb_checked,
+                ]
+            ];
+        }
         return $response;
     }
 }
