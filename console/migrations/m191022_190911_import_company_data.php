@@ -8,9 +8,9 @@ use yii\db\Migration;
 use yii\db\Query;
 
 /**
- * Class m190622_190911_import_company_data
+ * Class m191022_190911_import_company_data
  */
-class m190622_190911_import_company_data extends Migration
+class m191022_190911_import_company_data extends Migration
 {
     /**
      * {@inheritdoc}
