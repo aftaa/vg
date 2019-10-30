@@ -122,7 +122,7 @@ class ThumbController extends Controller
     {
         $url = 'http://wifi-acer.aftaa.ru/product/thumb/';
         $products = Product::find()
-            ->select('id')
+            ->select('*')
             ->all();
         foreach ($products as $product) {
             $jsonUrl = $url . $product->id;

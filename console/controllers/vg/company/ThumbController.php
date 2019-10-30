@@ -107,7 +107,7 @@ class ThumbController extends Controller
     {
         $url = 'http://wifi-acer.aftaa.ru/company/thumb/';
         $companies = Company::find()
-            ->select('id')
+            ->select('*')
             ->all();
         foreach ($companies as $company) {
             $jsonUrl = $url . $company->id;
