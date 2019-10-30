@@ -28,8 +28,7 @@ class ThumbController extends Controller
             ->select('id, thumb')
 //            ->where('thumb IS NOT NULL')
 //            ->where('thumb_checked=FALSE')
-            ->indexBy('id')
-//            ->limit(10)
+            ->indexBy('id')//            ->limit(10)
         ;
 //            ->all();
 
@@ -120,23 +119,34 @@ class ThumbController extends Controller
      */
     public function actionJsonImport()
     {
-        $url = 'http://vg.acer/product/thumbs';
-        $data = file_get_contents($url);
-        $json = json_decode($data, true);
-
-        $products = Product::find()
+        $url = 'http://vg.acer/product/thumb/';
+        $companies = product::find()
             ->select('*')
             ->all();
+        foreach ($companies as $product) {
+            $jsonUrl = $url . $product->id;
+            //echo "URL: $jsonUrl\n";
 
-        foreach ($products as $product) {
-            if (array_key_exists($product->id, $json)) {
-                $product->thumb_checked = $json[$product->id]['thumb_checked'];
-                $product->thumb = $json[$product->id]['thumb'];
-                if (!$product->save()) {
+            $json = file_get_contents($jsonUrl);
+            //echo "JSON: $json\n";
+
+            $data = json_decode($json, true);
+
+            if ($data['thumb_checked'] !== null) {
+                $product->thumb = $data['thumb'];
+                $product->thumb_checked = $data['thumb_checked'];
+                if ($product->save()) {
+                    //echo "product with id {$product->id} thumb's data was updated\n";
+                    echo $product->id, ' ';
+                } else {
+                    echo "product with id {$product->id} thumb's data was NOT updated\n";
                     print_r($product->errors);
                     exit(1);
                 }
+            } else {
+                echo "\nproduct {$product->id} skipped.\n";
             }
         }
         exit(0);
-    }}
+    }
+}
