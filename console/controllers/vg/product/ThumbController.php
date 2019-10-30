@@ -120,7 +120,7 @@ class ThumbController extends Controller
      */
     public function actionJsonImport()
     {
-        $url = 'http://wifi-acer.aftaa.ru/product/thumbs';
+        $url = 'http://vg.acer/product/thumbs';
         $data = file_get_contents($url);
         $json = json_decode($data, true);
 
