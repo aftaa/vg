@@ -80,6 +80,7 @@ class m190622_190911_import_company_data extends Migration
             $company->checked = $com['is_check'];
             $company->meta_keywords = $com['keywords'];
             $company->meta_description = $com['description'];
+            $company->thumb_checked = 0;
             $company->save();
 
             foreach ($params as $code => $param) {
