@@ -55,6 +55,8 @@ class ProductController extends FrontendController
      */
     public function actionThumb(int $productId)
     {
+        set_time_limit(0);
+        
         $product = product::findOne($productId);
 
         $response = Yii::$app->response;

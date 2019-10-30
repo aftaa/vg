@@ -119,6 +119,8 @@ class ThumbController extends Controller
      */
     public function actionJsonImport()
     {
+        set_time_limit(0);
+
         $url = 'http://vg.acer/product/thumb/';
         $companies = product::find()
             ->select('*')
