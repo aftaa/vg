@@ -87,4 +87,13 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
         }
         return $productCategories;
     }
+
+    /**
+     * @param int $startCategoryId
+     * @return array
+     */
+    public function allChildCategoriesAsArray(int $startCategoryId): array
+    {
+
+    }
 }

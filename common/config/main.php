@@ -26,7 +26,7 @@ return [
         ],
         'db'    => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=localhost;dbname=vg',
+            'dsn'      => 'mysql:host=localhost;dbname=vg_dev',
             'username' => 'vg',
             'password' => 'vg',
             'charset'  => 'utf8',
