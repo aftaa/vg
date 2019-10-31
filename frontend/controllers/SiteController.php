@@ -2,20 +2,21 @@
 
 namespace frontend\controllers;
 
-use common\models\Area;
-use common\models\Company;
 use common\models\Member;
-use common\models\Product;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgLoginForm;
+use common\vg\helpers\VgBigRandomSet;
+use common\vg\helpers\VgRandomizer;
 use common\vg\manager\CompanyCategoryManager;
 use common\vg\manager\ProductCategoryManager;
+use common\vg\models\VgCompany;
 use common\vg\models\VgProduct;
 use common\vg\models\VgUser;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\db\Exception;
 use yii\db\Query;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
@@ -90,12 +91,13 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
-        $areas = $this->getAreas();
         $topProducts = $this->getTopProducts();
         $newProducts = $this->getNewProducts();
 
         $topCompanies = $this->getTopCompanies();
         $newCompanies = $this->getNewCompanies();
+
+        $areas = $this->getAreas();
 
         return $this->render('index', [
             'productCategories' => $productCategories,
@@ -349,64 +351,72 @@ class SiteController extends FrontendController
     }
 
     /**
-     * @param int $limit
-     * @return array|VgProduct[]
+     * @param int $productsCount
+     * @return array
+     * @throws \Exception
      */
-    private function getTopProducts(int $limit = 16)
+    private function getTopProducts(int $productsCount = 16)
     {
-        $products = VgProduct::find()
-            ->select('id,thumb,name,price')
-            ->where('thumb_checked=TRUE')
-            ->andWhere('thumb IS NOT NULL')
-            ->orderBy('RAND()')
-            ->limit($limit);
+        return (new VgBigRandomSet(
+            VgProduct::find()
+                ->select('id, thumb, name, price')
+                ->where('thumb_checked=TRUE')
+                ->andWhere('thumb IS NOT NULL'),
 
-        return $products->all();
+            new VgRandomizer(1, VgProduct::getMaxId())
+
+        ))->bigGet($productsCount);
     }
 
     /**
      * @param int $limit
-     * @return array|Product[]
+     * @return array
+     * @throws \Exception
      */
     private function getNewProducts(int $limit = 16)
     {
-        $products = VgProduct::find()
-            ->select('id,thumb,name,price')
-            ->where('thumb_checked=TRUE')
-            ->andWhere('thumb IS NOT NULL')
-            ->orderBy('RAND()')
-            ->limit($limit);
+        return (new VgBigRandomSet(
+            VgProduct::find()
+                ->select('id, thumb, name, price')
+                ->where('thumb_checked=TRUE')
+                ->andWhere('thumb IS NOT NULL'),
 
-        return $products->all();
+            new VgRandomizer(1, VgProduct::getMaxId())
+
+        ))->bigGet($limit);
     }
 
     /**
-     * @param int $limit
-     * @return array|Company[]
+     * @param int $companiesCount
+     * @return array
+     * @throws Exception
      */
-    private function getTopCompanies(int $limit = 16)
+    private function getTopCompanies(int $companiesCount = 16)
     {
-        return Company::find()
-            ->select('*')
-            ->where('thumb_checked=TRUE')
-            ->andWhere('thumb IS NOT NULL')
-            ->limit($limit)
-            ->orderBy('RAND()')
-            ->all();
+        return (new VgBigRandomSet(
+            VgCompany::find()
+                ->where('thumb_checked=TRUE')
+                ->andWhere('thumb IS NOT NULL'),
+
+            new VgRandomizer(1, VgCompany::getMaxId())
+
+        ))->bigGet($companiesCount);
     }
 
     /**
      * @param int $limit
-     * @return array|Company[]
+     * @return array
+     * @throws Exception
      */
     private function getNewCompanies(int $limit = 16)
     {
-        return Company::find()
-            ->select('*')
-            ->where('thumb_checked=TRUE')
-            ->andWhere('thumb IS NOT NULL')
-            ->limit($limit)
-            ->orderBy('RAND()')
-            ->all();
+        return (new VgBigRandomSet(
+            VgCompany::find()
+                ->where('thumb_checked=TRUE')
+                ->andWhere('thumb IS NOT NULL'),
+
+            new VgRandomizer(1, VgCompany::getMaxId())
+
+        ))->bigGet($limit);
     }
 }
