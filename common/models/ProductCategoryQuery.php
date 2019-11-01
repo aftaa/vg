@@ -87,4 +87,5 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
         }
         return $productCategories;
     }
+
 }

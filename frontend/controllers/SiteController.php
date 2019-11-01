@@ -5,10 +5,13 @@ namespace frontend\controllers;
 use common\models\Member;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgLoginForm;
-use common\vg\helpers\VgBigRandomSet;
+use common\vg\helpers\VgRandomSelectFromBigTable;
 use common\vg\helpers\VgRandomizer;
+use common\vg\manager\AreaManager;
 use common\vg\manager\CompanyCategoryManager;
+use common\vg\manager\CompanyManager;
 use common\vg\manager\ProductCategoryManager;
+use common\vg\manager\ProductManager;
 use common\vg\models\VgCompany;
 use common\vg\models\VgProduct;
 use common\vg\models\VgUser;
@@ -91,13 +94,15 @@ class SiteController extends FrontendController
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
-        $topProducts = $this->getTopProducts();
-        $newProducts = $this->getNewProducts();
+        $productManager = new ProductManager;
+        $topProducts = $productManager->getTopProducts();
+        $newProducts = $productManager->getNewProducts();
 
-        $topCompanies = $this->getTopCompanies();
-        $newCompanies = $this->getNewCompanies();
+        $companyManager = new CompanyManager;
+        $topCompanies = $companyManager->getTopCompanies();
+        $newCompanies = $companyManager->getNewCompanies();
 
-        $areas = $this->getAreas();
+        $areas = (new AreaManager)->getAreas();
 
         return $this->render('index', [
             'productCategories' => $productCategories,
@@ -316,107 +321,5 @@ class SiteController extends FrontendController
     public function actionOffline(): string
     {
         return $this->render('offline');
-    }
-
-    /**
-     * @return array
-     */
-    private function getAreas(): array
-    {
-        $areas = (new Query)
-            ->select('t1.*, t1.id AS id1, COUNT(t2.id) AS cnt')
-            ->from('area AS t1')
-            ->join('JOIN', 'area AS t2', 't1.id=t2.parent_id')
-            ->where('t1.parent_id IS NULL')
-            ->groupBy('t1.id')
-            ->indexBy('id1')
-            ->all();
-
-        foreach ($areas as &$area) {
-            if ($area['cnt'] >= 100) {
-                $area['class'] = 'h3';
-            } elseif ($area['cnt'] >= 70) {
-                $area['class'] = 'h3';
-            } elseif ($area['cnt'] >= 60) {
-                $area['class'] = 'h3';
-            } elseif ($area['cnt'] >= 50) {
-                $area['class'] = 'h4';
-            } elseif ($area['cnt'] >= 40) {
-                $area['class'] = 'h4';
-            } else {
-                $area['class'] = 'h4';
-            }
-        }
-        return $areas;
-    }
-
-    /**
-     * @param int $productsCount
-     * @return array
-     * @throws \Exception
-     */
-    private function getTopProducts(int $productsCount = 16)
-    {
-        return (new VgBigRandomSet(
-            VgProduct::find()
-                ->select('id, thumb, name, price')
-                ->where('thumb_checked=TRUE')
-                ->andWhere('thumb IS NOT NULL'),
-
-            new VgRandomizer(1, VgProduct::getMaxId())
-
-        ))->bigGet($productsCount);
-    }
-
-    /**
-     * @param int $limit
-     * @return array
-     * @throws \Exception
-     */
-    private function getNewProducts(int $limit = 16)
-    {
-        return (new VgBigRandomSet(
-            VgProduct::find()
-                ->select('id, thumb, name, price')
-                ->where('thumb_checked=TRUE')
-                ->andWhere('thumb IS NOT NULL'),
-
-            new VgRandomizer(1, VgProduct::getMaxId())
-
-        ))->bigGet($limit);
-    }
-
-    /**
-     * @param int $companiesCount
-     * @return array
-     * @throws Exception
-     */
-    private function getTopCompanies(int $companiesCount = 16)
-    {
-        return (new VgBigRandomSet(
-            VgCompany::find()
-                ->where('thumb_checked=TRUE')
-                ->andWhere('thumb IS NOT NULL'),
-
-            new VgRandomizer(1, VgCompany::getMaxId())
-
-        ))->bigGet($companiesCount);
-    }
-
-    /**
-     * @param int $limit
-     * @return array
-     * @throws Exception
-     */
-    private function getNewCompanies(int $limit = 16)
-    {
-        return (new VgBigRandomSet(
-            VgCompany::find()
-                ->where('thumb_checked=TRUE')
-                ->andWhere('thumb IS NOT NULL'),
-
-            new VgRandomizer(1, VgCompany::getMaxId())
-
-        ))->bigGet($limit);
     }
 }

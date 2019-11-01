@@ -30,5 +30,7 @@ return [
 
     'dark'   => 'theme/dark',
     'light'  => 'theme/light',
-    'search' => 'search/index'
+    'search' => 'search/index',
+
+//    'catchAll' => ['site/offline'],
 ];

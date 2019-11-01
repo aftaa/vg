@@ -24,6 +24,13 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'db'    => [
+            'class'    => 'yii\db\Connection',
+            'dsn'      => 'mysql:host=localhost;dbname=vg_dev',
+            'username' => 'vg',
+            'password' => 'vg',
+            'charset'  => 'utf8',
+        ],
 //        'dbVsetigTest'    => [
 //            'class'    => 'yii\db\Connection',
 //            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',

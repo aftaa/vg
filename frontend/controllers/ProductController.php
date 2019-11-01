@@ -43,9 +43,8 @@ class ProductController extends FrontendController
         return $this->render('category', [
             'productCategories' => $companyCategories,
             'productCategory'   => $currentCategory,
-
-            'allProducts' => $products,
-            'pages'       => $pages,
+            'allProducts'       => $products,
+            'pages'             => $pages,
         ]);
     }
 
