@@ -13,36 +13,52 @@ use yii\db\Expression;
 class ProductManager
 {
     /**
+     * @param ProductCategory $productCategory
+     * @param array $categoriesId
+     * @return array
+     */
+    public function allChildCategoriesAsArray(ProductCategory $productCategory, &$categoriesId = []): array
+    {
+        $categoriesId[] = $productCategory->id;
+        if ($productCategory->productCategories) {
+            foreach ($productCategory->getProductCategories()->all() as $subCategory) {
+                $this->allChildCategoriesAsArray($subCategory, $categoriesId);
+            }
+        }
+        return $categoriesId;
+    }
+
+    /**
      * @param int $productCategoryId
      * @return array[array|VgProducts[], Pagination]
      */
     public static function getProductsByCategoryIdWithPagination($productCategoryId): array
     {
         $productCategory = ProductCategory::findOne($productCategoryId);
+
+
+        $query = VgProduct::find()->where([
+            'checked'     => true,
+            'category_id' => $productCategoryId,
+        ]);
+
         if ($productCategory->productCategories) {
-            // есть подкатегории, "проможуточная" страница каталога
+            $r = (new self)->allChildCategoriesAsArray($productCategory);
 
-            $productIds = (new ProductCategoryQuery)->allChildCategoriesAsArray();
-            echo '<pre>'; print_r($something); echo '</pre>'; die;
-
-
-            $query = VgProduct::find()->where([
-                'checked'     => true,
-            ]);
-            $query->andWhere(['IN', 'category_id', $productCategoryId]);
-        } else {
             $query = VgProduct::find()->where([
                 'checked'     => true,
                 'category_id' => $productCategoryId,
-            ]);
+            ])->orWhere(['IN', 'category_id', $r]);
         }
+
         $countQuery = clone $query;
         $pages = new Pagination([
             'totalCount' => $countQuery->count(),
         ]);
-        $pages->setPageSize(128);
+        $pages->setPageSize(64);
 
-        $products = $query->offset($pages->offset)
+        $products = $query
+            ->offset($pages->offset)
             ->limit($pages->limit)
             ->orderBy(new Expression('thumb IS NULL'))
             ->with('company')

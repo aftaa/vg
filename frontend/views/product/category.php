@@ -1,6 +1,5 @@
 <?php
 
-use common\models\Product;
 use common\vg\models\VgProductCategory;
 use yii\data\Pagination;
 use yii\helpers\Url;
@@ -39,6 +38,11 @@ array_unshift($this->params['breadcrumbs'], [
 <?= $this->render('/product/_categories', [
     'productCategories' => $productCategories,
 ]) ?>
+
+<?php if ($allProducts): ?>
+<hr size="1">
+<br>
+<?php endif ?>
 
 <?= $this->render('/product/_products', [
     'allProducts' => $allProducts,
