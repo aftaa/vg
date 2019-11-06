@@ -31,27 +31,6 @@ return [
             'password' => 'vg',
             'charset'  => 'utf8',
         ],
-//        'dbVsetigTest'    => [
-//            'class'    => 'yii\db\Connection',
-//            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
-//            'username' => 'vg',
-//            'password' => 'vg',
-//            'charset'  => 'utf8',
-//        ],
-//        'dbVsetigInfoCom' => [
-//            'class'    => 'yii\db\Connection',
-//            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
-//            'username' => 'vg',
-//            'password' => 'vg',
-//            'charset'  => 'utf8',
-//        ],
-//        'dbVsetigCat'     => [
-//            'class'    => 'yii\db\Connection',
-//            'dsn'      => 'mysql:host=kuba.aftaa.ru;dbname=vsetig',
-//            'username' => 'vg',
-//            'password' => 'vg',
-//            'charset'  => 'utf8',
-//        ],
         'dbVsetigTest'    => [
             'class'    => 'yii\db\Connection',
             'dsn'      => 'mysql:host=vsetig.beget.tech;dbname=vsetig_test',
