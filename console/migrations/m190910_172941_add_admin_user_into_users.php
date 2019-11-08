@@ -19,6 +19,7 @@ class m190910_172941_add_admin_user_into_users extends Migration
         $admin->save();
 
         $admin = new User;
+        $admin->auth_key = '';
         $admin->id = 2;
         $admin->username = 'admin';
         $admin->setPassword('vsetigoroda');

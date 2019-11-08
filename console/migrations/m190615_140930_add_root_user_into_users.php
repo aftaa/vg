@@ -22,6 +22,7 @@ class m190615_140930_add_root_user_into_users extends Migration
         $user->setPassword(self::PASSWORD);
         $user->email = self::EMAIL;
         $user->status = User::STATUS_ACTIVE;
+	$user->auth_key = '';
         $user->save();
     }
 
