@@ -24,35 +24,7 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-        'db'    => [
-            'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=localhost;dbname=vg_dev',
-            'username' => 'vg',
-            'password' => 'vg',
-            'charset'  => 'utf8',
-        ],
-        'dbVsetigTest'    => [
-            'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=vsetig.beget.tech;dbname=vsetig_test',
-            'username' => 'vsetig_test',
-            'password' => '&gH3Xzo5',
-            'charset'  => 'utf8',
-        ],
-        'dbVsetigInfoCom' => [
-            'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=vsetig.beget.tech;dbname=vsetig_info_com',
-            'username' => 'vsetig_info_com',
-            'password' => '&gH3Xzo5',
-            'charset'  => 'utf8',
-        ],
-        'dbVsetigCat'     => [
-            'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=vsetig.beget.tech;dbname=vsetig_cat',
-            'username' => 'vsetig_cat',
-            'password' => '&gH3Xzo5',
-            'charset'  => 'utf8',
-        ],
-        'mailer'          => [
+        'mailer' => [
             'class'    => 'yii\swiftmailer\Mailer',
             'viewPath' => '@common/mail',
             // send all mails to a file by default. You have to set
