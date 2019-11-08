@@ -44,6 +44,8 @@ class m190618_003237_import_data_into_member_table extends Migration
 //            $user->password_hash = $aw_member['password'];
             $user->email = $aw_member['email'];
             $user->status = User::STATUS_ACTIVE;
+            $user->auth_key = '';
+            $user->password_hash = '';
             $user->created_at = $aw_member['registertime'];
             if (!$user->save()) {
                 print_r($user->errors);
