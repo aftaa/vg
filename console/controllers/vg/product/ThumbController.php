@@ -168,7 +168,7 @@ class ThumbController extends Controller
 
         $command = $dbProd->createCommand("UPDATE product SET thumb=:thumb,thumb_checked=:thumb_checked WHERE id=:id");
 
-        foreach ($thumbs->batch() as $thumbs) {
+        foreach ($thumbs->batch(10) as $thumbs) {
             foreach ($thumbs as $thumb) {
                 $command->bindValues([
                     'thumb' => $thumb['thumb'],

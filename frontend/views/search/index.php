@@ -66,6 +66,7 @@ $this->title = Html::encode($s);
 
                 <div class="col lead">
                     <?php if ($productCategories): ?>
+                    <div style="clear:both;"></div>
                         <hr size="1">
                         <h2>в категориях мы нашли:</h2>
                         <?php foreach ($productCategories as $category): ?>
