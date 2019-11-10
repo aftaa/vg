@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use common\vg\models\VgProduct;
 use common\vg\models\VgProductCategory;
 use Yii;
 use yii\db\Exception;
@@ -68,8 +69,7 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
         $checkKey = self::CACHE_KEY_PRODUCT_CATEGORY_MAX_ID_ . $productCategoryParentId;
         $valueKey = self::CACHE_KEY_PRODUCT_CATEGORIES_ . $productCategoryParentId;
 
-        $sql = 'SELECT MAX(id) FROM product';
-        $maxId = VgProductCategory::getDb()->createCommand($sql)->queryScalar();
+        $maxId = (new VgProduct)->getMaxId();
         $cache = Yii::$app->cache;
 
         if ($cache->get($checkKey) != $maxId) {

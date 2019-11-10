@@ -91,6 +91,8 @@ class SiteController extends FrontendController
      */
     public function actionIndex()
     {
+        set_time_limit(0);
+
         $productCategories = ProductCategoryManager::getCategoriesByParentId();
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 

@@ -29,6 +29,10 @@ class VgCompany extends Company implements VgGetMaxId
      */
     public static function getMaxId(): int
     {
-        return (int)Yii::$app->getDb()->createCommand('SELECT MAX(id) FROM company')->queryScalar();
+        static $maxId = null;
+        if (null === $maxId) {
+            $maxId = (int)Yii::$app->getDb()->createCommand('SELECT MAX(id) FROM company')->queryScalar();
+        }
+        return $maxId;
     }
 }

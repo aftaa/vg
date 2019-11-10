@@ -4,7 +4,10 @@ namespace console\controllers\vg\product;
 
 use common\models\Company;
 use common\models\Product;
+use Yii;
 use yii\console\Controller;
+use yii\db\Connection;
+use yii\db\Query;
 
 class ThumbController extends Controller
 {
@@ -150,5 +153,31 @@ class ThumbController extends Controller
             }
         }
         exit(0);
+    }
+
+    public function actionCopy()
+    {
+        /** @var Connection $dbProd */
+        $dbProd = Yii::$app->dbProd;
+        $db = Yii::$app->db;
+
+        /** @var Product[] $thumbs */
+        $thumbs = (new Query)
+            ->select('id,thumb,thumb_checked')
+            ->from('product');
+
+        $command = $dbProd->createCommand("UPDATE product SET thumb=:thumb,thumb_checked=:thumb_checked WHERE id=:id");
+
+        foreach ($thumbs->batch() as $thumbs) {
+            foreach ($thumbs as $thumb) {
+                $command->bindValues([
+                    'thumb' => $thumb['thumb'],
+                    'thumb_checked' => $thumb['thumb_checked'],
+                    'id' => $thumb['id'],
+                ]);
+                $command->execute();
+                echo $thumb['id'], "\n";
+            }
+        }
     }
 }

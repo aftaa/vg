@@ -25,6 +25,10 @@ class VgProduct extends Product implements VgGetMaxId
      */
     public static function getMaxId(): int
     {
-        return (int)Yii::$app->getDb()->createCommand('SELECT MAX(id) FROM product')->queryScalar();
+        static $maxId = null;
+        if (null === $maxId) {
+            $maxId = (int)Yii::$app->getDb()->createCommand('SELECT MAX(id) FROM product')->queryScalar();
+        }
+        return $maxId;
     }
 }

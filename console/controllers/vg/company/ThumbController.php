@@ -3,11 +3,41 @@
 namespace console\controllers\vg\company;
 
 use common\models\Company;
+use Yii;
 use yii\console\Controller;
+use yii\db\Connection;
+use yii\db\Query;
 
 class ThumbController extends Controller
 {
     const THUMB_NOT_FOUND = null;
+
+    public function actionCopy()
+    {
+        /** @var Connection $dbProd */
+        $dbProd = Yii::$app->get('dbProd');
+        $db = Yii::$app->db;
+
+        /** @var Company[] $thumbs */
+        $thumbs = (new Query)
+            ->select('id,thumb,thumb_checked')
+            ->from('company');
+
+        $command = $dbProd->createCommand("UPDATE company SET thumb=:thumb,thumb_checked=:thumb_checked WHERE id=:id");
+
+        foreach ($thumbs->batch() as $thumbs) {
+            foreach ($thumbs as $thumb) {
+                $command->bindValues([
+                    'thumb' => $thumb['thumb'],
+                    'thumb_checked' => $thumb['thumb_checked'],
+                    'id' => $thumb['id'],
+                ]);
+                $command->execute();
+                echo $thumb['id'], "\n";
+            }
+        }
+    }
+
 
     public function actionIndex()
     {
