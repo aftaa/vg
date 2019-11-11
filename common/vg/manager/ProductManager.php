@@ -3,7 +3,6 @@
 namespace common\vg\manager;
 
 use common\models\ProductCategory;
-use common\models\ProductCategoryQuery;
 use common\vg\helpers\VgRandomSelectFromBigTable;
 use common\vg\helpers\VgRandomizer;
 use common\vg\models\VgProduct;
@@ -35,7 +34,6 @@ class ProductManager
     public static function getProductsByCategoryIdWithPagination($productCategoryId): array
     {
         $productCategory = ProductCategory::findOne($productCategoryId);
-
 
         $query = VgProduct::find()->where([
             'checked'     => true,

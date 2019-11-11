@@ -2,6 +2,9 @@
 
 namespace common\models;
 
+use common\vg\models\VgCompany;
+use yii\db\Expression;
+
 /**
  * This is the ActiveQuery class for [[Company]].
  *
@@ -30,5 +33,17 @@ class CompanyQuery extends \yii\db\ActiveQuery
     public function one($db = null)
     {
         return parent::one($db);
+    }
+
+    /**
+     * @return CompanyQuery
+     */
+    public function sitemap()
+    {
+        return $this
+            ->where(['checked' => true])
+            ->orderBy(
+                new Expression('thumb IS NULL DESC')
+            );
     }
 }

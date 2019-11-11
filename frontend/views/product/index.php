@@ -31,11 +31,9 @@ array_unshift($this->params['breadcrumbs'], [
 <div class="container company">
     <div class="row">
         <div class="col-md-4">
-            <img alt="" src="<?= $product->thumb ?>" style="max-width: 100%;">
+            <img alt="<?= $product->name ?>" src="<?= $product->thumb ?>" style="max-width: 100%;">
             <?php if ($product->price): ?>
-                <br>
-                <br>
-                <br>
+                <hr size="1">
                 <div class="btn btn-info" style="float: right;">Стоимость: <?= $product->getPrice() ?> ₽</div>
                 <br><br><br>
             <?php endif ?>

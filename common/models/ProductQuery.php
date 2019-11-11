@@ -2,8 +2,8 @@
 
 namespace common\models;
 
-use common\vg\models\VgProductCategory;
 use yii\db\ActiveQuery;
+use yii\db\Expression;
 
 /**
  * This is the ActiveQuery class for [[Product]].
@@ -33,5 +33,17 @@ class ProductQuery extends ActiveQuery
     public function one($db = null)
     {
         return parent::one($db);
+    }
+
+    /**
+     * @return ProductQuery
+     */
+    public function sitemap()
+    {
+        return $this
+            ->where(['checked' => true])
+            ->orderBy(
+                new Expression('thumb IS NULL DESC')
+            );
     }
 }
