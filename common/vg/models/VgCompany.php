@@ -5,6 +5,7 @@ namespace common\vg\models;
 use common\models\Company;
 use common\models\CompanyParamValue;
 use common\vg\interfaces\VgGetMaxId;
+use common\vg\interfaces\HasSiteMapLink;
 use Yii;
 use yii\db\ActiveQuery;
 use yii\db\Exception;

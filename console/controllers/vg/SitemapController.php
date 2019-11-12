@@ -4,11 +4,12 @@ namespace console\controllers\vg;
 
 use common\models\CompanyQuery;
 use common\models\ProductQuery;
+use common\vg\models\sitemap\SiteMap;
+use common\vg\models\sitemap\VgCompanySiteMapLink;
+use common\vg\models\sitemap\VgProductSiteMapLink;
 use common\vg\models\VgCompany;
 use common\vg\models\VgProduct;
-use frontend\models\SiteMap;
 use yii\console\Controller;
-use yii\db\Expression;
 use Exception;
 
 class SitemapController extends Controller
@@ -20,33 +21,21 @@ class SitemapController extends Controller
     public function actionIndex()
     {
         set_time_limit(0);
-
         $folder = getcwd() . '/frontend/web';
 
-        $siteMap = new SiteMap(
-            $folder,
-            (new CompanyQuery)->sitemap(),
-            (new ProductQuery)->sitemap()
-        );
+        $filenames = [];
 
-        return 0;
-    }
+        try {
+            $siteMap = new SiteMap($folder);
+            $productQuery = new ProductQuery(VgProduct::class);
+            $companyQuery = new CompanyQuery(VgCompany::class);
 
-    /**
-     * @param VgProduct $product
-     * @return string
-     */
-    private function getProductLink(VgProduct $product)
-    {
-        return "$this->serverName/product/$product->id";
-    }
+            $filenames[] = $siteMap->build(($productQuery->sitemap()), VgProductSiteMapLink::class);
+            $filenames[] = $siteMap->build(($companyQuery->sitemap()), VgCompanySiteMapLink::class);
 
-    /**
-     * @param VgCompany $company
-     * @return string
-     */
-    private function getCompanyLink(VgCompany $company)
-    {
-        return "$this->serverName/company/$company->id";
+            return 0;
+        } catch (Exception $e) {
+            throw $e;
+        }
     }
 }

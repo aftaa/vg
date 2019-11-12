@@ -2,9 +2,14 @@
 
 namespace common\vg\models\sitemap;
 
+use common\vg\interfaces\HasSiteMapLink;
+use yii\db\ActiveRecord;
+
 class SiteMapFile extends \SplFileObject
 {
     const NEWLINE_SEPARATOR = "\n";
+    const MAX_ROWS = 50000;
+    const MAX_SIZE = 50 * 1024 * 1024;
 
     /** @var int */
     private static $issue = 1;
@@ -20,33 +25,33 @@ class SiteMapFile extends \SplFileObject
 
     /**
      * SiteMapFile constructor.
+     * @param string $folder
      */
-    public function __construct()
+    public function __construct(string $folder)
     {
-        parent::__construct($this->getFilename(), 'w');
+        $filename = "$folder/$this->filenameMask";
+        $filename = str_replace('{{issue}}', self::$issue, $filename);
+        parent::__construct($filename, 'w');
     }
 
     /**
-     * @return string
+     * @param HasSiteMapLink $link
+     * @return int|null
      */
-    public function getFilename(): string
+    public function write(HasSiteMapLink $link): ?int
     {
-        if (!$this->filename) {
-            $filename = $this->filenameMask;
-            $filename = str_replace('{{issue}}', self::$issue, $filename);
-            $this->filename = $filename;
+        if (self::MAX_ROWS == $this->recordCount) {
+            throw new SiteMapFileExceptionMaxRows;
         }
-        return $this->filename;
-    }
 
-    /**
-     * @param $url
-     * @return int
-     */
-    public function write($url): int
-    {
+        $row = $link->sitemapLink() . self::NEWLINE_SEPARATOR;
+
+        if (self::MAX_SIZE < $this->getSize() + strlen($row)) {
+            throw new SiteMapFileExceptionMaxSize;
+        }
+
         $this->recordCount++;
-        return parent::fwrite($url . self::NEWLINE_SEPARATOR);
+        return parent::fwrite($row);
     }
 
     /**
