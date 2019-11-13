@@ -3,34 +3,30 @@
 namespace common\vg\models\sitemap;
 
 use common\vg\interfaces\HasSiteMapLink;
-use common\vg\models\VgCompany;
+use yii\db\ActiveRecord;
 
 class VgCompanySiteMapLink implements HasSiteMapLink
 {
-    /** @var VgCompany */
-    public $company;
-
     /** @var string */
-    public $server;
+    public $serverName;
+
+    /** @var ActiveRecord */
+    public $record;
 
     /**
      * VgCompanySiteMapLink constructor.
-     * @param VgCompany $company
-     * @param string $server
+     * @param string $serverName
      */
-    public function __construct(VgCompany $company, string $server)
+    public function __construct(string $serverName)
     {
-        $this->company = $company;
-        $this->server = $server;
+        $this->serverName = $serverName;
     }
 
-
     /**
-     * @param string $serverLink
      * @return string
      */
     public function sitemapLink(): string
     {
-        return "$this->server/company/{$this->company->id}";
+        return "$this->serverName/company/{$this->record->id}";
     }
 }

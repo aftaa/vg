@@ -12,9 +12,6 @@ class SiteMap
     /** @var string */
     public $folder;
 
-    /** @var string */
-    public $serverName = 'http://vseti-goroda.ru';
-
     /**
      * SiteMap constructor.
      * @param string $folder
@@ -28,10 +25,10 @@ class SiteMap
 
     /**
      * @param Query $query
-     * @param string $linkClassName
+     * @param HasSiteMapLink $link
      * @return array
      */
-    public function build(Query $query, string $linkClassName): array
+    public function build(Query $query, HasSiteMapLink $link): array
     {
         $mapFilenames = [];
 
@@ -40,9 +37,8 @@ class SiteMap
 
         foreach ($query->batch() as $records) {
             foreach ($records as $record) {
-                $link = new $linkClassName($record, $this->serverName);
                 try {
-
+                    $link->record = $record;
                     $sitemapFile->write($link);
                 } catch (SiteMapFileExceptionMaxRows|SiteMapFileExceptionMaxSize $e) {
                     $sitemapFile->unlock();
@@ -52,11 +48,14 @@ class SiteMap
 
                     $sitemapFile = new SiteMapFile($this->folder);
                     $sitemapFile->lock();
+                    $link->record = $record;
                     $sitemapFile->write($link);
                 }
             }
         }
         $sitemapFile->unlock();
+        $mapFilenames[] = $sitemapFile->getFilename();
+        SiteMapFile::issueUp();
         return $mapFilenames;
     }
 
@@ -66,7 +65,7 @@ class SiteMap
     public function checkFolder()
     {
         if (file_exists($this->folder) && is_dir($this->folder) && is_writable($this->folder)) {
-            echo "Folder: $this->folder exists and writable.\n";
+//            echo "Folder: $this->folder exists and writable.\n";
         } else {
             throw new Exception("Folder: $this->folder isn't exists or not writable.\n");
         }

@@ -46,12 +46,12 @@ class SiteMapFile extends \SplFileObject
 
         $row = $link->sitemapLink() . self::NEWLINE_SEPARATOR;
 
-        if (self::MAX_SIZE < $this->getSize() + strlen($row)) {
+        if ($this->getSize() + strlen($row) > self::MAX_SIZE) {
             throw new SiteMapFileExceptionMaxSize;
         }
 
         $this->recordCount++;
-        return parent::fwrite($row);
+        return parent::fwrite($row) && parent::fflush();
     }
 
     /**
