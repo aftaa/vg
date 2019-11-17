@@ -69,8 +69,8 @@ class ProfileController extends FrontendController
         }
 
         return $this->render('index', [
-            'model'   => $model,
-            'success' => $success
+            'member'   => $model,
+            'success' => $success,
         ]);
     }
 

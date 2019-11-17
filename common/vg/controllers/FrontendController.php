@@ -2,14 +2,17 @@
 
 namespace common\vg\controllers;
 
+use common\models\Member;
 use common\models\User;
+use Throwable;
 use Yii;
+use yii\db\ActiveQuery;
 
 class FrontendController extends Controller
 {
     /**
      * @return User
-     * @throws \Throwable
+     * @throws Throwable
      */
     public function getUserIdentity()
     {
@@ -19,7 +22,7 @@ class FrontendController extends Controller
 
     /**
      * @return int|null
-     * @throws \Throwable
+     * @throws Throwable
      */
     public function getUserId()
     {
@@ -31,5 +34,19 @@ class FrontendController extends Controller
 
         $userId = $user->getIdentity()->getId();
         return $userId;
+    }
+
+    /**
+     * @return Member|null
+     * @throws Throwable
+     */
+    public function getMember()
+    {
+        $userId = $this->getUserId();
+        if (null !== $userId) {
+            $user = User::findOne($userId);
+            return $user->member;
+        }
+        return null;
     }
 }

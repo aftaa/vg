@@ -34,6 +34,14 @@ AppAsset::register($this);
     <?php if ('dark' == $theme): ?>
         <link rel="stylesheet" type="text/css" href="/css/dark.css">
     <?php endif ?>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -43,8 +51,8 @@ AppAsset::register($this);
     NavBar::begin([
         'brandImage' => '/img/logo.png',
         'brandLabel' => 'vseti-goroda.ru',//Yii::$app->name,
-        'brandUrl'   => Yii::$app->homeUrl,
-        'options'    => [
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
@@ -61,7 +69,7 @@ AppAsset::register($this);
     if (VgUser::isUnderOtherUser()) {
         $menuItems[] = [
             'label' => 'Из пользователя →',
-            'url'   => ['/switch-identity/return'],
+            'url' => ['/switch-identity/return'],
             'class' => 'super-user'
         ];
     }
@@ -70,21 +78,7 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Регистрация', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => '» Войти', 'url' => ['/site/login']];
     } else {
-        $menuItems[] = [
-            'label' => 'Профиль', 'url' => ['/profile'], 'items' => [
-                ['label' => 'Анкета', 'url' => ['/profile']],
-                ['label' => 'Каталог', 'url' => ['/profile/companies']],
-                //                ['label' => 'Продукция', 'url' => ['/profile/products/all']],
-                ['label' => 'Баланс', 'url' => ['/profile/balance']],
-                ['label' => 'Импорт', 'url' => ['/profile/import']],
-                ['label' => 'Пароль', 'url' => ['/profile/password']],
-            ],
-        ];
-//        $menuItems[] = ['label' => 'Компании', 'url' => ['/profile/companies']];
-//        $menuItems[] = ['label' => 'Продукция', 'url' => ['/profile/products']];
-//        $menuItems[] = ['label' => 'Баланс', 'url' => ['/profile/balance']];
-//        $menuItems[] = ['label' => 'Импорт', 'url' => ['/profile/import']];
-//        $menuItems[] = ['label' => 'Пароль', 'url' => ['/profile/password']];
+        $menuItems[] = ['label' => 'Профиль', 'url' => ['/profile']];
 
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
@@ -99,13 +93,13 @@ AppAsset::register($this);
     if (false) {
         $menuItems[] = [
             'label' => $theme == 'dark' ? 'Зажечь' : 'Погасить',
-            'url'   => $theme == 'dark' ? '/light' : '/dark',
+            'url' => $theme == 'dark' ? '/light' : '/dark',
         ];
     }
 
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items'   => $menuItems,
+        'items' => $menuItems,
     ]);
     NavBar::end();
     ?>
@@ -138,10 +132,10 @@ AppAsset::register($this);
             <h1><?= $this->title ?></h1>
         <?php endif ?>
         <?= Breadcrumbs::widget([
-            'links'    => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             'homeLink' => [
                 'label' => 'В сети города',
-                'url'   => '/',
+                'url' => '/',
             ],
         ]) ?>
         <?= Alert::widget() ?>
