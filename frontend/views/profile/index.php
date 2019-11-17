@@ -4,6 +4,7 @@ use common\models\Member;
 
 /** @var $this yii\web\View */
 /** @var $success bool */
+
 /** @var $member Member */
 
 use yii\bootstrap\ActiveForm;
@@ -50,6 +51,12 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php if ($success): ?>
     <div class="alert alert-success" role="alert">
         Информация обновлена
+    </div>
+<?php endif ?>
+
+<?php if (Yii::$app->getSession()->hasFlash('balance')): ?>
+    <div class="alert alert-info" role="alert">
+        <?= Yii::$app->getSession()->getFlash('balance') ?>
     </div>
 <?php endif ?>
 

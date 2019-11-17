@@ -26,7 +26,9 @@
     "yiisoft/yii2-bootstrap4": "^2.0",
     "ext-curl": "*",
     "yiisoft/yii2-sphinx": "^2.0",
-    "ext-dom": "*"
+    "yiisoft/yii2-redis": "*",
+    "ext-dom": "*",
+    "ext-memcache": "*"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.1.0",

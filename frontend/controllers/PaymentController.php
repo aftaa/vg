@@ -6,52 +6,12 @@ use common\models\Invoice;
 use common\models\Member;
 use common\vg\controllers\FrontendController;
 use common\vg\models\VgInvoice;
-use http\Url;
 use Yii;
-use yii\db\Exception;
-use yii\web\Session;
 
 class PaymentController extends FrontendController
 {
-    public function actionInvoice()
+    public function actionIndex()
     {
-        $amount = Yii::$app->getRequest()->post('amount');
-        $member = $this->getMember();
-
-        $invoice = new VgInvoice($amount);
-        $invoiceFields = $invoice->fields;
-
-        $sentInvoice = new Invoice;
-        $sentInvoice->member_id = $member->id;
-        $sentInvoice->amount = $invoice->getAmount();
-        $sentInvoice->created_at = date('Y-m-d H:i:s');
-        if (!$sentInvoice->save()) {
-            echo '<pre>';
-            print_r($sentInvoice->errors);
-            echo '</pre>';
-            die;
-        }
-        $invoice->setPaymentNo($sentInvoice->id);
-
-        return $this->renderPartial('invoice', [
-            'fields' => $invoiceFields,
-        ]);
-    }
-
-    public function actionFail()
-    {
-        throw new \Error();
-    }
-
-    public function actionOk()
-    {
-
-        echo '<pre>'; print_r($_POST); echo '</pre>';
-        echo '<pre>'; print_r($_GET); echo '</pre>';
-        echo '<pre>'; print_r($_REQUEST); echo '</pre>';
-        echo '<pre>'; print_r(Yii::$app->getRequest()->get("WMI_PAYMENT_NO")); echo '</pre>';
-        
-
         // Секретный ключ интернет-магазина (настраивается в кабинете)
 
         $secretKey = VgInvoice::SECRET_KEY;
@@ -100,45 +60,77 @@ class PaymentController extends FrontendController
                 $commission = $_POST['WMI_COMMISSION_AMOUNT'];
                 $orderId = $_POST['WMI_ORDER_ID'];
 
-                $db = Yii::$app->db;
-                $transaction = $db->beginTransaction();
-
                 try {
+                    $db = Yii::$app->db;
+                    $transaction = $db->beginTransaction();
+
                     $invoice = Invoice::findOne($invoiceId);
                     $invoice->payment = $payment;
                     $invoice->commission = $commission;
                     $invoice->order_id = $orderId;
                     $invoice->updated_at = date('Y-m-d H:i:s');
                     if (!$invoice->save()) {
-                        echo '<pre>'; print_r($invoice); echo '</pre>';
                         throw new \Exception;
                     }
 
                     $member = Member::findOne($invoice->member_id);
-                    $member->balance += $payment;
+                    $member->balance = $member->balance + $payment;
                     if (!$member->save()) {
-                        echo '<pre>'; print_r($invoice); echo '</pre>';
                         throw new \Exception;
                     }
 
+                    print_answer("Ok", "Заказ #" . $_POST["WMI_PAYMENT_NO"] . " оплачен!");
                     $transaction->commit();
 
-                    Yii::$app->getSession()->setFlash('balance', 'Баланс обновлен');
-                    $this->redirect('/profile');
                 } catch (\Exception|\Throwable $e) {
                     $transaction->rollBack();
+                    print_answer("Retry", "Сервер временно недоступен " . $_POST["WMI_ORDER_STATE"]);
                 }
-
-
-                print_answer("Ok", "Заказ #" . $_POST["WMI_PAYMENT_NO"] . " оплачен!");
             } else {
                 // Случилось что-то странное, пришло неизвестное состояние заказа
                 print_answer("Retry", "Неверное состояние " . $_POST["WMI_ORDER_STATE"]);
             }
         } else {
             // Подпись не совпадает, возможно вы поменяли настройки интернет-магазина
-
             print_answer("Retry", "Неверная подпись " . $_POST["WMI_SIGNATURE"]);
         }
+
+        return '';
+    }
+
+    public function actionInvoice()
+    {
+        $amount = Yii::$app->getRequest()->post('amount');
+        $member = $this->getMember();
+
+        $invoice = new VgInvoice($amount);
+        $invoiceFields = $invoice->fields;
+
+        $sentInvoice = new Invoice;
+        $sentInvoice->member_id = $member->id;
+        $sentInvoice->amount = $invoice->getAmount();
+        $sentInvoice->created_at = date('Y-m-d H:i:s');
+        if (!$sentInvoice->save()) {
+            echo '<pre>';
+            print_r($sentInvoice->errors);
+            echo '</pre>';
+            die;
+        }
+        $invoice->setPaymentNo($sentInvoice->id);
+
+        return $this->renderPartial('invoice', [
+            'fields' => $invoiceFields,
+        ]);
+    }
+
+    public function actionFail()
+    {
+        throw new \Error("Неизвестная ошибка при выполнении платежа");
+    }
+
+    public function actionOk()
+    {
+        Yii::$app->getSession()->setFlash('balance', 'Баланс обновлен');
+        $this->redirect('/profile');
     }
 }

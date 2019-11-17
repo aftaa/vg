@@ -7,8 +7,8 @@ class VgInvoice
     const SECRET_KEY = '7b6d33634b4e6d396e4a32554348523173507c5e6256684c35484f';
     const WMI_MERCHANT_ID = '162634143288';
     const WMI_CURRENCY_ID = 643;
-    const WMI_SUCCESS_URL = 'http://vg-dev.aftaa.ru/payment/ok';
-    const WMI_FAIL_URL = 'http://vg-dev.aftaa.ru/payment/fail';
+    const WMI_SUCCESS_URL = '/profile';
+    const WMI_FAIL_URL = '/profile';
     const PAYMENT_DESCRIPTION = 'Пополнение баланса сайта vseti-goroda.ru';
 
     public $fields = [
@@ -32,6 +32,7 @@ class VgInvoice
         $this->setPaymentAmount($amount);
         $this->setDescription();
         $this->setExpiredDate();
+        $this->setUrls();
         $this->setSignature();
     }
 
@@ -91,5 +92,22 @@ class VgInvoice
     public function setPaymentNo(int $paymentNo)
     {
         $this->fields['WMI_PAYMENT_NO'] = $paymentNo;
+    }
+
+    /**
+     *
+     */
+    protected function setUrls(): void
+    {
+        $this->fields['WMI_FAIL_URL'] = implode([
+            'http://',
+            $_SERVER['HTTP_HOST'],
+            self::WMI_FAIL_URL
+        ]);
+        $this->fields['WMI_SUCCESS_URL'] = implode([
+            'http://',
+            $_SERVER['HTTP_HOST'],
+            self::WMI_FAIL_URL,
+        ]);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\models;
+namespace common\vg\models;
 
 use Yii;
 use yii\base\Model;

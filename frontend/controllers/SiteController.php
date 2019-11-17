@@ -10,6 +10,7 @@ use common\vg\manager\CompanyCategoryManager;
 use common\vg\manager\CompanyManager;
 use common\vg\manager\ProductCategoryManager;
 use common\vg\manager\ProductManager;
+use common\vg\models\ContactForm;
 use common\vg\models\VgUser;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
@@ -21,7 +22,6 @@ use yii\filters\AccessControl;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
-use frontend\models\ContactForm;
 use yii\web\Response;
 
 /**
