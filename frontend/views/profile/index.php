@@ -1,5 +1,6 @@
 <?php
 
+use common\models\Invoice;
 use common\models\Member;
 
 /** @var $this yii\web\View */
@@ -60,9 +61,9 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 <?php endif ?>
 
-<div class="profile-member">
-    <div class="row">
-        <div class="col-lg-5">
+<div class="col-lg-4">
+    <div class="profile-member">
+        <div class="row">
             <?php $form = ActiveForm::begin(['id' => 'member-form']); ?>
 
             <?= $form->field($member, 'first_name')->input(['autofocus' => true]) ?>
@@ -79,3 +80,28 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
+
+<div class="col-lg-2"></div>
+
+<?php
+$invoices = Invoice::find()->where(['member_id' => $member->id])
+    ->orderBy(['updated_at' => 'DESC'])
+    ->limit(3)
+    ->all();
+?>
+
+<?php if ($invoices): ?>
+    <div class="col-lg-2">
+        <h3>История</h3>
+
+        <?php foreach ($invoices as $invoice): ?>
+            <div>
+                <small><?= date('d.m.y H:i', strtotime($invoice->updated_at)) ?></small>
+                <div class="h4 text-right">
+                    +<?= $invoice->amount ?> ₽
+                </div>
+            </div>
+            <hr size="1">
+        <?php endforeach ?>
+    </div>
+<?php endif ?>

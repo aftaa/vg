@@ -100,13 +100,13 @@ class VgInvoice
     {
         $this->fields['WMI_FAIL_URL'] = implode([
             'http://',
-            'vg-dev.aftaa.ru',
+            'vseti-goroda.ru',
             //            $_SERVER['HTTP_HOST'],
             self::WMI_FAIL_URL,
         ]);
         $this->fields['WMI_SUCCESS_URL'] = implode([
             'http://',
-            'vg-dev.aftaa.ru',
+            'vseti-goroda.ru',
             //            $_SERVER['HTTP_HOST'],
             self::WMI_SUCCESS_URL,
         ]);
