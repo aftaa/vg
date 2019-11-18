@@ -9,11 +9,11 @@ use yii\web\View;
 
 <form method="post" action="https://wl.walletone.com/checkout/checkout/Index" accept-charset="UTF-8">
     <?php foreach ($fields as $name => $value): ?>
-        <input name="<?= $name ?>" value="<?= $value ?>" type="hidden">
+        <?= $name ?>: <input name="<?= $name ?>" value="<?= $value ?>" type="text"><br>
     <?php endforeach ?>
-    <input type="submit" style="display: none;">
+    <input type="submit">
 </form>
 
 <script type="text/javascript">
-    document.forms[0].submit();
+    //document.forms[0].submit();
 </script>

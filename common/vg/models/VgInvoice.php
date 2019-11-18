@@ -7,8 +7,8 @@ class VgInvoice
     const SECRET_KEY = '7b6d33634b4e6d396e4a32554348523173507c5e6256684c35484f';
     const WMI_MERCHANT_ID = '162634143288';
     const WMI_CURRENCY_ID = 643;
-    const WMI_SUCCESS_URL = '/profile';
-    const WMI_FAIL_URL = '/profile';
+    const WMI_SUCCESS_URL = '/payment/ok';
+    const WMI_FAIL_URL = '/payment/fail';
     const PAYMENT_DESCRIPTION = 'Пополнение баланса сайта vseti-goroda.ru';
 
     public $fields = [
@@ -18,8 +18,8 @@ class VgInvoice
         'WMI_PAYMENT_NO'     => null,
         'WMI_DESCRIPTION'    => null,
         'WMI_EXPIRED_DATE'   => null,
-        'WMI_SUCCESS_URL'    => self::WMI_SUCCESS_URL,
-        'WMI_FAIL_URL'       => self::WMI_FAIL_URL,
+        'WMI_SUCCESS_URL'    => null,
+        'WMI_FAIL_URL'       => null,
         'WMI_SIGNATURE'      => null,
     ];
 
@@ -33,7 +33,6 @@ class VgInvoice
         $this->setDescription();
         $this->setExpiredDate();
         $this->setUrls();
-        $this->setSignature();
     }
 
     /**
@@ -66,7 +65,7 @@ class VgInvoice
     /**
      * @see https://www.walletone.com/ru/merchant/documentation/#step1
      */
-    protected function setSignature(): void
+    public function setSignature(): void
     {
         uksort($this->fields, 'strcasecmp');
         $values = [];
@@ -101,13 +100,15 @@ class VgInvoice
     {
         $this->fields['WMI_FAIL_URL'] = implode([
             'http://',
-            $_SERVER['HTTP_HOST'],
-            self::WMI_FAIL_URL
+            'vg-dev.aftaa.ru',
+            //            $_SERVER['HTTP_HOST'],
+            self::WMI_FAIL_URL,
         ]);
         $this->fields['WMI_SUCCESS_URL'] = implode([
             'http://',
-            $_SERVER['HTTP_HOST'],
-            self::WMI_FAIL_URL,
+            'vg-dev.aftaa.ru',
+            //            $_SERVER['HTTP_HOST'],
+            self::WMI_SUCCESS_URL,
         ]);
     }
 }

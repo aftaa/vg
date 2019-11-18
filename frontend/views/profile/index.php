@@ -55,7 +55,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php endif ?>
 
 <?php if (Yii::$app->getSession()->hasFlash('balance')): ?>
-    <div class="alert alert-info" role="alert">
+    <div class="alert alert-warning" role="alert">
         <?= Yii::$app->getSession()->getFlash('balance') ?>
     </div>
 <?php endif ?>

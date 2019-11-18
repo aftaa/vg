@@ -11,13 +11,13 @@ use yii\web\View;
 
 <?php if ($balance < 0): ?>
     <div class="alert-danger"><?= $balance ?>₽</div>
-    <a href="<?= Url::to(['balance/up']) ?>" onclick="return false;" data-toggle="modal" data-target="#myModal">восполнить</a>
+    <a href="#" onclick="return false;" data-toggle="modal" data-target="#myModal">восполнить</a>
 <?php elseif ($balance > 0): ?>
     <div class="alert-success"><?= $balance ?>₽</div>
-    <a href="<?= Url::to(['balance/up']) ?>" onclick="return false;" data-toggle="modal" data-target="#myModal">дополнить</a>
+    <a href="#" onclick="return false;" data-toggle="modal" data-target="#myModal">дополнить</a>
 <?php else: ?>
     <div class="alert-info"><?= $balance ?>₽</div>
-    <a href="<?= Url::to(['balance/up']) ?>" onclick="return false;" data-toggle="modal" data-target="#myModal">наполнить</a>
+    <a href="#" onclick="return false;" data-toggle="modal" data-target="#myModal">наполнить</a>
 <?php endif ?>
 
 <!-- Modal -->
