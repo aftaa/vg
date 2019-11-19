@@ -69,7 +69,7 @@ class ProfileController extends FrontendController
         }
 
         return $this->render('index', [
-            'member'   => $model,
+            'member'  => $model,
             'success' => $success,
         ]);
     }
@@ -80,9 +80,7 @@ class ProfileController extends FrontendController
      */
     public function actionCompanies()
     {
-        /** @var User $user */
-        $user = Yii::$app->getUser()->getIdentity();
-        $member = $user->member;
+        $member = $this->getMember();
         $companies = $member->companies;
 
         return $this->render('companies', [
@@ -136,7 +134,10 @@ class ProfileController extends FrontendController
                     return $this->redirect(Url::to('/profile/companies'));
                 }
             } else {
-                echo '<pre>'; print_r($company->getErrorSummary(true)); echo '</pre>'; die;
+                echo '<pre>';
+                print_r($company->getErrorSummary(true));
+                echo '</pre>';
+                die;
             }
         } else {
             $company = new Company();
@@ -194,10 +195,5 @@ class ProfileController extends FrontendController
             'company'  => $company,
             'provider' => $provider,
         ]);
-    }
-
-    public function actionImport()
-    {
-        return $this->render('site/blank');
     }
 }

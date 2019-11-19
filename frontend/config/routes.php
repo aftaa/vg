@@ -20,6 +20,7 @@ return [
 
     'profile/'                         => 'profile/index',
     'profile/password'                 => 'password/index',
+    'profile/import/<companyId:\d+>'   => 'import/index',
     'profile/company/<companyId:\d+>'  => 'profile/company',
     'profile/products/<companyId:\d+>' => 'profile/products',
 
@@ -32,5 +33,5 @@ return [
     'light'  => 'theme/light',
     'search' => 'search/index',
 
-//    'catchAll' => ['site/offline'],
+    //    'catchAll' => ['site/offline'],
 ];

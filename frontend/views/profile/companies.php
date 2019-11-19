@@ -21,14 +21,12 @@ $this->params['breadcrumbs'][] = $this->title;
 <table class="table table-hover table-striped">
     <thead>
     <tr>
-        <td>№</td>
         <td>Компания</td>
         <td>Категория</td>
         <td>Тариф</td>
+        <td>Товаров</td>
         <td>Регион</td>
         <td>Описание</td>
-        <td>meta keywords</td>
-        <td>meta description</td>
     </tr>
     </thead>
 
@@ -36,28 +34,38 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php if ($companies): ?>
         <?php foreach ($companies as $company): ?>
             <tr>
-                <td><?= $company->id ?></td>
                 <td>
-                    <h4><?= $company->name ?></h4>
-                    
+                    <?= $company->name ?>
+
                     <div class="text-muted">
-                        <a href="<?= Url::to(['profile/products', 'companyId' => $company->id]) ?>">
-                            каталог
-                        </a>
+
+                        <?php if ($company->getProducts()->count()): ?>
+                            <a href="<?= Url::to(['profile/products', 'companyId' => $company->id]) ?>">
+                                каталог товаров
+                            </a>
+                        <?php endif ?>
+
                     </div>
                 </td>
                 <td><?= $company->getCompanyCategory()->one()->name ?></td>
-                <td><a href="<?= Url::to(['#', 'companyId' => $company->id] ) ?>"><?= $company->old_tarif ?? 'Начало' ?></a></td>
+                <td>
+                    <?= $company->old_tarif ?? 'Начало' ?>
+                </td>
+
+                <td>
+                    <?= $company->getProducts()->count() ?>
+                    <div><a href="<?= Url::to(['profile/import', 'companyId' => $company->id]) ?>">добавить из
+                            XML/YML</a></div>
+                </td>
+
                 <td><?= $company->getArea()->one()->name ?></td>
                 <td><?= $company->introduce ?></td>
-                <td><?= $company->meta_keywords ?></td>
-                <td><?= $company->meta_description ?></td>
             </tr>
         <?php endforeach ?>
     <?php else: ?>
-    <tr>
-        <td colspan="99">У вас пока нет компаний</td>
-    </tr>
+        <tr>
+            <td colspan="99">У вас пока нет компаний</td>
+        </tr>
     <?php endif ?>
     </tbody>
 </table>

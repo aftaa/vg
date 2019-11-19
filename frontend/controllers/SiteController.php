@@ -57,6 +57,13 @@ class SiteController extends FrontendController
                     'logout' => ['post'],
                 ],
             ],
+
+            //cache
+            [
+                'class' => 'yii\filters\PageCache',
+                'only' => ['index'],
+                'duration' => 10,
+            ]
         ];
     }
 

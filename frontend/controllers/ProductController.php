@@ -15,6 +15,21 @@ use yii\web\Response;
 
 class ProductController extends FrontendController
 {
+    public function behaviors()
+    {
+//        return [
+//            //cache
+//            [
+//                'class' => 'yii\filters\PageCache',
+//                'only' => ['category'],
+//                'duration' => 10,
+//                'dependency' => function () {
+//                    return Yii::$app->getRequest()->get('categoryId');
+//                }
+//            ]
+//        ];
+    }
+
     public function actionIndex(int $productId)
     {
         $product = VgProduct::findOne($productId);

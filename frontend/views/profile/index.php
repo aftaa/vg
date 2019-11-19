@@ -84,7 +84,8 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="col-lg-2"></div>
 
 <?php
-$invoices = Invoice::find()->where(['member_id' => $member->id])
+$invoices = Invoice::find()
+    ->where(['member_id' => $member->id])
     ->orderBy(['updated_at' => 'DESC'])
     ->limit(3)
     ->all();
@@ -96,7 +97,7 @@ $invoices = Invoice::find()->where(['member_id' => $member->id])
 
         <?php foreach ($invoices as $invoice): ?>
             <div>
-                <small><?= date('d.m.y H:i', strtotime($invoice->updated_at)) ?></small>
+                <small><?= (new \DateTime($invoice->updated_at))->format('d.m.y H:i') ?></small>
                 <div class="h4 text-right">
                     +<?= $invoice->amount ?> ₽
                 </div>
