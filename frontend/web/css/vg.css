@@ -38,7 +38,8 @@ div.index-product-name {
     height: 1em;
 }
 
-div.index-product-thumb {
+div.index-product-thumb,
+div.index-company-thumb {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -47,7 +48,8 @@ div.index-product-thumb {
     margin-top: .5em;
 }
 
-div.index-product-thumb a img {
+div.index-product-thumb a img,
+div.index-company-thumb a img {
     max-width: 100px;
     max-height: 100px;
 }

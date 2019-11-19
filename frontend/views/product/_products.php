@@ -27,8 +27,8 @@ use yii\widgets\LinkPager;
                 </div>
 
                 <?php if ($product->thumb): ?>
-                    <div class="center-block" style="text-align: center; min-height: 200px;">
-                        <img alt="" src="<?= $product->thumb ?>" style="max-width: 200px; max-height: 200px;">
+                    <div class="center-block category-product" style="text-align: center; min-height: 200px;">
+                        <img alt="" src="<?= $product->thumb ?>" style="max-width: 200px; max-height: 200px;" data-id="<?= $product->id ?>">
                     </div>
                 <?php else: ?>
                     <div class="center-block" style="text-align: center; min-height: 200px;">

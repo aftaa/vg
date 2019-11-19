@@ -63,3 +63,33 @@ $(function () {
         });
     }
 });
+
+// check thumb exists policy
+// in russian: обратиться в полицию превьюшек, если нет оной
+$(window).on('load', function () {
+    $('.index-product-thumb img').each(function () {
+        if (!this.width || !this.height) {
+            this.src = '/img/no_product.jpg';
+            let id = this.dataset.id;
+            $.get('policy/no-product-thumb/' + id);
+        }
+    });
+
+    $('.index-company-thumb img').each(function () {
+        if (!this.width || !this.height) {
+            this.src = '/img/no_logo.jpg';
+            let id = this.dataset.id;
+            $.get('policy/no-company-thumb/' + id);
+        }
+    });
+
+    $('.category-product img').each(function () {
+        if (!this.width || !this.height) {
+            this.src = '/img/no_product.jpg';
+            let id = this.dataset.id;
+            $.get('policy/no-product-thumb/' + id);
+        }
+    });
+
+    // TODO объеденить первую и последнюю функции
+});

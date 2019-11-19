@@ -17,7 +17,7 @@ class ProductController extends FrontendController
 {
     public function behaviors()
     {
-//        return [
+        return [
 //            //cache
 //            [
 //                'class' => 'yii\filters\PageCache',
@@ -27,7 +27,7 @@ class ProductController extends FrontendController
 //                    return Yii::$app->getRequest()->get('categoryId');
 //                }
 //            ]
-//        ];
+        ];
     }
 
     public function actionIndex(int $productId)

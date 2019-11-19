@@ -11,6 +11,7 @@ use yii\helpers\Url;
 <div class="row" id="<?= $divId ?>">
     <?php foreach ($companies as $company): ?>
         <div class="col col-xs-6 col-sm-4 col-lg-3" class="index-product-row">
+            <br><br>
             <div class="index-product-name">
                 <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>">
                     <?= $company->name ?>
@@ -18,7 +19,7 @@ use yii\helpers\Url;
             </div>
             <div class="index-product-thumb">
                 <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>">
-                    <img alt="" src="<?= $company->thumb ?>">
+                    <img alt="" src="<?= $company->thumb ?>" data-id="<?= $company->id ?>">
                 </a>
             </div>
         </div>
