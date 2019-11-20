@@ -21,12 +21,12 @@ $this->params['breadcrumbs'][] = $this->title;
 <table class="table table-hover table-striped">
     <thead>
     <tr>
-        <td>Компания</td>
-        <td>Категория</td>
-        <td>Тариф</td>
-        <td>Товаров</td>
-        <td>Регион</td>
-        <td>Описание</td>
+        <th>Компания</th>
+        <th>Категория</th>
+        <th>Тариф</th>
+        <th>Товаров</th>
+        <th>Регион</th>
+        <th>Описание</td>
     </tr>
     </thead>
 
@@ -54,8 +54,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <td>
                     <?= $company->getProducts()->count() ?>
-                    <div><a href="<?= Url::to(['profile/import', 'companyId' => $company->id]) ?>">добавить из
-                            XML/YML</a></div>
+                    <div>
+                        <a href="<?= Url::to(['import/index', 'companyId' => $company->id]) ?>">
+                            импорт!
+                        </a>
+                    </div>
                 </td>
 
                 <td><?= $company->getArea()->one()->name ?></td>

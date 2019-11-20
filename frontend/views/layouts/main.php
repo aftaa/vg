@@ -122,8 +122,10 @@ AppAsset::register($this);
         <?php if (!Yii::$app->user->isGuest): ?>
             <header>
                 <div class="alert-warning align-right"><?php if (!Yii::$app->user->isGuest): ?>
-                        Привет, наш <?= Yii::$app->user->identity->id ?>-й
-                        пользователь <a href="/profile/"><?= Yii::$app->user->identity->username ?></a>!
+                        Привет,
+<!--                        наш <?= Yii::$app->user->identity->id ?>-й-->
+<!--                        пользователь-->
+                        <a href="/profile"><?= Yii::$app->user->identity->username ?></a>!
                     <?php endif ?>
                 </div>
             </header>
@@ -154,6 +156,11 @@ AppAsset::register($this);
 <?php $this->endBody() ?>
 <script type="text/javascript" src="/js/vg.js"></script>
 <?php if (empty($_COOKIE['I-agree'])) echo $this->render('_cookie') ?>
+
+<div id="unload" style="display: none;">
+    <img alt="ждём-с" src="/img/284.svg" width="132" height="132">
+</div>
+
 </body>
 </html>
 <?php $this->endPage() ?>

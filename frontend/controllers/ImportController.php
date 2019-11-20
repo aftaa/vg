@@ -34,6 +34,23 @@ class ImportController extends FrontendController
         ]);
     }
 
+    public function actionCopy()
+    {
+        $url = $this->app->getRequest()->get('url');
+    }
+
+    /**
+     * @return string
+     */
+    public function actionRemoteFileSize()
+    {
+        $url = $this->app->getRequest()->get('url');
+        $fileSize = $this->getFileSize($url);
+        $return = [$fileSize];
+        $return = json_encode($return);
+        return $return;
+    }
+
     /**
      * @param string $url
      * @return int|null

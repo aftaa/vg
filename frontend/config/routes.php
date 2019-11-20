@@ -36,5 +36,5 @@ return [
     'policy/no-product-thumb/<productId:\d+>' => 'policy/no-product-thumb',
     'policy/no-logo-thumb/<companyId:\d+>'    => 'policy/no-company-thumb',
 
-    //    'catchAll' => ['site/offline'],
+//    'catchAll' => ['site/offline'],
 ];
