@@ -100,5 +100,5 @@ $(window).on('load', function () {
 //blur unload
 $(window).on('load', function() {
     $('div.container, footer').css('filter', 'blur(0px)');
-    $('#unload').fadeOut('slow');
+    $('#unload').fadeOut(1000);
 })
