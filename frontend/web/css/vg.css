@@ -242,3 +242,14 @@ ul.pagination li a {
 #w0 a:hover {
     background: #5cb85c;
 }
+
+div.container, footer {
+    filter: blur(1px);
+}
+
+div#unload {
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    display: block;
+}

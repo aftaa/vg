@@ -157,7 +157,7 @@ AppAsset::register($this);
 <script type="text/javascript" src="/js/vg.js"></script>
 <?php if (empty($_COOKIE['I-agree'])) echo $this->render('_cookie') ?>
 
-<div id="unload" style="display: none;">
+<div id="unload">
     <img alt="ждём-с" src="/img/284.svg" width="132" height="132">
 </div>
 

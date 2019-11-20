@@ -21,9 +21,13 @@ use Yii;
  * @property string $created_at Создан
  * @property string $updated_at Изменен
  * @property string $deleted_at Удалён
+ * @property int $yml_file_id YML файл
+ * @property string $yml_url Ссылка
+ * @property int $yml_id ID в YML-файле
  *
  * @property ProductCategory $category
  * @property Company $company
+ * @property YmlFile $ymlFile
  */
 class Product extends \yii\db\ActiveRecord
 {
@@ -42,14 +46,16 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             [['company_id', 'category_id', 'name', 'created_at'], 'required'],
-            [['company_id', 'category_id', 'thumb_checked', 'checked'], 'integer'],
+            [['company_id', 'category_id', 'thumb_checked', 'checked', 'yml_file_id', 'yml_id'], 'integer'],
             [['description', 'meta_keywords', 'meta_description'], 'string'],
             [['price'], 'number'],
             [['created_at', 'updated_at', 'deleted_at'], 'safe'],
             [['name'], 'string', 'max' => 500],
             [['thumb'], 'string', 'max' => 250],
+            [['yml_url'], 'string', 'max' => 255],
             [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductCategory::className(), 'targetAttribute' => ['category_id' => 'id']],
             [['company_id'], 'exist', 'skipOnError' => true, 'targetClass' => Company::className(), 'targetAttribute' => ['company_id' => 'id']],
+            [['yml_file_id'], 'exist', 'skipOnError' => true, 'targetClass' => YmlFile::className(), 'targetAttribute' => ['yml_file_id' => 'id']],
         ];
     }
 
@@ -73,6 +79,9 @@ class Product extends \yii\db\ActiveRecord
             'created_at' => Yii::t('app', 'Создан'),
             'updated_at' => Yii::t('app', 'Изменен'),
             'deleted_at' => Yii::t('app', 'Удалён'),
+            'yml_file_id' => Yii::t('app', 'YML файл'),
+            'yml_url' => Yii::t('app', 'Ссылка'),
+            'yml_id' => Yii::t('app', 'ID в YML-файле'),
         ];
     }
 
@@ -90,6 +99,14 @@ class Product extends \yii\db\ActiveRecord
     public function getCompany()
     {
         return $this->hasOne(Company::className(), ['id' => 'company_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getYmlFile()
+    {
+        return $this->hasOne(YmlFile::className(), ['id' => 'yml_file_id']);
     }
 
     /**

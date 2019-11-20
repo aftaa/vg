@@ -1,3 +1,5 @@
+'use strict';
+
 // index page sub-categories
 function productChildCategories() {
     $('a.look-product-category').click(function () {
@@ -93,3 +95,10 @@ $(window).on('load', function () {
 
     // TODO объеденить первую и последнюю функции
 });
+
+
+//blur unload
+$(window).on('load', function() {
+    $('div.container, footer').css('filter', 'blur(0px)');
+    $('#unload').fadeOut('slow');
+})

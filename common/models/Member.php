@@ -19,6 +19,7 @@ use Yii;
  * @property string $user_pic Аватар
  *
  * @property Company[] $companies
+ * @property Invoice[] $invoices
  * @property User $user
  */
 class Member extends \yii\db\ActiveRecord
@@ -54,16 +55,16 @@ class Member extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '№',
-            'user_id' => '№ пользователя',
-            'first_name' => 'Имя',
-            'last_name' => 'Фамилия',
-            'middle_name' => 'Отчество',
-            'position' => 'Должность',
-            'old_password' => 'Старый пароль',
-            'phone' => 'Телефон',
-            'balance' => 'Баланс',
-            'user_pic' => 'Аватар',
+            'id' => Yii::t('app', '№'),
+            'user_id' => Yii::t('app', '№ пользователя'),
+            'first_name' => Yii::t('app', 'Имя'),
+            'last_name' => Yii::t('app', 'Фамилия'),
+            'middle_name' => Yii::t('app', 'Отчество'),
+            'position' => Yii::t('app', 'Должность'),
+            'old_password' => Yii::t('app', 'Старый пароль'),
+            'phone' => Yii::t('app', 'Телефон'),
+            'balance' => Yii::t('app', 'Баланс'),
+            'user_pic' => Yii::t('app', 'Аватар'),
         ];
     }
 
@@ -73,6 +74,14 @@ class Member extends \yii\db\ActiveRecord
     public function getCompanies()
     {
         return $this->hasMany(Company::className(), ['owner_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getInvoices()
+    {
+        return $this->hasMany(Invoice::className(), ['member_id' => 'id']);
     }
 
     /**

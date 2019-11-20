@@ -19,6 +19,7 @@ use Yii;
  * @property Product[] $products
  * @property ProductCategory $parent
  * @property ProductCategory[] $productCategories
+ * @property YmlCategory[] $ymlCategories
  */
 class ProductCategory extends \yii\db\ActiveRecord
 {
@@ -51,14 +52,14 @@ class ProductCategory extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => '№',
-            'parent_id' => 'Родительская категория',
-            'name' => 'Категория',
-            'description' => 'Описание',
-            'sort' => 'Порядок',
-            'icon' => 'Иконка',
-            'meta_keywords' => 'Meta Keywords',
-            'meta_description' => 'Meta Description',
+            'id' => Yii::t('app', '№'),
+            'parent_id' => Yii::t('app', 'Родительская категория'),
+            'name' => Yii::t('app', 'Категория'),
+            'description' => Yii::t('app', 'Описание'),
+            'sort' => Yii::t('app', 'Порядок'),
+            'icon' => Yii::t('app', 'Иконка'),
+            'meta_keywords' => Yii::t('app', 'Meta Keywords'),
+            'meta_description' => Yii::t('app', 'Meta Description'),
         ];
     }
 
@@ -84,6 +85,14 @@ class ProductCategory extends \yii\db\ActiveRecord
     public function getProductCategories()
     {
         return $this->hasMany(ProductCategory::className(), ['parent_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getYmlCategories()
+    {
+        return $this->hasMany(YmlCategory::className(), ['product_category_id' => 'id']);
     }
 
     /**
