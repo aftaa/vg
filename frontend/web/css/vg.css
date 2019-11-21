@@ -244,7 +244,7 @@ ul.pagination li a {
 }
 
 div.container, footer {
-    filter: blur(1px);
+    //filter: blur(1px);
 }
 
 div#unload {
@@ -252,4 +252,5 @@ div#unload {
     top: 45%;
     left: 45%;
     display: block;
+    display: none;
 }
