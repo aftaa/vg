@@ -4,8 +4,10 @@
 function productChildCategories() {
     $('a.look-product-category').click(function () {
         let catId = this.dataset.categoyrId;
+        $('#unload').show();
         $.get(this.href, function (html) {
             $('#product-category-' + catId).html(html).fadeIn('slow');
+            $('#unload').fadeOut(1000);
         });
         return false;
     });
@@ -75,6 +77,7 @@ $(window).on('load', function () {
             let id = this.dataset.id;
             $.get('policy/no-product-thumb/' + id);
         }
+        $(this.parentNode.parentNode).removeClass('circle-732');
     });
 
     $('.index-company-thumb img').each(function () {
@@ -98,7 +101,16 @@ $(window).on('load', function () {
 
 
 //blur unload
+/*
 $(window).on('load', function() {
-    // $('div.container, footer').css('filter', 'blur(0px)');
-    // $('#unload').fadeOut(1000);
+    $('div.container, footer').css('filter', 'blur(0px)');
+    $('#unload').fadeOut(1000);
 })
+*/
+
+
+// $(function(){
+//     $('div.index-product-thumb img').on('load', function () {
+//         $(this).parent().parent().removeClass('circle-732');
+//     });
+// });

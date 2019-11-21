@@ -16,7 +16,7 @@ use yii\helpers\Url;
                     <?= $product->name ?>
                 </a>
             </div>
-            <div class="index-product-thumb">
+            <div class="index-product-thumb circle-732">
                 <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>">
                     <img alt="" src="<?= $product->thumb ?>" data-id="<?= $product->id ?>">
                 </a>

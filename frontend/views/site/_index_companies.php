@@ -17,7 +17,7 @@ use yii\helpers\Url;
                     <?= $company->name ?>
                 </a>
             </div>
-            <div class="index-product-thumb">
+            <div class="index-company-thumb">
                 <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>">
                     <img alt="" src="<?= $company->thumb ?>" data-id="<?= $company->id ?>">
                 </a>

@@ -243,14 +243,21 @@ ul.pagination li a {
     background: #5cb85c;
 }
 
+/* TODO сделать бы наоборот - все размывается при нажатии кнопки или ссылки */
+/* TODO но тут опасность - отличить ссылки/кнопки перехода от внутренне логических */
+
 div.container, footer {
     //filter: blur(1px);
 }
-
 div#unload {
     position: fixed;
     top: 45%;
     left: 45%;
-    display: block;
+    /*display: block;*/
     display: none;
+}
+
+div.circle-732 {
+    /*background-size: 50%;*/
+    /*background: url(/img/732.svg) center no-repeat;*/
 }

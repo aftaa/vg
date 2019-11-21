@@ -74,9 +74,9 @@ $this->params['breadcrumbs'][] = $this->title;
             компании</a></div>
 </div>
 
+<br><br>
 <div style="margin: 3em auto;">
-    <h2>Регионы присутствия</h2>
-    <hr size="1">
+    <h2 class="h1">Регионы присутствия</h2>
     <?php foreach ($areas as $areaId => $area): ?>
         <div class="a-index-area <?= $area['class'] ?>">
             <a href="<?= Url::to(['area/index', 'areaId' => $area['id']]) ?>">

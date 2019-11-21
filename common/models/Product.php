@@ -28,6 +28,7 @@ use Yii;
  * @property ProductCategory $category
  * @property Company $company
  * @property YmlFile $ymlFile
+ * @property ProductParamValue[] $productParamValues
  */
 class Product extends \yii\db\ActiveRecord
 {
@@ -107,6 +108,14 @@ class Product extends \yii\db\ActiveRecord
     public function getYmlFile()
     {
         return $this->hasOne(YmlFile::className(), ['id' => 'yml_file_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductParamValues()
+    {
+        return $this->hasMany(ProductParamValue::className(), ['product_id' => 'id']);
     }
 
     /**

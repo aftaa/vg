@@ -19,6 +19,9 @@ use Yii;
  * @property Product[] $products
  * @property ProductCategory $parent
  * @property ProductCategory[] $productCategories
+ * @property ProductCategoryParam[] $productCategoryParams
+ * @property ProductParam[] $productParams
+ * @property ProductParam[] $productParams0
  * @property YmlCategory[] $ymlCategories
  */
 class ProductCategory extends \yii\db\ActiveRecord
@@ -85,6 +88,30 @@ class ProductCategory extends \yii\db\ActiveRecord
     public function getProductCategories()
     {
         return $this->hasMany(ProductCategory::className(), ['parent_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductCategoryParams()
+    {
+        return $this->hasMany(ProductCategoryParam::className(), ['product_category_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductParams()
+    {
+        return $this->hasMany(ProductParam::className(), ['id' => 'product_param_id'])->viaTable('product_category_param', ['product_category_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProductParams0()
+    {
+        return $this->hasMany(ProductParam::className(), ['product_category_id' => 'id']);
     }
 
     /**
