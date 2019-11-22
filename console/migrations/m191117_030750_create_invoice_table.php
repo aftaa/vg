@@ -31,7 +31,7 @@ class m191117_030750_create_invoice_table extends Migration
 
         $this->createIndex(self::IDX_MEMBER_ID, self::TABLE_NAME, self::COLUMN_NAME);
         $this->addForeignKey(self::FK_MEMBER_ID, self::TABLE_NAME, self::COLUMN_NAME,
-            Member::tableName(), 'id');
+            'member', 'id', 'SET NULL', 'SET NULL');
     }
 
     /**

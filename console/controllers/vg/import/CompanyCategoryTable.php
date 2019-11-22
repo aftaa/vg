@@ -1,18 +1,17 @@
 <?php
 
+
+namespace console\controllers\vg\import;
+
+
 use common\models\CompanyCategory;
-use yii\db\Migration;
+use Yii;
+use yii\console\Controller;
 use yii\db\Query;
 
-/**
- * Class m190622_120859_import_data_into_company_category_table
- */
-class m190622_120859_import_data_into_company_category_table extends Migration
+class CompanyCategoryTable extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function safeUp()
+    public function actionIndex()
     {
         $db = Yii::$app->dbVsetigTest;
 
@@ -49,27 +48,4 @@ class m190622_120859_import_data_into_company_category_table extends Migration
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public
-    function safeDown()
-    {
-        Yii::$app->db->createCommand('TRUNCATE TABLE company_category')->execute();
-    }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190622_120859_import_data_into_company_category_table cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

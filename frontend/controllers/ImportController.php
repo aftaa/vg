@@ -39,17 +39,13 @@ class ImportController extends FrontendController
 
     public function actionCopy()
     {
-        $answer = new \stdClass;
+        $url = $this->app->getRequest()->post('url');
+        $companyId = $this->app->getRequest()->post('companyId');
+        $manager = new ImportManager;
+        $filename = $manager->createLocalFile($companyId, $url);
 
-        try {
-            $url = $this->app->getRequest()->get('url');
-            $companyId = $this->app->getRequest()->get('companyId');
-            $manager = new ImportManager;
-            $filename = $manager->createLocalFile($companyId, $url);
-        } catch (FolderCreateException $e) {
-            $answer->error = true;
-            $answer->message = $e->getMessage();
-        }
+        $xml = simplexml_load_file($filename);
+        echo $xml->yml_catalog;
     }
 
     /**

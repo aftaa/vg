@@ -1,19 +1,22 @@
 <?php
 
+namespace console\controllers\vg\import;
+
 use common\models\Member;
 use common\models\User;
-use yii\db\Migration;
+use Yii;
+use yii\console\Controller;
 use yii\db\Query;
 
-/**
- * Class m190618_003237_import_data_into_member_table
- */
-class m190618_003237_import_data_into_member_table extends Migration
+class MemberTableController extends Controller
 {
+    const USERNAME = 'root';
+    const PASSWORD = 'darkside';
+    const EMAIL = 'root@vseti-goroda.ru';
     /**
      * {@inheritdoc}
      */
-    public function safeUp()
+    public function actionIndex()
     {
         $db = Yii::$app->dbVsetigTest;
 
@@ -72,29 +75,38 @@ class m190618_003237_import_data_into_member_table extends Migration
             }
         }
         return true;
+
+        $this->createRootAndAdmin();
     }
 
     /**
-     * {@inheritdoc}
+     *
      */
-    public function safeDown()
+    private function createRootAndAdmin()
     {
-        Yii::$app->db->createCommand('TRUNCATE TABLE member')->execute();
-        Yii::$app->db->createCommand('DELETE FROM user WHERE id > 1')->execute();
+        $user = new User;
+        $user->id = 0;
+        $user->username = self::USERNAME;
+        $user->setPassword(self::PASSWORD);
+        $user->email = self::EMAIL;
+        $user->status = User::STATUS_ACTIVE;
+        $user->auth_key = $user->generateAuthKey();
+        $user->save();
+
+
+
+        $admin = User::findByUsername('admin');
+        $admin->username = 'user';
+        $admin->email = 'user@vseti-goroda.ru';
+        $admin->save();
+
+        $admin = new User;
+        $admin->auth_key = $user->generateAuthKey();
+        $admin->id = 1;
+        $admin->username = 'admin';
+        $admin->setPassword('vsetigoroda');
+        $admin->email = 'admin@vseti-goroda.ru';
+        $admin->status = User::STATUS_ACTIVE;
+        $admin->save();
     }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190618_003237_import_data_into_member_table cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

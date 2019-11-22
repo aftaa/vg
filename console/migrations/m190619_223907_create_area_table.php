@@ -35,7 +35,7 @@ class m190619_223907_create_area_table extends Migration
             self::TABLE_NAME,
             self::PARENT_ID_COLUMN,
             self::TABLE_NAME,
-            'id'
+            'id', 'SET NULL', 'SET NULL'
         );
     }
 

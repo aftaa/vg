@@ -31,7 +31,7 @@ class m191120_122601_create_table_yml_file extends Migration
 
         $this->createIndex(self::IDX_COMPANY_ID, self::TABLE_NAME, self::COLUMN_NAME);
         $this->addForeignKey(self::FK_COMPANY_ID, self::TABLE_NAME, self::COLUMN_NAME,
-            Company::tableName(), 'id');
+            'company', 'id', 'SET NULL', 'SET NULL');
     }
 
     /**
@@ -39,9 +39,11 @@ class m191120_122601_create_table_yml_file extends Migration
      */
     public function safeDown()
     {
+        Yii::$app->db->createCommand('SET foreign_key_checks = 0')->execute();
         $this->dropForeignKey(self::FK_COMPANY_ID, self::TABLE_NAME);
         $this->dropIndex(self::IDX_COMPANY_ID, self::TABLE_NAME);
         $this->dropTable(self::TABLE_NAME);
+        Yii::$app->db->createCommand('SET foreign_key_checks = 1')->execute();
     }
 
     /*

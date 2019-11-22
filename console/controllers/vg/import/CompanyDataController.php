@@ -1,21 +1,17 @@
 <?php
 
+namespace console\controllers\vg\import;
+
 use common\models\Company;
 use common\models\CompanyParam;
 use common\models\CompanyParamValue;
 use common\models\Member;
-use yii\db\Migration;
+use yii\console\Controller;
 use yii\db\Query;
 
-/**
- * Class m191022_190911_import_company_data
- */
-class m191022_190911_import_company_data extends Migration
+class CompanyDataController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function safeUp()
+    public function actionIndex()
     {
         $params = [
             'phone'       => 'Телефон',
@@ -100,18 +96,6 @@ class m191022_190911_import_company_data extends Migration
     }
 
     /**
-     * {@inheritdoc}
-     */
-    public function safeDown()
-    {
-        Yii::$app->db->createCommand('SET foreign_key_checks = 0')->execute();
-        Yii::$app->db->createCommand('TRUNCATE TABLE company_param_value')->execute();
-        Yii::$app->db->createCommand('TRUNCATE TABLE company_param')->execute();
-        Yii::$app->db->createCommand('TRUNCATE TABLE company')->execute();
-        Yii::$app->db->createCommand('SET foreign_key_checks = 1')->execute();
-    }
-
-    /**
      * @param string $thumb
      * @return string
      */
@@ -123,18 +107,4 @@ class m191022_190911_import_company_data extends Migration
         return $thumb;
     }
 
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190622_190911_import_company_data cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

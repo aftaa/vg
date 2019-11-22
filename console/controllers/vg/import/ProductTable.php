@@ -1,26 +1,18 @@
 <?php
 
+namespace console\controllers\vg\import;
+
 use common\models\Member;
 use common\models\Product;
 use common\vg\Helper;
 use common\vg\MemberNotFoundException;
-use yii\base\InvalidConfigException;
+use yii\console\Controller;
 use yii\db\Connection;
-use yii\db\Exception as DbException;
-use yii\db\Migration;
 use yii\db\Query;
 
-/**
- * Class m191023_024105_import_into_product_table
- */
-class m191023_024105_import_into_product_table extends Migration
+class ProductTable extends Controller
 {
-    /**
-     * @return bool|void
-     * @throws DbException
-     * @throws InvalidConfigException
-     */
-    public function safeUp()
+    public function actionIndex()
     {
         /** @var Connection $oldDb */
         $oldDb = Yii::$app->get('dbVsetigInfoCom');
@@ -65,18 +57,7 @@ class m191023_024105_import_into_product_table extends Migration
         echo "Total NOT imported rows: $totalNotImported\n";
     }
 
-    /**
-     * @return bool|void
-     * @throws yii\db\Exception
-     */
-    public function safeDown()
-    {
-        Yii::$app->db->createCommand('SET foreign_key_checks = 0')->execute();
-        Yii::$app->db->createCommand('TRUNCATE TABLE product')->execute();
-        Yii::$app->db->createCommand('SET foreign_key_checks = 1')->execute();
-    }
-
-    /**
+      /**
      * @param Query $aw_products_query
      * @param Connection $oldDb
      * @param Member $member
@@ -155,20 +136,4 @@ class m191023_024105_import_into_product_table extends Migration
         }
     }
 
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190626_024105_import_into_product_table cannot be reverted.\n";
-
-        return false;
-    }
-
-
-    */
 }

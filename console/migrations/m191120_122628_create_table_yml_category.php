@@ -11,7 +11,7 @@ class m191120_122628_create_table_yml_category extends Migration
     const TABLE_NAME = 'yml_category';
     const IDX_PARENT_ID = 'idx-yml-parent-id';
     const FK_PARENT_ID = 'fk-yml-parent-id';
-    const PARENT_ID_COLUMN = 'parent_id';
+    const PARENT_ID_COLUMN = 'yml_parent_id';
     const IDX_PRODUCT_CATEGORY_ID = 'idx-product-category-id';
     const IDX_YML_FILE_ID = 'idx-yml-file-id';
     const FK_YML_FILE_ID = 'fk-yml-file-id';
@@ -27,24 +27,25 @@ class m191120_122628_create_table_yml_category extends Migration
     {
         $this->createTable(self::TABLE_NAME, [
             'id'                      => $this->primaryKey()->comment('№'),
-            self::PARENT_ID_COLUMN    => $this->integer()->notNull()->comment('Родительская категория'),
+            'yml_id'                  => $this->integer()->notNull()->comment('YML-категория'),
+            self::PARENT_ID_COLUMN    => $this->integer()->null()->comment('Родительская YML-категория'),
             'name'                    => $this->string()->notNull()->comment('Категория YML-файла'),
-            'sort'                    => $this->integer()->notNull()->comment('Сортировка'),
-            self::PRODUCT_CATEGORY_ID => $this->integer()->notNull()->comment('Наша категория'),
+            'sort'                    => $this->integer()->null()->comment('Сортировка'),
+            self::PRODUCT_CATEGORY_ID => $this->integer()->null()->comment('Наша категория'),
             self::YML_FILE_ID         => $this->integer()->notNull()->comment('YML-файл'),
         ]);
 
         $this->createIndex(self::IDX_PARENT_ID, self::TABLE_NAME, self::PARENT_ID_COLUMN);
         $this->addForeignKey(self::FK_PARENT_ID, self::TABLE_NAME, self::PARENT_ID_COLUMN,
-            self::TABLE_NAME, 'id');
+            self::TABLE_NAME, 'yml_id', 'SET NULL', 'SET NULL');
 
         $this->createIndex(self::IDX_PRODUCT_CATEGORY_ID, self::TABLE_NAME, self::PRODUCT_CATEGORY_ID);
         $this->addForeignKey(self::FK_PRODUCT_CATEGORY_ID, self::TABLE_NAME, self::PRODUCT_CATEGORY_ID,
-            ProductCategory::tableName(), 'id');
+            ProductCategory::tableName(), 'id', 'SET NULL', 'SET NULL');
 
         $this->createIndex(self::IDX_YML_FILE_ID, self::TABLE_NAME, self::YML_FILE_ID);
         $this->addForeignKey(self::FK_YML_FILE_ID, self::TABLE_NAME, self::YML_FILE_ID,
-            'yml_file', 'id');
+            'yml_file', 'id', 'SET NULL', 'SET NULL');
     }
 
     /**
@@ -52,6 +53,8 @@ class m191120_122628_create_table_yml_category extends Migration
      */
     public function safeDown()
     {
+        Yii::$app->db->createCommand('SET foreign_key_checks = 0')->execute();
+
         $this->dropForeignKey(self::FK_YML_FILE_ID, self::TABLE_NAME);
         $this->dropIndex(self::IDX_YML_FILE_ID, self::TABLE_NAME);
 
@@ -62,6 +65,8 @@ class m191120_122628_create_table_yml_category extends Migration
         $this->dropIndex(self::IDX_PARENT_ID, self::TABLE_NAME);
 
         $this->dropTable(self::TABLE_NAME);
+
+        Yii::$app->db->createCommand('SET foreign_key_checks = 1')->execute();
     }
 
     /*

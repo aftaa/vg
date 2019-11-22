@@ -26,38 +26,18 @@ $this->params['breadcrumbs'][] = [
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<form action="<?= Url::to(['profile/import/load', 'companyId' => $company->id]) ?>" method="post"
-      enctype="multipart/form-data" id="import_form">
+<form action="<?= Url::to(['import/copy']) ?>" id="import_form" method="post">
+    <?= Html::hiddenInput('companyId', $company->id) ?>
     <?= Html::hiddenInput(Yii::$app->getRequest()->csrfParam, Yii::$app->getRequest()->getCsrfToken()) ?>
     <h1>URL<sup>*</sup>:</h1>
-    <input type="text" class="form-control" required value="http://tt/556.xml" style="font-size: 20px;" id="url">
+    <input type="text" class="form-control" name="url" required value="http://tt/556.xml" style="font-size: 20px;" id="url">
     <br>
-    <input type="submit" class="btn btn-danger" value="Импорт" id="import">
-    <br><br>
-    <label>
-        <div style="font-weight: normal;">
-            <input type="checkbox" name="url_periodical_check" checked>
-            сопоставить URL компании <?= $company->name ?> и периодически обновлять информацию из файла
-        </div>
-    </label>
+    <input type="submit" class="btn btn-danger" value="Импорт" id="import_btn">
 
     <div style="display: none;" id="file_size_wrap">
         <br>
         <h3>
             размер файла: <span id="file_size"></span> Мб
-        </h3>
-    </div>
-
-    <div style="display: none;" id="file_copy_wrap">
-        <br>
-        <h3>
-            загрузка:
-            <div class="progress" style="margin-top: .25em;">
-                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
-                     aria-valuemax="100">
-                    0%
-                </div>
-            </div>
         </h3>
     </div>
 
@@ -67,36 +47,23 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <script>
     $(function () {
-        function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
+        // function sleep(ms) {
+        //     return new Promise(resolve => setTimeout(resolve, ms));
+        // }
 
-        $('#import_form').on('submit', function () {
-            $('#import').attr({disabled: true});
+        $('#import_btn').on('click', function () {
             let url = $('#url').val();
             $.get('/import/remote-file-size/', {url: url}, function (data) {
-                $('#file_size_wrap').fadeIn('slow', function () {
-
-                    let fileSize = data.shift();
-                    fileSize = parseFloat(fileSize);
-                    fileSize /= 1024;
-                    fileSize /= 1024;
-                    fileSize = Math.round(fileSize);
-
-                    $('#file_size').html(fileSize);
-
-                    setTimeout(function () {
-                        $('#file_size_wrap').fadeOut('fast', function () {
-                            $('#file_copy_wrap').show();
-
-                            $.get('/import/copy', {companyId: <?= $company->id ?>, url: url}, function (data) {
-                                console.log(data);
-                            }, 'json');
-                        })
-                    }, 3000);
-                });
-
-
+                let fileSize = data.shift();
+                fileSize = parseFloat(fileSize);
+                fileSize /= 1024;
+                fileSize /= 1024;
+                fileSize = Math.round(fileSize);
+                $('#file_size').html(fileSize);
+                $('#file_size_wrap').fadeIn();
+                setTimeout(function () {
+                    $('#import_form').submit();
+                }, 3000);
             }, 'json');
             return false;
         });

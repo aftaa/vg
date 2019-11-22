@@ -1,20 +1,20 @@
 <?php
 
+namespace console\controllers\vg\import;
+
 use common\models\ProductCategory;
-use yii\db\Migration;
+use Yii;
+use yii\console\Controller;
 use yii\db\Query;
 
-/**
- * Class m190616_141515_import_data_into_product_category_table
- */
-class m190616_141515_import_data_into_product_category_table extends Migration
+class ProductCategoryTableController extends Controller
 {
     const METALL = 269;
 
     /**
      * {@inheritdoc}
      */
-    public function safeUp()
+    public function actionIndex()
     {
         $db = Yii::$app->dbVsetigTest;
 
@@ -90,31 +90,8 @@ class m190616_141515_import_data_into_product_category_table extends Migration
                 }
             }
 
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             print_r($e->getMessage());
         }
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function safeDown()
-    {
-        Yii::$app->db->createCommand('TRUNCATE TABLE product_category')->execute();
-    }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190616_141515_import_data_into_product_category_table cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

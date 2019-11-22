@@ -30,7 +30,7 @@ class m191121_051425_create_table_product_param extends Migration
             self::PRODUCT_CATEGORY_ID_COLUMN);
 
         $this->addForeignKey(self::FK_PRODUCT_PARAM_PRODUCT_CATEGORY_ID, self::TABLE_NAME,
-            self::PRODUCT_CATEGORY_ID_COLUMN, ProductCategory::tableName(), 'id');
+            self::PRODUCT_CATEGORY_ID_COLUMN, ProductCategory::tableName(), 'id', 'SET NULL', 'SET NULL');
     }
 
     /**
@@ -38,9 +38,13 @@ class m191121_051425_create_table_product_param extends Migration
      */
     public function safeDown()
     {
+        Yii::$app->db->createCommand('SET foreign_key_checks = 0')->execute();
+
         $this->dropForeignKey(self::FK_PRODUCT_PARAM_PRODUCT_CATEGORY_ID, self::TABLE_NAME);
         $this->dropIndex(self::IDX_PRODUCT_PARAM_PRODUCT_CATEGORY_ID, self::TABLE_NAME);
         $this->dropTable(self::TABLE_NAME);
+
+        Yii::$app->db->createCommand('SET foreign_key_checks = 1')->execute();
     }
 
     /*

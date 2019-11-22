@@ -1,18 +1,18 @@
 <?php
 
+namespace console\controllers\vg\import;
+
 use common\models\Area;
-use yii\db\Migration;
+use Yii;
+use yii\console\Controller;
 use yii\db\Query;
 
-/**
- * Class m190619_224733_import_data_into_area_table
- */
-class m190619_224733_import_data_into_area_table extends Migration
+class AreaTable extends Controller
 {
     /**
      * {@inheritdoc}
      */
-    public function safeUp()
+    public function actionIndex()
     {
         $db = Yii::$app->dbVsetigTest;
 
@@ -42,34 +42,12 @@ class m190619_224733_import_data_into_area_table extends Migration
                     echo "$area->name\n";
                     print_r($area->errors);
                 } else {
-                    echo "Area: $user->username added\n";
+                    echo "Area: $area->name added\n";
                 }
             }
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             print_r($e->getMessage());
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function safeDown()
-    {
-        Yii::$app->db->createCommand('TRUNCATE TABLE area')->execute();
-    }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190619_224733_import_data_into_area_table cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

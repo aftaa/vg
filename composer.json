@@ -28,7 +28,8 @@
     "yiisoft/yii2-sphinx": "^2.0",
     "yiisoft/yii2-redis": "*",
     "ext-dom": "*",
-    "ext-memcache": "*"
+    "ext-memcache": "*",
+    "ext-simplexml": "*"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.1.0",
