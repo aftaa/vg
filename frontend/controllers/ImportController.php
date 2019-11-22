@@ -4,6 +4,9 @@ namespace frontend\controllers;
 
 use common\models\Company;
 use common\vg\controllers\FrontendController;
+use common\vg\helpers\ImportHelper;
+use common\vg\manager\ImportManager;
+use common\vg\models\import\FolderCreateException;
 use yii\filters\AccessControl;
 
 class ImportController extends FrontendController
@@ -36,7 +39,17 @@ class ImportController extends FrontendController
 
     public function actionCopy()
     {
-        $url = $this->app->getRequest()->get('url');
+        $answer = new \stdClass;
+
+        try {
+            $url = $this->app->getRequest()->get('url');
+            $companyId = $this->app->getRequest()->get('companyId');
+            $manager = new ImportManager;
+            $filename = $manager->createLocalFile($companyId, $url);
+        } catch (FolderCreateException $e) {
+            $answer->error = true;
+            $answer->message = $e->getMessage();
+        }
     }
 
     /**
@@ -45,27 +58,9 @@ class ImportController extends FrontendController
     public function actionRemoteFileSize()
     {
         $url = $this->app->getRequest()->get('url');
-        $fileSize = $this->getFileSize($url);
+        $fileSize = ImportHelper::getFileSize($url);
         $return = [$fileSize];
         $return = json_encode($return);
         return $return;
-    }
-
-    /**
-     * @param string $url
-     * @return int|null
-     */
-    public function getFileSize(string $url): ?int
-    {
-        $fp = fopen($url, "r");
-        $inf = stream_get_meta_data($fp);
-        fclose($fp);
-        foreach ($inf["wrapper_data"] as $v) {
-            if (stristr($v, "content-length")) {
-                $v = explode(":", $v);
-                return trim($v[1]);
-            }
-        }
-        return null;
     }
 }

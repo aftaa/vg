@@ -6,6 +6,16 @@ return [
     ],
     'supportEmail' => 'support@vseti-goroda.ru',
     'senderEmail' => 'admin@vseti-goroda.ru',
-    'senderName' => 'Каталог «В сети города»',
+    'senderName' => '«В сети города»',
+    'rootEmail' => [
+        'senderEmail' => 'root@vseti-goroda.ru',
+        'senderName' => 'Технический администратор',
+    ],
+
     'user.passwordResetTokenExpire' => 3600,
+
+    //YML import
+    'import' => [
+        'folder' => "$_SERVER[DOCUMENT_ROOT]/import",
+    ],
 ];

@@ -48,6 +48,18 @@ $this->params['breadcrumbs'][] = $this->title;
         </h3>
     </div>
 
+    <div style="display: none;" id="file_copy_wrap">
+        <br>
+        <h3>
+            загрузка:
+            <div class="progress" style="margin-top: .25em;">
+                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                     aria-valuemax="100">
+                    0%
+                </div>
+            </div>
+        </h3>
+    </div>
 
     <hr size="1">
     <sup>*</sup> &mdash; максимальный размер файла <?= ini_get('upload_max_filesize') ?>б
@@ -74,7 +86,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     $('#file_size').html(fileSize);
 
                     setTimeout(function () {
-                        $('#file_size_wrap').fadeOut()
+                        $('#file_size_wrap').fadeOut('fast', function () {
+                            $('#file_copy_wrap').show();
+
+                            $.get('/import/copy', {companyId: <?= $company->id ?>, url: url}, function (data) {
+                                console.log(data);
+                            }, 'json');
+                        })
                     }, 3000);
                 });
 
