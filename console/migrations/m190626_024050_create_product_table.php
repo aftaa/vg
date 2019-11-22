@@ -44,9 +44,6 @@ class m190626_024050_create_product_table extends Migration
         $this->createIndex(self::IDX_PRODUCT_COMPANY_ID, self::TABLE_NAME, self::COMPANY_ID_COLUMN);
         $this->createIndex(self::IDX_PRODUCT_CATEGORY_ID, self::TABLE_NAME, self::CATEGORY_ID_COLUMN);
 
-        $this->addForeignKey(self::FK_PRODUCT_COMPANY_ID, self::TABLE_NAME, self::COMPANY_ID_COLUMN, 'company', 'id', 'SET NULL', 'SET NULL');
-        $this->addForeignKey(self::FK_PRODUCT_CATEGORY_ID, self::TABLE_NAME, self::CATEGORY_ID_COLUMN, 'product_category', 'id', 'SET NULL', 'SET NULL');
-
     }
 
     /**
@@ -56,8 +53,6 @@ class m190626_024050_create_product_table extends Migration
     {
         Yii::$app->db->createCommand('SET foreign_key_checks = 0')->execute();
 
-        $this->dropForeignKey(self::FK_PRODUCT_CATEGORY_ID, self::TABLE_NAME);
-        $this->dropForeignKey(self::FK_PRODUCT_COMPANY_ID, self::TABLE_NAME);
         $this->dropIndex(self::IDX_PRODUCT_CATEGORY_ID, self::TABLE_NAME);
         $this->dropIndex(self::IDX_PRODUCT_COMPANY_ID, self::TABLE_NAME);
 

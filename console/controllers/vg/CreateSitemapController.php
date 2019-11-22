@@ -12,7 +12,7 @@ use DateTime;
 use yii\console\Controller;
 use Exception;
 
-class SitemapController extends Controller
+class CreateSitemapController extends Controller
 {
     /** @var string */
     public $serverName = 'http://vseti-goroda.ru';

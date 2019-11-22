@@ -31,8 +31,6 @@ class m190622_134159_create_company_value_table extends Migration
         $this->createIndex(self::IDX_COMPANY_ID, self::TABLE_NAME, self::COMPANY_ID_COLUMN);
         $this->createIndex(self::IDX_PARAM_ID, self::TABLE_NAME, self::PARAM_ID_COLUMN);
 
-        $this->addForeignKey(self::FK_COMPANY_ID, self::TABLE_NAME, self::COMPANY_ID_COLUMN, 'company', 'id', 'SET NULL', 'SET NULL');
-        $this->addForeignKey(self::FK_PARAM_ID, self::TABLE_NAME, self::PARAM_ID_COLUMN, 'company_param', 'id', 'SET NULL', 'SET NULL');
     }
 
     /**
@@ -40,9 +38,6 @@ class m190622_134159_create_company_value_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropForeignKey(self::FK_PARAM_ID, self::TABLE_NAME);
-        $this->dropForeignKey(self::FK_COMPANY_ID, self::TABLE_NAME);
-
         $this->dropIndex(self::IDX_PARAM_ID, self::TABLE_NAME);
         $this->dropIndex(self::FK_COMPANY_ID, self::TABLE_NAME);
 

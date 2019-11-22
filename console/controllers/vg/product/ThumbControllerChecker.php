@@ -9,21 +9,12 @@ use yii\console\Controller;
 use yii\db\Connection;
 use yii\db\Query;
 
-class ThumbController extends Controller
+class ThumbControllerChecker extends Controller
 {
 //    const THUMB_NOT_FOUND = '/img/thumb_missing.jpg';
     const THUMB_NOT_FOUND = null;
 
     public function actionIndex()
-    {
-        echo "Usage:\n";
-        echo "1. vg/product/check\n";
-        echo "2. vg/product/correct\n"; // relative path 2 absolute
-        echo "3. vg/product/setnull\n"; // image is missing
-        exit(0);
-    }
-
-    public function actionCheck()
     {
         $time = time();
 

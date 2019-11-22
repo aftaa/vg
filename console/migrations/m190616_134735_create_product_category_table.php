@@ -33,14 +33,6 @@ class m190616_134735_create_product_category_table extends Migration
             self::TABLE_NAME,
             self::PARENT_ID_COLUMN
         );
-
-        $this->addForeignKey(
-            self::FK_CATEGORY_ID,
-            self::TABLE_NAME,
-            self::PARENT_ID_COLUMN,
-            self::TABLE_NAME,
-            'id'
-        );
     }
 
     /**
@@ -48,7 +40,6 @@ class m190616_134735_create_product_category_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropForeignKey(self::FK_CATEGORY_ID, self::TABLE_NAME);
         $this->dropIndex(self::IDX_CATEGORY_PARENT_ID, self::TABLE_NAME);
         $this->dropTable(self::TABLE_NAME);
     }

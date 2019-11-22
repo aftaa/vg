@@ -7,7 +7,7 @@ use yii\db\Migration;
  */
 class m190617_232436_create_member_table extends Migration
 {
-    const FK_USER_ID = 'fk-user-id';
+    const FK_USER_ID = 'fk-member-user-id';
     const IDX_USER_ID = 'idx-user-id';
     const TABLE = 'member';
 
@@ -37,8 +37,6 @@ class m190617_232436_create_member_table extends Migration
         ]);
 
         $this->createIndex(self::IDX_USER_ID, self::TABLE, 'user_id');
-        $this->addForeignKey(self::FK_USER_ID, self::TABLE, 'user_id',
-            'user', 'id', 'SET NULL', 'SET NULL');
     }
 
     /**
@@ -46,7 +44,6 @@ class m190617_232436_create_member_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropForeignKey(self::FK_USER_ID, self::TABLE);
         $this->dropIndex(self::IDX_USER_ID, self::TABLE);
         $this->dropTable('{{%member}}');
     }

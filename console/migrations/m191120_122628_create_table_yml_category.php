@@ -35,17 +35,6 @@ class m191120_122628_create_table_yml_category extends Migration
             self::YML_FILE_ID         => $this->integer()->notNull()->comment('YML-файл'),
         ]);
 
-        $this->createIndex(self::IDX_PARENT_ID, self::TABLE_NAME, self::PARENT_ID_COLUMN);
-        $this->addForeignKey(self::FK_PARENT_ID, self::TABLE_NAME, self::PARENT_ID_COLUMN,
-            self::TABLE_NAME, 'yml_id', 'SET NULL', 'SET NULL');
-
-        $this->createIndex(self::IDX_PRODUCT_CATEGORY_ID, self::TABLE_NAME, self::PRODUCT_CATEGORY_ID);
-        $this->addForeignKey(self::FK_PRODUCT_CATEGORY_ID, self::TABLE_NAME, self::PRODUCT_CATEGORY_ID,
-            ProductCategory::tableName(), 'id', 'SET NULL', 'SET NULL');
-
-        $this->createIndex(self::IDX_YML_FILE_ID, self::TABLE_NAME, self::YML_FILE_ID);
-        $this->addForeignKey(self::FK_YML_FILE_ID, self::TABLE_NAME, self::YML_FILE_ID,
-            'yml_file', 'id', 'SET NULL', 'SET NULL');
     }
 
     /**
@@ -53,20 +42,7 @@ class m191120_122628_create_table_yml_category extends Migration
      */
     public function safeDown()
     {
-        Yii::$app->db->createCommand('SET foreign_key_checks = 0')->execute();
-
-        $this->dropForeignKey(self::FK_YML_FILE_ID, self::TABLE_NAME);
-        $this->dropIndex(self::IDX_YML_FILE_ID, self::TABLE_NAME);
-
-        $this->dropForeignKey(self::FK_PRODUCT_CATEGORY_ID, self::TABLE_NAME);
-        $this->dropIndex(self::IDX_PRODUCT_CATEGORY_ID, self::TABLE_NAME);
-
-        $this->dropForeignKey(self::FK_PARENT_ID, self::TABLE_NAME);
-        $this->dropIndex(self::IDX_PARENT_ID, self::TABLE_NAME);
-
         $this->dropTable(self::TABLE_NAME);
-
-        Yii::$app->db->createCommand('SET foreign_key_checks = 1')->execute();
     }
 
     /*

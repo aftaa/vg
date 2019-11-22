@@ -28,8 +28,6 @@ class m190620_195936_create_company_category_table extends Migration
         ]);
 
         $this->createIndex(self::IDX_PARENT_ID, self::TABLE_NAME, self::PARENT_ID_COLUMN);
-        $this->addForeignKey(self::FK_PARENT_ID, self::TABLE_NAME, self::PARENT_ID_COLUMN,
-            self::TABLE_NAME, 'id', 'SET NULL', 'SET NULL');
     }
 
     /**
@@ -37,7 +35,6 @@ class m190620_195936_create_company_category_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropForeignKey(self::FK_PARENT_ID, self::TABLE_NAME);
         $this->dropIndex(self::IDX_PARENT_ID, self::TABLE_NAME);
         $this->dropTable('{{%company_category}}');
     }

@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Handles adding columns to table `{{%product}}`.
  */
-class m191120_142527_add_yml_columns_to_product_table extends Migration
+class m191120_122600_add_yml_columns_to_product_table extends Migration
 {
     const TABLE_NAME = 'product';
     const YML_URL_COLUMN = 'yml_url';
@@ -26,8 +26,6 @@ class m191120_142527_add_yml_columns_to_product_table extends Migration
         $this->createIndex(self::IDX_YML_FILE_ID, self::TABLE_NAME, self::YML_FILE_ID_COLUMN);
         $this->createIndex(self::IDX_YML_URL, self::TABLE_NAME, self::YML_URL_COLUMN);
 
-        $this->addForeignKey(self::FK_PRODUCT_YML_FILE_ID, self::TABLE_NAME, self::YML_FILE_ID_COLUMN,
-            'yml_file', 'id', 'SET NULL', 'SET NULL');
     }
 
     /**
@@ -36,8 +34,6 @@ class m191120_142527_add_yml_columns_to_product_table extends Migration
     public function safeDown()
     {
         Yii::$app->db->createCommand('SET foreign_key_checks = 0')->execute();
-
-        $this->dropForeignKey(self::FK_PRODUCT_YML_FILE_ID, self::TABLE_NAME);
 
         $this->dropIndex(self::IDX_YML_URL, self::TABLE_NAME);
         $this->dropIndex(self::IDX_YML_FILE_ID, self::TABLE_NAME);
