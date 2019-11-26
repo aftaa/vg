@@ -8,7 +8,7 @@ use Yii;
 use yii\console\Controller;
 use yii\db\Query;
 
-class MemberTableController extends Controller
+class MemberController extends Controller
 {
     const USERNAME = 'root';
     const PASSWORD = 'darkside';

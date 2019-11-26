@@ -7,7 +7,7 @@ use Yii;
 use yii\console\Controller;
 use yii\db\Query;
 
-class ProductCategoryTableController extends Controller
+class ProductCategoryController extends Controller
 {
     const METALL = 269;
 

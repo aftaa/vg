@@ -7,7 +7,7 @@ use Yii;
 use yii\console\Controller;
 use yii\db\Query;
 
-class AreaTable extends Controller
+class AreaController extends Controller
 {
     /**
      * {@inheritdoc}

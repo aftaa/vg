@@ -9,7 +9,7 @@ use Yii;
 use yii\console\Controller;
 use yii\db\Query;
 
-class CompanyCategoryTable extends Controller
+class CompanyCategoryController extends Controller
 {
     public function actionIndex()
     {

@@ -10,7 +10,7 @@ use yii\console\Controller;
 use yii\db\Connection;
 use yii\db\Query;
 
-class ProductTable extends Controller
+class ProductController extends Controller
 {
     public function actionIndex()
     {

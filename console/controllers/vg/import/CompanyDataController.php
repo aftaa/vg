@@ -6,6 +6,7 @@ use common\models\Company;
 use common\models\CompanyParam;
 use common\models\CompanyParamValue;
 use common\models\Member;
+use Yii;
 use yii\console\Controller;
 use yii\db\Query;
 
