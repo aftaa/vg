@@ -8,7 +8,7 @@ use yii\db\Migration;
 class m190616_134735_create_product_category_table extends Migration
 {
     const TABLE_NAME = 'product_category';
-    const FK_CATEGORY_ID = 'fk-category-id';
+    const FK_CATEGORY_ID = 'fk-product-category-category-id';
     const IDX_CATEGORY_PARENT_ID = 'idx-category-parent-id';
     const PARENT_ID_COLUMN = 'parent_id';
 
@@ -33,6 +33,9 @@ class m190616_134735_create_product_category_table extends Migration
             self::TABLE_NAME,
             self::PARENT_ID_COLUMN
         );
+
+        $this->addForeignKey(self::FK_CATEGORY_ID, self::TABLE_NAME,
+            self::TABLE_NAME, 'parent_id', 'id', 'SET NULL', 'SET NULL');
     }
 
     /**

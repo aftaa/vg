@@ -37,6 +37,11 @@ class m190617_232436_create_member_table extends Migration
         ]);
 
         $this->createIndex(self::IDX_USER_ID, self::TABLE, 'user_id');
+
+        $this->addForeignKey(self::FK_USER_ID, self::TABLE, 'user_id',
+            'user', 'id', 'SET NULL', 'SET NULL');
+
+
     }
 
     /**

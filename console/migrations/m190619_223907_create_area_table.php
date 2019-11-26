@@ -29,6 +29,9 @@ class m190619_223907_create_area_table extends Migration
             self::TABLE_NAME,
             self::PARENT_ID_COLUMN
         );
+
+        $this->addForeignKey(self::FK_AREA_PARENT_ID, self::TABLE_NAME, self::PARENT_ID_COLUMN,
+            self::TABLE_NAME, 'id', 'SET NULL', 'SET NULL');
     }
 
     /**

@@ -10,7 +10,7 @@ class m190620_195936_create_company_category_table extends Migration
     const TABLE_NAME = 'company_category';
     const IDX_PARENT_ID = 'idx-parent-id';
     const PARENT_ID_COLUMN = 'parent_id';
-    const FK_PARENT_ID = 'fk-parent-id';
+    const FK_PARENT_ID = 'fk-company-categgory-parent-id';
 
     /**
      * {@inheritdoc}
@@ -28,6 +28,9 @@ class m190620_195936_create_company_category_table extends Migration
         ]);
 
         $this->createIndex(self::IDX_PARENT_ID, self::TABLE_NAME, self::PARENT_ID_COLUMN);
+
+        $this->addForeignKey(self::FK_PARENT_ID, self::TABLE_NAME, self::PARENT_ID_COLUMN,
+            self::TABLE_NAME, 'id', 'SET NULL', 'SET NULL');
     }
 
     /**
