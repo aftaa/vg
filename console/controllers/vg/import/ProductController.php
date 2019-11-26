@@ -6,6 +6,7 @@ use common\models\Member;
 use common\models\Product;
 use common\vg\Helper;
 use common\vg\MemberNotFoundException;
+use Yii;
 use yii\console\Controller;
 use yii\db\Connection;
 use yii\db\Query;
