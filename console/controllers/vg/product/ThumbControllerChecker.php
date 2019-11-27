@@ -9,7 +9,7 @@ use yii\console\Controller;
 use yii\db\Connection;
 use yii\db\Query;
 
-class ThumbControllerChecker extends Controller
+class ThumbController extends Controller
 {
 //    const THUMB_NOT_FOUND = '/img/thumb_missing.jpg';
     const THUMB_NOT_FOUND = null;
