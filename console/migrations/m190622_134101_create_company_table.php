@@ -38,10 +38,11 @@ class m190622_134101_create_company_table extends Migration
         $this->createIndex('idx-area-id', self::TABLE_NAME, self::AREA_ID_COLUMN);
 
         $this->addForeignKey('fk-company-owner-id', self::TABLE_NAME, self::OWNER_ID_COLUMN,
-            'member', 'id', 'SET NULL', 'SET NULL');
+            'member', 'id', 'SET NULL');
         $this->addForeignKey('fk-company-category-id', self::TABLE_NAME, self::CATEGORY_ID_COLUMN,
-            'company_category', 'id', 'SET NULL', 'SET NULL');
-        $this->addForeignKey('fk-')
+            'company_category', 'id', 'SET NULL');
+        $this->addForeignKey('fk-company-area-id', 'company', 'area_id',
+            'area', 'id', 'SET NULL', 'SET NULL');
     }
 
     /**

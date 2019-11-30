@@ -11,7 +11,7 @@ class m191120_122628_create_table_yml_category extends Migration
     const TABLE_NAME = 'yml_category';
     const IDX_PARENT_ID = 'idx-yml-parent-id';
     const FK_PARENT_ID = 'fk-yml-parent-id';
-    const PARENT_ID_COLUMN = 'yml_parent_id';
+    const PARENT_ID_COLUMN = 'parent_id';
     const IDX_PRODUCT_CATEGORY_ID = 'idx-product-category-id';
     const IDX_YML_FILE_ID = 'idx-yml-file-id';
     const FK_YML_FILE_ID = 'fk-yml-file-id';
@@ -27,7 +27,6 @@ class m191120_122628_create_table_yml_category extends Migration
     {
         $this->createTable(self::TABLE_NAME, [
             'id'                      => $this->primaryKey()->comment('№'),
-            'yml_id'                  => $this->integer()->notNull()->comment('YML-категория'),
             self::PARENT_ID_COLUMN    => $this->integer()->null()->comment('Родительская YML-категория'),
             'name'                    => $this->string()->notNull()->comment('Категория YML-файла'),
             'sort'                    => $this->integer()->null()->comment('Сортировка'),

@@ -22,6 +22,9 @@ use yii\helpers\Html;
             <a rel="nofollow" target="_blank" href="https://www.instagram.com/vsetigoroda/">
                 <img alt="Группа в инстаграмме" src="/img/social/inst.png"></a>
         </p>
-        <p class="col col-md-4"><?= Yii::powered() ?></p>
+        <p class="col col-md-4">
+            Создано <a href="http://kuba.moscow/" style="padding: 5px; color: #333; background: yellow">kuba.moscow</a>
+            на <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a>
+        </p>
     </div>
 </footer>

@@ -29,7 +29,7 @@ class ThumbController extends Controller
         $results = [];
 
         $i = 1;
-        foreach ($products->each(100) as $id => $product) {
+        foreach ($products->each(10000) as $id => $product) {
 
             $url = $product->thumb;
             $correctUrl = $this->correctUrl($url);

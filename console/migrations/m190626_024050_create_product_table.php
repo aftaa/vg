@@ -22,12 +22,12 @@ class m190626_024050_create_product_table extends Migration
     {
         $this->createTable('{{%product}}', [
             'id'                     => $this->primaryKey()->comment('№'),
-            self::COMPANY_ID_COLUMN  => $this->integer()->notNull()->comment('Компания'),
+            self::COMPANY_ID_COLUMN  => $this->integer()->null()->comment('Компания'),
             self::CATEGORY_ID_COLUMN => $this->integer()->notNull()->comment('Категория'),
 
             'name'        => $this->string(500)->notNull()->comment('Товар'),
             'description' => $this->text()->null()->comment('Описание'),
-            'thumb'       => $this->string(250)->null()->comment('Изображение'),
+            'thumb'       => $this->string(500)->null()->comment('Изображение'),
 
             'checked' => $this->boolean()->notNull()->defaultValue(false)->comment('Проверен'),
             'price'   => $this->decimal(10, 2)->comment('Стоимость'),
@@ -35,9 +35,9 @@ class m190626_024050_create_product_table extends Migration
             'meta_keywords'    => $this->text()->null()->comment('Meta Keywords'),
             'meta_description' => $this->text()->null()->comment('Meta Description'),
 
-            'created_at' => $this->dateTime()->notNull()->comment('Создан'),
-            'updated_at' => $this->dateTime()->comment('Изменен'),
-            'deleted_at' => $this->dateTime()->comment('Удалён'),
+            'created_at' => $this->integer()->notNull()->comment('Создан'),
+            'updated_at' => $this->integer()->comment('Изменен'),
+            'deleted_at' => $this->integer()->comment('Удалён'),
 
         ]);
 

@@ -34,8 +34,8 @@ class m190616_134735_create_product_category_table extends Migration
             self::PARENT_ID_COLUMN
         );
 
-        $this->addForeignKey(self::FK_CATEGORY_ID, self::TABLE_NAME,
-            self::TABLE_NAME, 'parent_id', 'id', 'SET NULL', 'SET NULL');
+        $this->addForeignKey('fk-product-category-parent-id', 'product_category', 'parent_id',
+            'product_category', 'id', 'SET NULL');
     }
 
     /**
