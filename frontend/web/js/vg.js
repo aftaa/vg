@@ -71,31 +71,36 @@ $(function () {
 // check thumb exists policy
 // in russian: обратиться в полицию превьюшек, если нет оной
 $(window).on('load', function () {
+    console.log('site loaded');
 
     $('.index-product-thumb img').each(function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
-            $.get('policy/no-product-thumb/' + id);
+            console.log(id);
+            $.get('/policy/no-product-thumb/' + id);
         }
         $(this.parentNode.parentNode).removeClass('circle-732');
-    });
-
-    $('.index-company-thumb img').each(function () {
-        if (!this.width || !this.height) {
-            this.src = '/img/no_logo.jpg';
-            let id = this.dataset.id;
-            $.get('policy/no-company-thumb/' + id);
-        }
     });
 
     $('.category-product img').each(function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
-            $.get('policy/no-product-thumb/' + id);
+            $.get('/policy/no-product-thumb/' + id);
         }
     });
+
+    // companies
+    $('.index-company-thumb img').each(function () {
+        if (!this.width || !this.height) {
+            this.src = '/img/no_logo.jpg';
+            let id = this.dataset.id;
+            console.log(id);
+            $.get('/policy/no-company-thumb/' + id);
+        }
+    });
+
 
     // TODO объеденить первую и последнюю функции
 });

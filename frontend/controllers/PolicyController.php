@@ -24,7 +24,7 @@ class PolicyController extends FrontendController
         $product = Product::findOne($productId);
         $this->setNoThumb($product);
 
-        $productWrongThumb = new ProductWrongThumb();
+        $productWrongThumb = new ProductWrongThumb;
         $productWrongThumb->product_id = $productId;
         $productWrongThumb->save();
     }
