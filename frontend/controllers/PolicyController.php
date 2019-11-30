@@ -37,7 +37,6 @@ class PolicyController extends FrontendController
     protected function setNoThumb(ActiveRecord $ar): void
     {
         $ar->thumb = null;
-        $ar->thumb_checked = false;
         $ar->save(false);
     }
 }

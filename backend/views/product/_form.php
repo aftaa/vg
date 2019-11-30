@@ -22,8 +22,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'thumb')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'thumb_checked')->textInput() ?>
-
     <?= $form->field($model, 'checked')->textInput() ?>
 
     <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>

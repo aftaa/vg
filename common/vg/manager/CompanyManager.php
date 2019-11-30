@@ -23,7 +23,6 @@ class CompanyManager
     {
         return (new VgRandomSelectFromBigTable(
             VgCompany::find()
-                ->where('thumb_checked=TRUE')
                 ->andWhere('thumb IS NOT NULL'),
 
             new VgRandomizer(1, VgCompany::getMaxId())
@@ -40,7 +39,6 @@ class CompanyManager
     {
         return (new VgRandomSelectFromBigTable(
             VgCompany::find()
-                ->where('thumb_checked=TRUE')
                 ->andWhere('thumb IS NOT NULL'),
 
             new VgRandomizer(1, VgCompany::getMaxId())

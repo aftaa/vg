@@ -31,7 +31,7 @@ array_unshift($this->params['breadcrumbs'], [
 <div class="container company">
     <div class="row">
         <div class="col-md-4">
-            <?php if ($product->thumb_checked && $product->thumb): ?>
+            <?php if ($product->thumb): ?>
                 <img alt="<?= $product->name ?>" src="<?= $product->thumb ?>" style="max-width: 100%;">
             <?php else: ?>
                 <img alt="" src="<?= VgProduct::NO_PRODUCT ?>" style="max-width: 100%;">

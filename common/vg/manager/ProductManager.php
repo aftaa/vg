@@ -110,8 +110,8 @@ class ProductManager
         return (new VgRandomSelectFromBigTable(
             VgProduct::find()
                 ->select('id, thumb, name, price')
-                ->where('thumb_checked=TRUE')
-                ->andWhere('thumb IS NOT NULL'),
+                ->andWhere('thumb IS NOT NULL')
+                ->andWhere('price > 0'),
 
             new VgRandomizer(1, VgProduct::getMaxId())
 
@@ -128,8 +128,9 @@ class ProductManager
         return (new VgRandomSelectFromBigTable(
             VgProduct::find()
                 ->select('id, thumb, name, price')
-                ->where('thumb_checked=TRUE')
-                ->andWhere('thumb IS NOT NULL'),
+                ->andWhere('thumb IS NOT NULL')
+                ->andWhere('price > 0')
+                ->orderBy('created_at DESC'),
 
             new VgRandomizer(1, VgProduct::getMaxId())
 

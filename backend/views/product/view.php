@@ -35,7 +35,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'description:ntext',
             'thumb',
-            'thumb_checked',
             'checked',
             'price',
             'meta_keywords:ntext',
