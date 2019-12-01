@@ -8,21 +8,19 @@ use Yii;
  * This is the model class for table "company".
  *
  * @property int $id №
- * @property int $owner_id Владелец
- * @property int $company_category_id Категория
- * @property int $area_id Регион
+ * @property int|null $owner_id Владелец
+ * @property int|null $company_category_id Категория
+ * @property int|null $area_id Регион
  * @property string $name Компания
- * @property string $introduce Описание
- * @property string $thumb Картинка
- * @property int $thumb_checked Изображение проверено
+ * @property string|null $introduce Описание
+ * @property string|null $thumb Картинка
  * @property int $checked Проверена
- * @property string $meta_keywords Meta Keywords
- * @property string $meta_description Meta Description
+ * @property string|null $meta_keywords Meta Keywords
+ * @property string|null $meta_description Meta Description
  *
  * @property Area $area
  * @property CompanyCategory $companyCategory
  * @property Member $owner
- * @property CompanyParamValue[] $companyParamValues
  * @property Product[] $products
  */
 class Company extends \yii\db\ActiveRecord
@@ -41,8 +39,8 @@ class Company extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['owner_id', 'company_category_id', 'area_id', 'name'], 'required'],
-            [['owner_id', 'company_category_id', 'area_id', 'thumb_checked', 'checked'], 'integer'],
+            [['owner_id', 'company_category_id', 'area_id', 'checked'], 'integer'],
+            [['name'], 'required'],
             [['introduce', 'meta_keywords', 'meta_description'], 'string'],
             [['name', 'thumb'], 'string', 'max' => 100],
             [['area_id'], 'exist', 'skipOnError' => true, 'targetClass' => Area::className(), 'targetAttribute' => ['area_id' => 'id']],
@@ -64,7 +62,6 @@ class Company extends \yii\db\ActiveRecord
             'name' => Yii::t('app', 'Компания'),
             'introduce' => Yii::t('app', 'Описание'),
             'thumb' => Yii::t('app', 'Картинка'),
-            'thumb_checked' => Yii::t('app', 'Изображение проверено'),
             'checked' => Yii::t('app', 'Проверена'),
             'meta_keywords' => Yii::t('app', 'Meta Keywords'),
             'meta_description' => Yii::t('app', 'Meta Description'),
@@ -93,14 +90,6 @@ class Company extends \yii\db\ActiveRecord
     public function getOwner()
     {
         return $this->hasOne(Member::className(), ['id' => 'owner_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getCompanyParamValues()
-    {
-        return $this->hasMany(CompanyParamValue::className(), ['company_id' => 'id']);
     }
 
     /**

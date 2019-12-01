@@ -37,13 +37,14 @@ $companyCategories = CompanyCategory::find()
 <?php if ($company->errors): ?>
     <?php print($company->errors) ?>
 <?php endif ?>
-
+<?php $form = ActiveForm::begin(['id' => 'profile-company']); ?>
 <div class="profile-company">
     <div class="row">
         <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'profile-company']); ?>
+
 
             <?= $form->field($company, 'name')->label('Название компании') ?>
+            <?= $form->field($company, 'thumb')->label('Ссылка на логотип') ?>
             <?= $form->field($company, 'company_category_id')->dropDownList($companyCategories, ['prompt' => '']) ?>
             <?= $form->field($company, 'area_id')->dropDownList($areas, ['prompt' => '']) ?>
             <?= $form->field($company, 'introduce')->textarea() ?>
@@ -54,7 +55,13 @@ $companyCategories = CompanyCategory::find()
                 <?= Html::submitButton('Создать', ['class' => 'btn btn-primary', 'name' => 'company-button']) ?>
             </div>
 
-            <?php ActiveForm::end(); ?>
+
+        </div>
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-5">
         </div>
     </div>
 </div>
+
+<?php ActiveForm::end(); ?>

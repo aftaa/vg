@@ -2,10 +2,10 @@
 
 namespace frontend\controllers;
 
-use app\models\CompanyWrongThumb;
-use app\models\ProductWrongThumb;
 use common\models\Company;
+use common\models\CompanyWrongThumb;
 use common\models\Product;
+use common\models\ProductWrongThumb;
 use common\vg\controllers\FrontendController;
 use yii\db\ActiveRecord;
 use yii\db\Connection;
@@ -22,10 +22,12 @@ class PolicyController extends FrontendController
     public function actionNoProductThumb(int $productId)
     {
         $product = Product::findOne($productId);
+        $thumb = $product->thumb;
         $this->setNoThumb($product);
 
         $productWrongThumb = new ProductWrongThumb;
         $productWrongThumb->product_id = $productId;
+        $productWrongThumb->thumb = $thumb;
         $productWrongThumb->save();
     }
 
@@ -35,10 +37,12 @@ class PolicyController extends FrontendController
     public function actionNoCompanyThumb(int $companyId)
     {
         $company = Company::findOne($companyId);
+        $thumb = $company->thumb;
         $this->setNoThumb($company);
 
         $companyWrongThumb = new CompanyWrongThumb;
         $companyWrongThumb->company_id = $companyId;
+        $companyWrongThumb->thumb = $thumb;
         $companyWrongThumb->save();
     }
 

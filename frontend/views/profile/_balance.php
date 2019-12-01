@@ -10,13 +10,13 @@ use yii\web\View;
 ?>
 
 <?php if ($balance < 0): ?>
-    <div class="alert-danger"><?= $balance ?>₽</div>
+    <div class="alert-danger balance"><?= $balance ?>₽</div><br>
     <a href="#" onclick="return false;" data-toggle="modal" data-target="#myModal">восполнить</a>
 <?php elseif ($balance > 0): ?>
-    <div class="alert-success"><?= $balance ?>₽</div>
+    <div class="alert-success balance"><?= $balance ?>₽</div><br>
     <a href="#" onclick="return false;" data-toggle="modal" data-target="#myModal">дополнить</a>
 <?php else: ?>
-    <div class="alert-info"><?= $balance ?>₽</div>
+    <div class="alert-info balance"><?= $balance ?>₽</div><br>
     <a href="#" onclick="return false;" data-toggle="modal" data-target="#myModal">наполнить</a>
 <?php endif ?>
 
@@ -34,7 +34,7 @@ use yii\web\View;
                 <div class="modal-body">
 
                     <h2>Сумма пополнения:</h2>
-                    <h3><input size="1" type="number" name="amount" required> ₽</h3>
+                    <h3><input type="number" id="amount" name="amount" required> ₽</h3>
 
                 </div>
                 <div class="modal-footer">

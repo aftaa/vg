@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace common\models;
 
 use Yii;
 
@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "company_wrong_thumb".
  *
  * @property int $company_id
+ * @property string $thumb
  */
 class CompanyWrongThumb extends \yii\db\ActiveRecord
 {
@@ -25,8 +26,9 @@ class CompanyWrongThumb extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['company_id'], 'required'],
+            [['company_id', 'thumb'], 'required'],
             [['company_id'], 'integer'],
+            [['thumb'], 'string', 'max' => 500],
         ];
     }
 
@@ -37,6 +39,7 @@ class CompanyWrongThumb extends \yii\db\ActiveRecord
     {
         return [
             'company_id' => Yii::t('app', 'Company ID'),
+            'thumb' => Yii::t('app', 'Thumb'),
         ];
     }
 
@@ -54,6 +57,6 @@ class CompanyWrongThumb extends \yii\db\ActiveRecord
      */
     public static function getDb()
     {
-        return Yii::$app->get('dbDev');
+        return Yii::$app->getDb('dbDev');
     }
 }

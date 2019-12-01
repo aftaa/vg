@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace common\models;
 
 use Yii;
 
@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "product_wrong_thumb".
  *
  * @property int $product_id
+ * @property string $thumb
  */
 class ProductWrongThumb extends \yii\db\ActiveRecord
 {
@@ -20,13 +21,22 @@ class ProductWrongThumb extends \yii\db\ActiveRecord
     }
 
     /**
+     * @return \yii\db\Connection the database connection used by this AR class.
+     */
+    public static function getDb()
+    {
+        return Yii::$app->get('dbDev');
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function rules()
     {
         return [
-            [['product_id'], 'required'],
+            [['product_id', 'thumb'], 'required'],
             [['product_id'], 'integer'],
+            [['thumb'], 'string', 'max' => 500],
         ];
     }
 
@@ -37,6 +47,7 @@ class ProductWrongThumb extends \yii\db\ActiveRecord
     {
         return [
             'product_id' => Yii::t('app', 'Product ID'),
+            'thumb' => Yii::t('app', 'Thumb'),
         ];
     }
 
@@ -47,13 +58,5 @@ class ProductWrongThumb extends \yii\db\ActiveRecord
     public static function find()
     {
         return new ProductWrongThumbQuery(get_called_class());
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public static function getDb()
-    {
-        return Yii::$app->get('dbDev');
     }
 }

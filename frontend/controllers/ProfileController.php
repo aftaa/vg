@@ -59,7 +59,6 @@ class ProfileController extends FrontendController
      */
     public function actionIndex()
     {
-//        $model = new VgMemberForm();
         $model = Member::findOne(['user_id' => $this->getUserId()]);
         if ($model->load($this->app->request->post()) && $model->validate()) {
             $model->save();

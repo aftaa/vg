@@ -71,8 +71,6 @@ $(function () {
 // check thumb exists policy
 // in russian: обратиться в полицию превьюшек, если нет оной
 $(window).on('load', function () {
-    console.log('site loaded');
-
     $('.index-product-thumb img').each(function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';

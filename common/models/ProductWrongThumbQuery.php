@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace common\models;
 
 /**
- * This is the ActiveQuery class for [[CompanyWrongThumb]].
+ * This is the ActiveQuery class for [[ProductWrongThumb]].
  *
- * @see CompanyWrongThumb
+ * @see ProductWrongThumb
  */
-class CompanyWrongThumbQuery extends \yii\db\ActiveQuery
+class ProductWrongThumbQuery extends \yii\db\ActiveQuery
 {
     /*public function active()
     {
@@ -16,7 +16,7 @@ class CompanyWrongThumbQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return CompanyWrongThumb[]|array
+     * @return ProductWrongThumb[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class CompanyWrongThumbQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return CompanyWrongThumb|array|null
+     * @return ProductWrongThumb|array|null
      */
     public function one($db = null)
     {

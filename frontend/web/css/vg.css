@@ -261,3 +261,14 @@ div.circle-732 {
     /*background-size: 50%;*/
     /*background: url(/img/732.svg) center no-repeat;*/
 }
+
+.balance {
+    display: inline-block;
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#amount {
+    width: 100px;
+}

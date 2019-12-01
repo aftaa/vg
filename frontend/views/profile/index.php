@@ -20,12 +20,12 @@ $this->params['breadcrumbs'][] = $this->title;
 <table class="table">
     <thead>
     <tr>
-        <td>Логин</td>
-        <td>Пароль</td>
-        <td>E-mail</td>
-        <td>Баланс</td>
-        <td>Компаний</td>
-        <td>Статус</td>
+        <th>Логин</th>
+        <th>Пароль</th>
+        <th>E-mail</th>
+        <th>Баланс</th>
+        <th>Компаний</th>
+        <th>Статус</th>
     </tr>
     </thead>
     <tbody>
@@ -33,7 +33,9 @@ $this->params['breadcrumbs'][] = $this->title;
         <td><?= $identity->username ?></td>
         <td><a href="<?= Url::to(['profile/password']) ?>">сменить<br>пароль</a></td>
         <td><?= $identity->email ?></td>
-        <td><?= $this->render('_balance', ['balance' => $member->balance]) ?></td>
+        <td>
+            <?= $this->render('_balance', ['balance' => $member->balance]) ?>
+        </td>
         <td>
             <?= $member->getCompanies()->count() ?><br>
             <a href="<?= Url::to(['profile/companies']) ?>">глянуть</a>
@@ -82,17 +84,23 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 <div class="col-lg-2"></div>
+<div class="col-lg-6">
+    <?php if (!$member->getCompanies()->count()): ?>
+        <div class="h3">У вас нет компаний!</div>
+        <br>
+        <a href="<?= Url::to(['create-company']) ?>" class="btn btn-success">Создать компанию</a>
+    <?php endif ?>
 
-<?php
-$invoices = Invoice::find()
-    ->where(['member_id' => $member->id])
-    ->orderBy(['updated_at' => 'DESC'])
-    ->limit(3)
-    ->all();
-?>
+    <?php
+    $invoices = Invoice::find()
+        ->where(['member_id' => $member->id])
+        ->orderBy(['updated_at' => 'DESC'])
+        ->limit(3)
+        ->all();
+    ?>
 
-<?php if ($invoices): ?>
-    <div class="col-lg-2">
+    <?php if ($invoices): ?>
+
         <h3>История</h3>
 
         <?php foreach ($invoices as $invoice): ?>
@@ -104,5 +112,5 @@ $invoices = Invoice::find()
             </div>
             <hr size="1">
         <?php endforeach ?>
-    </div>
-<?php endif ?>
+    <?php endif ?>
+</div>

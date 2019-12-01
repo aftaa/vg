@@ -49,7 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </td>
                 <td><?= $company->getCompanyCategory()->one()->name ?></td>
                 <td>
-                    <?= $company->old_tarif ?? 'Начало' ?>
+                    <?= $company->old_tarif ?? '' ?>
                 </td>
 
                 <td>
