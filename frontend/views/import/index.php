@@ -30,7 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= Html::hiddenInput('companyId', $company->id) ?>
     <?= Html::hiddenInput(Yii::$app->getRequest()->csrfParam, Yii::$app->getRequest()->getCsrfToken()) ?>
     <h1>URL<sup>*</sup>:</h1>
-    <input type="text" class="form-control" name="url" required value="http://tt/556.xml" style="font-size: 20px;" id="url">
+    <input type="text" class="form-control" name="url" id="url" required value="https://kuba.msk.ru/556.xml"
+           style="font-size: 20px;" id="url">
     <br>
     <input type="submit" class="btn btn-danger" value="Импорт" id="import_btn">
 
@@ -38,6 +39,13 @@ $this->params['breadcrumbs'][] = $this->title;
         <br>
         <h3>
             размер файла: <span id="file_size"></span> Мб
+        </h3>
+    </div>
+
+    <div style="display: none;" id="file_size_wrong_url">
+        <br>
+        <h3>
+            указан неверный URL
         </h3>
     </div>
 
@@ -52,18 +60,28 @@ $this->params['breadcrumbs'][] = $this->title;
         // }
 
         $('#import_btn').on('click', function () {
+            $('#file_size_wrong_url').fadeOut();
             let url = $('#url').val();
             $.get('/import/remote-file-size/', {url: url}, function (data) {
                 let fileSize = data.shift();
-                fileSize = parseFloat(fileSize);
-                fileSize /= 1024;
-                fileSize /= 1024;
-                fileSize = Math.round(fileSize);
-                $('#file_size').html(fileSize);
-                $('#file_size_wrap').fadeIn();
-                setTimeout(function () {
-                    $('#import_form').submit();
-                }, 3000);
+
+                if (fileSize) {
+                    fileSize = parseFloat(fileSize);
+                    fileSize /= 1024;
+                    fileSize /= 1024;
+                    fileSize = Math.round(fileSize);
+                    $('#file_size').html(fileSize);
+                    $('#file_size_wrap').fadeIn();
+                    setTimeout(function () {
+                        $('#import_form').submit();
+                    }, 3000);
+                } else {
+                    $('#file_size_wrong_url').fadeIn();
+                    $('#import_btn').attr({disabled: true});
+                    $('#url').on('change', function () {
+                        $('#import_btn').attr({disabled: false});
+                    });
+                }
             }, 'json');
             return false;
         });

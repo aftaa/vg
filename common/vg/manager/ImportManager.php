@@ -14,11 +14,11 @@ class ImportManager
     /**
      * @param int $companyId
      * @param string $url
-     * @return string
+     * @return YmlFile
      * @throws FolderCreateException
      * @throws \Throwable
      */
-    public function createLocalFile(int $companyId, string $url): string
+    public function createLocalFile(int $companyId, string $url): YmlFile
     {
         $ymlFile = new YmlFile;
         $ymlFile->company_id = $companyId;
@@ -45,8 +45,7 @@ class ImportManager
             $ymlCategory->name = $category;
             $ymlCategory->yml_file_id = $ymlFile->id;
         }
-        die;
 
-        return $filename;
+        return $ymlFile;
     }
 }

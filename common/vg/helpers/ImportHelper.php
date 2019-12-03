@@ -10,7 +10,10 @@ class ImportHelper
      */
     public static function getFileSize(string $url): ?int
     {
-        $fp = fopen($url, "r");
+        @$fp = fopen($url, "r");
+        if (!$fp) {
+            return null;
+        }
         $inf = stream_get_meta_data($fp);
         fclose($fp);
         foreach ($inf["wrapper_data"] as $v) {

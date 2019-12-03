@@ -24,6 +24,8 @@ return [
     'profile/company/<companyId:\d+>'  => 'profile/company',
     'profile/products/<companyId:\d+>' => 'profile/products',
 
+    'import/files/<companyId:\d+>' => 'import/files',
+
     'tariffs' => 'site/tariffs',
 
     'switch-identity/by-first-letter/<letter>' => 'switch-identity/by-first-letter',
