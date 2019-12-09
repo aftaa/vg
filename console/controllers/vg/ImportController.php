@@ -98,7 +98,7 @@ class ImportController extends Controller
      */
     private function modifyThumb(?string $thumb): ?string
     {
-        if (preg_match('/^data/', $thumb)) {
+        if (!preg_match('/^http/', $thumb)) {
             $thumb = 'http://vseti-goroda.ru/' . $thumb;
         }
 
