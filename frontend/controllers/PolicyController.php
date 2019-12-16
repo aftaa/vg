@@ -59,7 +59,7 @@ class PolicyController extends FrontendController
     {
         /** @var Connection $db */
         $db = Yii::get('dbDev');
-        $db->createCommand("CREATE TABLE company_wrong_thumb(company_id INT NOT NULL)")->execute();
-        $db->createCommand("CREATE TABLE product_wrong_thumb(product_id INT NOT NULL)")->execute();
+        $db->createCommand("CREATE TABLE company_wrong_thumb(company_id INT NOT NULL, thumb VARCHAR(500) NOT NULL DEFAULT '')")->execute();
+        $db->createCommand("CREATE TABLE product_wrong_thumb(product_id INT NOT NULL, thumb VARCHAR(500) NOT NULL DEFAULT '')")->execute();
     }
 }

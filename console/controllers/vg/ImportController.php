@@ -436,7 +436,7 @@ class ImportController extends Controller
         array_unshift($columns, 'company_id');
 
         $insertedAll = 0;
-        $productsInsert = array_chunk($productsInsert, 2342);
+        $productsInsert = array_chunk($productsInsert, 100);
         foreach ($productsInsert as $insert) {
             try {
                 echo "\tbatch insert... ";
