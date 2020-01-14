@@ -42,10 +42,10 @@ return [
                 ],
             ],
         ],
-        'cache' => [
-                    'class' => 'yii\caching\FileCache',
-                ],
-        /*'cache'   => [
+//        'cache' => [
+//                    'class' => 'yii\caching\FileCache',
+//                ],
+        'cache'   => [
             'class'        => 'yii\caching\MemCache',
             'useMemcached' => true,
             'servers'      => [
@@ -55,7 +55,7 @@ return [
                     //                'weight' => 100,
                 ],
             ],
-        ],*/
+        ],
         'session' => [
             'class' => 'yii\redis\Session',
             'redis' => [
