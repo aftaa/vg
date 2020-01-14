@@ -8,6 +8,27 @@ return [
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=vg',
+            'username' => 'vg',
+            'password' => 'vg',
+            'charset' => 'utf8',
+        ],
+        'dbVsetigTest' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=vsetig.beget.tech;dbname=vsetig_test',
+            'username' => 'vsetig_test',
+            'password' => '&gH3Xzo5',
+            'charset' => 'utf8',
+        ],
+        'dbVsetigInfoCom' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=vsetig.beget.tech;dbname=vsetig_info_com',
+            'username' => 'vsetig_info_com',
+            'password' => '&gH3Xzo5',
+            'charset' => 'utf8',
+        ],
         'i18n'    => [
             'translations' => [
                 '*' => [
@@ -21,10 +42,10 @@ return [
                 ],
             ],
         ],
-        /*        'cache' => [
+        'cache' => [
                     'class' => 'yii\caching\FileCache',
-                ],*/
-        'cache'   => [
+                ],
+        /*'cache'   => [
             'class'        => 'yii\caching\MemCache',
             'useMemcached' => true,
             'servers'      => [
@@ -34,7 +55,7 @@ return [
                     //                'weight' => 100,
                 ],
             ],
-        ],
+        ],*/
         'session' => [
             'class' => 'yii\redis\Session',
             'redis' => [
