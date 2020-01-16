@@ -21,7 +21,7 @@ class SearchController extends FrontendController
         $s = Yii::$app->request->get('s');
         $s = Yii::$app->sphinx->escapeMatchValue($s);
 
-        $productCategories = $this->getProductCategories($s);
+//        $productCategories = $this->getProductCategories($s);
         $companies = $this->getCompanies($s);
         /** @var $pages Pagination */
         [$pages, $products] = $this->getProducts($s);
@@ -32,7 +32,7 @@ class SearchController extends FrontendController
 
 
         return $this->render('index', [
-            'productCategories' => $productCategories,
+//            'productCategories' => $productCategories,
             'products'          => $products,
             'companies'         => $companies,
             'pages'             => $pages,
