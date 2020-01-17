@@ -28,7 +28,7 @@ class SearchController extends FrontendController
 
         /** @var int $page */
         $page = $pages->getPage();
-//        $pages->limit = $perPage;
+        $pages->setPageSize(50);
 
 
         return $this->render('index', [
@@ -47,7 +47,7 @@ class SearchController extends FrontendController
      */
     protected function getProducts(string $s)
     {
-        $total = (new Query())->from('vg_product_index')->match($s)->count();
+        $total = (new Query())->from('product')->match($s)->count();
 
         $pages = new Pagination([
             'totalCount' => $total,
@@ -55,7 +55,7 @@ class SearchController extends FrontendController
         $pages->setPageSize(32);
 
         $productIds = (new Query)
-            ->from('vg_product_index')
+            ->from('product')
             ->match($s)
             ->limit(32)
             ->offset($pages->offset)
@@ -76,7 +76,7 @@ class SearchController extends FrontendController
     protected function getCompanies(string $s)
     {
         $companyIds = (new Query())
-            ->from('vg_company_index')
+            ->from('company')
             ->match($s)
             ->limit(1000)
             ->column();
@@ -92,7 +92,7 @@ class SearchController extends FrontendController
     protected function getProductCategories(string $s)
     {
         $productCategoryIds = (new Query())
-            ->from('vg_product_category_index')
+            ->from('product_category')
             ->match($s)
             ->limit(1000)
             ->column();
