@@ -33,7 +33,6 @@ use yii\web\View;
         <?php endif ?>
     <?php endforeach ?>
 
-
 <script type="text/javascript">
     productChildCategories();
 </script>

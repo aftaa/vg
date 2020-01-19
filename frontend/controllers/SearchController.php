@@ -8,6 +8,7 @@ use common\vg\controllers\FrontendController;
 use common\vg\models\VgCompany;
 use common\vg\models\VgProduct;
 use common\vg\models\VgProductCategory;
+use phpDocumentor\Reflection\DocBlock\Tags\Formatter\AlignFormatter;
 use Yii;
 use yii\data\Pagination;
 use yii\sphinx\Query;
@@ -18,10 +19,11 @@ class SearchController extends FrontendController
 //    public function actionIndex(string $searchString, ?int $page, ?int $perPage)
     public function actionIndex()
     {
-        $s = Yii::$app->request->get('s');
+
+        $s = Yii::$app->request->get('s', ' ');
         $s = Yii::$app->sphinx->escapeMatchValue($s);
 
-//        $productCategories = $this->getProductCategories($s);
+        $productCategories = $this->getProductCategories($s);
         $companies = $this->getCompanies($s);
         /** @var $pages Pagination */
         [$pages, $products] = $this->getProducts($s);
@@ -32,7 +34,7 @@ class SearchController extends FrontendController
 
 
         return $this->render('index', [
-//            'productCategories' => $productCategories,
+            'productCategories' => $productCategories,
             'products'          => $products,
             'companies'         => $companies,
             'pages'             => $pages,
