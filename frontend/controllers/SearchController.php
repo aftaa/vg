@@ -19,9 +19,13 @@ class SearchController extends FrontendController
 //    public function actionIndex(string $searchString, ?int $page, ?int $perPage)
     public function actionIndex()
     {
-
-        $s = Yii::$app->request->get('s', ' ');
+        $s = Yii::$app->request->get('s');
         $s = Yii::$app->sphinx->escapeMatchValue($s);
+
+        $s = trim($s);
+        if (!strlen($s)) {
+            $s = ' ';
+        }
 
         $productCategories = $this->getProductCategories($s);
         $companies = $this->getCompanies($s);

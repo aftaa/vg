@@ -1,4 +1,4 @@
 <?php
 return [
-    'adminEmail' => 'admin@example.com',
+    'adminEmail' => "root@$_SERVER[SERVER_NAME]",
 ];
