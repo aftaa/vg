@@ -86,7 +86,7 @@ $(window).on('load', function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
-            // $.get('/policy/no-product-thumb/' + id);
+            $.get('/policy/no-product-thumb/' + id);
             // TODO temporary
         }
     });
@@ -97,7 +97,7 @@ $(window).on('load', function () {
             this.src = '/img/no_logo.jpg';
             let id = this.dataset.id;
             // console.log(id);
-            // $.get('/policy/no-company-thumb/' + id);
+            $.get('/policy/no-company-thumb/' + id);
             // TODO temporary
         }
     });

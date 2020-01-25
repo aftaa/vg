@@ -21,6 +21,8 @@ class PolicyController extends FrontendController
      */
     public function actionNoProductThumb(int $productId)
     {
+        $this->createTable();
+
         $product = Product::findOne($productId);
         $thumb = $product->thumb;
         $this->setNoThumb($product);
@@ -36,6 +38,8 @@ class PolicyController extends FrontendController
      */
     public function actionNoCompanyThumb(int $companyId)
     {
+        $this->createTable();
+
         $company = Company::findOne($companyId);
         $thumb = $company->thumb;
         $this->setNoThumb($company);
@@ -59,7 +63,7 @@ class PolicyController extends FrontendController
     {
         /** @var Connection $db */
         $db = Yii::get('dbDev');
-        $db->createCommand("CREATE TABLE company_wrong_thumb(company_id INT NOT NULL, thumb VARCHAR(500) NOT NULL DEFAULT '')")->execute();
-        $db->createCommand("CREATE TABLE product_wrong_thumb(product_id INT NOT NULL, thumb VARCHAR(500) NOT NULL DEFAULT '')")->execute();
+        $db->createCommand("CREATE TABLE IF NOT EXISTS company_wrong_thumb(company_id INT NOT NULL, thumb VARCHAR(500) NOT NULL DEFAULT '')")->execute();
+        $db->createCommand("CREATE TABLE IF NOT EXISTS product_wrong_thumb(product_id INT NOT NULL, thumb VARCHAR(500) NOT NULL DEFAULT '')")->execute();
     }
 }
