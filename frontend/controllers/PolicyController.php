@@ -21,7 +21,7 @@ class PolicyController extends FrontendController
      */
     public function actionNoProductThumb(int $productId)
     {
-        $this->createTable();
+//        $this->createTables();
 
         $product = Product::findOne($productId);
         $thumb = $product->thumb;
@@ -38,7 +38,7 @@ class PolicyController extends FrontendController
      */
     public function actionNoCompanyThumb(int $companyId)
     {
-        $this->createTable();
+//        $this->createTables();
 
         $company = Company::findOne($companyId);
         $thumb = $company->thumb;
@@ -59,7 +59,7 @@ class PolicyController extends FrontendController
         $ar->save(false);
     }
 
-    public function createTable()
+    public function createTables()
     {
         /** @var Connection $db */
         $db = Yii::get('dbDev');
