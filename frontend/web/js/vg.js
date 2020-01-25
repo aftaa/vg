@@ -75,8 +75,7 @@ $(window).on('load', function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
-            // console.log(id);
-            // $.get('/policy/no-product-thumb/' + id);
+            $.get('/policy/no-product-thumb/' + id);
             // TODO temporary
         }
         $(this.parentNode.parentNode).removeClass('circle-732');
@@ -86,6 +85,7 @@ $(window).on('load', function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
+            console.log('product-id=', id);
             $.get('/policy/no-product-thumb/' + id);
             // TODO temporary
         }
@@ -96,7 +96,7 @@ $(window).on('load', function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_logo.jpg';
             let id = this.dataset.id;
-            // console.log(id);
+            console.log(id);
             $.get('/policy/no-company-thumb/' + id);
             // TODO temporary
         }
