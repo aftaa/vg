@@ -86,7 +86,7 @@ class SearchController extends FrontendController
             ->from('company')
             ->match($s)
             ->limit(1000)
-            ->column();
+            ->all();
 
         return VgCompany::find()->where(['id' => $companyIds])->all();
     }

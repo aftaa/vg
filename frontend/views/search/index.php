@@ -30,102 +30,36 @@ $this->params['breadcrumbs'][] = [
 /** @var $showFull boolean */
 /** @var $s string */
 
-$this->title = Html::encode($s);
+//$this->title = Html::encode($s);
 
 ?>
 
 <?php if (!empty($s)): ?>
+
     <div class="container">
-    <?php if (!Yii::$app->request->get('pages')): ?>
-
-        <?php if (true || $showFull): ?>
+        <?php if ($companies || $productCategories): ?>
             <div class="row">
-            <?php if ($companies): ?>
-                <h2>мы нашли в компаниях:</h2>
-                <?php foreach ($companies as $company): ?>
-                    <div class="col col-lg-6">
-                        <div style="margin-bottom: 3px; min-height: 55px;">
+            <?= $this->render('search_result_companies', ['companies' => $companies]) ?>
+            <?= $this->render('search_result_product_categories', ['productCategories' => $productCategories]) ?>
+            </div>
+        <?php endif ?>
 
-                            <?php if ($company->thumb): ?>
-                                <img src="<?= $company->thumb ?>" style="max-width: 50px; max-height: 50px;">
-                            <?php else: ?>
-                                <img src="<?= VgCompany::NO_LOGO ?>" style="max-width: 50px; max-height: 50px;">
-                            <?php endif ?>
+        <?php if (!Yii::$app->request->get('pages')): ?>
 
-                            <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>"
-                               target="_blank" class="warning">
-                                <?= strip_tags($company->name) ?>
-                            </a>
-                            <small class="default">
-                                (<?= $company->area->name ?>)
-                            </small>
+            <?php if ($showFull): ?>
+                <h2 style="clear: both;" class="container">мы поискали в товарах и услугах...</h2>
+            <?php endif ?>
 
-                        </div>
-                    </div>
-                <?php endforeach ?>
-
-                <div class="col lead">
-                    <?php if (!empty($productCategories)): ?>
-                    <div style="clear:both;"></div>
-                        <hr size="1">
-                        <h2>в категориях мы нашли:</h2>
-                        <?php foreach ($productCategories as $category): ?>
-                            <div style="margin-bottom: 3px;">
-                                <a href="<?= Url::to(['product/category', 'categoryId' => $category->id]) ?>"
-                                   target="_blank">
-                                    <?= $category->name ?>
-                                </a>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php endif ?>
-                </div>
+            <?php if ($products): ?>
+                <?= $this->render('search_result_products', ['products' => $products]) ?>
+            <?php else: ?>
+            ...ничего.
             <?php endif ?>
         <?php endif ?>
 
 
-        <div class="row">
-
-        <?php if ($showFull): ?>
-            <h2 style="clear: both;" class="container">мы поискали в товарах и услугах...</h2>
-        <?php endif ?>
-
-        <?php if ($products): ?>
-        <?php foreach ($products as $product): ?>
-            <div class="col col-lg-6" style="margin-top: 15px;">
-                <?php if ($product->thumb): ?>
-                    <div class="enter-block" style="float: left;">
-                        <img alt="" src="<?= $product->thumb ?>" style="max-width: 50px; max-height: 50px;">
-                    </div>
-                    <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
-                        <?= $product->name ?>
-                    </a>
-                    <div style="clear: left;"></div>
-                <?php else: ?>
-                    <div class="center-block" style="float: left;">
-                        <img alt="" src="<?= VgProduct::NO_PRODUCT ?>"
-                             style="max-width: 50px; max-height: 50px; border-radius: 1em; margin-right: 5px;">
-                    </div>
-                    <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
-                        <?= $product->name ?>
-                    </a>
-                    <span class="">
-                            <a href="<?= Url::to(['company/index', 'companyId' => $product->company->id]) ?>"
-                               target="_blank" style="font-weight: bold; font-size: 11px;">
-                                <?= $product->company->name ?>
-                            </a>
-                        </span>
-                    <span class="bg-info" style="float: right"><?= $product->getPrice() ?>₽</span>
-                    <div style="clear: left;"></div>
-                <?php endif ?>
-            </div>
-        <?php endforeach; ?>
-        </div>
-    <?php else: ?>
-        <div class="container">и ничего не нашли</div>
-    <?php endif ?>
-        </div>
-    <?php endif ?>
-
+    <div style="overflow: both;"></div>
+    <hr size="1">
     <?= LinkPager::widget([
     'pagination'           => $pages,
     'maxButtonCount'       => 20,
