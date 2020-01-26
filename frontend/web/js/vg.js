@@ -93,7 +93,7 @@ $(window).on('load', function () {
     });
 
     // companies
-    $('.index-company-thumb img').each(function () {
+    $('.index-company-thumb img, .search-company-thumb').each(function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_logo.jpg';
             let id = this.dataset.id;

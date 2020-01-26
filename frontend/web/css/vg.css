@@ -272,3 +272,11 @@ div.circle-732 {
 #amount {
     width: 100px;
 }
+
+/**
+    search results
+ */
+.search-company-thumb {
+    max-height: 100px;
+    max-width: 100px;
+}

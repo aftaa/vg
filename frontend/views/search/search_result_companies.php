@@ -1,7 +1,7 @@
 <?php
 
 use common\vg\models\VgCompany;
-use http\Url;
+use yii\helpers\Url;
 
 /** @var $companies VgCompany[] */
 
@@ -9,25 +9,20 @@ use http\Url;
 
 <?php if ($companies): ?>
     <h2>мы нашли в компаниях:</h2>
-    <?php foreach ($companies as $company): ?>
-        <div class="col col-lg-6">
-            <div style="margin-bottom: 3px; min-height: 55px;">
+    <div class="container">
+        <div class="row">
+            <?php foreach ($companies as $company): ?>
+                <div class="col col-md-4 col-sm-4 col-sx-6 text-center">
 
-                <?php if ($company->thumb): ?>
-                    <img src="<?= $company->thumb ?>" style="max-width: 50px; max-height: 50px;">
-                <?php else: ?>
-                    <img src="<?= VgCompany::NO_LOGO ?>" style="max-width: 50px; max-height: 50px;">
-                <?php endif ?>
+                    <div style="min-height: 110px"><img alt="" src="<?= $company->thumb ?>" class="search-company-thumb"></div>
 
-                <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>"
-                   target="_blank" class="warning">
-                    <?= strip_tags($company->name) ?>
-                </a>
-                <small class="default">
-                    (<?= $company->area->name ?>)
-                </small>
 
-            </div>
+                    <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>">
+                        <?= $company->name ?>
+                    </a>
+                    <br><hr size="1">
+                </div>
+            <?php endforeach ?>
         </div>
-    <?php endforeach ?>
+    </div>
 <?php endif ?>

@@ -38,14 +38,11 @@ $this->params['breadcrumbs'][] = [
 
     <div class="container">
         <?php if ($companies || $productCategories): ?>
-            <div class="row">
             <?= $this->render('search_result_companies', ['companies' => $companies]) ?>
             <?= $this->render('search_result_product_categories', ['productCategories' => $productCategories]) ?>
-            </div>
         <?php endif ?>
 
         <?php if (!Yii::$app->request->get('pages')): ?>
-
             <?php if ($showFull): ?>
                 <h2 style="clear: both;" class="container">мы поискали в товарах и услугах...</h2>
             <?php endif ?>
