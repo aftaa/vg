@@ -29,6 +29,7 @@ class SearchController extends FrontendController
 
         $productCategories = $this->getProductCategories($s);
         $companies = $this->getCompanies($s);
+
         /** @var $pages Pagination */
         [$pages, $products] = $this->getProducts($s);
 
@@ -87,8 +88,7 @@ class SearchController extends FrontendController
             ->limit(1000)
             ->column();
 
-        $companies = VgCompany::find()->where(['id' => $companyIds])->all();
-        return $companies;
+        return VgCompany::find()->where(['id' => $companyIds])->all();
     }
 
     /**
@@ -103,7 +103,6 @@ class SearchController extends FrontendController
             ->limit(1000)
             ->column();
 
-        $productCategories = VgProductCategory::find()->where(['id' => $productCategoryIds])->all();
-        return $productCategories;
+        return VgProductCategory::find()->where(['id' => $productCategoryIds])->all();
     }
 }

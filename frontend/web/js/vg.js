@@ -75,6 +75,7 @@ $(window).on('load', function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
+            console.log('product thumb with', id, 'missed');
             $.get('/policy/no-product-thumb/' + id);
             // TODO temporary
         }
@@ -85,7 +86,7 @@ $(window).on('load', function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
-            console.log('product-id=', id);
+            console.log('product thumb with', id, 'missed');
             $.get('/policy/no-product-thumb/' + id);
             // TODO temporary
         }
@@ -96,7 +97,7 @@ $(window).on('load', function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_logo.jpg';
             let id = this.dataset.id;
-            console.log(id);
+            console.log('company thumb with', id, 'missed');
             $.get('/policy/no-company-thumb/' + id);
             // TODO temporary
         }

@@ -10,9 +10,16 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=vg',
-            'username' => 'vg',
-            'password' => 'vg',
+            'dsn' => 'mysql:host=localhost;dbname=vg_dev',
+            'username' => 'vg_dev',
+            'password' => 'vg_dev',
+            'charset' => 'utf8',
+        ],
+        'dbDev' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=vg_dev',
+            'username' => 'vg_dev',
+            'password' => 'vg_dev',
             'charset' => 'utf8',
         ],
         'dbVsetigTest' => [

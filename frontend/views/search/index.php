@@ -38,7 +38,7 @@ $this->title = Html::encode($s);
     <div class="container">
     <?php if (!Yii::$app->request->get('pages')): ?>
 
-        <?php if ($showFull): ?>
+        <?php if (true || $showFull): ?>
             <div class="row">
             <?php if ($companies): ?>
                 <h2>мы нашли в компаниях:</h2>

@@ -61,6 +61,7 @@ class PolicyController extends FrontendController
 
     public function createTables()
     {
+        return;
         /** @var Connection $db */
         $db = Yii::get('dbDev');
         $db->createCommand("CREATE TABLE IF NOT EXISTS company_wrong_thumb(company_id INT NOT NULL, thumb VARCHAR(500) NOT NULL DEFAULT '')")->execute();
