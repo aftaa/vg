@@ -1,14 +1,11 @@
 <?php
 
-
 namespace frontend\controllers;
 
 use common\models\Company;
 use common\models\Member;
-use common\models\User;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgCompanyParamValueForm;
-use Yii;
 use yii\data\ActiveDataProvider;
 use yii\filters\AccessControl;
 use yii\helpers\Url;

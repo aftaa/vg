@@ -6,6 +6,7 @@ use common\models\Invoice;
 use common\models\Member;
 use common\vg\controllers\FrontendController;
 use common\vg\models\VgInvoice;
+use common\vg\models\VgUser;
 use Yii;
 use yii\log\Logger;
 
@@ -128,28 +129,51 @@ class PaymentController extends FrontendController
 
     public function actionInvoice()
     {
-        $amount = Yii::$app->getRequest()->post('amount');
-        $member = $this->getMember();
+        if (Yii::$app->getRequest()->post('now') && VgUser::isUnderOtherUser()) {
+            $member = $this->getMember();
 
-        $invoice = new VgInvoice($amount);
+            $invoice = new Invoice;
+            $invoice->added_by_root = true;
+            $invoice->payment = $amount = Yii::$app->getRequest()->post('amount');;
+            $invoice->amount = $amount;
+            $invoice->commission = 0;
+            $invoice->order_id = Invoice::find()
+                ->where(['added_by_root' => true])
+                ->limit(1)
+                ->orderBy(['order_id' => SORT_DESC])
+                ->scalar() + 1;
+            $invoice->created_at = date('Y-m-d H:i:s');
+            $invoice->updated_at = date('Y-m-d H:i:s');
+            $invoice->member_id = $member->id;
+            $invoice->save(false);
 
-        $sentInvoice = new Invoice;
-        $sentInvoice->member_id = $member->id;
-        $sentInvoice->amount = $invoice->getAmount();
-        $sentInvoice->created_at = date('Y-m-d H:i:s');
-        if (!$sentInvoice->save()) {
-            echo '<pre>';
-            print_r($sentInvoice->errors);
-            echo '</pre>';
-            die;
+            $member->balance = $member->balance + $amount;
+            $member->save(false);
+            return $this->redirect('/profile');
+
+        } else {
+            $amount = Yii::$app->getRequest()->post('amount');
+            $member = $this->getMember();
+
+            $invoice = new VgInvoice($amount);
+
+            $sentInvoice = new Invoice;
+            $sentInvoice->member_id = $member->id;
+            $sentInvoice->amount = $invoice->getAmount();
+            $sentInvoice->created_at = date('Y-m-d H:i:s');
+            if (!$sentInvoice->save()) {
+                echo '<pre>';
+                print_r($sentInvoice->errors);
+                echo '</pre>';
+                die;
+            }
+            $invoice->setPaymentNo($sentInvoice->id);
+            $invoice->setSignature();
+            $invoiceFields = $invoice->fields;
+            return $this->renderPartial('invoice', [
+                'fields' => $invoiceFields,
+            ]);
         }
-        $invoice->setPaymentNo($sentInvoice->id);
-        $invoice->setSignature();
-        $invoiceFields = $invoice->fields;
-
-        return $this->renderPartial('invoice', [
-            'fields' => $invoiceFields,
-        ]);
     }
 
     public function actionFail()

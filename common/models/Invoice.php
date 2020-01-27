@@ -3,20 +3,20 @@
 namespace common\models;
 
 use Yii;
+use yii\db\ActiveQuery;
 
 /**
  * This is the model class for table "invoice".
  *
  * @property int $id №
  * @property int $member_id Клиент
- * @property string $amount ₽
+ * @property float $amount ₽
  * @property string $created_at Счет выставлен
- * @property string $updated_at Счет оплачен
- * @property string $payment ₽
- * @property string $commission Комиссия
- * @property string $order_id № в Единой кассе
- *
- * @property Member $member
+ * @property string|null $updated_at Счет оплачен
+ * @property float|null $payment ₽
+ * @property float|null $commission Комиссия
+ * @property string|null $order_id № в Единой кассе
+ * @property int|null $added_by_root Администратором?
  */
 class Invoice extends \yii\db\ActiveRecord
 {
@@ -35,11 +35,10 @@ class Invoice extends \yii\db\ActiveRecord
     {
         return [
             [['member_id', 'amount', 'created_at'], 'required'],
-            [['member_id'], 'integer'],
+            [['member_id', 'added_by_root'], 'integer'],
             [['amount', 'payment', 'commission'], 'number'],
             [['created_at', 'updated_at'], 'safe'],
             [['order_id'], 'string', 'max' => 255],
-            [['member_id'], 'exist', 'skipOnError' => true, 'targetClass' => Member::className(), 'targetAttribute' => ['member_id' => 'id']],
         ];
     }
 
@@ -57,15 +56,16 @@ class Invoice extends \yii\db\ActiveRecord
             'payment' => Yii::t('app', '₽'),
             'commission' => Yii::t('app', 'Комиссия'),
             'order_id' => Yii::t('app', '№ в Единой кассе'),
+            'added_by_root' => Yii::t('app', 'Администратором?'),
         ];
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * @return ActiveQuery
      */
     public function getMember()
     {
-        return $this->hasOne(Member::className(), ['id' => 'member_id']);
+        return $this->hasOne(Member::class, ['id' => 'member_id']);
     }
 
     /**
