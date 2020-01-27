@@ -36,9 +36,11 @@ use yii\widgets\LinkPager;
                     </div>
                 <?php endif ?>
 
-                <small>
-                    <a href="<?= Url::to(['company/index', 'companyId' => $product->company_id]) ?>"><?= $product->company->name ?></a>
-                </small>
+                <?php if (!empty($product->company->name)): ?>
+                    <small>
+                        <a href="<?= Url::to(['company/index', 'companyId' => $product->company_id]) ?>"><?= $product->company->name ?></a>
+                    </small>
+                <?php endif ?>
 
                 <?php if ((int)$product->price): ?>
                     <div class="alert-info index-product-price">
