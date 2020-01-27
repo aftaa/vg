@@ -71,7 +71,7 @@ class SearchController extends FrontendController
         $products = VgProduct::find()
             ->where(['id' => $productIds])
             ->with('company')
-            ->orderBy('RAND()')
+            ->orderBy('thumb,price')
             ->all();
         return [$pages, $products];
     }
