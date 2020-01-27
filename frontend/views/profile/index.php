@@ -101,16 +101,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php if ($invoices): ?>
 
-        <h3>История</h3>
+        <?= $this->render('_invoices_history', ['invoices' => $invoices]) ?>
 
-        <?php foreach ($invoices as $invoice): ?>
-            <div>
-                <small><?= (new \DateTime($invoice->updated_at))->format('d.m.y H:i') ?></small>
-                <div class="h4 text-right">
-                    +<?= $invoice->amount ?> ₽
-                </div>
-            </div>
-            <hr size="1">
-        <?php endforeach ?>
     <?php endif ?>
 </div>
