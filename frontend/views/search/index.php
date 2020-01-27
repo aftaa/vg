@@ -37,9 +37,11 @@ $this->params['breadcrumbs'][] = [
 <?php if (!empty($s)): ?>
 
     <div class="container">
-        <?php if ($companies || $productCategories): ?>
-            <?= $this->render('search_result_companies', ['companies' => $companies]) ?>
-            <?= $this->render('search_result_product_categories', ['productCategories' => $productCategories]) ?>
+        <?php if ($showFull): ?>
+            <?php if ($companies || $productCategories): ?>
+                <?= $this->render('search_result_companies', ['companies' => $companies]) ?>
+                <?= $this->render('search_result_product_categories', ['productCategories' => $productCategories]) ?>
+            <?php endif ?>
         <?php endif ?>
 
         <?php if (!Yii::$app->request->get('pages')): ?>

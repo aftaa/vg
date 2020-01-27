@@ -71,11 +71,11 @@ $(function () {
 // check thumb exists policy
 // in russian: обратиться в полицию превьюшек, если нет оной
 $(window).on('load', function () {
-    $('.index-product-thumb img').each(function () {
+    $('.index-product-thumb img, img.search-company-thumb').each(function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
-            console.log('product thumb with', id, 'missed');
+            console.log('product thumb with id', id, 'missed');
             $.get('/policy/no-product-thumb/' + id);
             // TODO temporary
         }
@@ -86,18 +86,18 @@ $(window).on('load', function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
-            console.log('product thumb with', id, 'missed');
+            console.log('product thumb with id', id, 'missed');
             $.get('/policy/no-product-thumb/' + id);
             // TODO temporary
         }
     });
 
     // companies
-    $('.index-company-thumb img, .search-company-thumb').each(function () {
+    $('.index-company-thumb img, img.search-company-thumb').each(function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_logo.jpg';
             let id = this.dataset.id;
-            console.log('company thumb with', id, 'missed');
+            console.log('company thumb with id', id, 'missed');
             $.get('/policy/no-company-thumb/' + id);
             // TODO temporary
         }

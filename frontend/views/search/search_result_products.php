@@ -13,7 +13,7 @@ use yii\helpers\Url;
     <div class="col col-lg-6" style="margin-top: 15px;">
         <?php if ($product->thumb): ?>
             <div class="enter-block" style="float: left;">
-                <img alt="" src="<?= $product->thumb ?>" style="max-width: 50px; max-height: 50px;">
+                <img alt="" src="<?= $product->thumb ?>" style="max-width: 50px; max-height: 50px;" class="search-company-thumb" data-id="<?= $product->id ?>">
             </div>
             <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>" target="_blank">
                 <?= $product->name ?>

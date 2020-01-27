@@ -14,9 +14,7 @@ use yii\helpers\Url;
             <?php foreach ($companies as $company): ?>
                 <div class="col col-md-4 col-sm-4 col-sx-6 text-center">
 
-                    <div style="min-height: 110px"><img alt="" src="<?= $company->thumb ?>" class="search-company-thumb"></div>
-
-
+                    <div style="min-height: 110px"><img alt="" src="<?= $company->thumb ?>" class="search-company-thumb" data-id="<?= $company->id ?>"></div>
                     <a href="<?= Url::to(['company/index', 'companyId' => $company->id]) ?>">
                         <?= $company->name ?>
                     </a>
