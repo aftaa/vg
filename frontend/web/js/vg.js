@@ -71,6 +71,10 @@ $(function () {
 // check thumb exists policy
 // in russian: обратиться в полицию превьюшек, если нет оной
 $(window).on('load', function () {
+
+    // because hosting ends, turn temporary off this
+    return;
+
     $('.index-product-thumb img, img.search-company-thumb').each(function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
