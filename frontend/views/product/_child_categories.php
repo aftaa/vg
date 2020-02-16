@@ -15,8 +15,8 @@ use yii\web\View;
             <ul>
                 <?php if ($productCategory->productCategories): ?>
                     <a href="<?= Url::to(['product/category', 'categoryId' => $productCategory->id]) ?>"
-                       data-categoyr-id="<?= $productCategory->id ?>"
-                       class="glyphicon-plus look-product-category"></a>
+                       data-category-id="<?= $productCategory->id ?>"
+                       class="look-product-category sub-level">&darr;</a>
                 <?php endif ?>
 
                 <a class="product-categories"

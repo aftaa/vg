@@ -148,13 +148,13 @@ header > div {
     text-decoration: none !important;
 }
 
-.look-product-category:hover {
-    background: #f5f5f5;
-    border-radius: .5em;
-    text-decoration: none;
-    padding-left: 4px;
-    margin-left: -4px;
-}
+/*.look-product-category:hover {*/
+/*    background: #f5f5f5;*/
+/*    border-radius: .5em;*/
+/*    text-decoration: none;*/
+/*    padding-left: 4px;*/
+/*    margin-left: -4px;*/
+/*}*/
 
 .look-product-category:active,
 .look-product-category:visited {
@@ -214,11 +214,13 @@ form.nav-search input[type=search] {
     border-bottom: 1px dotted #0b72b8;
     display: inline-block;
 }
+
 .company-products-count {
     font-size: 18px;
     display: inline-block;
     /*border-bottom: 1px dotted #0b72b8;*/
 }
+
 .company-introduce {
     font-size: 17px;
     margin-bottom: 2em;
@@ -239,6 +241,7 @@ ul.pagination li a {
 #w0 a {
     color: #fff;
 }
+
 #w0 a:hover {
     background: #5cb85c;
 }
@@ -247,8 +250,9 @@ ul.pagination li a {
 /* TODO но тут опасность - отличить ссылки/кнопки перехода от внутренне логических */
 
 div.container, footer {
-    //filter: blur(1px);
+/ / filter: blur(1 px);
 }
+
 div#unload {
     position: fixed;
     top: 45%;
@@ -279,4 +283,24 @@ div.circle-732 {
 .search-company-thumb {
     max-height: 100px;
     max-width: 100px;
+}
+
+.look-product-category {
+    text-decoration: none;
+    background: orange;
+    color: #fff;
+    width: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center
+}
+
+.look-product-category.sub-level {
+    text-decoration: none;
+    background: orange;
+    color: #fff;
+    width: 18px;
+    display: inline-block;
+    border-radius: 9px;
+    text-align: center;
 }

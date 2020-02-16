@@ -3,7 +3,7 @@
 // index page sub-categories
 function productChildCategories() {
     $('a.look-product-category').click(function () {
-        let catId = this.dataset.categoyrId;
+        let catId = this.dataset.categoryId;
         $('#unload').show();
         $.get(this.href, function (html) {
             $('#product-category-' + catId).html(html).fadeIn('slow');
