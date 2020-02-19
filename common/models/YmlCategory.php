@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "yml_category".
  *
  * @property int $id №
+ * @property int $yml_id YML id
  * @property int|null $parent_id Родительская YML-категория
  * @property string $name Категория YML-файла
  * @property int|null $sort Сортировка
@@ -30,8 +31,8 @@ class YmlCategory extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['parent_id', 'sort', 'product_category_id', 'yml_file_id'], 'integer'],
-            [['name', 'yml_file_id'], 'required'],
+            [['yml_id', 'name', 'yml_file_id'], 'required'],
+            [['yml_id', 'parent_id', 'sort', 'product_category_id', 'yml_file_id'], 'integer'],
             [['name'], 'string', 'max' => 255],
         ];
     }
@@ -43,6 +44,7 @@ class YmlCategory extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', '№'),
+            'yml_id' => Yii::t('app', 'YML id'),
             'parent_id' => Yii::t('app', 'Родительская YML-категория'),
             'name' => Yii::t('app', 'Категория YML-файла'),
             'sort' => Yii::t('app', 'Сортировка'),

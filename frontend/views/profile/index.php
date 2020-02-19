@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </thead>
     <tbody>
     <tr>
-        <td><?= $identity->username ?></td>
+        <td><?= $identity->username ?><br><small>uid=<?= $member->user->id ?></small></td>
         <td><a href="<?= Url::to(['profile/password']) ?>">сменить<br>пароль</a></td>
         <td><?= $identity->email ?></td>
         <td>

@@ -4,7 +4,6 @@ namespace common\vg\models;
 
 use common\models\Product;
 use common\vg\interfaces\VgGetMaxId;
-use common\vg\interfaces\HasSiteMapLink;
 use Yii;
 use yii\db\Exception;
 

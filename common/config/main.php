@@ -8,35 +8,35 @@ return [
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=vg_dev',
+        'db'              => [
+            'class'    => 'yii\db\Connection',
+            'dsn'      => 'mysql:host=localhost;dbname=vg_dev',
             'username' => 'vg_dev',
             'password' => 'vg_dev',
-            'charset' => 'utf8',
+            'charset'  => 'utf8',
         ],
-        'dbDev' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=vg_dev',
+        'dbDev'           => [
+            'class'    => 'yii\db\Connection',
+            'dsn'      => 'mysql:host=localhost;dbname=vg_dev',
             'username' => 'vg_dev',
             'password' => 'vg_dev',
-            'charset' => 'utf8',
+            'charset'  => 'utf8',
         ],
-        'dbVsetigTest' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=vsetig.beget.tech;dbname=vsetig_test',
+        'dbVsetigTest'    => [
+            'class'    => 'yii\db\Connection',
+            'dsn'      => 'mysql:host=vsetig.beget.tech;dbname=vsetig_test',
             'username' => 'vsetig_test',
             'password' => '&gH3Xzo5',
-            'charset' => 'utf8',
+            'charset'  => 'utf8',
         ],
         'dbVsetigInfoCom' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=vsetig.beget.tech;dbname=vsetig_info_com',
+            'class'    => 'yii\db\Connection',
+            'dsn'      => 'mysql:host=vsetig.beget.tech;dbname=vsetig_info_com',
             'username' => 'vsetig_info_com',
             'password' => '&gH3Xzo5',
-            'charset' => 'utf8',
+            'charset'  => 'utf8',
         ],
-        'i18n'    => [
+        'i18n'            => [
             'translations' => [
                 '*' => [
                     'class'          => 'yii\i18n\PhpMessageSource',
@@ -49,10 +49,10 @@ return [
                 ],
             ],
         ],
-//        'cache' => [
-//                    'class' => 'yii\caching\FileCache',
-//                ],
-        'cache'   => [
+        //        'cache' => [
+        //                    'class' => 'yii\caching\FileCache',
+        //                ],
+        'cache'           => [
             'class'        => 'yii\caching\MemCache',
             'useMemcached' => true,
             'servers'      => [
@@ -63,15 +63,15 @@ return [
                 ],
             ],
         ],
-        'session' => [
+        'session'         => [
             'class' => 'yii\redis\Session',
             'redis' => [
                 'hostname' => 'localhost',
-                'port' => 6379,
+                'port'     => 6379,
                 'database' => 0,
             ]
         ],
-        'mailer'  => [
+        'mailer'          => [
             'class'    => 'yii\swiftmailer\Mailer',
             'viewPath' => '@common/mail',
             // send all mails to a file by default. You have to set
@@ -79,7 +79,7 @@ return [
             // for the mailer to send real emails.
             // 'useFileTransport' => true,
         ],
-        'sphinx'  => [
+        'sphinx'          => [
             'class'    => 'yii\sphinx\Connection',
             'dsn'      => 'mysql:host=127.0.0.1;port=9306;',
             'username' => '',

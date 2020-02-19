@@ -7,6 +7,7 @@ use common\models\YmlFile;
 use common\vg\helpers\ImportHelper;
 use common\vg\models\import\Folder;
 use common\vg\models\import\FolderCreateException;
+use Exception;
 use Yii;
 
 class ImportManager
@@ -42,7 +43,7 @@ class ImportManager
         $xml = simplexml_load_file($filename);
         foreach ($xml->shop->categories->children() as $category) {
             $ymlCategory = new YmlCategory;
-            $ymlCategory->name = $category;
+            $ymlCategory->name = trim($category);
             $ymlCategory->yml_file_id = $ymlFile->id;
         }
 

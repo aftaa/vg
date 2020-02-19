@@ -3,8 +3,10 @@
 namespace frontend\controllers;
 
 use common\models\Company;
+use common\models\ProductCategory;
 use common\models\YmlCategory;
 use common\models\YmlFile;
+use common\models\YmlOffer;
 use common\vg\controllers\FrontendController;
 use common\vg\helpers\ImportHelper;
 use common\vg\manager\ImportManager;
@@ -50,18 +52,32 @@ class ImportController extends FrontendController
         $sort = 1;
         foreach ($xml->shop->categories->children() as $category) {
             $ymlCategory = new YmlCategory;
-            $ymlCategory->name = (string)$category;
+            $ymlCategory->name = trim((string)$category);
             $ymlCategory->sort = $sort++;
             $ymlCategory->yml_file_id = $ymlFile->id;
             $ymlCategory->product_category_id = null;
-            $ymlCategory->parent_id = null;
-            if (!$ymlCategory->save()) {
-                echo '<pre>'; print_r($ymlCategory->errors); echo '</pre>'; die;
+            $ymlCategory->parent_id = $category['parent_id'];
+            $ymlCategory->yml_id = $category['id'];
+            if (!$ymlCategory->save(false)) {
+                echo '<pre>';
+                print_r($ymlCategory->errors);
+                echo '</pre>';
+                die;
             }
         }
 
-        foreach ($xml->shop->offers->children() as $offer) {
-            
+        foreach ($xml->shop->offers->children() as $fileOffer) {
+            $offer = new YmlOffer;
+            $offer->yml_file_id = $ymlFile->id;
+            $offer->offer_id = $fileOffer['id'];
+            $offer->available = 'true' == $fileOffer ? true : false;
+            $offer->yml_category_id = (int)$fileOffer->categoryId;
+            $offer->url = (string)$fileOffer->url;
+            $offer->price = (double)$fileOffer->price;
+            $offer->picture = (double)$fileOffer->picture;
+            $offer->name = (string)$fileOffer->name;
+            $offer->description = (string)$fileOffer->description;
+            $offer->save(false);
         }
 
         return $this->redirect(Url::to(['import/files', 'companyId' => $companyId]));
@@ -74,9 +90,8 @@ class ImportController extends FrontendController
     public function actionFiles(int $companyId)
     {
         $files = YmlFile::find()->orderBy(['created_at' => SORT_DESC, 'updated_at' => SORT_ASC])->all();
-
         return $this->render('files', [
-            'files' => $files,
+            'files'     => $files,
             'companyId' => $companyId,
         ]);
     }
@@ -91,5 +106,26 @@ class ImportController extends FrontendController
         $return = [$fileSize];
         $return = json_encode($return);
         return $return;
+    }
+
+    /**
+     * @param int $fileId
+     * @return string
+     */
+    public function actionCategories(int $fileId)
+    {
+        $siteCategories = ProductCategory::find()->indexBy('name')->all();
+        $ymlCategories = YmlCategory::find()->where(['yml_file_id' => $fileId])->all();
+
+        foreach ($ymlCategories as $ymlCategory) {
+            if (isset($siteCategories[$ymlCategory->name])) {
+                $ymlCategory->product_category_id = $siteCategories[$ymlCategory->name]->id;
+            }
+        }
+
+        return $this->render('categories', [
+            'siteCategories' => $siteCategories,
+            'ymlCategories'  => $ymlCategories,
+        ]);
     }
 }
