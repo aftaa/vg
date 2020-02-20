@@ -114,13 +114,20 @@ class ImportController extends FrontendController
      */
     public function actionCategories(int $fileId)
     {
-        $siteCategories = ProductCategory::find()->indexBy('name')->all();
+        $siteCategories = ProductCategory::find()->indexBy('id')->all();
         $ymlCategories = YmlCategory::find()->where(['yml_file_id' => $fileId])->all();
 
         foreach ($ymlCategories as $ymlCategory) {
-            if (isset($siteCategories[$ymlCategory->name])) {
-                $ymlCategory->product_category_id = $siteCategories[$ymlCategory->name]->id;
+//            if (isset($siteCategories[$ymlCategory->name])) {
+//                $ymlCategory->product_category_id = $siteCategories[$ymlCategory->name]->id;
+//            }
+            $sql = "SELECT * FROM product_category WHERE MATCH (name) AGAINST ('$ymlCategory->name LIMIT 1')";
+            $r = \Yii::$app->db->createCommand($sql)->queryOne(\PDO::FETCH_ASSOC);
+
+            if ($r) {
+                $ymlCategory->product_category_id = $r['id'];
             }
+
         }
 
         return $this->render('categories', [

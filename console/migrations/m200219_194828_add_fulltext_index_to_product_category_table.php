@@ -12,7 +12,8 @@ class m200219_194828_add_fulltext_index_to_product_category_table extends Migrat
      */
     public function safeUp()
     {
-
+        $sql = "ALTER TABLE product_category ADD FULLTEXT INDEX `idx-fulltext-product-category` (name ASC)";
+        Yii::$app->db->createCommand($sql)->execute();
     }
 
     /**
@@ -20,9 +21,8 @@ class m200219_194828_add_fulltext_index_to_product_category_table extends Migrat
      */
     public function safeDown()
     {
-        echo "m200219_194828_add_fulltext_index_to_product_category_table cannot be reverted.\n";
-
-        return false;
+        $this->dropIndex('idx-fulltext-product-category', 'product_category');
+        return true;
     }
 
     /*

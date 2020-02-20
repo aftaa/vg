@@ -22,7 +22,18 @@ $this->title = 'Сопоставление категорий';
             <td>
                 <?php if ($ymlCategory->product_category_id): ?>
                     <?= $ymlCategory->product_category_id ?>:
-                    <?= $siteCategories[$ymlCategory->name]->name ?>
+
+                    <?php if ($siteCategories[$ymlCategory->product_category_id]->parent_id): ?>
+                        <?php if (isset($siteCategories[$ymlCategory->product_category_id]->parent->parent_id)): ?>
+                            <i><?= $siteCategories[$ymlCategory->product_category_id]->parent->parent->name ?> &rarr;</i>
+                        <?php endif ?>
+
+                        <?= $siteCategories[$ymlCategory->product_category_id]->parent->name ?> &rarr;
+
+
+                    <?php endif ?>
+
+                    <b><?= $siteCategories[$ymlCategory->product_category_id]->name ?></b>
                 <?php endif ?>
             </td>
         </tr>
