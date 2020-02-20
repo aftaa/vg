@@ -11,7 +11,7 @@ use Yii;
  * @property int $product_param_id Параметр
  *
  * @property ProductParam $productParam
- * @property ProductCategory $productCategory
+ * @property VgProductCategory $productCategory
  */
 class ProductCategoryParam extends \yii\db\ActiveRecord
 {
@@ -33,7 +33,7 @@ class ProductCategoryParam extends \yii\db\ActiveRecord
             [['product_category_id', 'product_param_id'], 'integer'],
             [['product_category_id', 'product_param_id'], 'unique', 'targetAttribute' => ['product_category_id', 'product_param_id']],
             [['product_param_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductParam::className(), 'targetAttribute' => ['product_param_id' => 'id']],
-            [['product_category_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductCategory::className(), 'targetAttribute' => ['product_category_id' => 'id']],
+            [['product_category_id'], 'exist', 'skipOnError' => true, 'targetClass' => VgProductCategory::className(), 'targetAttribute' => ['product_category_id' => 'id']],
         ];
     }
 
@@ -61,7 +61,7 @@ class ProductCategoryParam extends \yii\db\ActiveRecord
      */
     public function getProductCategory()
     {
-        return $this->hasOne(ProductCategory::className(), ['id' => 'product_category_id']);
+        return $this->hasOne(VgProductCategory::className(), ['id' => 'product_category_id']);
     }
 
     /**

@@ -10,7 +10,7 @@ use yii\db\Exception;
 /**
  * This is the ActiveQuery class for [[ProductCategory]].
  *
- * @see ProductCategory
+ * @see VgProductCategory
  */
 class ProductCategoryQuery extends \yii\db\ActiveQuery
 {
@@ -23,7 +23,7 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return ProductCategory[]|array
+     * @return VgProductCategory[]|array
      */
     public function all($db = null)
     {
@@ -32,7 +32,7 @@ class ProductCategoryQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return ProductCategory|array|null
+     * @return VgProductCategory|array|null
      */
     public function one($db = null)
     {

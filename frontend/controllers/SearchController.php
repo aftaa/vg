@@ -3,7 +3,7 @@
 namespace frontend\controllers;
 
 use common\models\Company;
-use common\models\ProductCategory;
+use common\models\VgProductCategory;
 use common\vg\controllers\FrontendController;
 use common\vg\models\VgCompany;
 use common\vg\models\VgProduct;
@@ -93,7 +93,7 @@ class SearchController extends FrontendController
 
     /**
      * @param string $s
-     * @return array|ProductCategory[]|VgProductCategory[]
+     * @return array|VgProductCategory[]|VgProductCategory[]
      */
     protected function getProductCategories(string $s)
     {

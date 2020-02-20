@@ -1,6 +1,6 @@
 <?php
 
-use common\models\ProductCategory;
+use common\models\VgProductCategory;
 use yii\db\Migration;
 
 /**

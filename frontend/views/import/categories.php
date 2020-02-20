@@ -1,10 +1,12 @@
 <?php
 
-use common\models\ProductCategory;
 use common\models\YmlCategory;
+use common\vg\models\import\VgYmlCategoryChoice;
+use yii\web\View;
 
-/** @var $siteCategories ProductCategory[] */
 /** @var $ymlCategories YmlCategory[] */
+/** @var $choices VgYmlCategoryChoice[] */
+/** @var $this View */
 
 $this->title = 'Сопоставление категорий';
 
@@ -12,31 +14,35 @@ $this->title = 'Сопоставление категорий';
 
 <table class="table table-bordered table-hover">
     <thead>
-    <th width="50%">Yml</th>
+    <th width="2%">#</th>
+    <th width="45%">Yml</th>
+    <th width="6%">Choice</th>
     <th>Site</th>
     </thead>
     <tbody>
-    <?php foreach ($ymlCategories as $ymlCategory): ?>
-        <tr>
-            <td><?= $ymlCategory->name ?></td>
-            <td>
-                <?php if ($ymlCategory->product_category_id): ?>
-                    <?= $ymlCategory->product_category_id ?>:
+        <?php foreach ($choices as $choice): ?>
+            <tr<?php if ($choice->productCategoriesChoice->count()) echo ' class="alert-info"';
+            else echo ' class="alert-danger"' ?>>
+                <td><?= $choice->ymlCategory->id ?></td>
+                <td><?= $choice->ymlCategory->name ?></td>
+                <td><?= $choice->productCategoriesChoice->count() ?></td>
+                <td>
+                    <?php foreach ($choice->productCategoriesChoice->productCategories as $productCategory): ?>
 
-                    <?php if ($siteCategories[$ymlCategory->product_category_id]->parent_id): ?>
-                        <?php if (isset($siteCategories[$ymlCategory->product_category_id]->parent->parent_id)): ?>
-                            <i><?= $siteCategories[$ymlCategory->product_category_id]->parent->parent->name ?> &rarr;</i>
+                        <?php if ($productCategory->parent): ?>
+
+                            <?php if ($productCategory->parent->parent): ?>
+                                <?= $productCategory->parent->parent->name ?> /
+                            <?php endif ?>
+
+                            <?= $productCategory->parent->name ?> /
                         <?php endif ?>
 
-                        <?= $siteCategories[$ymlCategory->product_category_id]->parent->name ?> &rarr;
-
-
-                    <?php endif ?>
-
-                    <b><?= $siteCategories[$ymlCategory->product_category_id]->name ?></b>
-                <?php endif ?>
-            </td>
-        </tr>
-    <?php endforeach ?>
+                        <?= $productCategory->name ?>
+                        <br><br>
+                    <?php endforeach ?>
+                </td>
+            </tr>
+        <?php endforeach ?>
     </tbody>
 </table>

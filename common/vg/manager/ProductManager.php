@@ -2,7 +2,7 @@
 
 namespace common\vg\manager;
 
-use common\models\ProductCategory;
+use common\models\VgProductCategory;
 use common\vg\helpers\VgRandomSelectFromBigTable;
 use common\vg\helpers\VgRandomizer;
 use common\vg\models\VgProduct;
@@ -12,11 +12,11 @@ use yii\db\Expression;
 class ProductManager
 {
     /**
-     * @param ProductCategory $productCategory
+     * @param VgProductCategory $productCategory
      * @param array $categoriesId
      * @return array
      */
-    public function allChildCategoriesAsArray(ProductCategory $productCategory, &$categoriesId = []): array
+    public function allChildCategoriesAsArray(VgProductCategory $productCategory, &$categoriesId = []): array
     {
         $categoriesId[] = $productCategory->id;
         if ($productCategory->productCategories) {
@@ -33,7 +33,7 @@ class ProductManager
      */
     public static function getProductsByCategoryIdWithPagination($productCategoryId): array
     {
-        $productCategory = ProductCategory::findOne($productCategoryId);
+        $productCategory = VgProductCategory::findOne($productCategoryId);
 
         $query = VgProduct::find()->where([
             'checked'     => true,

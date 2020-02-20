@@ -1,6 +1,6 @@
 <?php
 
-namespace common\vg\models\sitemap;
+namespace common\vg\models\import;
 
 use common\vg\interfaces\HasSiteMapLink;
 use common\vg\models\VgProduct;

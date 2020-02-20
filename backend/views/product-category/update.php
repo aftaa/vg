@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\ProductCategory */
+/* @var $model common\models\VgProductCategory */
 
 $this->title = Yii::t('app', 'Update Product Category: {name}', [
     'name' => $model->name,

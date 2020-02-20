@@ -29,7 +29,9 @@
     "yiisoft/yii2-redis": "*",
     "ext-dom": "*",
     "ext-memcached": "*",
-    "ext-simplexml": "*"
+    "ext-simplexml": "*",
+    "ext-pdo": "*",
+    "ext-json": "*"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.1.0",

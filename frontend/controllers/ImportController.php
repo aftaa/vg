@@ -10,6 +10,12 @@ use common\models\YmlOffer;
 use common\vg\controllers\FrontendController;
 use common\vg\helpers\ImportHelper;
 use common\vg\manager\ImportManager;
+use common\vg\models\import\VgYmlCategoryChoice;
+use common\vg\models\VgProductCategory;
+use Yii;
+use yii\db\Exception;
+use yii\db\Query;
+use yii\db\QueryBuilder;
 use yii\filters\AccessControl;
 use yii\helpers\Url;
 
@@ -111,28 +117,43 @@ class ImportController extends FrontendController
     /**
      * @param int $fileId
      * @return string
+     * @throws Exception
      */
     public function actionCategories(int $fileId)
     {
         $siteCategories = ProductCategory::find()->indexBy('id')->all();
         $ymlCategories = YmlCategory::find()->where(['yml_file_id' => $fileId])->all();
+        $choices = [];
 
         foreach ($ymlCategories as $ymlCategory) {
-//            if (isset($siteCategories[$ymlCategory->name])) {
-//                $ymlCategory->product_category_id = $siteCategories[$ymlCategory->name]->id;
-//            }
-            $sql = "SELECT * FROM product_category WHERE MATCH (name) AGAINST ('$ymlCategory->name LIMIT 1')";
-            $r = \Yii::$app->db->createCommand($sql)->queryOne(\PDO::FETCH_ASSOC);
+            $choice = new VgYmlCategoryChoice($ymlCategory);
 
-            if ($r) {
-                $ymlCategory->product_category_id = $r['id'];
+            $sql = "SELECT * FROM product_category WHERE MATCH (name) AGAINST ('$ymlCategory->name') LIMIT 3";
+            $res = Yii::$app->db->createCommand($sql)->query();
+
+            /** @var array $productCategories */
+            $productCategories = (new Query)
+                ->select('*')
+                ->from(ProductCategory::tableName())
+                ->where("MATCH (name) AGAINST ('$ymlCategory->name')")
+                ->limit(3)
+                ->all();
+
+            if ($productCategories) {
+                foreach ($productCategories as $productCategory) {
+                    $productCategoryObject = new ProductCategory;
+                    $productCategoryObject->setAttributes($productCategory);
+                    $choice->addChoice($productCategoryObject);
+                }
             }
 
+            $choices[$ymlCategory->id] = $choice;
         }
 
         return $this->render('categories', [
             'siteCategories' => $siteCategories,
             'ymlCategories'  => $ymlCategories,
+            'choices'        => $choices,
         ]);
     }
 }

@@ -3,7 +3,7 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\ProductCategory;
+use common\models\VgProductCategory;
 use backend\models\ProductCategorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -64,7 +64,7 @@ class ProductCategoryController extends Controller
      */
     public function actionCreate()
     {
-        $model = new ProductCategory();
+        $model = new VgProductCategory();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -113,12 +113,12 @@ class ProductCategoryController extends Controller
      * Finds the ProductCategory model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return ProductCategory the loaded model
+     * @return VgProductCategory the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = ProductCategory::findOne($id)) !== null) {
+        if (($model = VgProductCategory::findOne($id)) !== null) {
             return $model;
         }
 

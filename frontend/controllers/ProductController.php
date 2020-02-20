@@ -5,7 +5,7 @@ namespace frontend\controllers;
 
 
 use common\models\Product;
-use common\models\ProductCategory;
+use common\models\VgProductCategory;
 use common\vg\controllers\FrontendController;
 use common\vg\manager\ProductCategoryManager;
 use common\vg\manager\ProductManager;
@@ -46,7 +46,7 @@ class ProductController extends FrontendController
     public function actionCategory(int $categoryId): string
     {
         $companyCategories = ProductCategoryManager::getCategoriesByParentId($categoryId);
-        $currentCategory = ProductCategory::findOne($categoryId);
+        $currentCategory = VgProductCategory::findOne($categoryId);
         [$products, $pages] = ProductManager::getProductsByCategoryIdWithPagination($categoryId);
 
         if ($this->app->request->isAjax) {

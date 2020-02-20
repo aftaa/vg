@@ -25,7 +25,7 @@ use Yii;
  * @property string $yml_url Ссылка
  * @property int $yml_id ID в YML-файле
  *
- * @property ProductCategory $category
+ * @property VgProductCategory $category
  * @property Company $company
  * @property YmlFile $ymlFile
  * @property ProductParamValue[] $productParamValues
@@ -54,7 +54,7 @@ class Product extends \yii\db\ActiveRecord
             [['name'], 'string', 'max' => 500],
             [['thumb'], 'string', 'max' => 250],
             [['yml_url'], 'string', 'max' => 255],
-            [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductCategory::className(), 'targetAttribute' => ['category_id' => 'id']],
+            [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => VgProductCategory::className(), 'targetAttribute' => ['category_id' => 'id']],
             [['company_id'], 'exist', 'skipOnError' => true, 'targetClass' => Company::className(), 'targetAttribute' => ['company_id' => 'id']],
             [['yml_file_id'], 'exist', 'skipOnError' => true, 'targetClass' => YmlFile::className(), 'targetAttribute' => ['yml_file_id' => 'id']],
         ];
@@ -91,7 +91,7 @@ class Product extends \yii\db\ActiveRecord
      */
     public function getCategory()
     {
-        return $this->hasOne(ProductCategory::className(), ['id' => 'category_id']);
+        return $this->hasOne(VgProductCategory::className(), ['id' => 'category_id']);
     }
 
     /**

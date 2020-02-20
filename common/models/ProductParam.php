@@ -14,8 +14,8 @@ use Yii;
  * @property int $product_category_id Категория
  *
  * @property ProductCategoryParam[] $productCategoryParams
- * @property ProductCategory[] $productCategories
- * @property ProductCategory $productCategory
+ * @property VgProductCategory[] $productCategories
+ * @property VgProductCategory $productCategory
  * @property ProductParamValue[] $productParamValues
  */
 class ProductParam extends \yii\db\ActiveRecord
@@ -37,7 +37,7 @@ class ProductParam extends \yii\db\ActiveRecord
             [['name', 'code', 'sort', 'product_category_id'], 'required'],
             [['sort', 'product_category_id'], 'integer'],
             [['name', 'code'], 'string', 'max' => 255],
-            [['product_category_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductCategory::className(), 'targetAttribute' => ['product_category_id' => 'id']],
+            [['product_category_id'], 'exist', 'skipOnError' => true, 'targetClass' => VgProductCategory::className(), 'targetAttribute' => ['product_category_id' => 'id']],
         ];
     }
 
@@ -68,7 +68,7 @@ class ProductParam extends \yii\db\ActiveRecord
      */
     public function getProductCategories()
     {
-        return $this->hasMany(ProductCategory::className(), ['id' => 'product_category_id'])->viaTable('product_category_param', ['product_param_id' => 'id']);
+        return $this->hasMany(VgProductCategory::className(), ['id' => 'product_category_id'])->viaTable('product_category_param', ['product_param_id' => 'id']);
     }
 
     /**
@@ -76,7 +76,7 @@ class ProductParam extends \yii\db\ActiveRecord
      */
     public function getProductCategory()
     {
-        return $this->hasOne(ProductCategory::className(), ['id' => 'product_category_id']);
+        return $this->hasOne(VgProductCategory::className(), ['id' => 'product_category_id']);
     }
 
     /**
