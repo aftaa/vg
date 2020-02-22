@@ -95,7 +95,7 @@ class SearchController extends FrontendController
         $productCategoryIds = (new Query())
             ->from('product_category')
             ->match($s)
-            ->limit(1000)
+            ->limit(100)
             ->column();
 
         return VgProductCategory::find()->where(['id' => $productCategoryIds])->all();
