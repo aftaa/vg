@@ -128,7 +128,7 @@ class ImportController extends FrontendController
         foreach ($ymlCategories as $ymlCategory) {
             $choice = new VgYmlCategoryChoice($ymlCategory);
 
-            $sql = "SELECT * FROM product_category WHERE MATCH (name) AGAINST ('$ymlCategory->name') LIMIT 3";
+            $sql = "SELECT * FROM product_category WHERE MATCH (name) AGAINST ('$ymlCategory->name') LIMIT 5";
             $res = Yii::$app->db->createCommand($sql)->query();
 
             /** @var array $productCategories */
