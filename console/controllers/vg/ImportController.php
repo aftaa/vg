@@ -420,13 +420,11 @@ class ImportController extends Controller
         $insertedAll = 0;
 
         foreach ($tables as $table) {
-
             if (!preg_match('/^aw_info\d+/', $table)) {
                 continue;
             }
             $companyId = $this->getCompanyIdByTableName($table);
-
-            $count = (new Query)->from($table)->count();
+            $count = (new Query)->from($table)->count('*', $dbVsetigInfoCom);
 
             for ($offset = 0; $offset < $count; $offset += $limit) {
                 $products = (new Query)
