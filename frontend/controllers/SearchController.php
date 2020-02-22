@@ -3,12 +3,10 @@
 namespace frontend\controllers;
 
 use common\models\Company;
-use common\models\VgProductCategory;
 use common\vg\controllers\FrontendController;
 use common\vg\models\VgCompany;
 use common\vg\models\VgProduct;
 use common\vg\models\VgProductCategory;
-use phpDocumentor\Reflection\DocBlock\Tags\Formatter\AlignFormatter;
 use Yii;
 use yii\data\Pagination;
 use yii\sphinx\Query;
