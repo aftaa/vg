@@ -21,7 +21,7 @@ class VgProductCategory extends ProductCategory
     /**
      * @return int
      */
-    public function getProductCount(): int
+    public function getProductCount(): string
     {
         $productCount = $this->productCount;
         $productCount = number_format($productCount,0, '', ' ');
