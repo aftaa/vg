@@ -11,10 +11,8 @@ use Yii;
 use yii\data\Pagination;
 use yii\sphinx\Query;
 
-
 class SearchController extends FrontendController
 {
-//    public function actionIndex(string $searchString, ?int $page, ?int $perPage)
     public function actionIndex()
     {
         $s = Yii::$app->request->get('s');
@@ -34,7 +32,6 @@ class SearchController extends FrontendController
         /** @var int $page */
         $page = $pages->getPage();
         $pages->setPageSize(50);
-
 
         return $this->render('index', [
             'productCategories' => $productCategories,
