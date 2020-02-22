@@ -73,14 +73,14 @@ $(function () {
 $(window).on('load', function () {
 
     // because hosting ends, turn temporary off this
-    return;
+    // return;
 
     $('.index-product-thumb img, img.search-company-thumb').each(function () {
         if (!this.width || !this.height) {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
             console.log('product thumb with id', id, 'missed');
-            $.get('/policy/no-product-thumb/' + id);
+            // $.get('/policy/no-product-thumb/' + id);
             // TODO temporary
         }
         $(this.parentNode.parentNode).removeClass('circle-732');
@@ -91,7 +91,7 @@ $(window).on('load', function () {
             this.src = '/img/no_product.jpg';
             let id = this.dataset.id;
             console.log('product thumb with id', id, 'missed');
-            $.get('/policy/no-product-thumb/' + id);
+            // $.get('/policy/no-product-thumb/' + id);
             // TODO temporary
         }
     });
@@ -102,7 +102,7 @@ $(window).on('load', function () {
             this.src = '/img/no_logo.jpg';
             let id = this.dataset.id;
             console.log('company thumb with id', id, 'missed');
-            $.get('/policy/no-company-thumb/' + id);
+            // $.get('/policy/no-company-thumb/' + id);
             // TODO temporary
         }
     });
