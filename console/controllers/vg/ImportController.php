@@ -419,39 +419,41 @@ class ImportController extends Controller
         $tables = $dbVsetigInfoCom->createCommand('SHOW TABLES')->queryColumn();
         $productsInsert = [];
 
-        foreach ($tables as $table) {
+        $limit = 100;
 
+        $columnsForInsert = array_keys($columns);
+        array_unshift($columnsForInsert, 'company_id');
+        $insertedAll = 0;
+
+        foreach ($tables as $table) {
             if (!preg_match('/^aw_info\d+/', $table)) {
                 continue;
             }
             $companyId = $this->getCompanyIdByTableName($table);
-            $products = (new Query)->select(array_values($columns))->from($table)->all($dbVsetigInfoCom);
-            $products = $this->map($products);
+            $count = (new Query)->from($table)->count('*', $dbVsetigInfoCom);
 
-            foreach ($products as &$product) {
-                array_unshift($product, $companyId);
-                if (!$product[9]) {
-                    $product[9] = time();
+            for ($offset = 0; $offset < $count; $offset += $limit) {
+                $products = (new Query)
+                    ->select(array_values($columns))
+                    ->from($table)
+                    ->offset($offset)
+                    ->limit($limit)
+                    ->all($dbVsetigInfoCom);
+                $products = $this->map($products);
+
+                foreach ($products as &$product) {
+                    array_unshift($product, $companyId);
+                    if (!$product[9]) {
+                        $product[9] = time();
+                    }
+                    $product[9] = date('Y-m-d H:i:s', $product[9]);
                 }
-                $product[9] = date('Y-m-d H:i:s', $product[9]);
-            }
-            $productsInsert = array_merge($productsInsert, $products);
 
-        }
-        $columns = array_keys($columns);
-        array_unshift($columns, 'company_id');
-
-        $insertedAll = 0;
-        $productsInsert = array_chunk($productsInsert, 100);
-        foreach ($productsInsert as $insert) {
-            try {
-                echo "\tbatch insert... ";
-                $inserted = Yii::$app->db->createCommand()->batchInsert('product', $columns, $insert)->execute();
+                $inserted = Yii::$app->db
+                    ->createCommand()
+                    ->batchInsert('product', $columnsForInsert, $products)
+                    ->execute();
                 $insertedAll += $inserted;
-                echo "$insertedAll inserted.\n";
-            } catch (Exception $e) {
-                echo 'was error ';
-                file_put_contents('report.txt', $e->getMessage());
             }
         }
     }

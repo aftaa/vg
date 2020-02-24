@@ -3,20 +3,16 @@
 namespace frontend\controllers;
 
 use common\models\Company;
-use common\models\VgProductCategory;
 use common\vg\controllers\FrontendController;
 use common\vg\models\VgCompany;
 use common\vg\models\VgProduct;
 use common\vg\models\VgProductCategory;
-use phpDocumentor\Reflection\DocBlock\Tags\Formatter\AlignFormatter;
 use Yii;
 use yii\data\Pagination;
 use yii\sphinx\Query;
 
-
 class SearchController extends FrontendController
 {
-//    public function actionIndex(string $searchString, ?int $page, ?int $perPage)
     public function actionIndex()
     {
         $s = Yii::$app->request->get('s');
@@ -36,7 +32,6 @@ class SearchController extends FrontendController
         /** @var int $page */
         $page = $pages->getPage();
         $pages->setPageSize(50);
-
 
         return $this->render('index', [
             'productCategories' => $productCategories,
@@ -100,7 +95,7 @@ class SearchController extends FrontendController
         $productCategoryIds = (new Query())
             ->from('product_category')
             ->match($s)
-            ->limit(1000)
+            ->limit(100)
             ->column();
 
         return VgProductCategory::find()->where(['id' => $productCategoryIds])->all();
