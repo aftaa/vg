@@ -88,14 +88,14 @@ class SearchController extends FrontendController
 
     /**
      * @param string $s
-     * @return array|VgProductCategory[]|VgProductCategory[]
+     * @return VgProductCategory[]
      */
     protected function getProductCategories(string $s)
     {
-        $productCategoryIds = (new Query())
+        $productCategoryIds = (new \yii\sphinx\Query)
             ->from('product_category')
             ->match($s)
-            ->limit(100)
+            ->limit(1000)
             ->column();
 
         return VgProductCategory::find()->where(['id' => $productCategoryIds])->all();
