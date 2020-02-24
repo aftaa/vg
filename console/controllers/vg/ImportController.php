@@ -98,6 +98,12 @@ class ImportController extends Controller
      */
     private function modifyThumb(?string $thumb): ?string
     {
+        $wrong = 'terapiyasna.ru';
+        if (preg_match("/$wrong/", $thumb)) {
+            $thumb = null;
+            return null;
+        }
+
         if (!preg_match('/^http/', $thumb)) {
             $thumb = 'http://vseti-goroda.ru/' . $thumb;
         }
