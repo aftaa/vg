@@ -60,6 +60,8 @@ $this->params['breadcrumbs'][] = $this->title;
         // }
 
         $('#import_btn').on('click', function () {
+            $('#unload').fadeIn();
+            this.disabled = true;
             $('#file_size_wrong_url').fadeOut();
             let url = $('#url').val();
             $.get('/import/remote-file-size/', {url: url}, function (data) {
