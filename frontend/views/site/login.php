@@ -16,9 +16,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="site-login">
 
-<!--    <p>Для входа на сайт введите следующие данные:</p>-->
-<!--    <br>-->
-
     <div class="row">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>

@@ -1,4 +1,5 @@
 <?php
+
 namespace frontend\models;
 
 use Yii;
@@ -13,6 +14,7 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
+    public $promocode;
 
 
     /**
@@ -34,6 +36,10 @@ class SignupForm extends Model
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
+
+            ['promocode', 'required'],
+            ['promocode', 'string', 'min' => 10],
+            ['promocode', 'string', 'max' => 10],
         ];
     }
 
@@ -47,14 +53,17 @@ class SignupForm extends Model
         if (!$this->validate()) {
             return null;
         }
-        
+
         $user = new User();
         $user->username = $this->username;
         $user->email = $this->email;
         $user->setPassword($this->password);
         $user->generateAuthKey();
         $user->generateEmailVerificationToken();
-        return $user->save() && $this->sendEmail($user);
+//        return $user->save() && $this->sendEmail($user);
+        if (false) {
+
+        }
 
     }
 
@@ -80,12 +89,13 @@ class SignupForm extends Model
     /**
      * @inheritDoc
      */
-    public function attributeLabels() {
+    public function attributeLabels()
+    {
         return [
-            'username' => 'Логин',
-            'email' => 'Электронная почта',
-            'password' => 'Пароль',
-
+            'username'  => 'Логин',
+            'email'     => 'Электронная почта',
+            'password'  => 'Пароль',
+            'promocode' => 'Промо-код',
         ];
     }
 }
