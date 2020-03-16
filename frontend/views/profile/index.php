@@ -5,7 +5,6 @@ use common\models\Member;
 
 /** @var $this yii\web\View */
 /** @var $success bool */
-
 /** @var $member Member */
 
 use yii\bootstrap\ActiveForm;
@@ -15,33 +14,42 @@ use yii\helpers\Url;
 $identity = Yii::$app->user->getIdentity();
 $this->title = 'Профиль';
 $this->params['breadcrumbs'][] = $this->title;
+$this->params['hide_search'] =
+    true;
 ?>
 
-<table class="table">
+<table class="table table-hover table-striped">
     <thead>
-    <tr>
+    <tr class="alert-danger">
         <th>Логин</th>
-        <th>Пароль</th>
         <th>E-mail</th>
         <th>Баланс</th>
-        <th>Компаний</th>
+        <th>Компания</th>
+        <th class="text-center">Тариф</th>
         <th>Статус</th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <td><?= $identity->username ?><br><small>uid=<?= $member->user->id ?></small></td>
-        <td><a href="<?= Url::to(['profile/password']) ?>">сменить<br>пароль</a></td>
+        <td><?= $identity->username ?></td>
         <td><?= $identity->email ?></td>
         <td>
             <?= $this->render('_balance', ['balance' => $member->balance]) ?>
         </td>
         <td>
-            <?= $member->getCompanies()->count() ?><br>
-            <a href="<?= Url::to(['profile/companies']) ?>">глянуть</a>
+            <?php if (!$member->getCompanies()->count()): ?>
+                <div class="h5">У вас нет компаний!</div>
+                <a href="<?= Url::to(['create-company']) ?>" class="btn btn-success">Создать компанию</a>
+            <?php else: ?>
+                <a href="#<?//= Url::to(['profile/edit-company',
+                        'companyId' => $member->companies[0]->id
+                ]) ?>"><?= $member->companies[0]->name ?></a>
+            <?php endif ?>
         </td>
-        <td><?= $identity->attributeLabels()[$identity->status] ?></td>
 
+        <td class="text-center">&mdash;</td>
+
+        <td><?= $identity->attributeLabels()[$identity->status] ?></td>
     </tr>
     </tbody>
     <tfoot>
@@ -68,14 +76,18 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <?php $form = ActiveForm::begin(['id' => 'member-form']); ?>
 
-            <?= $form->field($member, 'first_name')->input(['autofocus' => true]) ?>
+            <?= $form->field($member, 'first_name') ?>
             <?= $form->field($member, 'last_name') ?>
             <?= $form->field($member, 'middle_name') ?>
-            <?= $form->field($member, 'position') ?>
             <?= $form->field($member, 'phone') ?>
+            <?= $form->field($member, 'position') ?>
+            <?= $form->field($member, 'user_pic') ?>
+
 
             <div class="form-group">
                 <?= Html::submitButton('Обновить', ['class' => 'btn btn-primary', 'name' => 'member-button']) ?>
+                &nbsp; &nbsp; &nbsp;
+                <a class="btn btn-danger" href="<?= Url::to('profile/password') ?>">Сменить пароль</a>
             </div>
 
             <?php ActiveForm::end(); ?>
@@ -85,11 +97,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="col-lg-2"></div>
 <div class="col-lg-6">
-    <?php if (!$member->getCompanies()->count()): ?>
-        <div class="h3">У вас нет компаний!</div>
-        <br>
-        <a href="<?= Url::to(['create-company']) ?>" class="btn btn-success">Создать компанию</a>
-    <?php endif ?>
 
     <?php
     $invoices = Invoice::find()

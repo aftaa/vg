@@ -11,11 +11,9 @@ use common\vg\controllers\FrontendController;
 use common\vg\helpers\ImportHelper;
 use common\vg\manager\ImportManager;
 use common\vg\models\import\VgYmlCategoryChoice;
-use common\vg\models\VgProductCategory;
 use Yii;
 use yii\db\Exception;
 use yii\db\Query;
-use yii\db\QueryBuilder;
 use yii\filters\AccessControl;
 use yii\helpers\Url;
 
@@ -42,49 +40,23 @@ class ImportController extends FrontendController
     public function actionIndex(int $companyId)
     {
         $company = Company::findOne($companyId);
-        return $this->render('index', [
+        return $this->render('profile', [
             'company' => $company,
         ]);
     }
 
+    /**
+     * @return \yii\web\Response
+     * @throws Exception
+     * @throws \Throwable
+     */
     public function actionCopy()
     {
         $url = $this->app->getRequest()->post('url');
         $companyId = $this->app->getRequest()->post('companyId');
-        $manager = new ImportManager;
-        $ymlFile = $manager->createLocalFile($companyId, $url);
 
-        $xml = simplexml_load_file($ymlFile->local_filename);
-        $sort = 1;
-        foreach ($xml->shop->categories->children() as $category) {
-            $ymlCategory = new YmlCategory;
-            $ymlCategory->name = trim((string)$category);
-            $ymlCategory->sort = $sort++;
-            $ymlCategory->yml_file_id = $ymlFile->id;
-            $ymlCategory->product_category_id = null;
-            $ymlCategory->parent_id = $category['parent_id'];
-            $ymlCategory->yml_id = $category['id'];
-            if (!$ymlCategory->save(false)) {
-                echo '<pre>';
-                print_r($ymlCategory->errors);
-                echo '</pre>';
-                die;
-            }
-        }
-
-        foreach ($xml->shop->offers->children() as $fileOffer) {
-            $offer = new YmlOffer;
-            $offer->yml_file_id = $ymlFile->id;
-            $offer->offer_id = $fileOffer['id'];
-            $offer->available = 'true' == $fileOffer ? true : false;
-            $offer->yml_category_id = (int)$fileOffer->categoryId;
-            $offer->url = (string)$fileOffer->url;
-            $offer->price = (double)$fileOffer->price;
-            $offer->picture = (double)$fileOffer->picture;
-            $offer->name = (string)$fileOffer->name;
-            $offer->description = (string)$fileOffer->description;
-            $offer->save(false);
-        }
+        $manager = new ImportManager($companyId, $url);
+        $manager->import();
 
         return $this->redirect(Url::to(['import/files', 'companyId' => $companyId]));
     }

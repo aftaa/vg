@@ -109,7 +109,7 @@ AppAsset::register($this);
 
     <div class="container">
 
-        <?= $this->render('/search/_search_form') ?>
+        <?php if (empty($this->params['hide_search'])) echo $this->render('/search/_search_form') ?>
 
         <?php if (empty($this->params['hideLogo'])): ?>
             <div class="text-center" id="logo-cropped">

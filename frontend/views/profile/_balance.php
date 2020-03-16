@@ -18,7 +18,7 @@ use yii\web\View;
     <a href="#" onclick="return false;" data-toggle="modal" data-target="#myModal">дополнить</a>
 <?php else: ?>
     <div class="alert-info balance"><?= $balance ?>₽</div><br>
-    <a href="#" onclick="return false;" data-toggle="modal" data-target="#myModal">наполнить</a>
+    <a href="#" onclick="return false;" data-toggle="modal" data-target="#myModal">заполнить</a>
 <?php endif ?>
 
 <!-- Modal -->

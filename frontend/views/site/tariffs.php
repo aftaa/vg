@@ -40,7 +40,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="h3">50<br>
                     <small>топовых суток</small>
                 </div>
-                <div class="h4" style="color: #999;"><s>YML/XML-импорт</s></div>
+                <div class="h4" style="color: #999;">YML/XML-импорт</div>
             </div>
             <div class="col col-sm-3 col-xs-6 text-center alert-warning tariff">
                 <div class="h1">Старт</div>

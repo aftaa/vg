@@ -58,7 +58,8 @@
     "psr-4": {
       "Mail\\": "mail",
       "Recaptcha\\": "recaptcha",
-      "Vsetigoroda\\": "vsetigoroda"
+      "Vsetigoroda\\": "vsetigoroda",
+      "ParserLoader\\": "parser-loader"
     }
   }
 }

@@ -6,6 +6,8 @@ use common\models\Company;
 use common\models\Member;
 use common\vg\controllers\FrontendController;
 use common\vg\forms\VgCompanyParamValueForm;
+use common\vg\models\VgCompany;
+use vsetigoroda\billing\TariffMysqliRepository;
 use yii\data\ActiveDataProvider;
 use yii\filters\AccessControl;
 use yii\helpers\Url;
@@ -139,8 +141,11 @@ class ProfileController extends FrontendController
             $company = new Company();
         }
 
+        $tarrifs = (new TariffMysqliRepository())->getTariffs();
+
         return $this->render('create-company', [
             'company' => $company,
+            'tarrifs' => $tarrifs,
         ]);
     }
 
@@ -190,6 +195,18 @@ class ProfileController extends FrontendController
         return $this->render('products', [
             'company'  => $company,
             'provider' => $provider,
+        ]);
+
+    }
+
+    /**
+     * @param int $companyId
+     * @return string
+     */
+    public function actionEditCompany(int $companyId)
+    {
+        return $this->render('edit-company',[
+            'company' => VgCompany::findOne($companyId)
         ]);
     }
 }

@@ -1,8 +1,11 @@
 <?php
 
 use yii\helpers\Html;
+use yii\web\View;
 
-/** @var string $s */
+/** @var $this View */
+/** @var $s string  */
+
 $s = Yii::$app->request->get('s');
 
 ?>

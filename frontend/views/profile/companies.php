@@ -24,7 +24,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <tr>
         <th>Компания</th>
         <th>Категория</th>
-        <th>Тариф</th>
+        <th class="text-center">Тариф</th>
+        <th>Категорий</th>
         <th>Товаров</th>
         <th>Регион</th>
         <th>Описание</td>
@@ -37,31 +38,23 @@ $this->params['breadcrumbs'][] = $this->title;
             <tr>
                 <td>
                     <?= $company->name ?>
-
                     <div class="text-muted">
-
                         <?php if ($company->getProducts()->count()): ?>
                             <a href="<?= Url::to(['profile/products', 'companyId' => $company->id]) ?>">
                                 каталог товаров
                             </a>
                         <?php endif ?>
-
                     </div>
                 </td>
-                <td><?= $company->getCompanyCategory()->one()->name ?></td>
                 <td>
-                    <?= $company->old_tarif ?? '' ?>
+                    <a href="/"><?= $company->getCompanyCategory()->one()->name ?></a>
                 </td>
-
+                <td class="text-center">
+                    <?= $company->old_tarif ?? '&mdash;' ?>
+                </td>
                 <td>
                     <?= $company->getProducts()->count() ?>
-                    <div>
-                        <a href="<?= Url::to(['import/index', 'companyId' => $company->id]) ?>">
-                            импорт!
-                        </a>
-                    </div>
                 </td>
-
                 <td><?= $company->getArea()->one()->name ?></td>
                 <td><?= $company->introduce ?></td>
             </tr>
@@ -74,4 +67,10 @@ $this->params['breadcrumbs'][] = $this->title;
     </tbody>
 </table>
 
-<a href="<?= Url::to(['create-company']) ?>" class="btn btn-success">Создать компанию</a>
+<!--<a href="--><?//= Url::to(['create-company']) ?><!--" class="btn btn-success">Создать компанию</a>-->
+
+<div>
+    <a href="<?= Url::to(['import/index', 'companyId' => $company->id]) ?>">
+        Импорт товаров
+    </a>
+</div>

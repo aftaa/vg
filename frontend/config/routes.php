@@ -24,6 +24,8 @@ return [
     'profile/company/<companyId:\d+>'  => 'profile/company',
     'profile/products/<companyId:\d+>' => 'profile/products',
 
+    'profile/company/edit/<companyId:\d+>'  => 'profile/edit-company',
+
     'import/files/<companyId:\d+>'   => 'import/files',
     'import/categories/<fileId:\d+>' => 'import/categories',
 

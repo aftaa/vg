@@ -41,15 +41,11 @@ $companyCategories = CompanyCategory::find()
 <div class="profile-company">
     <div class="row">
         <div class="col-lg-5">
-
-
             <?= $form->field($company, 'name')->label('Название компании') ?>
             <?= $form->field($company, 'thumb')->label('Ссылка на логотип') ?>
             <?= $form->field($company, 'company_category_id')->dropDownList($companyCategories, ['prompt' => '']) ?>
             <?= $form->field($company, 'area_id')->dropDownList($areas, ['prompt' => '']) ?>
             <?= $form->field($company, 'introduce')->textarea() ?>
-            <?= $form->field($company, 'meta_keywords')->textarea() ?>
-            <?= $form->field($company, 'meta_description')->textarea() ?>
 
             <div class="form-group">
                 <?= Html::submitButton('Создать', ['class' => 'btn btn-primary', 'name' => 'company-button']) ?>

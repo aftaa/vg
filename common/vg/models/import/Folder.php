@@ -2,15 +2,17 @@
 
 namespace common\vg\models\import;
 
+use yii\db\Exception;
+
 class Folder
 {
     /** @var string */
-    private $folder = '';
+    private string $folder = '';
 
     /**
      * Folder constructor.
      * @param string $folder
-     * @throws FolderCreateException
+     * @throws Exception
      */
     public function __construct(string $folder)
     {
@@ -19,15 +21,15 @@ class Folder
     }
 
     /**
-     * @throws FolderCreateException
+     * @throws Exception
      */
-    private function checkFolder()
+    private function checkFolder(): void
     {
         $f = $this->folder;
 
         if (!file_exists($f)) {
             if (!mkdir($f)) {
-                throw new FolderCreateException("Cannot create folder: $f");
+                throw new Exception("Cannot create folder: $f");
             }
             chmod($f, 0755);
         }
@@ -39,7 +41,6 @@ class Folder
      */
     public function getLocalNameForFileId(int $id): string
     {
-        $filename = "$this->folder/$id.xml";
-        return $filename;
+        return "$this->folder/$id.xml";
     }
 }
