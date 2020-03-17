@@ -304,3 +304,12 @@ div.circle-732 {
     border-radius: 9px;
     text-align: center;
 }
+
+h1 {
+    background: url(/img/bg3.png) bottom !important;
+    padding: 3px;
+}
+#w0 {
+    background: #82c7ea url(/img/bg0.png) top right no-repeat !important;
+    padding: 3px;
+}
