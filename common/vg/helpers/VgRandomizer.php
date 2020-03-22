@@ -5,11 +5,11 @@ namespace common\vg\helpers;
 class VgRandomizer
 {
     /** @var array */
-    private $randomValues = [];
+    private array $randomValues = [];
     /** @var int */
-    private $min = 0;
+    private int $min = 0;
     /** @var int */
-    private $max = PHP_INT_MAX;
+    private int $max = PHP_INT_MAX;
 
     /**
      * Randomer constructor.

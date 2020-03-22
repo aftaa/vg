@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 
-<h2>Компании</h2>
+<h2 id="company_title">Компании</h2>
 
 <?= $this->render('/company/_categories', [
     'companyCategories' => $companyCategories,
@@ -75,8 +75,11 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 <br><br>
+
+<hr size="1">
+<br><br>
 <div style="margin: 3em auto;">
-    <h2 class="h1">Регионы присутствия</h2>
+    <h2 class="h1" id="regions_title">Регионы присутствия</h2>
     <?php foreach ($areas as $areaId => $area): ?>
         <div class="a-index-area <?= $area['class'] ?>">
             <a href="<?= Url::to(['area/index', 'areaId' => $area['id']]) ?>">

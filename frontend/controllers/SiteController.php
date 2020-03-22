@@ -62,8 +62,14 @@ class SiteController extends FrontendController
             [
                 'class' => 'yii\filters\PageCache',
                 'only' => ['index'],
-                'duration' => 10,
-            ]
+                'duration' => 30,
+            ],
+            //longest cache
+            [
+                'class' => 'yii\filters\PageCache',
+                'only' => ['about', 'tariffs'],
+                'duration' => 24 * 3600,
+            ],
         ];
     }
 
@@ -98,8 +104,8 @@ class SiteController extends FrontendController
         $companyCategories = CompanyCategoryManager::getCategoriesByParentId();
 
         $productManager = new ProductManager;
-        $topProducts = $productManager->getTopProducts();
-        $newProducts = $productManager->getNewProducts();
+        $topProducts = $productManager->getTopProducts(32);
+        $newProducts = $productManager->getNewProducts(32);
 
         $companyManager = new CompanyManager;
         $topCompanies = $companyManager->getTopCompanies();

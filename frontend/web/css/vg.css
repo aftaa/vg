@@ -7,9 +7,9 @@
 }
 
 .uc {
-    height: 690px;
+    /*height: 690px;*/
     text-align: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .uc p {
@@ -314,4 +314,17 @@ h1 {
 #w0 {
     background: #82c7ea url(/img/bg0.png) top right no-repeat !important;
     padding: 3px;
+}
+
+#company_title {
+    margin-top: 2em;
+    background: url(/img/bg.png);
+    padding: 2rem 0;
+}
+
+#regions_title {
+    margin-top: 2em;
+    background: url(/img/bg4.png);
+    padding: 2rem;
+    color: #fff
 }

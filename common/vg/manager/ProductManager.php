@@ -105,7 +105,7 @@ class ProductManager
      * @return array
      * @throws \Exception
      */
-    public function getTopProducts(int $productsCount = 16)
+    public function getTopProducts(int $productsCount)
     {
         return (new VgRandomSelectFromBigTable(
             VgProduct::find()
@@ -123,7 +123,7 @@ class ProductManager
      * @return array
      * @throws \Exception
      */
-    public function getNewProducts(int $limit = 16)
+    public function getNewProducts(int $limit)
     {
         return (new VgRandomSelectFromBigTable(
             VgProduct::find()

@@ -13,7 +13,7 @@ use yii\helpers\Url;
         <div class="col col-xs-6 col-sm-4 col-lg-3" class="index-product-row">
             <div class="index-product-name">
                 <a href="<?= Url::to(['product/index', 'productId' => $product->id]) ?>">
-                    <?= $product->name ?>1111
+                    <?= $product->name ?>
                 </a>
             </div>
             <div class="index-product-thumb circle-732">
