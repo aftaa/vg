@@ -74,10 +74,8 @@ $this->params['breadcrumbs'][] = $this->title;
             компании</a></div>
 </div>
 
-<br><br>
-
 <hr size="1">
-<br><br>
+
 <div style="margin: 3em auto;">
     <h2 class="h1" id="regions_title">Регионы присутствия</h2>
     <?php foreach ($areas as $areaId => $area): ?>

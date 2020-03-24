@@ -1,9 +1,8 @@
 <?php
 
-namespace common\vg\models\import;
+namespace common\vg\models\sitemap;
 
 use common\vg\interfaces\HasSiteMapLink;
-use common\vg\models\VgProduct;
 use yii\db\ActiveRecord;
 
 class VgProductSiteMapLink implements HasSiteMapLink

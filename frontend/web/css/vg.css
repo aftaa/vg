@@ -326,5 +326,6 @@ h1 {
     margin-top: 2em;
     background: url(/img/bg4.png);
     padding: 2rem;
-    color: #fff
+    color: #fff;
+    clear: both;
 }

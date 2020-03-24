@@ -2,6 +2,8 @@
 
 namespace common\models;
 
+use yii\db\Expression;
+
 /**
  * This is the ActiveQuery class for [[Company]].
  *
@@ -13,6 +15,18 @@ class CompanyQuery extends \yii\db\ActiveQuery
     {
         return $this->andWhere('[[status]]=1');
     }*/
+
+    /**
+     * @return CompanyQuery
+     */
+    public function sitemap()
+    {
+        return $this
+            ->where(['checked' => true])
+            ->orderBy(
+                new Expression('thumb IS NULL DESC')
+            );
+    }
 
     /**
      * {@inheritdoc}
