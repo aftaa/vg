@@ -40,7 +40,7 @@ class ProductQuery extends ActiveQuery
      */
     public function sitemap()
     {
-        returnpush $this
+        return $this
             ->where(['checked' => true]);
             //->orderBy(new Expression('thumb IS NULL DESC')
             //);
