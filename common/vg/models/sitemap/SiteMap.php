@@ -10,7 +10,7 @@ class SiteMap
 {
 
     /** @var string */
-    public $folder;
+    public string $folder;
 
     /**
      * SiteMap constructor.
@@ -35,7 +35,7 @@ class SiteMap
         $sitemapFile = new SiteMapFile($this->folder);
         $sitemapFile->lock();
 
-        foreach ($query->batch() as $records) {
+        foreach ($query->batch(10) as $records) {
             foreach ($records as $record) {
                 try {
                     $link->record = $record;

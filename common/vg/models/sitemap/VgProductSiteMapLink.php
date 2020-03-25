@@ -8,10 +8,10 @@ use yii\db\ActiveRecord;
 class VgProductSiteMapLink implements HasSiteMapLink
 {
     /** @var string */
-    public $serverName;
+    public string $serverName;
 
     /** @var ActiveRecord */
-    public $record;
+    public ActiveRecord $record;
 
     /**
      * VgProductSiteMapLink constructor.
