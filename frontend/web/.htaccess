@@ -3,8 +3,6 @@ IndexIgnore */*
 
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} local
-RewriteRule . index.php [L, R=302, QSA]
 
 
 # if a directory or a file exists, use it directly

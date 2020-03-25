@@ -24,6 +24,7 @@ class CreateSitemapController extends Controller
     public function actionIndex()
     {
         set_time_limit(0);
+	ini_set('memory_limit', -1);
         $folder = getcwd() . '/frontend/web';
 
         $mapMain = new SiteMapMain;
