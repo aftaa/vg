@@ -8,8 +8,8 @@ use yii\db\ActiveRecord;
 class SiteMapFile extends \SplFileObject
 {
     const NEWLINE_SEPARATOR = "\n";
-    const MAX_ROWS = 50000;
-    const MAX_SIZE = 50 * 1024 * 1024;
+    const MAX_ROWS = 5000;
+    const MAX_SIZE = 5 * 1024 * 1024;
 
     /** @var int */
     private static $issue = 1;
