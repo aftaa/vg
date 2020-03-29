@@ -24,6 +24,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <link rel="stylesheet" type="text/css" href="/css/inside.css">
+    <?= $this->render('_metrika') ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
