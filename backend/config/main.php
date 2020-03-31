@@ -7,7 +7,7 @@ $params = array_merge(
 );
 
 return [
-    'name' => 'Сеттингс',
+    'name' => 'Set & Settings',
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
