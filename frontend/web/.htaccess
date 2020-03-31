@@ -1,9 +1,11 @@
 Options +FollowSymLinks
 IndexIgnore */*
 
-RewriteEngine on
+RewriteEngine On
 
-
+RewriteRule /category.php?id=(\d+)  ttps://vseti-goroda.ru/category/$1  [L, QSA]
+RewriteRule /category.php?ki=(\d+)  https://vseti-goroda.ru/category/$1 [L, QSA]
+RewriteRule /com_str.php?id=(\d+)   https://vseti-goroda.ru/company/$1  [L, QSA]
 
 # if a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
