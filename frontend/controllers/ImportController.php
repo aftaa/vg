@@ -6,7 +6,6 @@ use common\models\Company;
 use common\models\ProductCategory;
 use common\models\YmlCategory;
 use common\models\YmlFile;
-use common\models\YmlOffer;
 use common\vg\controllers\FrontendController;
 use common\vg\helpers\ImportHelper;
 use common\vg\manager\ImportManager;
