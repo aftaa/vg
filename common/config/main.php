@@ -24,16 +24,16 @@ return [
         ],
         'dbVsetigTest'    => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=vsetig.beget.tech;dbname=vsetig_test',
-            'username' => 'vsetig_test',
-            'password' => '&gH3Xzo5',
+            'dsn'      => 'mysql:host=localhost;dbname=vsetig_test',
+            'username' => 'vg_dev',
+            'password' => 'vg_dev',
             'charset'  => 'utf8',
         ],
         'dbVsetigInfoCom' => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=vsetig.beget.tech;dbname=vsetig_info_com',
-            'username' => 'vsetig_info_com',
-            'password' => '&gH3Xzo5',
+            'dsn'      => 'mysql:host=localhost;dbname=vsetig_info_com',
+            'username' => 'vg_dev',
+            'password' => 'vg_dev',
             'charset'  => 'utf8',
         ],
         'i18n'            => [
