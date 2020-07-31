@@ -63,14 +63,14 @@ return [
                 ],
             ],
         ],
-        'session'         => [
-            'class' => 'yii\redis\Session',
-            'redis' => [
-                'hostname' => 'localhost',
-                'port'     => 6379,
-                'database' => 0,
-            ]
-        ],
+//        'session'         => [
+//            'class' => 'yii\redis\Session',
+//            'redis' => [
+//                'hostname' => 'localhost',
+//                'port'     => 6379,
+//                'database' => 0,
+//            ]
+//        ],
         'mailer'          => [
             'class'    => 'yii\swiftmailer\Mailer',
             'viewPath' => '@common/mail',

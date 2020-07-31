@@ -1,0 +1,3127 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2015-12-06 11:12">
+	<shop>
+		<name>TricotShop</name>
+		<company>Интернет магазин трикотажных головных уборов</company>
+		<url>http://tricot-shop.ru</url>
+		<email>info@tricot-shop.ru</email>
+		<currencies>
+			<currency id="RUR" rate="1"/>
+		</currencies>
+		<categories>
+							<category id="1">Шапки</category>
+							<category id="2">Аксессуары</category>
+							<category id="3">Одежда</category>
+					</categories>
+		<offers>
+							<offer id="5649" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-samurai/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>700</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0011/5649/image-5649-1447166183.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Самурай"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5627" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-fisher/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0011/5627/image-5627-1447166182.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Фишер"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5611" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-kluni/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>900</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0011/5611/image-5611-1447166181.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Клуни"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5598" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-richard/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0011/5598/image-5598-1447166180.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Ричард"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5589" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-niderlandy/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0011/5589/image-5589-1447166180.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Нидерланды"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5576" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/komplekt-snezhok/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0011/5576/image-5576-1447166179.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Снежок"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5561" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/komplekt-voyazh/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0011/5561/image-5561-1447166179.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Вояж"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5548" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/komplekt-marta/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0011/5548/image-5548-1447166178.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Марта"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5517" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shlem-alfa-3/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0011/5517/image-5517-1447166178.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 3"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5492" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shlem-polese/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5492/image-5492-1447166177.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Полесье"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5455" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shlem-tetris/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5455/image-5455-1447166176.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Тетрис"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5438" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/komplekt-arktika/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5438/image-5438-1447166175.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Арктика"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5411" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-park/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5411/image-5411-1447166175.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Парк"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5386" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shlem-zhak/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5386/image-5386-1447166174.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Жак"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5349" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shlem-alfa/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5349/image-5349-1447166173.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5318" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shlem-alfa-4/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5318/image-5318-1447166172.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 4"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5305" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shlem-alfa-6/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5305/image-5305-1447166172.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 6"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5286" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shlem-alfa-7/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5286/image-5286-1447166171.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 7"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5273" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-polina/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5273/image-5273-1447166098.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Полина"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5245" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-uni/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5245/image-5245-1447163116.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Уни"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5190" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/sharf-tom/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5190/image-5190-1444376605.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Том"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5189" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/sharf-tom/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5189/image-5189-1444376577.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Том"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5147" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/sharf-kimmi/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5147/image-5147-1444375831.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Кимми"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5146" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/sharf-kimmi/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5146/image-5146-1444375820.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Кимми"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5128" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/snud-dita/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5128/image-5128-1444375020.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Снуд "Дита"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5127" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/snud-dita/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5127/image-5127-1444374979.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Снуд "Дита"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5082" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/sharf-daniel/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>520</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5082/image-5082-1444373454.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Даниэль"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5081" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/sharf-daniel/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>520</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5081/image-5081-1444373465.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Даниэль"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5027" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-alfa-7/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5027/image-5027-1443166881.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 7"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="5014" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-alfa-6/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0010/5014/image-5014-1443166584.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 6"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4983" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-alfa-4/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4983/image-4983-1443166032.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 4"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4945" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-alfa/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4945/image-4945-1443165503.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4920" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-zhak/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4920/image-4920-1442820370.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Жак"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4898" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-park/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4898/image-4898-1442817303.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Парк"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4880" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/komplekt-arktika/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4880/image-4880-1442816472.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Арктика"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4868" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-schaste/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4868/image-4868-1442815957.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Счастье"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4786" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/accessories/sharf-kimmi/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4786/image-4786-1441882993.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Кимми"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4777" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/accessories/sharf-daniel/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>520</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4777/image-4777-1441805711.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Даниэль"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4764" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/accessories/sharf-tom/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4764/image-4764-1441804520.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Том"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="4757" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/accessories/snud-dita/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0009/4757/image-4757-1441803281.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Снуд "Дита"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3931" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-magda/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3931/image-3931-1440655602.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Магда"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3901" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-tetris/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3901/image-3901-1440656266.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Тетрис"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3893" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-polese/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3893/image-3893-1441025699.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Полесье"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3885" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-zhak/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3885/image-3885-1442820380.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Жак"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3878" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-alfa/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3878/image-3878-1440656267.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3872" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-alfa-7/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3872/image-3872-1443166788.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 7"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3866" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-alfa-4/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3866/image-3866-1440656267.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 4"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3860" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-alfa-3/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3860/image-3860-1441025826.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 3"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3856" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-alfa-6/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3856/image-3856-1443166520.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Альфа 6"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3850" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-kelli/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3850/image-3850-1440655595.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Кэлли"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3841" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-rik/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>900</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3841/image-3841-1440655595.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Рик"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3833" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-luiza/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3833/image-3833-1440655594.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Луиза"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3825" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-nika/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3825/image-3825-1440655594.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Ника"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3818" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-vera/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3818/image-3818-1440655593.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Вера"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3811" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-marta/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3811/image-3811-1441005904.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Марта"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3802" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-arktika/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3802/image-3802-1442816463.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Арктика"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3794" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-sever/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3794/image-3794-1440655591.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Север"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3786" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-voyazh/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3786/image-3786-1440655591.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Вояж"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3779" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-murzilka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3779/image-3779-1440655591.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Мурзилка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3772" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-ritta/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3772/image-3772-1440655590.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Ритта"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3765" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-snezhok/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3765/image-3765-1440655590.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Снежок"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3758" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-svetlana/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3758/image-3758-1440655589.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Светлана"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3751" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-delta/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3751/image-3751-1440655589.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Дельта"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3746" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-niderlandy/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3746/image-3746-1440655589.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Нидерланды"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3739" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-richard/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3739/image-3739-1440655588.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Ричард"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3733" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-kluni/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>900</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3733/image-3733-1440655588.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Клуни"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3725" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-fisher/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3725/image-3725-1440655587.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Фишер"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3723" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-beisik/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3723/image-3723-1440655587.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Бейсик"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3709" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-park/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3709/image-3709-1442817316.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Парк"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3700" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-samurai/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>700</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3700/image-3700-1440655586.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Самурай"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3692" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-kris/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>700</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3692/image-3692-1440655585.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Крис"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3685" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-renata/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3685/image-3685-1440655585.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Рената"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3678" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-polina/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3678/image-3678-1442998395.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Полина"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3671" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-ulyana/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3671/image-3671-1440655584.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Ульяна"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3659" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-daniel/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>900</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3659/image-3659-1441025520.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Даниэль"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3650" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/clothes/reituzy/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3650/image-3650-1440656122.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Рейтузы</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3621" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-rokki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3621/image-3621-1440597847.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Рокки"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3615" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shlem-gans/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3615/image-3615-1440597846.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Ганс"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3608" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/accessories/getry/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3608/image-3608-1440597845.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Гетры</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3599" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-dyushes/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4700</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3599/image-3599-1440597844.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Дюшес"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3590" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-elizabet/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3590/image-3590-1441088014.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Элизабет"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3581" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-kombi/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3581/image-3581-1441025286.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Комби"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3574" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-tim/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3574/image-3574-1440597840.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Тим"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3564" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-orlando/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3564/image-3564-1441025183.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Орландо"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3556" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-shato/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3556/image-3556-1440597838.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Шато"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3550" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-piksel/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3550/image-3550-1440597836.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Пиксель"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3545" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-skif/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3545/image-3545-1440597836.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Скиф"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3538" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-kletka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3538/image-3538-1440597835.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Клетка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3531" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-omega/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3531/image-3531-1440597833.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Омега"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3527" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-graf/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3527/image-3527-1440597833.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Граф"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3521" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-artur/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3521/image-3521-1440597831.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Артур"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3517" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-ushanka-devid/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3517/image-3517-1440597831.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка-ушанка "Дэвид"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3510" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-ushanka-grin/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3510/image-3510-1440597829.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка-ушанка "Грин"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3503" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-ushanka-polyus/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0007/3503/image-3503-1440597828.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка-ушанка "Полюс"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3496" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-trikolor/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3496/image-3496-1440597826.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Триколор"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3485" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-ushanka-inessa/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4700</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3485/image-3485-1440597824.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка-ушанка "Инесса"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3474" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-marika/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3474/image-3474-1440597823.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Марика"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3463" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/beret-evitta/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3463/image-3463-1440597821.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Берет "Эвитта"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3452" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/beret-konfetti/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>5200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3452/image-3452-1440597819.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Берет "Конфетти"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3446" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-barbi/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3446/image-3446-1440597818.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Барби"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3443" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-ben/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3443/image-3443-1440597818.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Бэн"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3440" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-piter/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3440/image-3440-1440597817.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Питер"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3423" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-ushanka-beatris/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3423/image-3423-1440597814.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка-ушанка "Беатрис"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3419" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-ushanka-peris/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>5000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3419/image-3419-1440597813.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка-ушанка "Пэрис"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3414" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-ushanka-alba/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3414/image-3414-1440597812.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка-ушанка "Альба"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3409" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/beret-sonata/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3409/image-3409-1440597811.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Берет "Соната"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3405" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-melani/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3405/image-3405-1440597811.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Мелани"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3401" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-shakira/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3401/image-3401-1440597810.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Шакира"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3397" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-holli/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3397/image-3397-1440597809.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Холли"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3394" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-lisa/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3394/image-3394-1440597809.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Лиса"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3388" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-enot/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3388/image-3388-1440597808.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Енот"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3383" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-schaste/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3383/image-3383-1442815414.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Счастье"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3377" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/shapka-kets/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3377/image-3377-1440597806.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Кэтс"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3371" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-kotenok/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3371/image-3371-1440597805.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Котенок"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3367" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-stepashka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3367/image-3367-1440597804.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Степашка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3364" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-myau/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3364/image-3364-1440597803.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Мяу"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3360" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-gav/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3360/image-3360-1440597801.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Гав"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3351" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-myshka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3351/image-3351-1440597800.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Мышка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3347" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-mishutki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3347/image-3347-1440597799.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Мишутки"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3343" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/komplekt-sestrichki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3343/image-3343-1440597799.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Сестрички"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3338" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/teenager/hats/komplekt-polyarnik/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2900</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3338/image-3338-1440597798.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Полярник"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3334" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-milashka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4520</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3334/image-3334-1440597797.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Милашка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3328" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-kisa/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4520</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3328/image-3328-1440597796.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Киса"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3324" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-drug/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3700</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3324/image-3324-1440597795.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Друг"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3320" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-margosha/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3320/image-3320-1440597795.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Маргоша"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3316" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/komplekt-lyubov/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4520</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3316/image-3316-1440597794.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Любовь"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3286" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/beret-katyusha/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3286/image-3286-1423806526.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Берет "Катюша"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3268" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-chempion/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3268/image-3268-1424868593.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Чемпион"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3252" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-uni/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3252/image-3252-1447163137.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Уни"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3245" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-taksi/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3245/image-3245-1424868341.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Такси"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3236" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-sport/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3236/image-3236-1424866373.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Спорт"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3227" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-kapitan/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3227/image-3227-1424866983.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Капитан"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3220" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-dendi/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3220/image-3220-1424865104.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Дэнди"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3197" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-bryus/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3197/image-3197-1424867986.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Брюс"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3196" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-gonschik/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3196/image-3196-1424868036.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Гонщик"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3187" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-bred/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3187/image-3187-1424865173.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Брэд"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3178" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-brigantina/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3178/image-3178-1424868528.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Бригантина"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3167" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-avia/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3167/image-3167-1424867071.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Авиа"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3160" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/beret-tilda/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3160/image-3160-1424864876.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Берет "Тильда"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3155" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-roza/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3155/image-3155-1424864828.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Роза"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3142" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-pretti/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3142/image-3142-1424863521.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Претти"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3135" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-monpanse/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3135/image-3135-1424862350.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Монпансье"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3126" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-molli/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3126/image-3126-1424861828.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Молли"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3119" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-madlen/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1800</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3119/image-3119-1424863424.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Мадлен"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3112" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-leo/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1900</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3112/image-3112-1424862976.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Лео"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3095" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/beret-kameya/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3095/image-3095-1424863316.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Берет "Камея"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3085" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/beret-drazhe/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3085/image-3085-1424863205.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Берет "Драже"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3080" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-barsik/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1900</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3080/image-3080-1424863155.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Барсик"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="3075" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-arisha/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0006/3075/image-3075-1424864941.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Ариша"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2994" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/clothes/zhaket1/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>7230</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2994/image-2994-1424874333.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Жакет (темно-синий)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2993" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/clothes/zhaket-(seryi)/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>7230</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2993/image-2993-1424874270.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Жакет (серый)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2992" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/plate-barhatnoe-so-strazami1/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>5790</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2992/image-2992-1424871743.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Платье бархатное со стразами (серое)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2991" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/plate-barhatnoe-so-strazami2/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>5790</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2991/image-2991-1424874594.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Платье бархатное со стразами (розовое)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2989" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/plate-barhatnoe-so-strazami/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>5790</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2989/image-2989-1447058776.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Платье бархатное со стразами (темно-синее)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2988" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/klassicheskoe-palto2/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>8160</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2988/image-2988-1424871571.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Классическое пальто (слоновая кость)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2987" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/klassicheskoe-palto1/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>8160</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2987/image-2987-1424871527.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Классическое пальто (розовое)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2986" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/klassicheskoe-palto/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>8160</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2986/image-2986-1424871655.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Классическое пальто (темно-синее)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2985" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/palto-dlya-devochek1/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>8890</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2985/image-2985-1424873361.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Пальто для девочек (серо-розовое)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2984" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/palto-dlya-devochek/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>8890</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2984/image-2984-1424873162.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Пальто для девочек (белое с золотом)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2983" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/detskoe-palto-(shubka)/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>8300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2983/image-2983-1424873505.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Детское пальто кремовое (Шубка)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2982" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/detskoe-palto-(shubka)1/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>8300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2982/image-2982-1424873652.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Детское пальто темно-синее (Шубка)</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2981" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/barhatnoe-plate/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3670</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2981/image-2981-1424870827.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Бархатное платье</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2980" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/vyazanoe-plate/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3670</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2980/image-2980-1424870065.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Вязаное платье</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2979" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/tunika-s-bantom/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3740</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2979/image-2979-1424869922.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Туника с бантом</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2978" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/palto-dvubortnoe/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4840</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2978/image-2978-1424869721.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Пальто двубортное</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2974" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/kofta-na-pugovitsah-s-bantom/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2840</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0005/2974/image-2974-1424353158.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Кофта на пуговицах с бантом</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2943" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/clothes/reituzy/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>3</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2943/image-2943-1424869618.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Рейтузы</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2917" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/clothes/reituzy/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0005/2917/image-2917-1424869533.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Рейтузы</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2896" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/gladkii-vorotnik/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2896/image-2896-1425033778.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Гладкий воротник</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="2862" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/vorotnik/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0005/2862/image-2862-1425034392.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Воротник</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="839" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/sharf-shans/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0839/image-839-1411715777.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Шанс"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="823" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/sharf-flesh/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0823/image-823-1411715066.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Флеш"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="812" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/sharf-trek/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0812/image-812-1411714492.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Трек"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="794" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/sharf-shans/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0794/image-794-1411714085.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Шанс"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="779" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/sharf-flesh/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0779/image-779-1411712849.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Флеш"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="769" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/sharf-trek/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0769/image-769-1411712229.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф "Трек"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="742" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-diana/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2928</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0742/image-742-1411113047.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Диана"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="726" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-olenenok/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3876</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0726/image-726-1442305967.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Олененок"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="720" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/komplekt-shrift/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2990</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0720/image-720-1440408625.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Шрифт"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="716" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-sherlok/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2070</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0716/image-716-1411109924.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Шерлок"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="711" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-chip/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0711/image-711-1411109693.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Чип"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="704" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-huk/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1310</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0704/image-704-1411109017.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Хук"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="698" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-hilton/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0698/image-698-1411108525.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Хилтон"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="694" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/komplekt-tauer/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3120</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0694/image-694-1411107924.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Тауэр"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="690" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-saigon/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0690/image-690-1411107557.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Сайгон"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="686" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/perchatki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>450</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0686/image-686-1411107352.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Перчатки</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="684" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-ofitser/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2070</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0684/image-684-1411107044.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Офицер"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="678" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-nikki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3264</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0678/image-678-1411105700.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Никки"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="673" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-miks/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1310</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0673/image-673-1411105096.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Микс"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="667" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shlem-mikki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3258</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0667/image-667-1411104430.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Микки"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="662" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/sharf/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>540</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0662/image-662-1411104076.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шарф</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="658" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/komplekt-mazhor/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2090</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0658/image-658-1411103235.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Комплект "Мажор"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="653" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-larch/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1240</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0653/image-653-1411102762.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Ларч"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="649" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-deil/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1230</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0649/image-649-1411102352.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Дэйл"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="645" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-grand/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1950</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0645/image-645-1440408667.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Гранд"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="640" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-genri/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2070</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0640/image-640-1411039466.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Генри"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="636" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-vrungel/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2010</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0636/image-636-1440408705.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Врунгель"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="631" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/vorotnik/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0631/image-631-1411038691.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Воротник</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="624" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/accessories/varezhki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>450</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0624/image-624-1411037132.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Варежки</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="621" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-bruklin/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0621/image-621-1411036523.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Бруклин"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="618" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-briks/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1300</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0618/image-618-1411025350.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Брикс"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="613" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/boys/hats/shapka-baiker/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1270</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0613/image-613-1411025127.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Байкер"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="604" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-emma/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2262</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0604/image-604-1410957922.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Эмма"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="599" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-elvira/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3254</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0599/image-599-1410956948.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Эльвира"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="597" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-edit/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2846</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0597/image-597-1442306189.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Эдит"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="585" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-flai/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0585/image-585-1442306287.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Флай"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="581" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-trio/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2906</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0581/image-581-1410955902.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Трио"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="573" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-sovyata/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3514</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0573/image-573-1410955722.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Совята"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="568" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-snegurochka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4294</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0568/image-568-1410955364.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Снегурочка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="559" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-snegoviki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2914</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0559/image-559-1442306198.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Снеговики"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="555" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-snegiri/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2996</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0555/image-555-1442306200.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Снегири"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="549" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-ryabinka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3374</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0549/image-549-1442306202.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Рябинка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="546" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-rozaliya/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4334</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0546/image-546-1410954304.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Розалия"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="542" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-pudel/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3492</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0542/image-542-1410954103.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Пудель"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="533" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-polyanochka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2904</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0533/image-533-1410953131.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Поляночка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="527" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-polina/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3246</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0527/image-527-1442998379.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Полина"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="521" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/perchatki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0001/0521/image-521-1411475541.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Перчатки</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="516" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-parochka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2894</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0516/image-516-1442306307.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Парочка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="510" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-panda/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3506</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0510/image-510-1410952181.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Панда"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="504" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-oleshek/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3520</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0001/0504/image-504-1442305988.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Олешек"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="496" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-oleni/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4334</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0496/image-496-1410951551.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Олени"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="487" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-nezhnost/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2918</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0487/image-487-1410950917.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Нежность"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="483" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-nevesta/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4464</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0483/image-483-1410950624.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Невеста"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="478" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-nastenka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2924</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0478/image-478-1412331247.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Настенька"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="475" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-meri/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3526</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0475/image-475-1410949635.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Мэри"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="469" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-mishutka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3316</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0469/image-469-1410949373.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Мишутка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="465" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-marusya/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2898</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0465/image-465-1410949053.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Маруся"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="460" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-malvina/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2914</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0460/image-460-1442305940.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Мальвина"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="455" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-malinka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2810</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0455/image-455-1410948616.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Малинка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="449" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-maiya/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3034</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0449/image-449-1410948279.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Майя"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="445" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-lyutiki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2796</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0445/image-445-1410948033.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Лютики"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="440" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-lili/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2936</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0440/image-440-1410947800.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Лили"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="432" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-korolla/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3276</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0432/image-432-1442305915.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Королла"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="427" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-korzinochka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3296</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0427/image-427-1442305891.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Корзиночка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="422" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-kolosok/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2916</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0422/image-422-1410931810.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Колосок"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="416" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-karusel/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3824</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0416/image-416-1410931485.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Карусель"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="406" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-karmelita/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2460</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0406/image-406-1410931170.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Кармелита"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="400" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-karamelka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3832</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0400/image-400-1410930855.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Карамелька"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="395" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-zimushka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2830</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0395/image-395-1442305834.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Зимушка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="389" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-zaika/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3490</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0389/image-389-1442305805.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Зайка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="385" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-zhannet/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2600</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0385/image-385-1410930018.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Жаннет"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="379" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-druzya/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3446</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0379/image-379-1410929776.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Друзья"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="374" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-dolche/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3796</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0374/image-374-1442305779.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Дольче"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="370" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-glamur/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2908</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0370/image-370-1410929074.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Гламур"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="358" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-vasilisa/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0358/image-358-1410862871.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Василиса"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="353" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/accessories/varezhki/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>500</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>2</categoryId>
+										<picture>http://tricot-shop.ru/files/nodus_items/0000/0353/image-353-1410862439.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Варежки</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="347" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-buketik/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2996</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0347/image-347-1410862156.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Букетик"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="342" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-bonni/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>4272</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0342/image-342-1410861738.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Бонни"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="336" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-babochka/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2934</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0336/image-336-1410861470.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Бабочка"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="331" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-assol/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2906</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0331/image-331-1410861108.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Ассоль"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="326" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shlem-anita/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>3232</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0326/image-326-1410860673.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шлем "Анита"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="321" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-alisa/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2240</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0321/image-321-1410860274.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Алиса"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="316" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-aisberg/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>2904</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0316/image-316-1442305719.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Айсберг"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="51" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-buton/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0051/image-51-1406542601.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Бутон"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="50" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-kokko/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1000</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0050/image-50-1406542521.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Кокко"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="48" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-stella/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0048/image-48-1406542380.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Стэлла"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="47" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-karmen/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1400</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0047/image-47-1406542568.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Кармен"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="46" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-lika/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1100</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0046/image-46-1406542482.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Лика"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+							<offer id="44" available="true">
+					<url>
+						http://tricot-shop.ru/catalog/girls/hats/shapka-mahaon/?utm_source=market&amp;utm_medium=cpc&amp;utm_campaign=shapki					</url>
+					<price>1200</price>
+					<currencyId>RUR</currencyId>
+					<categoryId>1</categoryId>
+					<market_category>Одежда, обувь и аксессуары/Детская одежда/Для мальчиков/Головные уборы</market_category>					<picture>http://tricot-shop.ru/files/nodus_items/0000/0044/image-44-1406542438.jpg</picture>
+					<delivery>true</delivery>
+					<local_delivery_cost>300</local_delivery_cost>
+					<name>Шапка "Махаон"</name>
+					<vendor>Dan&amp;Dani (Daniil&amp;Daniela)</vendor>
+				</offer>
+					</offers>
+	</shop>
+</yml_catalog>

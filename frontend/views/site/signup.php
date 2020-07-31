@@ -12,7 +12,7 @@ $this->title = 'Регистрация';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-signup">
-    <h2>регистрация&nbsp;&mdash; с&nbsp;первого мая,
+    <h2>регистрация&nbsp;&mdash; с&nbsp;первого сентября,
         но уже сейчас <br>доступна регистрация по&nbsp;промо-коду</h2>
 
     <div class="row">

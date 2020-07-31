@@ -13,7 +13,7 @@ class m200315_173426_add_tariff_column_to_company_table extends Migration
     public function safeUp()
     {
         $this->addColumn('company', 'tariff_id',
-            $this->integer()->notNull()->comment('Тариф')->after('area_id'));
+            $this->integer()->notNull()->defaultValue(0)->comment('Тариф')->after('area_id'));
     }
 
     /**

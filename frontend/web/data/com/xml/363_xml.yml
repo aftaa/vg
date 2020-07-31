@@ -1,0 +1,3879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2016-02-04 12:30">
+<shop>
+<name>pro.m</name>
+<company>pro.m</company>
+<url>prom2u.ru</url>
+<currencies>
+<currency  id="RUR" rate="1"/>
+<currency  id="USD" rate="CBRF"/>
+<currency  id="EUR" rate="CBRF"/>
+</currencies>
+<categories>
+<category id="1">Компьютеры Apple</category>
+<category id="3">Аксессуары</category>
+<category id="14">Apple MacBook Pro</category>
+<category id="6">Мониторы Apple</category>
+<category id="10">Плееры iPod</category>
+<category id="11">iPad Air</category>
+<category id="12">Программное обеспечение</category>
+<category id="16">Apple MacBook Air</category>
+<category id="17">Apple iMac</category>
+<category id="18">Mac Pro</category>
+<category id="19">Apple Mac mini</category>
+<category id="25" parentId="3">Адаптеры для Mac</category>
+<category id="26" parentId="3">Клавиатуры и мыши</category>
+<category id="27" parentId="3">Наушники и гарнитуры</category>
+<category id="30" parentId="3">Сменные аккумуляторы</category>
+<category id="31">AppleCare Protection Plan</category>
+<category id="36" parentId="10">Apple iPod nano</category>
+<category id="35" parentId="10">Apple iPod touch</category>
+<category id="37" parentId="10">Apple iPod shuffle</category>
+<category id="38" parentId="10">Apple iPod classic</category>
+<category id="40" parentId="3">Внешний оптический привод</category>
+<category id="46" parentId="12">Microsoft</category>
+<category id="47" parentId="3">Чехлы для MacBook</category>
+<category id="83" parentId="27">Sony</category>
+<category id="80" parentId="3">Переходники для Mac</category>
+<category id="57" parentId="3">Trackpad и  Apple Remote</category>
+<category id="58" parentId="3">Переходники и адаптеры для iPhone, iPod, iPad</category>
+<category id="59" parentId="12">Parallels</category>
+<category id="61" parentId="17">Apple iMac 21.5</category>
+<category id="62" parentId="17">Apple iMac 27</category>
+<category id="64" parentId="3">Чехлы для iPad</category>
+<category id="82" parentId="27">Apple Ear</category>
+<category id="68" parentId="3">Wi-Fi роутеры</category>
+<category id="69" parentId="27">Sennheiser</category>
+<category id="70" parentId="3">Наклейки для MacBook</category>
+<category id="71">iPhone</category>
+<category id="72">Архив моделей</category>
+<category id="73" parentId="72">Apple Macbook</category>
+<category id="74" parentId="72">Macbook Pro</category>
+<category id="75" parentId="72">Macbook Air</category>
+<category id="76" parentId="72">Apple Mac Pro</category>
+<category id="77" parentId="72">Mac mini</category>
+<category id="78">iPad mini 2</category>
+<category id="79" parentId="72">iMac</category>
+<category id="87" parentId="17">Apple iMac 27 Retina</category>
+<category id="89" parentId="14">Apple MacBook Pro 13</category>
+<category id="88">Apple iMac 27 Retina</category>
+<category id="90" parentId="14">Apple MacBook Pro 15</category>
+<category id="91">Apple MacBook Pro 13</category>
+<category id="92">Apple MacBook Pro 13</category>
+<category id="93" parentId="16">Apple MacBook Air 11.6</category>
+<category id="94" parentId="16">Apple MacBook Air 13</category>
+<category id="96">Apple MacBook New</category>
+<category id="97">iPhone</category>
+<category id="98">iPad Air 2</category>
+<category id="99">iPad mini 3</category>
+</categories>
+<offers>
+
+<offer id="435" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=435</url>
+<price>1390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Camer_50bdc9251ad60.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Camera Connection Kit   [MC531ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="436" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=436</url>
+<price>2690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>26</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_MC533RS_A__Appl_50bdcc191616f.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Keyboard Dock - Russian [MC533RS/A]"</name>
+<description></description>
+</offer>
+
+<offer id="437" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=437</url>
+<price>1590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Dock_Conne_50bdcd631af5a.png</picture>
+<delivery>true</delivery> 
+<name>Apple Dock Connector to VGA Adapter [MC552ZM/B]"</name>
+<description></description>
+</offer>
+
+<offer id="438" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=438</url>
+<price>1790.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_World_Trav_50bdceb08c00d.png</picture>
+<delivery>true</delivery> 
+<name>Apple World Travel Adapter Kit [MB974ZM/B]"</name>
+<description></description>
+</offer>
+
+<offer id="439" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=439</url>
+<price>1090.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Lightning_to_USB_50bdd031e521f.png</picture>
+<delivery>true</delivery> 
+<name>Lightning to USB Cable [MD818ZM/A]"</name>
+<description>
+Для подключения к компьютеру:
+iPhone 5
+iPod touch 5-го поколения
+iPod nano 7-го поколения
+iPad 4-го поколения
+iPad mini</description>
+</offer>
+
+<offer id="440" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=440</url>
+<price>1050.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Lightning_to_Mic_50bdd1b933b82.png</picture>
+<delivery>true</delivery> 
+<name>Lightning to Micro USB Adapter [MD820ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="497" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=497</url>
+<price>442990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>18</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mac_Pro_In_55717a3a44348.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mac Pro Intel Xeon E5 3.0GHz/64Gb DDR3 ECC/AMD FirePro D700 6Gb DDR5/SSD 512Gb"</name>
+<description>
+8-ядерный процессор Intel Xeon E5 с тактовой частотой 3.0 ГГц и 25 МБ кэш-памяти третьего уровня
+Оперативная память 64 ГБ памяти DDR3 ECC 1866 МГц
+Флэш-накопитель PCIe ёмкостью 512ГБ
+Два графических процессора AMD FirePro D700 с 6 ГБ видеопамяти GDDR5 на каждом
+</description>
+</offer>
+
+<offer id="498" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=498</url>
+<price>579590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>18</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mac_Pro_In_55717e5f97d49.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mac Pro Intel Xeon E5 3.0GHz/64Gb DDR3 ECC/AMD FirePro D700 6Gb DDR5/SSD 1Tb"</name>
+<description>
+8-ядерный процессор Intel Xeon E5 с тактовой частотой 3.0 ГГц и 25 МБ кэш-памяти третьего уровня
+Оперативная память 64 ГБ памяти DDR3 ECC 1866 МГц
+Флэш-накопитель PCIe ёмкостью 1ТБ
+Два графических процессора AMD FirePro D700 с 6 ГБ видеопамяти GDDR5 на каждом
+</description>
+</offer>
+
+<offer id="496" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=496</url>
+<price>651590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>18</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mac_Pro_In_55717861696fc.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mac Pro Intel Xeon E5 2.7GHz/64Gb DDR3 ECC/AMD FirePro D700 6Gb DDR5/SSD 512Gb"</name>
+<description>
+12-ядерный процессор Intel Xeon E5 с тактовой частотой 2,7 ГГц и 30 МБ кэш-памяти третьего уровня
+Оперативная память 64 ГБ памяти DDR3 ECC 1866 МГц
+Флэш-накопитель PCIe ёмкостью 512 ГБ
+Два графических процессора AMD FirePro D700 с 6 ГБ видеопамяти GDDR5 на каждом
+</description>
+</offer>
+
+<offer id="340" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=340</url>
+<price>7290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>36</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_nano__50b4b061bd2de.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod nano 7G 16ГБ Красный"</name>
+<description>
+Ёмкость 16Гб(до 4 000 песен)
+Цвет Красный
+Дисплей 2.5-дюйма (разрешением 240 х 432) 
+Поддержка Bluetooth Stereo
+</description>
+</offer>
+
+<offer id="501" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=501</url>
+<price>279590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>62</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__55718d222dd4e.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27""</name>
+<description>
+Процессор Quad-Core Intel Core i7 ("Haswell"), 3,5ГГц
+Оперативная память DDR3 64ГБ
+Дисковый накопитель 1TБ Flash Drive
+Графический процессор NVIDIA GeForce GT 780M с 4ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="427" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=427</url>
+<price>3390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdb951a61af.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Case (темно-серый)"</name>
+<description></description>
+</offer>
+
+<offer id="428" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=428</url>
+<price>3390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdb9b08c290.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Case (серый)"</name>
+<description></description>
+</offer>
+
+<offer id="429" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=429</url>
+<price>3390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdbd600f62c.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Case (розовый)"</name>
+<description></description>
+</offer>
+
+<offer id="430" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=430</url>
+<price>3390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdc008457dd.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Case (зеленый)"</name>
+<description></description>
+</offer>
+
+<offer id="431" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=431</url>
+<price>3390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdc0c5bbc1d.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Case (голубой)"</name>
+<description></description>
+</offer>
+
+<offer id="432" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=432</url>
+<price>3390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdc263c93bd.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Case (красный)"</name>
+<description></description>
+</offer>
+
+<offer id="434" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=434</url>
+<price>990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_12W_U_50c05fbe9a372.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad 12W USB Power Adapter (only) [MD836ZM/A]"</name>
+<description>
+Адаптер питания Apple 12W USB Power Adapter позволяет заряжать ваш iPad 4-го поколения, iPad mini,  а также все модели iPhone и iPod, имеющие разъем Lightning.</description>
+</offer>
+
+<offer id="69" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=69</url>
+<price>3590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>40</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_USB_SuperD_50bc6fb96dbc7.png</picture>
+<delivery>true</delivery> 
+<name>Apple USB SuperDrive[MD564ZM/A]"</name>
+<description>Компактный и удобный дисковод Apple USB SuperDrive подключается к MacBook Air, MacBook Pro Retina Display, iMac и Mac mini  единственным USB-кабелем и легко помещается в дорожной сумке. Позволяет устанавливать программное обеспечение, а также проигрывать и записывать диски CD и DVD, включая двухслойные DVD.</description>
+</offer>
+
+<offer id="81" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=81</url>
+<price>950.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>57</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Remote__MC_50b601ec1145d.png</picture>
+<delivery>true</delivery> 
+<name>Apple Remote [MC377]"</name>
+<description>
+Вид подключения: IR-приемник
+Радиус действия: 9 м
+Материал корпуса: алюминий
+Питание: батарейка CR2032 </description>
+</offer>
+
+<offer id="71" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=71</url>
+<price>1490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_USB_Ethern_50bc6dcc976b4.png</picture>
+<delivery>true</delivery> 
+<name>Apple USB Ethernet Adapter [MC704Z/A]"</name>
+<description>
+Apple USB Ethernet Adapter позволяет подключить компьютер MacBook Air к сети Ethernet. Компактный и лёгкий, он подсоединяется к порту USB 2.0 компьютера MacBook Air и снабжён коннектором RJ-45, поддерживающим скорость обмена 10/100BASE-T.
+</description>
+</offer>
+
+<offer id="72" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=72</url>
+<price>3650.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>26</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Wireless_M_50bc636f2727e.png</picture>
+<delivery>true</delivery> 
+<name>Apple Wireless Magic Mouse [MB829ZM/A]"</name>
+<description>Первая в мире мышь с мультисенсорным управлением называется Magic Mouse и у нее нет привычных кнопок и колеса прокрутки. Пользователь управляет прикосновением пальцев. То есть рабочая поверхность Magic Mouse представляет собой сенсорный тачпад. 
+
+</description>
+</offer>
+
+<offer id="73" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=73</url>
+<price>2590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>26</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mouse__MB1_50bc6192394ec.png</picture>
+<delivery>true</delivery> 
+<name>Apple Mouse [MB112ZM/B]"</name>
+<description>Функциональная оптическая мышь; имеет 4 кнопки - 2 в обычном месте, одну совмещенную с шариком скроллинга, и одну по бокам корпуса; шарик скроллинга позволяет удобно прокручивать документы как по вертикали, так и по горизонтали</description>
+</offer>
+
+<offer id="74" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=74</url>
+<price>2290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>26</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Keyboard_w_50bc60803151b.png</picture>
+<delivery>true</delivery> 
+<name>Apple Keyboard with Numeric Keypad [MB110RS/B]"</name>
+<description>
+Мак с доступным портом USB 1.1 или USB 2.0
+Mac OS X 10.4.10 или новее
+Обновление программного обеспечения клавиатуры
+
+
+</description>
+</offer>
+
+<offer id="75" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=75</url>
+<price>3290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>26</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Wireless_K_50bc63aba0181.png</picture>
+<delivery>true</delivery> 
+<name>Apple Wireless Keyboard [MC184RS/B]"</name>
+<description>Минимальные системные требования
+
+Мак, оснащённый адаптером Bluetooth
+Mac OS X 10.4.10 или новее
+Обновление программного обеспечения клавиатуры
+Существующая клавиатура и мышь для начальной настройки
+Две батарейки AA (включены)
+</description>
+</offer>
+
+<offer id="408" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=408</url>
+<price>1390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>82</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Earphones__50bca13463e1d.png</picture>
+<delivery>true</delivery> 
+<name>Apple Earphones with Remote and Mic[MB770G/B]"</name>
+<description></description>
+</offer>
+
+<offer id="409" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=409</url>
+<price>1590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>82</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_EarPods_wi_50bc61bfc17b8.png</picture>
+<delivery>true</delivery> 
+<name>Apple EarPods with Remote and Mic[MD827ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="410" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=410</url>
+<price>690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MagSafe_to_50bc665b3bf94.png</picture>
+<delivery>true</delivery> 
+<name>Apple MagSafe to MagSafe 2 Converter[MD504ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="411" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=411</url>
+<price>1430.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>30</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Battery_Ch_50bc682ddcae9.png</picture>
+<delivery>true</delivery> 
+<name>Apple Battery Charger [MC500ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="416" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=416</url>
+<price>1690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Thunderbol_50bc765bef7d0.png</picture>
+<delivery>true</delivery> 
+<name>Apple Thunderbolt to FireWire Adapter [MD464ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="413" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=413</url>
+<price>1690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Thunderbol_50bc6e9e1de25.png</picture>
+<delivery>true</delivery> 
+<name>Apple Thunderbolt to Gigabit Ethernet Adapter[MD463ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="82" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=82</url>
+<price>8790.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>31</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Mac_mini___Apple_4c0e21e85a672.jpg</picture>
+<delivery>true</delivery> 
+<name>Mac mini - AppleCare Protection Plan [MC260]"</name>
+<description>План AppleCare Protection Plan — это комплексное обслуживание, поддержка и продление срока гарантии на компьютеры Mac до трёх лет со дня приобретения.</description>
+</offer>
+
+<offer id="83" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=83</url>
+<price>9490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>31</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iMac___AppleCare_4c0e23dfc0900.jpg</picture>
+<delivery>true</delivery> 
+<name>iMac - AppleCare Protection Plan [MC257]"</name>
+<description>План AppleCare Protection Plan — это комплексное обслуживание, поддержка и продление срока гарантии на компьютеры Mac до трёх лет со дня приобретения.</description>
+</offer>
+
+<offer id="403" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=403</url>
+<price>3590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>25</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_45W_MagSaf_50bc56556f1f2.png</picture>
+<delivery>true</delivery> 
+<name>Apple 45W MagSafe 2 Power Adapter[MD592Z/A]"</name>
+<description>
+Мощность: 45 Вт
+Совместимость: MacBook Air 11" и 13" c разъемом Magsafe2
+Материал корпуса: пластик
+Светодиодный индикатор режима заряда
+Регулировка длины провода
+Встроенные держатели для наматывания кабеля</description>
+</offer>
+
+<offer id="404" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=404</url>
+<price>3590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>25</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_85W_MagSaf_50bc566457954.png</picture>
+<delivery>true</delivery> 
+<name>Apple 85W MagSafe 2 Power Adapter [MD506Z/A]"</name>
+<description>
+Мощность: 85 ватт
+Совместимость: MacBook Pro Retina с разъемом Magsafe 2
+Материал корпуса: пластик
+Светодиодный индикатор режима заряда
+Регулировка длины провода
+Встроенные держатели для наматывания кабеля</description>
+</offer>
+
+<offer id="406" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=406</url>
+<price>4790.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>68</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________50bc59b3798eb.png</picture>
+<delivery>true</delivery> 
+<name>Точка доступа AirPort Express-SUN"</name>
+<description></description>
+</offer>
+
+<offer id="85" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=85</url>
+<price>12790.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>31</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/MacBook___MacBoo_4c0e26439c67e.jpg</picture>
+<delivery>true</delivery> 
+<name>MacBook / MacBook Air / MacBook Pro 13" - AppleCare Protection Plan [MC258]"</name>
+<description>План AppleCare Protection Plan — это комплексное обслуживание, поддержка и продление срока гарантии на компьютеры Mac до трёх лет со дня приобретения.</description>
+</offer>
+
+<offer id="86" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=86</url>
+<price>15290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>31</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Mac_Pro___AppleC_4c0e293603c2f.jpg</picture>
+<delivery>true</delivery> 
+<name>Mac Pro - AppleCare Protection Plan [MC256]"</name>
+<description>План AppleCare Protection Plan — это комплексное обслуживание, поддержка и продление срока гарантии на компьютеры Mac до трёх лет со дня приобретения.</description>
+</offer>
+
+<offer id="87" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=87</url>
+<price>17690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>31</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/MacBook_Pro_15___4c0e29d74d468.jpg</picture>
+<delivery>true</delivery> 
+<name>MacBook Pro 15" and 17" - AppleCare Protection Plan [MC259]"</name>
+<description>План AppleCare Protection Plan — это комплексное обслуживание, поддержка и продление срока гарантии на компьютеры Mac до трёх лет со дня приобретения.</description>
+</offer>
+
+<offer id="91" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=91</url>
+<price>7290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>36</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_nano__50923b8ce0d5f.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod nano 7G 16ГБ Зеленый"</name>
+<description>
+Ёмкость: 16ГБ(до 4 000 песен)
+Цвет: Зеленый
+Дисплей: 2.5-дюйма (разрешение 240 х 432)Поддержка Bluetooth Stereo
+</description>
+</offer>
+
+<offer id="115" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=115</url>
+<price>10650.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>38</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_class_4c18cef305bb5.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPod classic 160GB - Черный"</name>
+<description>
+
+
+Ёмкость 160ГБ (40,000 песен)
+Цвет Чёрный
+Время работы от батареи До 40 ч. музыки; до 6 ч. видео
+Дисплей 2.5-дюймовый 
+Порты Док-коннектор, стерео мини-разъём
+Время зарядки Около 4 часов 
+
+
+</description>
+</offer>
+
+<offer id="93" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=93</url>
+<price>7290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>36</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_nano__50923cfcb8e37.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod nano 7G 16ГБ Серебристый"</name>
+<description>
+Ёмкость: 16ГБ(до 4 000 песен)
+Цвет: Серебристый
+Дисплей: 2.5-дюйма (разрешение 240 х 432)Поддержка Bluetooth Stereo
+</description>
+</offer>
+
+<offer id="98" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=98</url>
+<price>7290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>36</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_nano__509239b5d0db1.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod nano 7G 16ГБ Желтый"</name>
+<description>
+Ёмкость: 16ГБ(до 4 000 песен)
+Цвет: Желтый
+Дисплей: 2.5-дюйма (разрешение 240 х 432)Поддержка Bluetooth Stereo
+</description>
+</offer>
+
+<offer id="100" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=100</url>
+<price>7290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>36</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_nano__50923a9a8cf80.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod nano 7G 16ГБ Голубой"</name>
+<description>
+Ёмкость: 16ГБ(до 4 000 песен)
+Цвет: Голубой
+Дисплей: 2.5-дюйма (разрешение 240 х 432)Поддержка Bluetooth Stereo
+</description>
+</offer>
+
+<offer id="101" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=101</url>
+<price>7290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>36</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_nano__509221b960fa3.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod nano 7G 16ГБ Розовый"</name>
+<description>
+Ёмкость: 16ГБ(до 4 000 песен)
+Цвет: Розовый
+Дисплей: 2.5-дюйма (разрешение 240 х 432)Поддержка Bluetooth Stereo
+</description>
+</offer>
+
+<offer id="102" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=102</url>
+<price>7290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>36</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_nano__50923dbac0cd3.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod nano 7G 16ГБ Сине-серый"</name>
+<description>
+Ёмкость: 16ГБ(до 4 000 песен)
+Цвет: Сине-серый
+Дисплей: 2.5-дюйма (разрешение 240 х 432) 
+</description>
+</offer>
+
+<offer id="474" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=474</url>
+<price>81590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>61</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_21_5__52a44b4ee55f4.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 21,5'"</name>
+<description>
+Процессор Quad-Core Intel Core i5 ("Haswell"), 2,7ГГц
+Оперативная память DDR3 8ГБ
+Turbo Boost: 2.7ГГц
+Дисковый накопитель 1TБ
+Графический процессор Intel Iris Pro </description>
+</offer>
+
+<offer id="104" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=104</url>
+<price>7290.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>36</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_nano__50923c6cdf5ad.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod nano 7G 16ГБ Фиолетовый"</name>
+<description>
+Ёмкость: 16ГБ(до 4 000 песен)
+Цвет: Фиолетовый
+Дисплей: 2.5-дюйма (разрешение 240 х 432)Поддержка Bluetooth Stereo
+</description>
+</offer>
+
+<offer id="105" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=105</url>
+<price>2450.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>37</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_shuff_4caafcb5c22b1.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPod shuffle 2GB - Blue"</name>
+<description>
+Емкость 2ГБ
+Количество песен 500
+Цвет Голубой
+Дисплей Нет
+Время зарядки Около 3 часов (на 80% - 2 часа)
+Вес 12.5 г
+</description>
+</offer>
+
+<offer id="106" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=106</url>
+<price>2450.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>37</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_shuff_4caaf02c1248b.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPod shuffle 2GB - Silver"</name>
+<description>
+Емкость 2ГБ
+Количество песен 500
+Цвет Cеребристый
+Дисплей Нет
+Время зарядки Около 3 часов (на 80% - 2 часа)
+Вес 12.5 г
+</description>
+</offer>
+
+<offer id="107" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=107</url>
+<price>2450.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>37</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_shuff_4caafb823e73d.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPod shuffle 2GB - Orange"</name>
+<description>
+Емкость 2ГБ
+Количество песен 500
+Цвет Оранжевый
+Дисплей Нет
+Время зарядки Около 3 часов (на 80% - 2 часа)
+Вес 12.5 г
+</description>
+</offer>
+
+<offer id="108" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=108</url>
+<price>2450.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>37</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_shuff_4caafc29c7898.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPod shuffle 2GB - Green"</name>
+<description>
+Емкость 2ГБ
+Количество песен 500
+Цвет Зеленый
+Дисплей Нет
+Время зарядки Около 3 часов (на 80% - 2 часа)
+Вес 12.5 г
+</description>
+</offer>
+
+<offer id="109" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=109</url>
+<price>2450.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>37</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_shuff_4caafdf33bb58.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPod shuffle 2GB - Pink"</name>
+<description>
+Емкость 2ГБ
+Количество песен 500
+Цвет Розовый
+Дисплей Нет
+Время зарядки Около 3 часов (на 80% - 2 часа)
+Вес 12.5 г
+</description>
+</offer>
+
+<offer id="185" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=185</url>
+<price>2390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>0</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4cab35f0b3b2b.jpg</picture>
+<delivery>true</delivery> 
+<name>Наушники AKG  K 330 WASP"</name>
+<description></description>
+</offer>
+
+<offer id="117" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=117</url>
+<price>3690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>25</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_85W_MagSaf_50b5fd869f982.png</picture>
+<delivery>true</delivery> 
+<name>Apple 85W MagSafe Power Adapter[MC556Z/A]"</name>
+<description>
+Мощность: 85 ватт
+Совместимость: MacBook Pro с разъемом Magsafe
+Материал корпуса: пластик
+Светодиодный индикатор режима заряда
+Регулировка длины провода
+Встроенные держатели для наматывания кабеля</description>
+</offer>
+
+<offer id="118" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=118</url>
+<price>3890.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>25</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_60W_MagSaf_50b5ff0b8548f.png</picture>
+<delivery>true</delivery> 
+<name>Apple 60W MagSafe Power Adapter[MC461Z/A]"</name>
+<description>
+Мощность: 60 Вт
+Совместимость: MacBook и MacBook Pro 13" с разъемом Magsafe
+Материал корпуса: пластик
+Светодиодный индикатор режима заряда
+Регулировка длины провода
+Встроенные держатели для наматывания кабеля</description>
+</offer>
+
+<offer id="119" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=119</url>
+<price>3590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>25</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_45W_MagSaf_50b5fd5a399c4.png</picture>
+<delivery>true</delivery> 
+<name>Apple 45W MagSafe Power Adapter[MC747Z/A]"</name>
+<description>
+Связь с компьютером: Bluetooth
+Габаритные размеры, мм: 130 х 132 х 17
+Масса: 140 г (без батареек)</description>
+</offer>
+
+<offer id="116" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=116</url>
+<price>10650.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>38</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/MC293_4c18da06b00fb.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPod classic 160GB - Silver"</name>
+<description>
+Ёмкость 160ГБ (40,000 песен)
+Цвет Серебрянный
+Время работы от батареи До 40 ч. музыки; до 6 ч. видео
+Дисплей 2.5-дюймовый 
+Порты Док-коннектор, стерео мини-разъём
+Время зарядки Около 4 часов 
+</description>
+</offer>
+
+<offer id="296" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=296</url>
+<price>23790.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>68</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________50bc5a26b9277.png</picture>
+<delivery>true</delivery> 
+<name>Точка доступа Apple Time Capsule - 3TB"</name>
+<description>
+Резервное копирование
+Беспроводная сеть
+Простая настройка
+</description>
+</offer>
+
+<offer id="297" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=297</url>
+<price>15950.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>68</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________50bc5a01f1eee.png</picture>
+<delivery>true</delivery> 
+<name>Точка доступа Apple Time Capsule - 2TB"</name>
+<description>
+Резервное копирование
+Беспроводная сеть
+Простая настройка
+</description>
+</offer>
+
+<offer id="121" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=121</url>
+<price>5690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>30</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Rechargeable_Bat_50b5ffcf1c75c.png</picture>
+<delivery>true</delivery> 
+<name>Rechargeable Battery - 15-inch MacBook Pro [MA348G/A]"</name>
+<description>Аккумуляторная батарея для 15-дюймовых компьютеров MacBook Pro.</description>
+</offer>
+
+<offer id="122" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=122</url>
+<price>5690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>30</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Rechargeable_Bat_50bf441bc1860.png</picture>
+<delivery>true</delivery> 
+<name>Rechargeable Battery - 17-inch MacBook Pro [MA458G/A]"</name>
+<description>Аккумуляторная батарея для 17-дюймовых компьютеров MacBook Pro.</description>
+</offer>
+
+<offer id="123" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=123</url>
+<price>5890.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>30</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Rechargeable_Bat_4c19db27ed615.jpg</picture>
+<delivery>true</delivery> 
+<name>Rechargeable Battery - 13-inch MacBook (Black) [MA566G/A]"</name>
+<description>Аккумуляторная батарея для чёрных 13-дюймовых компьютеров MacBook.</description>
+</offer>
+
+<offer id="124" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=124</url>
+<price>5890.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>30</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Rechargeable_Bat_4c19e0d959ddd.jpg</picture>
+<delivery>true</delivery> 
+<name>Rechargeable Battery - 13-inch MacBook (White) [MA561G/A]"</name>
+<description>Аккумуляторная батарея для белых 13-дюймовых компьютеров MacBook.</description>
+</offer>
+
+<offer id="127" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=127</url>
+<price>6190.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Mini_DisplayPort_50bc8f3f24ebf.png</picture>
+<delivery>true</delivery> 
+<name>Mini DisplayPort to Dual-Link DVI Adapter [MB571Z/A]"</name>
+<description>Адаптер Mini DisplayPort to Dual-Link DVI Adapter позволяет подключить 30-дюймовый монитор Apple Cinema HD Display к компьютерам MacBook, MacBook Pro, MacBook Air, Mac mini, iMac и Mac Pro с интерфейсом Mini DisplayPort.</description>
+</offer>
+
+<offer id="128" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=128</url>
+<price>1850.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mini_Displ_50bc8da45d8ba.png</picture>
+<delivery>true</delivery> 
+<name>Apple Mini DisplayPort to DVI Adapter [MB570Z/B]"</name>
+<description>Адаптер Mini DisplayPort to DVI Adapter позволяет подключить мониторы с разъёмом DVI к компьютерам MacBook, MacBook Pro, MacBook Air, Mac mini, iMac и Mac Pro с интерфейсом Mini DisplayPort.</description>
+</offer>
+
+<offer id="129" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=129</url>
+<price>1890.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mini_Displ_50bc90b35b80d.png</picture>
+<delivery>true</delivery> 
+<name>Apple Mini DisplayPort to VGA Adapter [MB572Z/B]"</name>
+<description>Адаптер Mini DisplayPort to VGA Adapter позволяет подключить стандартный аналоговый монитор, проектор или ЖК-дисплей с VGA-разъёмом к компьютерам MacBook, MacBook Pro, MacBook Air, Mac mini, iMac и Mac Pro с интерфейсом Mini DisplayPort.</description>
+</offer>
+
+<offer id="130" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=130</url>
+<price>1090.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mini_DVI_t_50bc8b84f16e8.png</picture>
+<delivery>true</delivery> 
+<name>Apple Mini-DVI to DVI Adapter [M9321G/B]"</name>
+<description>Адаптер позволяет подключить внешний DVI-монитор к PowerBook G4 12", MacBook или iMac с портом Mini-DVI. Может также использоваться в комбинации с Apple DVI to ADC Adapter для подлкючения ЖК-мониторов Apple Studio или Cinema Displays предыдущих поколений.</description>
+</offer>
+
+<offer id="131" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=131</url>
+<price>1090.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mini_DVI_t_50bc841883f85.png</picture>
+<delivery>true</delivery> 
+<name>Apple Mini-DVI to VGA Adapter [M9320G/A]"</name>
+<description>Адаптер позволяет подключить стандартный аналоговый монитор, проектор или ЖК-дисплей с VGA-интерфейсом к компьютерам PowerBook G4 12", MacBook и iMac с портом Mini-DVI.</description>
+</offer>
+
+<offer id="132" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=132</url>
+<price>1090.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mini_DVI_t_4c19f4d5b8156.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mini-DVI to Video Adapter [M9319G/A]"</name>
+<description>Адаптер для подключения PowerBook G4 12", MacBook и iMac с портом mini-DVI к устройствам с разъёмами S-Video или Composite.</description>
+</offer>
+
+<offer id="420" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=420</url>
+<price>1590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_USB_Power__50befd7409c17.png</picture>
+<delivery>true</delivery> 
+<name>Apple USB Power Adapter (Apple 5W USB Power Adapter with Apple Dock Connector to USB Cable) [MB707ZM/B]"</name>
+<description>
+Назначение: зарядка iPhone и плееров iPod выпуска до 2012 года
+Выходная мощность: 5В
+Материал: ударопрочный пластик</description>
+</offer>
+
+<offer id="448" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=448</url>
+<price>1390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_2_Doc_50befb68ede92.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad 2 Dock [MC940ZM/A]"</name>
+<description>
+Док-станция для Apple iPad 2 Dock MC940ZM/A  предназначена для синхронизации планшета с компьютером, для зарядки и подключения внешних колонок с помощью аудио кабеля.</description>
+</offer>
+
+<offer id="446" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=446</url>
+<price>50390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_LED_Cinema_50c045a1668e8.png</picture>
+<delivery>true</delivery> 
+<name>Apple LED Cinema Display 27'' [MC007ZE/A]"</name>
+<description>
+Широкоформатный глянцевый экран 27" со светодиодной подсветкой
+ Разрешение 2560 x 1440
+ Встроенная камера iSight с микрофоном
+ Встроенная акустическая система 2.1
+
+
+ Три порта USB 2.0
+</description>
+</offer>
+
+<offer id="449" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=449</url>
+<price>6190.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>30</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Rechargeab_50bf456b12043.png</picture>
+<delivery>true</delivery> 
+<name>Apple Rechargeable Battery 15" MacBook Pro [MB772G/A]"</name>
+<description></description>
+</offer>
+
+<offer id="402" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=402</url>
+<price>19490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Touch_50b4a241acf33.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 64ГБ Красный"</name>
+<description>
+Емкость: 64ГБ 
+Цвет: красный
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="401" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=401</url>
+<price>14590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Touch_50b4a059f3f9b.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 32ГБ Красный"</name>
+<description>
+Емкость: 32ГБ 
+Цвет: красный
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="153" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=153</url>
+<price>3490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>46</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Microsoft_Office_4d77910d06e94.jpg</picture>
+<delivery>true</delivery> 
+<name>Microsoft Office for Mac Home and Student 2011 (Русский) - 1-Pack"</name>
+<description>Версия Office for Mac 2011 Для дома и учебы
+
+Версия для использования дома и в учёбе на одном компьютере Mac.
+</description>
+</offer>
+
+<offer id="154" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=154</url>
+<price>3990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>46</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Microsoft_Office_4d7791d4ddf10.jpg</picture>
+<delivery>true</delivery> 
+<name>Microsoft Office for Mac Home and Student 2011 (Русский) - 1-Pack (на 3 компьютера)"</name>
+<description>Версия Office for Mac 2011 Для дома и учебы 
+
+ Версия для использования дома и в учёбе на трёх компьютерах Mac из расчёта на семью.
+</description>
+</offer>
+
+<offer id="212" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=212</url>
+<price>3190.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>57</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Magic_Trac_50b6015a8b2c5.png</picture>
+<delivery>true</delivery> 
+<name>Apple Magic Trackpad [MC380ZM/A]"</name>
+<description>
+Связь с компьютером: Bluetooth
+Радиус действия: 10 м
+Габаритные размеры, мм: 130 х 132 х 17
+Материал корпуса: алюминий
+Масса: 140 г (без батареек)</description>
+</offer>
+
+<offer id="295" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=295</url>
+<price>8590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>68</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________50bc57ce7048a.png</picture>
+<delivery>true</delivery> 
+<name>Точка доступа AirPort Extreme Base Station"</name>
+<description>
+Базовая станция AirPort Extreme — превосходное беспроводное решение для дома, школы и малого бизнеса.
+AirPort Extreme — это ещё и полнофункциональная   базовая станция Wi-Fi 802.11n. Теперь она работает одновременно в двух   диапазонах: 2,4 ГГц и 5 ГГц, обеспечивая наилучшую производительность и   ширину охвата для всех ваших устройств Wi-Fi.
+</description>
+</offer>
+
+<offer id="221" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=221</url>
+<price>5500.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>46</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Microsoft_Window_4d7787dd6dbcb.jpg</picture>
+<delivery>true</delivery> 
+<name>Microsoft Windows 7 Pro 64bit Ru DVD OEM"</name>
+<description>
+Тип: Операционная система
+Гарантийный срок (мес): Нет
+</description>
+</offer>
+
+<offer id="415" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=415</url>
+<price>2790.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Thunderbol_50bc745269dac.png</picture>
+<delivery>true</delivery> 
+<name>Apple Thunderbolt Cable [MC913ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="414" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=414</url>
+<price>1090.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_HDMI_to_HD_50bc733fb326b.png</picture>
+<delivery>true</delivery> 
+<name>Apple HDMI to HDMI Cable (1,8 m) [MC838ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="418" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=418</url>
+<price>1150.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Micro_DVI_to_VGA_50bc87ee0f9d4.png</picture>
+<delivery>true</delivery> 
+<name>Micro DVI to VGA  Adapter [MB203G/A]"</name>
+<description></description>
+</offer>
+
+<offer id="419" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=419</url>
+<price>1150.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Micro_DVI_to_DVI_50bc8a2fa200b.png</picture>
+<delivery>true</delivery> 
+<name>Micro DVI to DVI Adapter [MB204G/A]"</name>
+<description></description>
+</offer>
+
+<offer id="412" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=412</url>
+<price>990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_shuff_50bc6a9e41453.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod shuffle USB Cable [MC003ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="407" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=407</url>
+<price>3690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>82</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_In_ear_Hea_50bc5c7add9c2.png</picture>
+<delivery>true</delivery> 
+<name>Apple In-ear Headphones with Remote and Mic[MA850G/B]"</name>
+<description></description>
+</offer>
+
+<offer id="417" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=417</url>
+<price>1150.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Micro_DVI_to_Vid_50bc872d23bde.png</picture>
+<delivery>true</delivery> 
+<name>Micro DVI to Video Adapter [MB202G/A]"</name>
+<description></description>
+</offer>
+
+<offer id="421" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=421</url>
+<price>990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Dock_Conne_50bca98051d7c.png</picture>
+<delivery>true</delivery> 
+<name>Apple Dock Connector to USB Cable[MA591G/B]"</name>
+<description></description>
+</offer>
+
+<offer id="422" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=422</url>
+<price>1990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Composite__50bcaaf18a99d.png</picture>
+<delivery>true</delivery> 
+<name>Apple Composite AV Cable[MC748ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="423" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=423</url>
+<price>2390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>25</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MagSafe_Ai_50bcaec8ba8f9.png</picture>
+<delivery>true</delivery> 
+<name>Apple MagSafe Airline Adapter[MB441Z/A]"</name>
+<description></description>
+</offer>
+
+<offer id="424" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=424</url>
+<price>2090.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Digital_AV_50bda01830072.png</picture>
+<delivery>true</delivery> 
+<name>Apple Digital AV Adapter  [MD098ZM/A]"</name>
+<description></description>
+</offer>
+
+<offer id="425" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=425</url>
+<price>3990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bda8caab585.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover, итальянская кожа (красный)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="426" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=426</url>
+<price>2390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdae2d22db2.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover (темно-серый)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="433" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=433</url>
+<price>1490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_10W_U_50bdc5925ec3e.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad 10W USB Power Adapter  [MC359ZM/A]"</name>
+<description>
+Назначение: зарядка планшетного ПК Apple iPad выпуска до 2012 года
+Выходная мощность: 10В
+Материал: ударопрочный пластик</description>
+</offer>
+
+<offer id="216" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=216</url>
+<price>1390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_USB_Power__50bc94fab494d.png</picture>
+<delivery>true</delivery> 
+<name>Apple USB Power Adapter[MD813ZM/A]"</name>
+<description>
+Назначение: зарядка iPhone и плееров iPod выпуска до 2012 года
+Выходная мощность: 5В
+Материал: ударопрочный пластик</description>
+</offer>
+
+<offer id="441" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=441</url>
+<price>1590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Lightning_to_30__50bdd36e48fc4.png</picture>
+<delivery>true</delivery> 
+<name>Lightning to 30-pin Adapter [MD823ZM/A]"</name>
+<description>
+Переходник Apple Lightning to 30-pin Adapter позволяет подключать iPhone 5, iPod touch 5G, iPod nano 7G к аксессуарам с прежним 30-пиновым док-разъемом.</description>
+</offer>
+
+<offer id="442" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=442</url>
+<price>2190.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Lightning_to_30__50bdd62fc2394.png</picture>
+<delivery>true</delivery> 
+<name>Lightning to 30-pin Adapter (0.2 m) [MD824ZM/A]"</name>
+<description>
+Переходник Apple Lightning to 30-pin Adapter позволяет подключать iPhone 5, iPod touch 5G, iPod nano 7G к аксессуарам с прежним 30-пиновым док-разъемом. </description>
+</offer>
+
+<offer id="443" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=443</url>
+<price>2690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Universal__50bdd8a9efd69.png</picture>
+<delivery>true</delivery> 
+<name>Apple Universal Dock [MC746ZA/A]"</name>
+<description></description>
+</offer>
+
+<offer id="444" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=444</url>
+<price>1490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>58</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_shuff_50bddbf2aedf5.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod shuffle Dock [MA694G/A]"</name>
+<description>
+Док-станция для iPod Shuffle 2-го поколения предназначена для подключения  плеера к компьютеру для синхронизации и зарядки. Состоит из самой станции и USB-кабеля.</description>
+</offer>
+
+<offer id="222" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=222</url>
+<price>3200.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>46</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Microsoft_Window_4d778f3b9cdb6.jpg</picture>
+<delivery>true</delivery> 
+<name>Microsoft Windows 7 Home Basic 64bit DVD OEM"</name>
+<description>
+Тип: Операционная система
+Гарантийный срок (мес): Нет
+</description>
+</offer>
+
+<offer id="223" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=223</url>
+<price>8490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>46</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Microsoft_Office_4d77944b2b92e.jpg</picture>
+<delivery>true</delivery> 
+<name>Microsoft Office for Mac Home and Busines 2011 (Русский) - 1-Pack"</name>
+<description>Версия Office for Mac 2011 Для дома и бизнеса
+
+Версия лицензируется для одного компьютера Mac.
+</description>
+</offer>
+
+<offer id="224" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=224</url>
+<price>3900.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>46</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Microsoft_Window_4d77956db6938.jpg</picture>
+<delivery>true</delivery> 
+<name>Microsoft Windows 7 Home Premium 64bit DVD OEM"</name>
+<description>
+Тип: Операционная система
+Гарантийный срок (мес): Нет
+</description>
+</offer>
+
+<offer id="225" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=225</url>
+<price>2500.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>59</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Parallels_Deskto_4d7796a776dd2.jpg</picture>
+<delivery>true</delivery> 
+<name>Parallels Desktop для Mac 6"</name>
+<description>Parallels Desktop для Mac – это самое популярное и надежное решение для работы с приложениями Windows на Mac. С помощью Parallels Desktop можно одновременно работать с приложениями Windows и Mac OS X без перезагрузки. Перетаскивайте файлы между приложениями Windows и Мас, запускайте приложения Windows из Dock и выполняйте множество других задач без ущерба для производительности, управляемости и стабильности.</description>
+</offer>
+
+<offer id="243" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=243</url>
+<price>3990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bda1eb35f35.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover, итальянская кожа (черный)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="244" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=244</url>
+<price>3990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdaa2b89da5.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover, итальянская кожа (бежевый)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="245" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=245</url>
+<price>3990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bda39679ff2.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover, итальянская кожа (коричневый)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="246" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=246</url>
+<price>3990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdac4b5d3de.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover, итальянская кожа (темно-синий)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="248" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=248</url>
+<price>2390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdb45b5658c.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover (розовый)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="249" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=249</url>
+<price>2390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdaf562a169.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover (серый)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="250" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=250</url>
+<price>2390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdb6500b4c8.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover (голубой)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="251" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=251</url>
+<price>2390.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Smart_50bdb5b4d2418.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Smart Cover (зеленый)"</name>
+<description>Фирменный(оригинальный) чехол-обложка, созданный специально для планшетника Apple iPad 2, iPad 3</description>
+</offer>
+
+<offer id="308" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=308</url>
+<price>999.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>69</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4ef9ac94bdf75.jpg</picture>
+<delivery>true</delivery> 
+<name>Наушники SENNHEISER CX 180 STREET II"</name>
+<description>
+Инновационный дизайн позволяет просто, надёжно и комфортно закреплять наушники в ушном канале
+Мощный звук насыщенный НЧ
+Высокая степень защиты от окружающего шума
+Идеально подходят для всех MP3, DVD, CD-плееров, iPod и iPhone, а также для портативных игровых консолей
+Симметричный кабель
+</description>
+</offer>
+
+<offer id="309" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=309</url>
+<price>1750.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>69</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4ef9addceb73c.jpg</picture>
+<delivery>true</delivery> 
+<name>Наушники SENNHEISER CX 300-II BLACK"</name>
+<description>
+Мощный стереозвук с ярко выраженными НЧ
+Превосходная  защита от окружающего шума
+Асимметричный кабель
+Чехол для хранения и транспортировки в комплекте поставки
+Идеально подходят для всех MP3, DVD, CD-плееров, iPod и iPhone, а также для портативных игровых консолей
+</description>
+</offer>
+
+<offer id="310" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=310</url>
+<price>1750.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>69</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4ef9b0550602b.jpg</picture>
+<delivery>true</delivery> 
+<name>Наушники SENNHEISER CX 300-II SILVER"</name>
+<description>
+Мощный стереозвук с ярко выраженными НЧ
+Превосходная защита от окружающего шума
+Асимметричный кабель
+Чехол для хранения и транспортировки в комплекте поставки
+Идеально подходят для всех MP3, DVD, CD-плееров, iPod и iPhone, а также для портативных игровых консолей
+</description>
+</offer>
+
+<offer id="311" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=311</url>
+<price>1100.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>69</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________50bc6def019a0.png</picture>
+<delivery>true</delivery> 
+<name>Наушники SENNHEISER CX 200 STREET II WHITE"</name>
+<description>
+Улучшенный захват для пальцев
+Силиконовые ушные адаптеры для индивидуальной подгонки
+Высокая степень защиты от окружающего шума
+Симметричный кабель
+Идеально подходят для всех MP3, DVD, CD-плееров, iPod и iPhone, а также для портативных медиа плееров
+</description>
+</offer>
+
+<offer id="312" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=312</url>
+<price>2836.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>69</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4ef9b377a1049.jpg</picture>
+<delivery>true</delivery> 
+<name>Наушники SENNHEISER HD 220 Originals"</name>
+<description>
+Мощный, насыщенный НЧ стереозвук, благодаря неодимовым магнитам
+Закрытая конструкция с амбушюрами Supra-aural хорошо защищает от внешнего шума
+Удобная конструкция для индивидуальной подгонки
+Оптимизированы для использования с iPod, iPhone, MP3, CD и DVD плеерами
+</description>
+</offer>
+
+<offer id="313" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=313</url>
+<price>3350.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>69</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4ef9b607481fd.jpg</picture>
+<delivery>true</delivery> 
+<name>Наушники SENNHEISER RS 110-8 II"</name>
+<description>
+РЧ-система, открытые беспроводные наушники с амбушюрами типа Supra-aural
+Детальное сбалансированное звуковоспроизведение с мощной отдачей по низким частотам
+Обеспечивает качественное звучание для Hi-Fi систем и телевизоров
+Свобода движения без кабеля
+Дальность действия до 100 м
+Три выбираемых РЧ-канала
+Удобно расположенные элементы управления обеспечивают несложный, интуитивный метод управления
+Исключительно легкие, комфортабельные наушники
+Батарейки в комплекте поставки
+Время работы без подзарядки - около 23 часов
+</description>
+</offer>
+
+<offer id="316" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=316</url>
+<price>600.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4f757d9bc9894.jpg</picture>
+<delivery>true</delivery> 
+<name>Наклейка Simpsons"</name>
+<description></description>
+</offer>
+
+<offer id="317" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=317</url>
+<price>600.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4f757deb8c324.jpg</picture>
+<delivery>true</delivery> 
+<name>Наклейка Sakkura"</name>
+<description></description>
+</offer>
+
+<offer id="318" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=318</url>
+<price>600.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4f757e6b7ca69.jpg</picture>
+<delivery>true</delivery> 
+<name>Наклейка Alien"</name>
+<description></description>
+</offer>
+
+<offer id="319" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=319</url>
+<price>400.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4f757ed626541.jpg</picture>
+<delivery>true</delivery> 
+<name>Наклейка Pacman"</name>
+<description></description>
+</offer>
+
+<offer id="320" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=320</url>
+<price>400.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4f757f4640d32.jpg</picture>
+<delivery>true</delivery> 
+<name>Наклейка Pirate"</name>
+<description></description>
+</offer>
+
+<offer id="321" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=321</url>
+<price>400.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4f757f8a0cbff.jpg</picture>
+<delivery>true</delivery> 
+<name>Наклейка Rainbow"</name>
+<description></description>
+</offer>
+
+<offer id="322" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=322</url>
+<price>600.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/_________________4f758015dd9af.jpg</picture>
+<delivery>true</delivery> 
+<name>Наклейка Zombie"</name>
+<description></description>
+</offer>
+
+<offer id="519" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=519</url>
+<price>121590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>94</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Ai_5586d19787b7a.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Air 13"</name>
+<description>
+Графический процессор Intel HD Graphics 6000
+Процессор 2.2GHz Dual-Core Intel Core i7(Turbo Boost up to 3.2GHz) 
+Оперативная память 8 Gb DDR3 1600MHz
+Flash-накопитель 512 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="327" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=327</url>
+<price>74990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>89</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_51af3c7ca11f3.png</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro 13" MD101RS/A"</name>
+<description>
+Процессор Intel Core i5 2.5ГГц  (Ivy Bridge) (двухядерный)
+Технология Turbo Boost до 3.1ГГц
+Оперативная память 4ГБ DDR3M 1600МГц
+Дисковый накопитель 500ГБ (5400 об/мин)
+Графический процессор Intel HD Graphics 4000
+Встроенный аккумулятор (7 часов)</description>
+</offer>
+
+<offer id="517" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=517</url>
+<price>81590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>94</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Ai_5586cfe525159.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Air 13"</name>
+<description>
+Графический процессор Intel HD Graphics 6000
+Процессор 1.6GHz Dual-Core Intel Core i5(Turbo Boost up to 2.7GHz) 
+Оперативная память 4 Gb DDR3 1600MHz
+Flash-накопитель 256 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="447" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=447</url>
+<price>53690.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Thunderbol_50beef97a9f37.png</picture>
+<delivery>true</delivery> 
+<name>Apple Thunderbolt Display 27" [MC914ZE/A]"</name>
+<description>
+Широкоформатный глянцевый экран 27" со светодиодной подсветкой
+ Разрешение 2560 x 1440
+ Встроенная камера iSight с микрофоном
+ Встроенная акустическая система 2.1
+ Разъём MagSafe
+Порт  Thunderbolt
+
+
+ Три порта USB 2.0
+</description>
+</offer>
+
+<offer id="486" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=486</url>
+<price>54590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>93</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/MacBook_Air_11.6_52a6146baf5ea.jpg</picture>
+<delivery>true</delivery> 
+<name>MacBook Air 11.6" Core i5 1.3GHz/4Gb/256Gb"</name>
+<description>
+Графический процессор Intel HD Graphics 5000
+Процессор 1.3GHz Dual-Core Intel Core i5(Turbo Boost up to 2.6GHz) 
+Оперативная память 4 Gb DDR3 1600MHz
+Flash-накопитель 256 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="499" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=499</url>
+<price>192590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>62</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__55718a99c1b12.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27""</name>
+<description>
+Процессор Quad-Core Intel Core i7 ("Haswell"), 3,5ГГц
+Оперативная память DDR3 16ГБ
+Дисковый накопитель 1TБ Fusion Drive
+Графический процессор NVIDIA GeForce GT 780M с 4ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="500" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=500</url>
+<price>203590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>62</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__55718caf4cf60.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27""</name>
+<description>
+Процессор Quad-Core Intel Core i7 ("Haswell"), 3,5ГГц
+Оперативная память DDR3 16ГБ
+Дисковый накопитель 3TБ Fusion Drive
+Графический процессор NVIDIA GeForce GT 780M с 4ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="360" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=360</url>
+<price>14590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__50922840d48d4.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 32ГБ Голубой"</name>
+<description>
+Емкость: 32ГБ 
+Цвет: голубой
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="362" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=362</url>
+<price>19490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__50922903392e2.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 64ГБ Голубой"</name>
+<description>
+Емкость: 64ГБ 
+Цвет: голубой
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="363" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=363</url>
+<price>14590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__509229cb572c0.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 32ГБ Желтый"</name>
+<description>
+Емкость: 32ГБ 
+Цвет: желтый
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="364" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=364</url>
+<price>19490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__50922a88944e1.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 64ГБ Желтый"</name>
+<description>
+Емкость: 64ГБ 
+Цвет: желтый
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="365" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=365</url>
+<price>14590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__50922b8190173.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 32ГБ Розовый"</name>
+<description>
+Емкость: 32ГБ 
+Цвет: розовый
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="366" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=366</url>
+<price>19490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__50922c3a4763d.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 64ГБ Розовый"</name>
+<description>
+Емкость: 64ГБ 
+Цвет: розовый
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="367" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=367</url>
+<price>14590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__50922cc9cd556.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 32ГБ Серебристый"</name>
+<description>
+Емкость: 32ГБ 
+Цвет: серебристый
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="368" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=368</url>
+<price>19490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__50922d60ca9eb.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 64ГБ Серебристый"</name>
+<description>
+
+
+Емкость: 64ГБ 
+Цвет: серебристый
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+
+
+</description>
+</offer>
+
+<offer id="369" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=369</url>
+<price>14590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__50922e5362fbb.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 32ГБ Сине-серый"</name>
+<description>
+Емкость: 32ГБ 
+Цвет: сине-серый
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+</description>
+</offer>
+
+<offer id="370" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=370</url>
+<price>19490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>35</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPod_Toch__50922eb4ba94a.png</picture>
+<delivery>true</delivery> 
+<name>Apple iPod Touch 64ГБ Сине-серый"</name>
+<description>
+
+
+Емкость: 64ГБ 
+Цвет: сине-серый
+Камеры: фронтальная,тыловая
+ Дисплей: 4 дюйма, Retina
+
+
+</description>
+</offer>
+
+<offer id="475" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=475</url>
+<price>94590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>61</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_21_5__52a44df4bf2b0.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 21,5''"</name>
+<description>
+Процессор Quad-Core Intel Core i5 ("Haswell"), 2,9ГГц
+Turbo Boost: 3.6ГГц
+Оперативная память DDR3 8ГБ
+Дисковый накопитель 1TБ
+Графический процессор NVIDIA GeForce GT 750M с 1ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="492" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=492</url>
+<price>103590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>61</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_21.5__548978e5da2c9.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 21.5""</name>
+<description>
+Процессор Quad-Core Intel Core i5 ("Haswell"), 2,7ГГц
+Оперативная память DDR3 16ГБ
+Turbo Boost: 2.7ГГц
+Дисковый накопитель 1TБ
+Графический процессор Intel Iris Pro </description>
+</offer>
+
+<offer id="476" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=476</url>
+<price>123990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>62</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__Q_52a45754658d0.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27""</name>
+<description>
+Процессор Quad-Core Intel Core i5 ("Haswell"), 3,2ГГц
+Оперативная память DDR3 8ГБ
+Дисковый накопитель 1TБ
+Графический процессор NVIDIA GeForce GT 755M с 1ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="477" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=477</url>
+<price>125590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>62</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__Q_52a45933efad8.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27""</name>
+<description>
+Процессор Quad-Core Intel Core i5 ("Haswell"), 3,4ГГц
+Оперативная память DDR3 8ГБ
+Дисковый накопитель 1TБ
+Графический процессор NVIDIA GeForce GT 755M с 2ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="518" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=518</url>
+<price>99590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>94</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Ai_5586d0937ea2f.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Air 13"</name>
+<description>
+Графический процессор Intel HD Graphics 6000
+Процессор 2.2GHz Dual-Core Intel Core i7(Turbo Boost up to 3.2GHz) 
+Оперативная память 8 Gb DDR3 1600MHz
+Flash-накопитель 256 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="478" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=478</url>
+<price>79590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>89</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_52a4628aa6515.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 13""</name>
+<description>
+Процессор Intel Core i5 2.6ГГц ("Haswell") (двухядерный)
+Технология Turbo Boost до 3.1ГГц
+Intel Iris Graphics 5100
+Оперативная память 8ГБ 1600МГц
+Флэш-память 256ГБ
+Встроенный аккумулятор (9 часов)
+</description>
+</offer>
+
+<offer id="479" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=479</url>
+<price>69590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>89</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_52a464295978b.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 13""</name>
+<description>
+Процессор Intel Core i5 2.6ГГц ("Haswell") (двухядерный)
+Технология Turbo Boost до 3.1ГГц
+Intel Iris Graphics 5100
+Оперативная память 8ГБ 1600МГц
+Флэш-память 128ГБ
+Встроенный аккумулятор (9 часов)
+</description>
+</offer>
+
+<offer id="480" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=480</url>
+<price>152990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>89</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_52a46608ce97b.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 13""</name>
+<description>
+Процессор Intel Core i7 3.1ГГц ("Haswell") (двухядерный)
+Технология Turbo Boost до 3.4ГГц
+Intel Iris Graphics
+Оперативная память 16ГБ 1600МГц
+Флэш-память 512ГБ
+Встроенный аккумулятор (9 часов)
+</description>
+</offer>
+
+<offer id="507" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=507</url>
+<price>188590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>89</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_5586a51238df5.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 13""</name>
+<description>
+Процессор Intel Core i7 3.1ГГц ("Haswell") (двухядерный)
+Технология Turbo Boost до 3.4ГГц
+Intel Iris Graphics
+Оперативная память 16ГБ 1600МГц
+Флэш-память 1TБ
+Встроенный аккумулятор (9 часов)
+</description>
+</offer>
+
+<offer id="481" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=481</url>
+<price>129590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_52a468d395378.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 15""</name>
+<description>
+Процессор Intel Core i7 2.2ГГц ("Haswell") (четырёхъядерный)
+Технология Turbo Boost до 3.4ГГц
+Оперативная память 16ГБ 1600МГц
+Флеш память 256ГБ
+Графический процессор Intel Iris Pro Graphics
+Встроенный аккумулятор (8 часов)
+</description>
+</offer>
+
+<offer id="482" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=482</url>
+<price>138590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_52a46a961eb82.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 15""</name>
+<description>
+Процессор Intel Core i7 2.2ГГц ("Haswell") (четырёхъядерный)
+Технология Turbo Boost до 3.4ГГц
+Оперативная память 16ГБ 1600МГц
+Флеш память 256ГБ
+Графический процессор Intel Iris Pro Graphics
+Встроенный аккумулятор (9 часов)
+</description>
+</offer>
+
+<offer id="508" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=508</url>
+<price>159590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_5586a7e4a266a.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 15""</name>
+<description>
+Процессор Intel Core i7 2.5ГГц (четырёхъядерный)
+Технология Turbo Boost до 3.7ГГц
+Оперативная память 16ГБ 1600МГц
+Флеш память 512ГБ
+Графический процессор Intel Iris Pro Graphics 5200 + NVIDIA GeForce GT 750M 2ГБ GDDR5
+Встроенный аккумулятор (8 часов)
+</description>
+</offer>
+
+<offer id="484" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=484</url>
+<price>49590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>93</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/pple_MacBook_Air_52a60dd2f3b48.jpg</picture>
+<delivery>true</delivery> 
+<name>MacBook Air 11.6" Core i5 1.3GHZ/4Gb/128Gb"</name>
+<description>
+Графический процессор Intel HD Graphics 5000
+Процессор 1.3GHz Dual-Core Intel Core i5(Turbo Boost up to 2.6GHz) 
+Оперативная память 4 Gb DDR3 1600MHz
+Flash-накопитель 128 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="495" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=495</url>
+<price>687590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>18</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mac_Pro_In_557174306ece8.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mac Pro Intel Xeon E5 2.7GHz/64Gb DDR3 ECC/AMD FirePro D700 6Gb DDR5/SSD 1Tb"</name>
+<description>
+12-ядерный процессор Intel Xeon E5 с тактовой частотой 2,7 ГГц и 30 МБ кэш-памяти третьего уровня
+Оперативная память 64 ГБ памяти DDR3 ECC 1866 МГц
+Флэш-накопитель PCIe ёмкостью 1ТБ
+Два графических процессора AMD FirePro D700 с 6 ГБ видеопамяти GDDR5 на каждом
+</description>
+</offer>
+
+<offer id="489" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=489</url>
+<price>208990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>18</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mac_Pro_In_52a630239a882.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mac Pro Intel Xeon E5 3.7GHz/12Gb DDR3 ECC/AMD FirePro D300 2Gb DDR5/SSD 256Gb"</name>
+<description>
+4-ядерный процессор Intel Xeon E5 с тактовой частотой 3,7 ГГц
+Оперативная память 12 ГБ памяти DDR3 ECC 1866 МГц
+Флэш-накопитель PCIe ёмкостью 256 ГБ
+Два графических процессора AMD FirePro D300 с 2 ГБ видеопамяти GDDR5 на каждом
+</description>
+</offer>
+
+<offer id="490" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=490</url>
+<price>278990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>18</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mac_Pro_In_52a636d3afc73.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mac Pro Intel Xeon E5 3.5GHz/16Gb DDR3 ECC/AMD FirePro D500 3Gb DDR5/SSD 256Gb"</name>
+<description>
+6-ядерный процессор Intel Xeon E5 с тактовой частотой 3,5 ГГц
+Оперативная память 16 ГБ памяти DDR3 ECC 1866 МГц
+Флэш-накопитель PCIe ёмкостью 256 ГБ
+Два графических процессора AMD FirePro D500 с 3 ГБ видеопамяти GDDR5 на каждом
+</description>
+</offer>
+
+<offer id="491" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=491</url>
+<price>75590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>61</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iMac_21.5__Core__5489734a62074.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 21.5""</name>
+<description>
+Процессор: 2-ядерный Intel Core i5 1.4ГГц
+Turbo Boost: 2.7ГГц
+Память: 8ГБ 1600МГц LPDDR3
+Жёсткий диск: 500ГБ
+Графика: Intel HD Graphics 5000</description>
+</offer>
+
+<offer id="493" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=493</url>
+<price>147590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>61</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_21_5__54897b26ec60d.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 21,5''"</name>
+<description>
+Процессор Quad-Core Intel Core i7 ("Haswell"), 3,1ГГц
+Turbo Boost: 3.9ГГц
+Оперативная память DDR3 16ГБ
+Fusion Drive 1TБ
+Графический процессор NVIDIA GeForce GT 750M с 1ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="494" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=494</url>
+<price>165590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>61</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_21_5__54897bf0259ee.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 21,5''"</name>
+<description>
+Процессор Quad-Core Intel Core i7 ("Haswell"), 3,1ГГц
+Turbo Boost: 3.9ГГц
+Оперативная память DDR3 16ГБ
+Флэш-память 512ГБ
+Графический процессор NVIDIA GeForce GT 750M с 1ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="502" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=502</url>
+<price>138590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__R_557192a6bcf84.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27" Retina 5K"</name>
+<description>
+Процессор Quad-Core Intel Core i5 ("Haswell"), 3,3ГГц
+Оперативная память DDR3 8ГБ
+Дисковый накопитель 1TБ HDD
+Графический процессор AMD Radeon R9 M290 с 2ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="503" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=503</url>
+<price>149590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__R_5586990b1c300.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27" Retina 5K"</name>
+<description>
+Процессор Quad-Core Intel Core i5 ("Haswell"), 3,5ГГц
+Оперативная память DDR3 8ГБ
+Дисковый накопитель Fusion Drive 1TБ HDD
+Графический процессор AMD Radeon R9 M290 с 2ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="504" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=504</url>
+<price>209590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__R_55869d5d48723.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27" Retina 5K"</name>
+<description>
+Процессор Quad-Core Intel Core i7 ("Haswell"), 4,0ГГц
+Оперативная память DDR3 16ГБ
+Дисковый накопитель Fusion Drive 1TБ HDD
+Графический процессор AMD Radeon R9 M295X с 4ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="505" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=505</url>
+<price>231590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__R_55869d911cc03.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27" Retina 5K"</name>
+<description>
+Процессор Quad-Core Intel Core i7 ("Haswell"), 4,0ГГц
+Оперативная память DDR3 16ГБ
+Твердотельный накопитель 512Gb
+Графический процессор AMD Radeon R9 M295X с 4ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="506" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=506</url>
+<price>294990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iMac_27__R_55869eaa2b65f.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iMac 27" Retina 5K"</name>
+<description>
+Процессор Quad-Core Intel Core i7 ("Haswell"), 4,0ГГц
+Оперативная память DDR3 32ГБ
+Твердотельный накопитель 1Tb
+Графический процессор AMD Radeon R9 M295X с 4ГБ памяти GDDR5 </description>
+</offer>
+
+<offer id="509" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=509</url>
+<price>171590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_5586aa9af10ea.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 15""</name>
+<description>
+Процессор Intel Core i7 2.5ГГц (четырёхъядерный)
+Технология Turbo Boost до 3.7ГГц
+Оперативная память 16ГБ 1600МГц
+Флеш память 512ГБ
+Графический процессор Intel Iris Pro Graphics 5200 + AMD Radeon R9 M370X 2ГБ GDDR5
+Встроенный аккумулятор (9 часов)
+</description>
+</offer>
+
+<offer id="510" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=510</url>
+<price>186590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_5586ac2faa367.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 15""</name>
+<description>
+Процессор Intel Core i7 2.8ГГц (четырёхъядерный)
+Технология Turbo Boost до 4.0ГГц
+Оперативная память 16ГБ 1600МГц
+Флеш память 512ГБ
+Графический процессор Intel Iris Pro Graphics 5200 + AMD Radeon R9 M370X 2ГБ GDDR5
+Встроенный аккумулятор (9 часов)
+</description>
+</offer>
+
+<offer id="511" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=511</url>
+<price>222590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Pr_5586acbfda389.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Pro Retina 15""</name>
+<description>
+Процессор Intel Core i7 2.8ГГц (четырёхъядерный)
+Технология Turbo Boost до 4.0ГГц
+Оперативная память 16ГБ 1600МГц
+Флеш память 1Tb
+Графический процессор Intel Iris Pro Graphics 5200 + AMD Radeon R9 M370X 2ГБ GDDR5
+Встроенный аккумулятор (9 часов)
+</description>
+</offer>
+
+<offer id="512" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=512</url>
+<price>61590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>93</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Ai_5586ca4785b3b.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Air 11.6"</name>
+<description>
+Графический процессор Intel HD Graphics 6000
+Процессор 1.6GHz Dual-Core Intel Core i5(Turbo Boost up to 2.7GHz) 
+Оперативная память 4 Gb DDR3 1600MHz
+Flash-накопитель 128 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="513" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=513</url>
+<price>74590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>93</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Ai_5586ca8299cbe.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Air 11.6"</name>
+<description>
+Графический процессор Intel HD Graphics 6000
+Процессор 1.6GHz Dual-Core Intel Core i5(Turbo Boost up to 2.7GHz) 
+Оперативная память 4 Gb DDR3 1600MHz
+Flash-накопитель 256 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="514" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=514</url>
+<price>93590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>93</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Ai_5586cb00a1971.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Air 11.6"</name>
+<description>
+Графический процессор Intel HD Graphics 6000
+Процессор 2.2GHz Dual-Core Intel Core i7(Turbo Boost up to 3.2GHz) 
+Оперативная память 8 Gb DDR3 1600MHz
+Flash-накопитель 256 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="515" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=515</url>
+<price>114990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>93</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Ai_5586cba0b1866.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Air 11.6"</name>
+<description>
+Графический процессор Intel HD Graphics 6000
+Процессор 2.2GHz Dual-Core Intel Core i7(Turbo Boost up to 3.2GHz) 
+Оперативная память 8 Gb DDR3 1600MHz
+Flash-накопитель 512 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="516" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=516</url>
+<price>67590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>94</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_Ai_5586ce1ef370a.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook Air 13"</name>
+<description>
+Графический процессор Intel HD Graphics 6000
+Процессор 1.6GHz Dual-Core Intel Core i5(Turbo Boost up to 2.7GHz) 
+Оперативная память 4 Gb DDR3 1600MHz
+Flash-накопитель 128 Gb
+Подсветка клавиатуры
+USB 3.0 (до 5 Гбит/с)
+</description>
+</offer>
+
+<offer id="520" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=520</url>
+<price>89990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>96</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_12_5586f7e650b6f.png</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook 12 Gold"</name>
+<description>
+Двухъядерный процессор Intel Core M 1.1ГГц
+Технология Turbo Boost до 2.4ГГц
+Графика Intel HD Graphics 5300
+Оперативная память 8ГБ 1600МГц LPDDR3
+Флэш-память 256ГБ
+Встроенный аккумулятор (9 часов)
+Трекпад Force Touch
+</description>
+</offer>
+
+<offer id="521" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=521</url>
+<price>89990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>96</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_12_5586f882f25ea.png</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook 12 Silver"</name>
+<description>
+Двухъядерный процессор Intel Core M 1.1ГГц
+Технология Turbo Boost до 2.4ГГц
+Графика Intel HD Graphics 5300
+Оперативная память 8ГБ 1600МГц LPDDR3
+Флэш-память 256ГБ
+Встроенный аккумулятор (9 часов)
+Трекпад Force Touch
+</description>
+</offer>
+
+<offer id="522" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=522</url>
+<price>89990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>96</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_MacBook_12_5586f91103002.png</picture>
+<delivery>true</delivery> 
+<name>Apple MacBook 12 Space Gray"</name>
+<description>
+Двухъядерный процессор Intel Core M 1.1ГГц
+Технология Turbo Boost до 2.4ГГц
+Графика Intel HD Graphics 5300
+Оперативная память 8ГБ 1600МГц LPDDR3
+Флэш-память 256ГБ
+Встроенный аккумулятор (9 часов)
+Трекпад Force Touch
+</description>
+</offer>
+
+<offer id="523" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=523</url>
+<price>26990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_5c__55e0cd7c08a69.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 5c 8 ГБ белый"</name>
+<description>Красивый, яркий корпус из цветного пластика.
+Мощный процессор Apple A6.
+Дисплей Retina</description>
+</offer>
+
+<offer id="524" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=524</url>
+<price>26990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_5c__55e0cf1047188.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 5c 8 ГБ зеленый"</name>
+<description>Красивый, яркий корпус из цветного пластика.
+Мощный процессор Apple A6.
+Дисплей Retina</description>
+</offer>
+
+<offer id="525" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=525</url>
+<price>26990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_5c__55e0cf54162f7.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 5c 8 ГБ голубой"</name>
+<description>Красивый, яркий корпус из цветного пластика.
+Мощный процессор Apple A6.
+Дисплей Retina</description>
+</offer>
+
+<offer id="526" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=526</url>
+<price>35990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_5s__55e0d03168ddb.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 5s 16 ГБ серый космос"</name>
+<description>Ёмкость: 16 ГБ</description>
+</offer>
+
+<offer id="527" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=527</url>
+<price>35990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_5s__55e2caf657bba.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 5s 16 ГБ серебристый"</name>
+<description>Мощный, функциональный и очень удобный смартфон.</description>
+</offer>
+
+<offer id="528" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=528</url>
+<price>39990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_5s__55e2cb435b653.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 5s 32 ГБ серебристый"</name>
+<description>Мощный, функциональный и очень удобный смартфон.</description>
+</offer>
+
+<offer id="529" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=529</url>
+<price>35590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_5s__55e2cb8d3e517.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 5s 16 ГБ золотой"</name>
+<description>Мощный, функциональный и очень удобный смартфон.</description>
+</offer>
+
+<offer id="530" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=530</url>
+<price>39990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_5s__55e2cbcfa9266.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 5s 32 ГБ золотой"</name>
+<description>Мощный, функциональный и очень удобный смартфон.</description>
+</offer>
+
+<offer id="531" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=531</url>
+<price>39990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_5s__55e2cc6d7fef9.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 5s 32 ГБ серый космос"</name>
+<description>Мощный, функциональный и очень удобный смартфон.</description>
+</offer>
+
+<offer id="532" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=532</url>
+<price>48990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_1_55e2ccf80309d.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 16 ГБ серый космос"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="533" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=533</url>
+<price>48990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_1_55e2cd59442d3.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 16 ГБ серебристый"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="534" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=534</url>
+<price>48990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_1_55e2cde9ed877.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 16 ГБ золотой"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="535" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=535</url>
+<price>55990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_6_55e2ce4b1662e.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 64 ГБ серый космос"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="536" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=536</url>
+<price>55990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_6_55e2ce9804533.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 64 ГБ серебристый"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="537" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=537</url>
+<price>55990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_6_55e2cedb41c2b.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 64 ГБ золотой"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="538" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=538</url>
+<price>62990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_1_55e2cf37ef022.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 128 ГБ серый космос"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="539" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=539</url>
+<price>62990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_1_55e2cf67b6d42.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 128 ГБ серебристый"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="540" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=540</url>
+<price>62990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_1_55e2cf9d0a7bd.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 128 ГБ золотой"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="541" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=541</url>
+<price>50990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_P_55e2d008a0eb8.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 Plus 16 ГБ серый космос"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="542" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=542</url>
+<price>50990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_P_55e2d036e7304.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 Plus 16 ГБ серебристый"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="543" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=543</url>
+<price>50990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_P_55e2d08a53cb1.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 Plus 16 ГБ золотой"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="544" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=544</url>
+<price>62990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_P_55e2d0dc8279d.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 Plus 64 ГБ серый космос"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8. iPhone 6 не просто больше предшественников — он лучше в каждой своей детали. Смартфон оснащён большим экраном диагональю 5,5 дюйма и мощным 64-разрядным процессором Apple A8. Приятный на ощупь бесшовный корпус с округлыми гранями выполнен из металла и стекла. Полностью обновлённая камера позволяет делать снимки и записывать видео профессионального уровня. За счёт улучшенной архитектуры более бережно расходуется заряд аккумулятора; а магазин App Store по-прежнему открывает доступ к сотням тысяч приложений и красочных игр.</description>
+</offer>
+
+<offer id="545" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=545</url>
+<price>62990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_P_55e2d12376372.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 Plus 64 ГБ серебристый"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8</description>
+</offer>
+
+<offer id="546" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=546</url>
+<price>62990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_P_55e2d170befa0.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 Plus 64 ГБ золотой"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="547" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=547</url>
+<price>69990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_P_55e2d1ca0dd98.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 Plus 128 ГБ серый космос"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="548" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=548</url>
+<price>69990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_P_55e2d20fb0a05.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 Plus 128 ГБ серебристый"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="549" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=549</url>
+<price>69990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPhone_6_P_55e2d2502cec1.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPhone 6 Plus 128 ГБ золотой"</name>
+<description>Самая совершенная модель iPhone, в которой идеально сочетаются безупречный дизайн, инновационная техническая начинка и функциональная система iOS 8.</description>
+</offer>
+
+<offer id="550" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=550</url>
+<price>25970.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>11</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_W_55e2d4ee7d0d7.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air Wi-Fi 16 ГБ серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="551" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=551</url>
+<price>25590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>11</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_W_55e2d56291b06.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air Wi-Fi 16 ГБ серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="552" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=552</url>
+<price>29990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>11</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_W_55e2d5ea36f19.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air Wi-Fi 32 ГБ серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="553" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=553</url>
+<price>29990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>11</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_W_55e2d61555622.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air Wi-Fi 32 ГБ серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="554" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=554</url>
+<price>31990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>11</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_W_55e2d669a4513.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air Wi-Fi + Cellular 16 ГБ серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="555" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=555</url>
+<price>31990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>11</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_W_55e2d6b58aea7.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air Wi-Fi + Cellular 16 ГБ серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="556" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=556</url>
+<price>35590.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>11</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_W_55e2d744bc9f7.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air Wi-Fi + Cellular 32 ГБ серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="557" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=557</url>
+<price>35990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>11</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_W_55e2d789debb7.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air Wi-Fi + Cellular 32 ГБ серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="558" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=558</url>
+<price>30990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2d9a7b92fd.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi 16 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="559" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=559</url>
+<price>30990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2d9e36ae6a.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi 16 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="560" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=560</url>
+<price>30990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2da191a5b0.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi 16 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="561" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=561</url>
+<price>34990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2dad403f96.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi + Cellular 16 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="562" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=562</url>
+<price>34990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2db0eb50c5.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi + Cellular 16 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="563" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=563</url>
+<price>34990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2db43aa137.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi + Cellular 16 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="564" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=564</url>
+<price>37990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2db9da0327.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi 64 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="565" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=565</url>
+<price>37990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2dbcef0421.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi 64 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="566" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=566</url>
+<price>37990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2dbffc6f9b.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi 64 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="567" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=567</url>
+<price>45990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2dc52a74c1.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi 128 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="568" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=568</url>
+<price>45990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2dc7a8e0ba.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi 128 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="569" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=569</url>
+<price>45990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2dcac536fd.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi 128 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="570" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=570</url>
+<price>47990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2dcf11af5b.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi + Cellular 64 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="571" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=571</url>
+<price>47990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2dd1fabf0e.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi + Cellular 64 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="572" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=572</url>
+<price>47990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2dd588858d.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi + Cellular 64 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="573" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=573</url>
+<price>53990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2ddb898e51.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi + Cellular 128 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="574" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=574</url>
+<price>53990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2ddee72592.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi + Cellular 128 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="575" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=575</url>
+<price>53990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_Air_2_55e2de24a0c31.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad Air 2 Wi-Fi + Cellular 128 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="576" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=576</url>
+<price>20490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2df73eac41.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 2 Wi-Fi 16 ГБ серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="577" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=577</url>
+<price>20490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2df9af2b43.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 2 Wi-Fi 16 ГБ серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="578" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=578</url>
+<price>24990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2dff2cead7.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 2 Wi-Fi 32 ГБ серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="579" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=579</url>
+<price>24990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e0203492e.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 2 Wi-Fi 32 ГБ серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="580" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=580</url>
+<price>27790.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e0718761b.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 2 Wi-Fi + Cellular 16 ГБ серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="581" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=581</url>
+<price>27990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e0b67348d.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 2 Wi-Fi + Cellular 16 ГБ серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="582" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=582</url>
+<price>30990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e10847e1b.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 2 Wi-Fi + Cellular 32 ГБ серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="583" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=583</url>
+<price>30990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e13063d91.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 2 Wi-Fi + Cellular 32 ГБ серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="584" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=584</url>
+<price>25490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e26100b5d.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi 16 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="585" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=585</url>
+<price>25490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e28eca522.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi 16 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="586" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=586</url>
+<price>25490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/MGNV2RU_A_55e2e2b902484.jpg</picture>
+<delivery>true</delivery> 
+<name>MGNV2RU/A"</name>
+<description></description>
+</offer>
+
+<offer id="587" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=587</url>
+<price>32990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e315a7b7f.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi 64 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="588" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=588</url>
+<price>32990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e33d7ca48.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi 64 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="589" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=589</url>
+<price>32990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e3821b264.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi 64 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="590" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=590</url>
+<price>33490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e3e532124.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi + Cellular 16 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="591" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=591</url>
+<price>33490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e412619ec.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi + Cellular 16 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="592" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=592</url>
+<price>33490.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e454a3330.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi + Cellular 16 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="593" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=593</url>
+<price>37990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e489a337d.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi 128 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="594" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=594</url>
+<price>37990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e4ac5df8c.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi 128 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="595" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=595</url>
+<price>37990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e4d11707f.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi 128 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="596" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=596</url>
+<price>39990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e5090b9aa.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi + Cellular 64 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="597" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=597</url>
+<price>39990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e536f08d1.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi + Cellular 64 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="598" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=598</url>
+<price>39990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e58d72ea4.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi + Cellular 64 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="599" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=599</url>
+<price>45990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e6096b501.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi + Cellular 128 ГБ, серебристый"</name>
+<description></description>
+</offer>
+
+<offer id="600" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=600</url>
+<price>45990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e666d185a.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi + Cellular 128 ГБ, серый космос"</name>
+<description></description>
+</offer>
+
+<offer id="601" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=601</url>
+<price>45990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_iPad_mini__55e2e69142db9.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple iPad mini 3 Wi-Fi + Cellular 128 ГБ, золотой"</name>
+<description></description>
+</offer>
+
+<offer id="602" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=602</url>
+<price>34990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>19</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mac_mini_C_55e2ea2324491.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mac mini Core i5 1,4 ГГц, 4 ГБ, HDD 500 ГБ, Intel HD 5000"</name>
+<description></description>
+</offer>
+
+<offer id="603" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=603</url>
+<price>47990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>19</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mac_mini_C_55e2ea6e040a4.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mac mini Core i5 2,6 ГГц, 8 ГБ, HDD 1 TБ, Intel Iris"</name>
+<description></description>
+</offer>
+
+<offer id="604" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=604</url>
+<price>68990.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>19</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/Apple_Mac_mini_C_55e2eac6088b0.jpg</picture>
+<delivery>true</delivery> 
+<name>Apple Mac mini Core i5 2,8 ГГц, 8 ГБ, Fusion Drive 1 TБ, Intel Iris"</name>
+<description></description>
+</offer>
+
+<offer id="605" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=605</url>
+<price>82691.25</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Swarov_56277589e0505.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Swarovski Edition 16 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovski</description>
+</offer>
+
+<offer id="606" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=606</url>
+<price>84941.25</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Swarov_56277d92c4687.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Swarovski Edition 32 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovski</description>
+</offer>
+
+<offer id="607" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=607</url>
+<price>87191.25</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Swarov_56279360768fb.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Swarovski Edition 64 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovski</description>
+</offer>
+
+<offer id="608" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=608</url>
+<price>75627.24</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Gold_E_56279a61b55f4.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Gold Edition 16 ГБ"</name>
+<description>Только представьте, идеально ровную, отполированную до зеркального отражения поверхность, старательно покрытую чистейшим золотом 24 карата с нано алмазными частицами.</description>
+</offer>
+
+<offer id="609" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=609</url>
+<price>77967.24</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Gold_E_56279f0aa57ff.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Gold Edition 32 ГБ"</name>
+<description>Только представьте, идеально ровную, отполированную до зеркального отражения поверхность, старательно покрытую чистейшим золотом 24 карата с нано алмазными частицами.</description>
+</offer>
+
+<offer id="611" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=611</url>
+<price>77322.80</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Gold_E_5627af98e301f.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Gold Edition (Elite) 16 ГБ"</name>
+<description>Только представьте, идеально ровную, отполированную до зеркального отражения поверхность, старательно покрытую чистейшим золотом 24 карата с нано алмазными частицами.</description>
+</offer>
+
+<offer id="610" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=610</url>
+<price>80307.24</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Gold_E_56279feb07547.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Gold Edition 64 ГБ"</name>
+<description>Только представьте, идеально ровную, отполированную до зеркального отражения поверхность, старательно покрытую чистейшим золотом 24 карата с нано алмазными частицами.</description>
+</offer>
+
+<offer id="612" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=612</url>
+<price>79812.80</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Gold_E_5627b086970d9.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Gold Edition (Elite) 32 ГБ"</name>
+<description>Только представьте, идеально ровную, отполированную до зеркального отражения поверхность, старательно покрытую чистейшим золотом 24 карата с нано алмазными частицами.</description>
+</offer>
+
+<offer id="613" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=613</url>
+<price>82302.80</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Gold_E_5627b0fd387c5.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Gold Edition (Elite) 64 ГБ"</name>
+<description>Только представьте, идеально ровную, отполированную до зеркального отражения поверхность, старательно покрытую чистейшим золотом 24 карата с нано алмазными частицами.</description>
+</offer>
+
+<offer id="614" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=614</url>
+<price>101870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Swarov_5627b572f3926.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Swarovski Edition (Elite) 16 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovski</description>
+</offer>
+
+<offer id="615" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=615</url>
+<price>104870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Swarov_5627b69e06a42.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Swarovski Edition (Elite) 32 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovski</description>
+</offer>
+
+<offer id="616" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=616</url>
+<price>107870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Swarov_5627b70bd0f7f.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Swarovski Edition (Elite) 64 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovski</description>
+</offer>
+
+<offer id="617" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=617</url>
+<price>102224.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Sparkl_5627b92075475.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Sparkling Diamond 16 ГБ"</name>
+<description>А вы знаете, что такое роскошный блеск?
+1000 маленьких граненых кристаллов Swarovski, один к одному размещенных на золотой поверхности лучшего смартфона.</description>
+</offer>
+
+<offer id="618" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=618</url>
+<price>104624.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Sparkl_5627bac2040a8.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Sparkling Diamond 32 ГБ"</name>
+<description>А вы знаете, что такое роскошный блеск?
+1000 маленьких граненых кристаллов Swarovski, один к одному размещенных на золотой поверхности лучшего смартфона.</description>
+</offer>
+
+<offer id="619" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=619</url>
+<price>107024.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_5s_Sparkl_5627baee16d3f.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 5s Sparkling Diamond 64 ГБ"</name>
+<description>А вы знаете, что такое роскошный блеск?
+1000 маленьких граненых кристаллов Swarovski, один к одному размещенных на золотой поверхности лучшего смартфона.</description>
+</offer>
+
+<offer id="620" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=620</url>
+<price>119870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Gold_Ed_5627c9ef7f4d9.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Gold Edition 16 ГБ"</name>
+<description>Только представьте идеально ровную, отполированную до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытую чистейшим золотом 999 пробы.</description>
+</offer>
+
+<offer id="621" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=621</url>
+<price>124870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Gold_Ed_5627ccd6000a6.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Gold Edition 64 ГБ"</name>
+<description>Только представьте идеально ровную, отполированную до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытую чистейшим золотом 999 пробы.</description>
+</offer>
+
+<offer id="622" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=622</url>
+<price>128870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Gold_Ed_5627ccbb82819.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Gold Edition 128 ГБ"</name>
+<description>Только представьте идеально ровную, отполированную до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытую чистейшим золотом 999 пробы.</description>
+</offer>
+
+<offer id="623" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=623</url>
+<price>125870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Plus_Go_5627cd2d57ea0.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Plus Gold Edition 16 ГБ"</name>
+<description>Только представьте идеально ровную, отполированную до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытую чистейшим золотом 999 пробы.</description>
+</offer>
+
+<offer id="624" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=624</url>
+<price>130870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Plus_Go_5627cf13bb96f.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Plus Gold Edition 64 ГБ"</name>
+<description>Только представьте идеально ровную, отполированную до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытую чистейшим золотом 999 пробы.</description>
+</offer>
+
+<offer id="625" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=625</url>
+<price>134870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Plus_Go_5627d01eaadc1.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Plus Gold Edition 128 ГБ"</name>
+<description>Только представьте идеально ровную, отполированную до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытую чистейшим золотом 999 пробы.</description>
+</offer>
+
+<offer id="626" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=626</url>
+<price>121870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Swarovs_5627d37fb5f2f.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Swarovski Edition 16 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovsk</description>
+</offer>
+
+<offer id="627" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=627</url>
+<price>126870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Swarovs_5627d8f810627.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Swarovski Edition 64 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovsk</description>
+</offer>
+
+<offer id="628" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=628</url>
+<price>130870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Swarovs_5627da3d5c008.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Swarovski Edition 128  ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovsk</description>
+</offer>
+
+<offer id="629" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=629</url>
+<price>127870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Plus_Sw_5627daa0426c0.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Plus Swarovski Edition 16 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovsk</description>
+</offer>
+
+<offer id="630" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=630</url>
+<price>132870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Plus_Sw_5627db27215e5.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Plus Swarovski Edition 64 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovsk</description>
+</offer>
+
+<offer id="631" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=631</url>
+<price>136870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Plus_Sw_5627dc0f2980b.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Plus Swarovski Edition 128 ГБ"</name>
+<description>Золото 24 карата, зеркальная полировка, и зеркальная инкрустация боковых + задних панелей и логотипа оригинальными кристаллами Swarovsk</description>
+</offer>
+
+<offer id="632" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=632</url>
+<price>124870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Platinu_5627e94ea6439.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Platinum Edition 16 ГБ"</name>
+<description>Идеально ровная, отполированная до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытая самым дорогим в мире металлом.</description>
+</offer>
+
+<offer id="633" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=633</url>
+<price>129870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Platinu_5627ecc33cadc.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Platinum Edition 64 ГБ"</name>
+<description>Идеально ровная, отполированная до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытая самым дорогим в мире металлом.</description>
+</offer>
+
+<offer id="634" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=634</url>
+<price>133870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Platinu_5627ed1769765.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Platinum Edition 128 ГБ"</name>
+<description>Идеально ровная, отполированная до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытая самым дорогим в мире металлом.</description>
+</offer>
+
+<offer id="635" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=635</url>
+<price>130870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Plus_Pl_5627ed7936d0a.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Plus Platinum Edition 16 ГБ"</name>
+<description>Идеально ровная, отполированная до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытая самым дорогим в мире металлом.</description>
+</offer>
+
+<offer id="636" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=636</url>
+<price>135870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Plus_Pl_5627eec9520c8.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Plus Platinum Edition 64 ГБ"</name>
+<description>Идеально ровная, отполированная до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытая самым дорогим в мире металлом.</description>
+</offer>
+
+<offer id="637" available="true" bid="11">
+<url>http://prom2u.ru/index.php?page=shop.product_details&amp;flypage=shop.flypage&amp;option=com_virtuemart&amp;product_id=637</url>
+<price>139870.00</price>
+<currencyId>RUR</currencyId>
+<categoryId>97</categoryId>
+<picture>http://prom2u.ru/components/com_virtuemart/shop_image/product/iPhone_6_Plus_Pl_5627ef370808e.jpg</picture>
+<delivery>true</delivery> 
+<name>iPhone 6 Plus Platinum Edition 128 ГБ"</name>
+<description>Идеально ровная, отполированная до зеркального отражения поверхность лучшего в мире смартфона, старательно покрытая самым дорогим в мире металлом.</description>
+</offer>
+</offers>
+</shop>
+</yml_catalog>

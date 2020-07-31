@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE yml_catalog SYSTEM "shops.dtd"><yml_catalog date="2016-06-27 04:30:04"><shop><name>FLAPRU</name><company>Flapru</company><url>http://flapru.ru/</url><currencies><currency id="RUR" rate="1" plus="0"/></currencies><categories><category id="9222">Зоотовары</category><category id="9335" parentId="9222">Товары для собак</category><category id="9477" parentId="9335">Украшения для собак</category><category id="9480" parentId="9477">Ожерелья</category><category id="9481" parentId="9477">Резинки и заколки</category><category id="168885" parentId="9477">Кулоны</category></categories><offers><offer id="1158232" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1158232/</url>
+				<price>359.00</price>
+				        <prices>
+                            <price>
+                              <value>249</value>
+                             <quantity>41</quantity>
+                            </price>
+                        </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9480</categoryId>
+				<picture>http://image.buy45.ru/images/750088/0/700.jpg</picture><picture>http://image.buy45.ru/images/750088/1/700.jpg</picture>
+				<vendorCode>750088</vendorCode>
+				<delivery>true</delivery>
+				<name>Украшение шик-модерн, квадратные подвески на плетёной затяжке, фиолетовые кристаллы, 17-26 см. 750</name>
+				<description><![CDATA[Роскошное ожерелье с мерцающими кристаллами будет изысканно смотреться на вашем любимом питомце! оригинальная плетеная затяжка черного цвета легко и надежно фиксируется на шее животного. благодаря большому выбору оттенков украшение можно подобрать к любому наряду!  на нашем сайте вы также можете приобрести стильные бантики, оригинальные ошейники и поводки с бусинами, кружевами и рюшами! стиль и роскошь всегда в моде!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">105 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">60 шт.</param><param name="Тип индивидуальной упаковки">Картонная коробка</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">пластик</param><param name="Производитель">-</param>
+				</offer><offer id="1158240" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1158240/</url>
+				<price>324</price>
+				    <prices>
+                        <price>
+                          <value>324</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9480</categoryId>
+				<picture>http://image.buy45.ru/images/1044245/0/140.jpg</picture><picture>http://image.buy45.ru/images/1044245/1/140.jpg</picture><picture>http://image.buy45.ru/images/1044245/2/140.jpg</picture>
+				<vendorCode>1044245</vendorCode>
+				<delivery>true</delivery>
+				<name>Украшение на кожаном шнурке сердце со стразами  (комплект из 2 шт.)</name>
+				<description><![CDATA[Домашние животные - это наши преданные и верные друзья! они нас умиляют, дают массу позитивных эмоций! поэтому заботиться о питомцах - это наш долг! украшение на кожаном шнурке сердце со стразами - это необходимый товар для вашего питомца и вас, по выгодной цене. покупая оптом зоотовары, вы экономите деньги и время!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">11 г.</param><param name="Объем">0.061 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">90 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Производитель">-</param>
+				</offer><offer id="1158241" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1158241/</url>
+				<price>324</price>
+				    <prices>
+                        <price>
+                          <value>324</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9480</categoryId>
+				<picture>http://image.buy45.ru/images/1044242/0/140.jpg</picture><picture>http://image.buy45.ru/images/1044242/1/140.jpg</picture><picture>http://image.buy45.ru/images/1044242/2/140.jpg</picture><picture>http://image.buy45.ru/images/1044242/3/140.jpg</picture>
+				<vendorCode>1044242</vendorCode>
+				<delivery>true</delivery>
+				<name>Украшение на кожаном шнурке косточка со стразами, микс цветов  (комплект из 2 шт.)</name>
+				<description><![CDATA[Домашние животные - это наши преданные и верные друзья! они нас умиляют, дают массу позитивных эмоций! поэтому заботиться о питомцах - это наш долг! украшение на кожаном шнурке косточка со стразами, микс цветов - это необходимый товар для вашего питомца и вас, по выгодной цене. покупая оптом зоотовары, вы экономите деньги и время!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">11 г.</param><param name="Объем">0.061 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Производитель">-</param>
+				</offer><offer id="1158246" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1158246/</url>
+				<price>450</price>
+				    <prices>
+                        <price>
+                          <value>450</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1154082/0/140.jpg</picture><picture>http://image.buy45.ru/images/1154082/1/140.jpg</picture>
+				<vendorCode>1154082</vendorCode>
+				<delivery>true</delivery>
+				<name>Резинки для собак пастель, 95-100 шт в наборе, микс цветов  (комплект из 10 шт.)</name>
+				<description><![CDATA[Резинки для собак пастель, 95-100 шт в наборе, микс цветов &ndash; оригинальная вещица для вашего питомца. ежедневный уход за вашим любимцем и дрессировка превратятся в удовольствие с нашими товарами. порадуйте себя или своих знакомых забавной новинкой, или подарите ее человеку, который давно планировал завести себе четвероногого друга.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">10 г.</param><param name="Объем">0.064 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">1500 шт.</param><param name="Тип индивидуальной упаковки">п/п пакет</param><param name="Производитель">-</param>
+				</offer><offer id="1158248" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1158248/</url>
+				<price>470</price>
+				    <prices>
+                        <price>
+                          <value>470</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1120705/0/140.jpg</picture><picture>http://image.buy45.ru/images/1120705/1/140.jpg</picture>
+				<vendorCode>1120705</vendorCode>
+				<delivery>true</delivery>
+				<name>Резинки для собак повышенной прочности точки, 100 шт в наборе, микс цветов  (комплект из 10 шт.)</name>
+				<description><![CDATA[Для счастливого обладателя домашнего животного чрезвычайно важно здоровье питомца. резинки для собак повышенной прочности точки, 100 шт в наборе, микс цветов - товар абсолютно безопасный для любимца, продуманный в мельчайших деталях. индивидуальный дизайн подчеркнет уникальность  и неповторимость не только животного, но и его хозяев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">7 г.</param><param name="Объем">0.005 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">1000 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Кол-во штук в наборе">100</param><param name="Кол-во единиц в фасовке">10</param><param name="Производитель">-</param>
+				</offer><offer id="1158249" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1158249/</url>
+				<price>540</price>
+				    <prices>
+                        <price>
+                          <value>540</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1154081/0/140.jpg</picture><picture>http://image.buy45.ru/images/1154081/1/140.jpg</picture>
+				<vendorCode>1154081</vendorCode>
+				<delivery>true</delivery>
+				<name>Резинки для собак, 95-100 шт в наборе, микс цветов  (комплект из 12 шт.)</name>
+				<description><![CDATA[Домашние животные - это наши преданные и верные друзья! они нас умиляют, дают массу позитивных эмоций! поэтому заботиться о питомцах - это наш долг! резинки для собак, 95-100 шт в наборе, микс цветов - это необходимый товар для вашего питомца и вас, по выгодной цене. покупая оптом зоотовары, вы экономите деньги и время!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">10 г.</param><param name="Объем">0.048 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">1500 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Размер">8 см &amp;times; 8 см &amp;times; 1 см</param><param name="Размер упаковки">8 см &amp;times; 8 см &amp;times; 1 см</param><param name="Кол-во единиц в фасовке">12</param><param name="Производитель">-</param>
+				</offer><offer id="1158251" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1158251/</url>
+				<price>360</price>
+				    <prices>
+                        <price>
+                          <value>360</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/742674/0/140.jpg</picture><picture>http://image.buy45.ru/images/742674/1/140.jpg</picture><picture>http://image.buy45.ru/images/742674/2/140.jpg</picture><picture>http://image.buy45.ru/images/742674/3/140.jpg</picture>
+				<vendorCode>742674</vendorCode>
+				<delivery>true</delivery>
+				<name>Заколка-шляпка серия блестки, захват 3 см, синяя, 6,0 х 2,5 см  (комплект из 4 шт.)</name>
+				<description><![CDATA[Собираетесь со своей любимицей на светский раут? тогда вам просто не обойтись без стильной шляпки на заколочке! аксессуар отлично закрепляет шерсть и нарядно смотрится на голове собачки!очаровательный аксессуар для изысканной особы!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.254 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">250 шт.</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">пластик</param><param name="Кол-во единиц в фасовке">25</param><param name="Производитель">-</param>
+				</offer><offer id="1421809" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421809/</url>
+				<price>335</price>
+				    <prices>
+                        <price>
+                          <value>335</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1148761/0/140.jpg</picture><picture>http://image.buy45.ru/images/1148761/1/140.jpg</picture>
+				<vendorCode>1148761</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик кофейный с кругами на латексной резинке, 4,5 х 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Бантик кофейный с кругами на латексной резинке, 4,5 х 2,5 см, набор 4 шт &ndash; оригинальная вещица для вашего питомца. ежедневный уход за вашим любимцем и дрессировка превратятся в удовольствие с нашими товарами. порадуйте себя или своих знакомых забавной новинкой, или подарите ее человеку, который давно планировал завести себе четвероногого друга.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">301 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421813" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421813/</url>
+				<price>324</price>
+				    <prices>
+                        <price>
+                          <value>324</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/872667/0/140.jpg</picture><picture>http://image.buy45.ru/images/872667/1/140.jpg</picture>
+				<vendorCode>872667</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик кремовый в горошек на латексной резинке, 3,5 х 2,2 см, набор 4 шт  (комплект из 6 шт.)</name>
+				<description><![CDATA[Домашние животные - это наши преданные и верные друзья! они нас умиляют, дают массу позитивных эмоций! поэтому заботиться о питомцах - это наш долг! бантик кремовый в горошек на латексной резинке, 3,5 х 2,2 см, набор 4 шт - это необходимый товар для вашего питомца и вас, по выгодной цене. покупая оптом зоотовары, вы экономите деньги и время!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">4 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">600 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421815" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421815/</url>
+				<price>270</price>
+				    <prices>
+                        <price>
+                          <value>270</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/872668/0/140.jpg</picture><picture>http://image.buy45.ru/images/872668/1/140.jpg</picture>
+				<vendorCode>872668</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик зелено-розовый на латексной резинке, 4 х 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Как кропотливо и тщательно человек выбирает вещи для себя, точно также и для своих четвероногих любимцев. бантик зелено-розовый на латексной резинке, 4 х 2,5 см, набор 4 шт - безопасный товар, сделанный из современных материалов, порадует  удобством использования как самих животных, так и их хозяев. необычный дизайн придаст питомцу индивидуальность и удовлетворит вкус самых взыскательных зоовладельцев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">401 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421817" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421817/</url>
+				<price>270</price>
+				    <prices>
+                        <price>
+                          <value>270</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1148746/0/140.jpg</picture><picture>http://image.buy45.ru/images/1148746/2/140.jpg</picture>
+				<vendorCode>1148746</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик красный на латексной резинке, 4 х 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Как кропотливо и тщательно человек выбирает вещи для себя, точно также и для своих четвероногих любимцев. бантик красный на латексной резинке, 4 х 2,5 см, набор 4 шт - безопасный товар, сделанный из современных материалов, порадует  удобством использования как самих животных, так и их хозяев. необычный дизайн придаст питомцу индивидуальность и удовлетворит вкус самых взыскательных зоовладельцев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">400 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421818" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421818/</url>
+				<price>300</price>
+				    <prices>
+                        <price>
+                          <value>300</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/872670/0/140.jpg</picture><picture>http://image.buy45.ru/images/872670/1/140.jpg</picture>
+				<vendorCode>872670</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик розовый с цветами на латексной резинке, 3,5 * 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Владельцы домашних животных ставят заботу о братьях наших меньших превыше всего, ведь мы в ответственности за тех, кого приручили. вот почему зоолюбители выбирают товары нашей компании, например бантик розовый с цветами на латексной резинке, 3,5 * 2,5 см, набор 4 шт. этот товар обладает высоким качеством, сделан из проверенных материалов, использовать его легко и приятно. в каталоге вы найдете все, что нужно для вашего питомца по низким ценам.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421819" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421819/</url>
+				<price>270</price>
+				    <prices>
+                        <price>
+                          <value>270</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1148760/0/140.jpg</picture><picture>http://image.buy45.ru/images/1148760/1/140.jpg</picture>
+				<vendorCode>1148760</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик бежевый с цветами на латексной резинке, 4,5 х 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Бантик бежевый с цветами на латексной резинке, 4,5 х 2,5 см, набор 4 шт &ndash; оригинальная вещица для вашего питомца. ежедневный уход за вашим любимцем и дрессировка превратятся в удовольствие с нашими товарами. порадуйте себя или своих знакомых забавной новинкой, или подарите ее человеку, который давно планировал завести себе четвероногого друга.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">4 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">301 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421820" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421820/</url>
+				<price>270</price>
+				    <prices>
+                        <price>
+                          <value>270</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1148751/0/140.jpg</picture><picture>http://image.buy45.ru/images/1148751/1/140.jpg</picture>
+				<vendorCode>1148751</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик красный с цветами на латексной резинке, 3,5 * 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Бантик красный с цветами на латексной резинке, 3,5 * 2,5 см, набор 4 шт &ndash; оригинальная вещица для вашего питомца. ежедневный уход за вашим любимцем и дрессировка превратятся в удовольствие с нашими товарами. порадуйте себя или своих знакомых забавной новинкой, или подарите ее человеку, который давно планировал завести себе четвероногого друга.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">301 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421821" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421821/</url>
+				<price>335</price>
+				    <prices>
+                        <price>
+                          <value>335</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/872671/0/140.jpg</picture><picture>http://image.buy45.ru/images/872671/1/140.jpg</picture>
+				<vendorCode>872671</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик оранжевый с цветами на латексной резинке, 3,5 х 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Бантик оранжевый с цветами на латексной резинке, 3,5 х 2,5 см, набор 4 шт &ndash; оригинальная вещица для вашего питомца. ежедневный уход за вашим любимцем и дрессировка превратятся в удовольствие с нашими товарами. порадуйте себя или своих знакомых забавной новинкой, или подарите ее человеку, который давно планировал завести себе четвероногого друга.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">201 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421823" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421823/</url>
+				<price>325</price>
+				    <prices>
+                        <price>
+                          <value>325</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1148762/0/140.jpg</picture><picture>http://image.buy45.ru/images/1148762/1/140.jpg</picture>
+				<vendorCode>1148762</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик розовый с бабочками на латексной резинке, 4,5 х 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Владельцы домашних животных ставят заботу о братьях наших меньших превыше всего, ведь мы в ответственности за тех, кого приручили. вот почему зоолюбители выбирают товары нашей компании, например бантик розовый с бабочками на латексной резинке, 4,5 х 2,5 см, набор 4 шт. этот товар обладает высоким качеством, сделан из проверенных материалов, использовать его легко и приятно. в каталоге вы найдете все, что нужно для вашего питомца по низким ценам.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">6 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">301 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421827" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421827/</url>
+				<price>288</price>
+				    <prices>
+                        <price>
+                          <value>288</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/872675/0/140.jpg</picture><picture>http://image.buy45.ru/images/872675/1/140.jpg</picture>
+				<vendorCode>872675</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик двуслойный бело-розовый на латексной резинке, 4,3 х 2,5 см, набор 4 шт  (комплект из 4 шт.)</name>
+				<description><![CDATA[Владельцы домашних животных ставят заботу о братьях наших меньших превыше всего, ведь мы в ответственности за тех, кого приручили. вот почему зоолюбители выбирают товары нашей компании, например бантик двуслойный бело-розовый на латексной резинке, 4,3 х 2,5 см, набор 4 шт. этот товар обладает высоким качеством, сделан из проверенных материалов, использовать его легко и приятно. в каталоге вы найдете все, что нужно для вашего питомца по низким ценам.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">7 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421828" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421828/</url>
+				<price>270</price>
+				    <prices>
+                        <price>
+                          <value>270</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1148754/0/140.jpg</picture><picture>http://image.buy45.ru/images/1148754/1/140.jpg</picture>
+				<vendorCode>1148754</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик вишневый с принтом на латексной резинке, 6 х 4,5 см, набор 2 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Для счастливого обладателя домашнего животного чрезвычайно важно здоровье питомца. бантик вишневый с принтом на латексной резинке, 6 х 4,5 см, набор 2 шт - товар абсолютно безопасный для любимца, продуманный в мельчайших деталях. индивидуальный дизайн подчеркнет уникальность  и неповторимость не только животного, но и его хозяев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">2</param><param name="Производитель">-</param>
+				</offer><offer id="1421832" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421832/</url>
+				<price>270</price>
+				    <prices>
+                        <price>
+                          <value>270</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/872674/0/140.jpg</picture><picture>http://image.buy45.ru/images/872674/1/140.jpg</picture>
+				<vendorCode>872674</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик розовый в горошек на латексной резинке, 4,8 х 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Бантик розовый в горошек на латексной резинке, 4,8 х 2,5 см, набор 4 шт &ndash; оригинальная вещица для вашего питомца. ежедневный уход за вашим любимцем и дрессировка превратятся в удовольствие с нашими товарами. порадуйте себя или своих знакомых забавной новинкой, или подарите ее человеку, который давно планировал завести себе четвероногого друга.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421836" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421836/</url>
+				<price>440</price>
+				    <prices>
+                        <price>
+                          <value>440</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/872676/0/140.jpg</picture><picture>http://image.buy45.ru/images/872676/1/140.jpg</picture>
+				<vendorCode>872676</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик на латексной резинке, 5 х 3,6 см, набор 4 шт, арбузный  (комплект из 10 шт.)</name>
+				<description><![CDATA[Домашние животные - это наши преданные и верные друзья! они нас умиляют, дают массу позитивных эмоций! поэтому заботиться о питомцах - это наш долг! бантик на латексной резинке, 5 х 3,6 см, набор 4 шт, арбузный - это необходимый товар для вашего питомца и вас, по выгодной цене. покупая оптом зоотовары, вы экономите деньги и время!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">6 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">701 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421837" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421837/</url>
+				<price>288</price>
+				    <prices>
+                        <price>
+                          <value>288</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1148744/0/140.jpg</picture><picture>http://image.buy45.ru/images/1148744/1/140.jpg</picture>
+				<vendorCode>1148744</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик двуслойный бело-голубой на латексной резинке, 4,3 х 2,5 см, набор 4 шт  (комплект из 4 шт.)</name>
+				<description><![CDATA[Как кропотливо и тщательно человек выбирает вещи для себя, точно также и для своих четвероногих любимцев. бантик двуслойный бело-голубой на латексной резинке, 4,3 х 2,5 см, набор 4 шт - безопасный товар, сделанный из современных материалов, порадует  удобством использования как самих животных, так и их хозяев. необычный дизайн придаст питомцу индивидуальность и удовлетворит вкус самых взыскательных зоовладельцев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">7 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="1421839" available="true" selling_type="u">
+				<url>http://flapru.ru/product/1421839/</url>
+				<price>490</price>
+				    <prices>
+                        <price>
+                          <value>490</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://image.buy45.ru/images/1148757/0/140.jpg</picture><picture>http://image.buy45.ru/images/1148757/1/140.jpg</picture>
+				<vendorCode>1148757</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик блестящий рыжий на латексной резинке, 4,5 х 2 см, набор 4 шт  (комплект из 10 шт.)</name>
+				<description><![CDATA[Владельцы домашних животных ставят заботу о братьях наших меньших превыше всего, ведь мы в ответственности за тех, кого приручили. вот почему зоолюбители выбирают товары нашей компании, например бантик блестящий рыжий на латексной резинке, 4,5 х 2 см, набор 4 шт. этот товар обладает высоким качеством, сделан из проверенных материалов, использовать его легко и приятно. в каталоге вы найдете все, что нужно для вашего питомца по низким ценам.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">3 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">301 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="2074781" available="true" selling_type="u">
+				<url>http://flapru.ru/product/2074781/</url>
+				<price>360</price>
+				    <prices>
+                        <price>
+                          <value>360</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9481</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/742/742673/0/280.jpg</picture>
+				<vendorCode>742673</vendorCode>
+				<delivery>true</delivery>
+				<name>Заколка-шляпка серия блестки, захват 3 см, красная, 6,0 х 2,5 см  (комплект из 4 шт.)</name>
+				<description><![CDATA[Собираетесь со своей любимицей на светский раут? тогда вам просто не обойтись без стильной шляпки на заколочке! аксессуар отлично закрепляет шерсть и нарядно смотрится на голове собачки!очаровательный аксессуар для изысканной особы!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.254 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">249 шт.</param><param name="Тип индивидуальной упаковки">п/п пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">пластик</param><param name="Кол-во единиц в фасовке">20</param><param name="Производитель">-</param>
+				</offer><offer id="3042020" available="true" selling_type="u">
+				<url>http://flapru.ru/product/3042020/</url>
+				<price>235</price>
+				    <prices>
+                        <price>
+                          <value>235</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9480</categoryId>
+				<picture>http://image.buy45.ru/images/1418233/2/140.jpg</picture><picture>http://image.buy45.ru/images/1418233/1/140.jpg</picture><picture>http://image.buy45.ru/images/1418233/0/140.jpg</picture>
+				<vendorCode>1418233</vendorCode>
+				<delivery>true</delivery>
+				<name>Ожерелье для животных с пластиковыми бусинами, обхват шеи 16 см  (комплект из 5 шт.)</name>
+				<description><![CDATA[Домашние животные - это наши преданные и верные друзья! они нас умиляют, дают массу позитивных эмоций! поэтому заботиться о питомцах - это наш долг! ожерелье для животных с пластиковыми бусинами, обхват шеи 16 см - это необходимый товар для вашего питомца и вас, по выгодной цене. покупая оптом зоотовары, вы экономите деньги и время!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">7 г.</param><param name="Объем">0.023 л.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">50 шт.</param><param name="Размер">9 см &amp;times; 2,5 см &amp;times; 1 см</param><param name="Размер упаковки">9 см &amp;times; 2,5 см &amp;times; 1 см</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">пластик</param><param name="Кол-во единиц в фасовке">5</param><param name="Производитель">-</param>
+				</offer><offer id="3042021" available="true" selling_type="u">
+				<url>http://flapru.ru/product/3042021/</url>
+				<price>286</price>
+				    <prices>
+                        <price>
+                          <value>286</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>9480</categoryId>
+				<picture>http://image.buy45.ru/images/1418234/2/140.jpg</picture><picture>http://image.buy45.ru/images/1418234/1/140.jpg</picture><picture>http://image.buy45.ru/images/1418234/0/140.jpg</picture>
+				<vendorCode>1418234</vendorCode>
+				<delivery>true</delivery>
+				<name>Ожерелье для животных блеск, обхват шеи 16 см  (комплект из 2 шт.)</name>
+				<description><![CDATA[Владельцы домашних животных ставят заботу о братьях наших меньших превыше всего, ведь мы в ответственности за тех, кого приручили. вот почему зоолюбители выбирают товары нашей компании, например ожерелье для животных блеск, обхват шеи 16 см. этот товар обладает высоким качеством, сделан из проверенных материалов, использовать его легко и приятно. в каталоге вы найдете все, что нужно для вашего питомца по низким ценам.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">16 г.</param><param name="Объем">0.015 л.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">40 шт.</param><param name="Размер">10,5 см &amp;times; 2 см &amp;times; 0,7 см</param><param name="Размер упаковки">10,5 см &amp;times; 2 см &amp;times; 0,7 см</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">пластик</param><param name="Кол-во единиц в фасовке">2</param><param name="Производитель">-</param>
+				</offer><offer id="7122614" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7122614/</url>
+				<price>732</price>
+				    <prices>
+                        <price>
+                          <value>732</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225429</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/736/736531/0/280.jpg</picture>
+				<vendorCode>736531</vendorCode>
+				<delivery>true</delivery>
+				<name>Адресник под гравировку бантик, глянцевый металлик, микс цветов, подвес-карабин 3,0 х 1,0 х 0,2 см (комплект из 12 шт.)</name>
+				<description><![CDATA[Этот стильный адресник в форме бантика не только украсит вашего питомца, но и поможет ему вернуться домой. вам нужно всего лишь нанести гравировку: на лицевой стороне медальона можно написать кличку животного, а на обратной   станет отличным подарком любимой кошечке или собачке!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.034 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">400 шт.</param><param name="Тип индивидуальной упаковки">Без упаковки</param><param name="Материал">металл</param><param name="Кол-во единиц в фасовке">12</param><param name="Производитель">-</param>
+				</offer><offer id="7122618" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7122618/</url>
+				<price>324</price>
+				    <prices>
+                        <price>
+                          <value>324</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225429</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/104/1044243/0/280.jpg</picture>
+				<vendorCode>1044243</vendorCode>
+				<delivery>true</delivery>
+				<name>Украшение на кожаном шнурке бабочка со стразами  (комплект из 2 шт.)</name>
+				<description><![CDATA[Как кропотливо и тщательно человек выбирает вещи для себя, точно также и для своих четвероногих любимцев. украшение на кожаном шнурке бабочка со стразами - безопасный товар, сделанный из современных материалов, порадует  удобством использования как самих животных, так и их хозяев. необычный дизайн придаст питомцу индивидуальность и удовлетворит вкус самых взыскательных зоовладельцев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.090 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во единиц в фасовке">10</param><param name="Производитель">-</param>
+				</offer><offer id="7122620" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7122620/</url>
+				<price>324</price>
+				    <prices>
+                        <price>
+                          <value>324</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225429</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/104/1044247/0/280.jpg</picture>
+				<vendorCode>1044247</vendorCode>
+				<delivery>true</delivery>
+				<name>Украшение на кожаном шнурке собачка со стразами  (комплект из 2 шт.)</name>
+				<description><![CDATA[Владельцы домашних животных ставят заботу о братьях наших меньших превыше всего, ведь мы в ответственности за тех, кого приручили. вот почему зоолюбители выбирают товары нашей компании, например украшение на кожаном шнурке собачка со стразами. этот товар обладает высоким качеством, сделан из проверенных материалов, использовать его легко и приятно. в каталоге вы найдете все, что нужно для вашего питомца по низким ценам.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">13 г.</param><param name="Объем">0.061 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Производитель">-</param>
+				</offer><offer id="7122622" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7122622/</url>
+				<price>324</price>
+				    <prices>
+                        <price>
+                          <value>324</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225429</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/104/1044244/0/280.jpg</picture>
+				<vendorCode>1044244</vendorCode>
+				<delivery>true</delivery>
+				<name>Украшение на кожаном шнурке сердечко со стразами, микс цветов  (комплект из 2 шт.)</name>
+				<description><![CDATA[Как кропотливо и тщательно человек выбирает вещи для себя, точно также и для своих четвероногих любимцев. украшение на кожаном шнурке сердечко со стразами, микс цветов - безопасный товар, сделанный из современных материалов, порадует  удобством использования как самих животных, так и их хозяев. необычный дизайн придаст питомцу индивидуальность и удовлетворит вкус самых взыскательных зоовладельцев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">10 г.</param><param name="Объем">0.090 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Кол-во единиц в фасовке">10</param><param name="Производитель">-</param>
+				</offer><offer id="7122624" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7122624/</url>
+				<price>324</price>
+				    <prices>
+                        <price>
+                          <value>324</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225429</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/104/1044246/0/280.jpg</picture>
+				<vendorCode>1044246</vendorCode>
+				<delivery>true</delivery>
+				<name>Украшение на кожаном шнурке цветок со стразами, микс цветов  (комплект из 2 шт.)</name>
+				<description><![CDATA[Для счастливого обладателя домашнего животного чрезвычайно важно здоровье питомца. украшение на кожаном шнурке цветок со стразами, микс цветов - товар абсолютно безопасный для любимца, продуманный в мельчайших деталях. индивидуальный дизайн подчеркнет уникальность  и неповторимость не только животного, но и его хозяев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.090 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Кол-во единиц в фасовке">10</param><param name="Производитель">-</param>
+				</offer><offer id="7122626" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7122626/</url>
+				<price>384</price>
+				    <prices>
+                        <price>
+                          <value>384</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225429</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/736/736526/0/280.jpg</picture>
+				<vendorCode>736526</vendorCode>
+				<delivery>true</delivery>
+				<name>Адресник со стразами и вкладышем косточка малый, 3,2 х 2 см  (комплект из 3 шт.)</name>
+				<description><![CDATA[Этот стильный адресник в форме аппетитной косточки не только украсит вашего питомца, но и поможет ему вернуться домой. медальон изготовлен из качественного и прочного металла, устойчивого к царапинам и износу. в яркий корпус вкладывается записка с контактами владельца. аксессуар легко крепится к ошейнику при помощи надежной застёжки.	адресник со стразами   станет отличным подарком любимой собачке или кошечке!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">11 г.</param><param name="Объем">0.034 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">391 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">металл</param><param name="Производитель">-</param>
+				</offer><offer id="7122628" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7122628/</url>
+				<price>528</price>
+				    <prices>
+                        <price>
+                          <value>528</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225429</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/736/736529/0/280.jpg</picture>
+				<vendorCode>736529</vendorCode>
+				<delivery>true</delivery>
+				<name>Адресник под гравировку лапка 3,5 х 3,5 см, микс цветов  (комплект из 12 шт.)</name>
+				<description><![CDATA[Владельцы домашних животных ставят заботу о братьях наших меньших превыше всего, ведь мы в ответственности за тех, кого приручили. вот почему зоолюбители выбирают товары нашей компании, например адресник под гравировку лапка 3,5 х 3,5 см, микс цветов. этот товар обладает высоким качеством, сделан из проверенных материалов, использовать его легко и приятно. в каталоге вы найдете все, что нужно для вашего питомца по низким ценам.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">6 г.</param><param name="Объем">0.034 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">1008 шт.</param><param name="Тип индивидуальной упаковки">п/п пакет</param><param name="Материал">металл</param><param name="Кол-во единиц в фасовке">12</param><param name="Производитель">-</param>
+				</offer><offer id="7122632" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7122632/</url>
+				<price>540</price>
+				    <prices>
+                        <price>
+                          <value>540</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225429</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/668/668442/0/280.jpg</picture>
+				<vendorCode>668442</vendorCode>
+				<delivery>true</delivery>
+				<name>Адресник лапа под гравировку телефона, 2 см, микс видов  (комплект из 12 шт.)</name>
+				<description><![CDATA[Как кропотливо и тщательно человек выбирает вещи для себя, точно также и для своих четвероногих любимцев. адресник под гравировку телефона лапка красный 2 см - безопасный товар, сделанный из современных материалов, порадует  удобством использования как самих животных, так и их хозяев. необычный дизайн придаст питомцу индивидуальность и удовлетворит вкус самых взыскательных зоовладельцев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">13 г.</param><param name="Объем">0.002 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">500 шт.</param><param name="Размер">0,5 см &amp;times; 6,5 см &amp;times; 13 см</param><param name="Размер упаковки">0,5 см &amp;times; 6,5 см &amp;times; 13 см</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">сталь</param><param name="Кол-во единиц в фасовке">12</param><param name="Производитель">-</param>
+				</offer><offer id="7126020" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126020/</url>
+				<price>278</price>
+				    <prices>
+                        <price>
+                          <value>278</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225595</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/736/736524/0/280.jpg</picture>
+				<vendorCode>736524</vendorCode>
+				<delivery>true</delivery>
+				<name>Адресник со стразами и вкладышем косточка, 4,3 х 2,8 см  (комплект из 2 шт.)</name>
+				<description><![CDATA[Этот стильный адресник в форме аппетитной косточки не только украсит вашего питомца, но и поможет ему вернуться домой. медальон изготовлен из качественного и прочного металла, устойчивого к царапинам и износу. в яркий корпус вкладывается записка с контактами владельца. аксессуар легко крепится к ошейнику при помощи надежной застёжки.	адресник со стразами   станет отличным подарком любимой собачке или кошечке!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">15 г.</param><param name="Объем">0.034 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">200 шт.</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">металл</param><param name="Кол-во единиц в фасовке">10</param><param name="Производитель">-</param>
+				</offer><offer id="7126026" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126026/</url>
+				<price>528</price>
+				    <prices>
+                        <price>
+                          <value>528</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225595</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/736/736527/0/280.jpg</picture>
+				<vendorCode>736527</vendorCode>
+				<delivery>true</delivery>
+				<name>Адресник под гравировку косточка 3,9 х 2,5 см, микс цветов  (комплект из 12 шт.)</name>
+				<description><![CDATA[Этот стильный адресник в форме косточки не только украсит вашего питомца, но и поможет ему вернуться домой. вам нужно всего лишь нанести гравировку: на лицевой стороне медальона можно написать кличку животного, а на обратной   станет отличным подарком любимой кошечке или собачке!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Объем">0.034 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">1008 шт.</param><param name="Материал">металл</param><param name="Кол-во единиц в фасовке">12</param><param name="Производитель">-</param>
+				</offer><offer id="7126032" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126032/</url>
+				<price>768</price>
+				    <prices>
+                        <price>
+                          <value>768</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225595</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/736/736530/0/280.jpg</picture>
+				<vendorCode>736530</vendorCode>
+				<delivery>true</delivery>
+				<name>Адресник под гравировку косточка объемная 3,2 х 2 см, микс цветов  (комплект из 12 шт.)</name>
+				<description><![CDATA[Этот стильный адресник в форме аппетитной косточки не только украсит вашего питомца, но и поможет ему вернуться домой. вам нужно всего лишь нанести гравировку: на лицевой стороне медальона можно написать кличку животного, а на обратной   станет отличным подарком любимой кошечке или собачке!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.034 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">504 шт.</param><param name="Тип индивидуальной упаковки">Без упаковки</param><param name="Материал">металл</param><param name="Кол-во единиц в фасовке">12</param><param name="Производитель">-</param>
+				</offer><offer id="7126492" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126492/</url>
+				<price>672</price>
+				    <prices>
+                        <price>
+                          <value>672</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182368/0/280.jpg</picture>
+				<vendorCode>182368</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти s желтые, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти s желтые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер s подойдет для животных весом от 2,5 до 5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">10 г.</param><param name="Объем">0.255 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">150 шт.</param><param name="Тип индивидуальной упаковки">подложка, блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126493" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126493/</url>
+				<price>672</price>
+				    <prices>
+                        <price>
+                          <value>672</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182375/0/280.jpg</picture>
+				<vendorCode>182375</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти m белые, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти m белые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер m подойдет для животных весом от 5 до 7,5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">11 г.</param><param name="Объем">0.255 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">150 шт.</param><param name="Тип индивидуальной упаковки">подложка, блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126494" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126494/</url>
+				<price>672</price>
+				    <prices>
+                        <price>
+                          <value>672</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182359/0/280.jpg</picture>
+				<vendorCode>182359</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти xs фуксия, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки  размер xs подойдет для животных весом до 2,5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">8 г.</param><param name="Объем">0.255 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">150 шт.</param><param name="Тип индивидуальной упаковки">подложка, блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126495" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126495/</url>
+				<price>504</price>
+				    <prices>
+                        <price>
+                          <value>504</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182360/0/280.jpg</picture>
+				<vendorCode>182360</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти xs светло-розовые, 20 шт  (комплект из 2 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки  размер xs подойдет для животных весом до 2,5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">8 г.</param><param name="Объем">0.179 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">подложка, блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126496" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126496/</url>
+				<price>504</price>
+				    <prices>
+                        <price>
+                          <value>504</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182362/0/280.jpg</picture>
+				<vendorCode>182362</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти xs желтые, 20 шт  (комплект из 2 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки  размер xs подойдет для животных весом до 2,5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">7 г.</param><param name="Объем">0.179 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">подложка, блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126497" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126497/</url>
+				<price>672</price>
+				    <prices>
+                        <price>
+                          <value>672</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://image.buy45.ru/images/182374/0/140.jpg</picture><picture>http://image.buy45.ru/images/182374/1/140.jpg</picture><picture>http://image.buy45.ru/images/182374/2/140.jpg</picture>
+				<vendorCode>182374</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти m желтые, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти m желтые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер m подойдет для животных весом от 5 до 7,5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">10 г.</param><param name="Объем">0.255 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">150 шт.</param><param name="Тип индивидуальной упаковки">подложка, блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126498" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126498/</url>
+				<price>672</price>
+				    <prices>
+                        <price>
+                          <value>672</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182371/0/280.jpg</picture>
+				<vendorCode>182371</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти m фуксия, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти m темно-розовые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер m подойдет для животных весом от 5 до 7,5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">10 г.</param><param name="Объем">0.255 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">подложка, блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126499" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126499/</url>
+				<price>672</price>
+				    <prices>
+                        <price>
+                          <value>672</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182369/0/280.jpg</picture>
+				<vendorCode>182369</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти s белые, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти s белые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер s подойдет для животных весом от 2,5 до 5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">8 г.</param><param name="Объем">0.155 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">150 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126500" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126500/</url>
+				<price>672</price>
+				    <prices>
+                        <price>
+                          <value>672</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182358/0/280.jpg</picture>
+				<vendorCode>182358</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти xs красные, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки  размер xs подойдет для животных весом до 2,5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">8 г.</param><param name="Объем">0.255 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">150 шт.</param><param name="Тип индивидуальной упаковки">подложка, блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126501" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126501/</url>
+				<price>672</price>
+				    <prices>
+                        <price>
+                          <value>672</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182365/0/280.jpg</picture>
+				<vendorCode>182365</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти s фуксия, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти s темно-розовые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер s подойдет для животных весом от 2,5 до 5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">10 г.</param><param name="Объем">0.255 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">200 шт.</param><param name="Тип индивидуальной упаковки">подложка, блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126502" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126502/</url>
+				<price>672</price>
+				    <prices>
+                        <price>
+                          <value>672</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225621</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/182/182367/0/280.jpg</picture>
+				<vendorCode>182367</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти s оранжевые, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти s оранжевые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер s подойдет для животных весом от 2,5 до 5 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">8 г.</param><param name="Объем">0.255 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">200 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7126507" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126507/</url>
+				<price>324</price>
+				    <prices>
+                        <price>
+                          <value>324</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225624</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/122/1224056/0/280.jpg</picture>
+				<vendorCode>1224056</vendorCode>
+				<delivery>true</delivery>
+				<name>Украшение на кожаном шнурке бант со стразами 1044245  (комплект из 2 шт.)</name>
+				<description><![CDATA[Домашние животные - это наши преданные и верные друзья! они нас умиляют, дают массу позитивных эмоций! поэтому заботиться о питомцах - это наш долг! украшение на кожаном шнурке бант со стразами, 50 см - это необходимый товар для вашего питомца и вас, по выгодной цене. покупая оптом зоотовары, вы экономите деньги и время!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.061 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">110 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Производитель">-</param>
+				</offer><offer id="7126525" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126525/</url>
+				<price>234.00</price>
+				        <prices>
+                            <price>
+                              <value>163</value>
+                             <quantity>62</quantity>
+                            </price>
+                        </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225623</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/750/750096/0/280.jpg</picture>
+				<vendorCode>750096</vendorCode>
+				<delivery>true</delivery>
+				<name>Украшение шик-модерн, круглые подвески на плетёной затяжке, чёрные кристаллы, 17-26 см. </name>
+				<description><![CDATA[Роскошное ожерелье с мерцающими кристаллами будет изысканно смотреться на вашем любимом питомце! оригинальная плетеная затяжка черного цвета легко и надежно фиксируется на шее животного. благодаря большому выбору оттенков украшение можно подобрать к любому наряду!  на нашем сайте вы также можете приобрести стильные бантики, оригинальные ошейники и поводки с бусинами, кружевами и рюшами! стиль и роскошь всегда в моде!&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">94 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">60 шт.</param><param name="Тип индивидуальной упаковки">Картонная коробка</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">пластик</param><param name="Производитель">-</param>
+				</offer><offer id="7126533" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126533/</url>
+				<price>490</price>
+				    <prices>
+                        <price>
+                          <value>490</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225625</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/114/1148756/0/280.jpg</picture>
+				<vendorCode>1148756</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик блестящий сиреневый на латексной резинке, 4,5 х 2 см, набор 4 шт  (комплект из 10 шт.)</name>
+				<description><![CDATA[Для счастливого обладателя домашнего животного чрезвычайно важно здоровье питомца. бантик блестящий сиреневый на латексной резинке, 4,5 х 2 см, набор 4 шт - товар абсолютно безопасный для любимца, продуманный в мельчайших деталях. индивидуальный дизайн подчеркнет уникальность  и неповторимость не только животного, но и его хозяев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">4 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="7126543" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126543/</url>
+				<price>270</price>
+				    <prices>
+                        <price>
+                          <value>270</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225625</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/872/872680/0/280.jpg</picture>
+				<vendorCode>872680</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик сиреневый с принтом на латексной резинке, 6 х 4,5 см, набор 2 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Как кропотливо и тщательно человек выбирает вещи для себя, точно также и для своих четвероногих любимцев. бантик сиреневый с принтом на латексной резинке, 6 х 4,5 см, набор 2 шт - безопасный товар, сделанный из современных материалов, порадует  удобством использования как самих животных, так и их хозяев. необычный дизайн придаст питомцу индивидуальность и удовлетворит вкус самых взыскательных зоовладельцев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">4 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">301 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">2</param><param name="Производитель">-</param>
+				</offer><offer id="7126549" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126549/</url>
+				<price>318</price>
+				    <prices>
+                        <price>
+                          <value>318</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225625</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/872/872678/0/280.jpg</picture>
+				<vendorCode>872678</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик двуслойный голубой с кружевом на латексной резинке, 5,5 х 3,5 см, набор 2 шт  (комплект из 6 шт.)</name>
+				<description><![CDATA[Для счастливого обладателя домашнего животного чрезвычайно важно здоровье питомца. бантик двуслойный голубой с кружевом на латексной резинке, 5,5 х 3,5 см, набор 2 шт - товар абсолютно безопасный для любимца, продуманный в мельчайших деталях. индивидуальный дизайн подчеркнет уникальность  и неповторимость не только животного, но и его хозяев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">401 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">2</param><param name="Производитель">-</param>
+				</offer><offer id="7126557" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126557/</url>
+				<price>270</price>
+				    <prices>
+                        <price>
+                          <value>270</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225626</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/114/1148755/0/280.jpg</picture>
+				<vendorCode>1148755</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик розовый в белый горох на латексной резинке, 4 х 2,5 см, набор 4 шт 872669  (комплект из 5 шт.)</name>
+				<description><![CDATA[Бантик розовый в белый горох на латексной резинке, 4 х 2,5 см, набор 4 шт 872669 &ndash; оригинальная вещица для вашего питомца. ежедневный уход за вашим любимцем и дрессировка превратятся в удовольствие с нашими товарами. порадуйте себя или своих знакомых забавной новинкой, или подарите ее человеку, который давно планировал завести себе четвероногого друга.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="7126561" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126561/</url>
+				<price>420</price>
+				    <prices>
+                        <price>
+                          <value>420</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225625</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/114/1148752/0/280.jpg</picture>
+				<vendorCode>1148752</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик красный двойной на латексной резинке, 6,2 х 4,8 см, набор 2 шт  (комплект из 10 шт.)</name>
+				<description><![CDATA[Как кропотливо и тщательно человек выбирает вещи для себя, точно также и для своих четвероногих любимцев. бантик красный двойной на латексной резинке, 6,2 х 4,8 см, набор 2 шт - безопасный товар, сделанный из современных материалов, порадует  удобством использования как самих животных, так и их хозяев. необычный дизайн придаст питомцу индивидуальность и удовлетворит вкус самых взыскательных зоовладельцев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">2</param><param name="Производитель">-</param>
+				</offer><offer id="7126571" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126571/</url>
+				<price>360</price>
+				    <prices>
+                        <price>
+                          <value>360</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225625</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/114/1148748/0/280.jpg</picture>
+				<vendorCode>1148748</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик красный на латексной резинке, 5 х 3,6 см, набор 4 шт  (комплект из 10 шт.)</name>
+				<description><![CDATA[Владельцы домашних животных ставят заботу о братьях наших меньших превыше всего, ведь мы в ответственности за тех, кого приручили. вот почему зоолюбители выбирают товары нашей компании, например бантик красный на латексной резинке, 5 х 3,6 см, набор 4 шт. этот товар обладает высоким качеством, сделан из проверенных материалов, использовать его легко и приятно. в каталоге вы найдете все, что нужно для вашего питомца по низким ценам.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">700 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="7126573" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126573/</url>
+				<price>270</price>
+				    <prices>
+                        <price>
+                          <value>270</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225625</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/114/1148759/0/280.jpg</picture>
+				<vendorCode>1148759</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик голубой с бабочками на латексной резинке, 3,5 х 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Как кропотливо и тщательно человек выбирает вещи для себя, точно также и для своих четвероногих любимцев. бантик голубой с бабочками на латексной резинке, 3,5 х 2,5 см, набор 4 шт - безопасный товар, сделанный из современных материалов, порадует  удобством использования как самих животных, так и их хозяев. необычный дизайн придаст питомцу индивидуальность и удовлетворит вкус самых взыскательных зоовладельцев.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">ЕАС</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="7126579" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7126579/</url>
+				<price>425</price>
+				    <prices>
+                        <price>
+                          <value>425</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225625</categoryId>
+				<picture>http://st-cdn.r.worldssl.net/items/872/872673/0/280.jpg</picture>
+				<vendorCode>872673</vendorCode>
+				<delivery>true</delivery>
+				<name>Бантик радужный на латексной резинке, 4 х 2,5 см, набор 4 шт  (комплект из 5 шт.)</name>
+				<description><![CDATA[Владельцы домашних животных ставят заботу о братьях наших меньших превыше всего, ведь мы в ответственности за тех, кого приручили. вот почему зоолюбители выбирают товары нашей компании, например бантик радужный на латексной резинке, 4 х 2,5 см, набор 4 шт. этот товар обладает высоким качеством, сделан из проверенных материалов, использовать его легко и приятно. в каталоге вы найдете все, что нужно для вашего питомца по низким ценам.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">5 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">300 шт.</param><param name="Тип индивидуальной упаковки">Пакет</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Кол-во штук в наборе">4</param><param name="Производитель">-</param>
+				</offer><offer id="7132313" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7132313/</url>
+				<price>624</price>
+				    <prices>
+                        <price>
+                          <value>624</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225888</categoryId>
+				<picture>http://image.buy45.ru/images/182381/0/140.jpg</picture><picture>http://image.buy45.ru/images/182381/1/140.jpg</picture><picture>http://image.buy45.ru/images/182381/2/140.jpg</picture>
+				<vendorCode>182381</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти для собак, размер l, белые, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти l белые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер l подойдет для животных весом от 7,5 до 10 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">11 г.</param><param name="Объем">0.191 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7132315" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7132315/</url>
+				<price>624</price>
+				    <prices>
+                        <price>
+                          <value>624</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225888</categoryId>
+				<picture>http://image.buy45.ru/images/182387/0/140.jpg</picture><picture>http://image.buy45.ru/images/182387/1/140.jpg</picture><picture>http://image.buy45.ru/images/182387/2/140.jpg</picture>
+				<vendorCode>182387</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти для собак, размер xl, белые, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти xl белые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер xl подойдет для животных весом от 10  до 15 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.191 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7132317" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7132317/</url>
+				<price>468</price>
+				    <prices>
+                        <price>
+                          <value>468</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225888</categoryId>
+				<picture>http://image.buy45.ru/images/182384/0/140.jpg</picture><picture>http://image.buy45.ru/images/182384/1/140.jpg</picture><picture>http://image.buy45.ru/images/182384/2/140.jpg</picture>
+				<vendorCode>182384</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти для собак, размер xl, светло-розовые, 20 шт  (комплект из 2 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти xl светло-розовые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер xl подойдет для животных весом от 10  до 15 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.217 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7132335" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7132335/</url>
+				<price>624</price>
+				    <prices>
+                        <price>
+                          <value>624</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225888</categoryId>
+				<picture>http://image.buy45.ru/images/182376/0/140.jpg</picture><picture>http://image.buy45.ru/images/182376/1/140.jpg</picture><picture>http://image.buy45.ru/images/182376/2/140.jpg</picture>
+				<vendorCode>182376</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти для собак, размер l, красные, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти l красные, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер l подойдет для животных весом от 7,5 до 10 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">11 г.</param><param name="Объем">0.217 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7132337" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7132337/</url>
+				<price>624</price>
+				    <prices>
+                        <price>
+                          <value>624</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225888</categoryId>
+				<picture>http://image.buy45.ru/images/182379/0/140.jpg</picture><picture>http://image.buy45.ru/images/182379/1/140.jpg</picture><picture>http://image.buy45.ru/images/182379/2/140.jpg</picture>
+				<vendorCode>182379</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти для собак, размер l, оранжевые, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти l оранжевые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер l подойдет для животных весом от 7,5 до 10 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">10 г.</param><param name="Объем">0.191 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7132339" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7132339/</url>
+				<price>624</price>
+				    <prices>
+                        <price>
+                          <value>624</value>
+                         <quantity>2</quantity>
+                        </price>
+                    </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225888</categoryId>
+				<picture>http://image.buy45.ru/images/182386/0/140.jpg</picture><picture>http://image.buy45.ru/images/182386/1/140.jpg</picture><picture>http://image.buy45.ru/images/182386/2/140.jpg</picture>
+				<vendorCode>182386</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти для собак, размер xl, желтые, 20 шт  (комплект из 3 шт.)</name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти xl желтые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер xl подойдет для животных весом от 10  до 15 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">14 г.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer><offer id="7132347" available="true" selling_type="u">
+				<url>http://flapru.ru/product/7132347/</url>
+				<price>234.00</price>
+				        <prices>
+                            <price>
+                              <value>163</value>
+                             <quantity>62</quantity>
+                            </price>
+                        </prices>
+				<currencyId>RUR</currencyId>
+				<categoryId>225888</categoryId>
+				<picture>http://image.buy45.ru/images/182383/0/140.jpg</picture><picture>http://image.buy45.ru/images/182383/1/140.jpg</picture><picture>http://image.buy45.ru/images/182383/2/140.jpg</picture>
+				<vendorCode>182383</vendorCode>
+				<delivery>true</delivery>
+				<name>Накладные когти для собак, набор 20 шт, размер xl, фуксия </name>
+				<description><![CDATA[Мягкие пластиковые колпачки &ndash; прекрасная альтернатива удаления когтей домашних питомцев. они защитят вашу одежду и дом от царапин животного. накладные когти xl темно-розовые, 20 шт изготовлены из качественного, мягкого пластика, абсолютно безвредны для здоровья собаки или кошки.    в комплект входит 20 накладных колпачков. размер xl подойдет для животных весом от 10  до 15 кг.&lt;p&gt;Этот и другие товары в наших интернет-магазинах Flapru.ru и Flap.kz&lt;/p&gt;]]></description>
+				<param name="Вес">12 г.</param><param name="Объем">0.191 л.</param><param name="Тип сертификата">Не подлежит сертификации</param><param name="В боксе">100 шт.</param><param name="Тип индивидуальной упаковки">Блистер</param><param name="Предоставляется выбор цветов и моделей">да</param><param name="Материал">резина</param><param name="Производитель">-</param>
+				</offer></offers></shop></yml_catalog>
