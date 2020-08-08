@@ -1,4 +1,7 @@
 <?php
+
+error_reporting(E_ALL & ~E_NOTICE);
+
 return [
     'name'       => 'В сети города',
     'language'   => 'ru-RU',
