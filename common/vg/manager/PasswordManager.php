@@ -30,9 +30,8 @@ class PasswordManager
      */
     public function changePassword(array $form)
     {
-        if ($this->model->load($form) && $this->model->validate()) {
-            $this->updatePassword();
-            return true;
+        if ($this->loadForm($form) && $this->modelValidate()) {
+            return $this->updatePassword();
         } else {
             return false;
         }
@@ -48,12 +47,30 @@ class PasswordManager
     }
 
     /**
-     *
+     * @return bool
      */
-    private function updatePassword(): void
+    public function updatePassword(): bool
     {
-        $user = User::findOne(Yii::$app->getUser()->getId());
+//        $user = User::findOne(Yii::$app->getUser()->getId());
+        $user = User::findOne($this->user->id);
         $user->setPassword($this->model->newPassword1);
-        $user->save();
+        return $user->save();
+    }
+
+    /**
+     * @param array $form
+     * @return bool
+     */
+    public function loadForm(array $form): bool
+    {
+        return $this->model->load($form);
+    }
+
+    /**
+     * @return bool
+     */
+    public function modelValidate(): bool
+    {
+        return $this->model->validate();
     }
 }

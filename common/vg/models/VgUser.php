@@ -22,18 +22,24 @@ class VgUser extends User
     /**
      * @return bool
      */
-    public static function isUnderOtherUser()
+    public static function isUnderOtherUser(): bool
     {
         $result = Yii::$app->session->has(self::class);
         return $result;
     }
 
+    /**
+     * @throws \Throwable
+     */
     public static function setOtherUser()
     {
         $suIdentity = Yii::$app->getUser()->getIdentity();
         Yii::$app->session->set(self::class, $suIdentity);
     }
 
+    /**
+     *
+     */
     public static function returnToSuperUser()
     {
         $suIdentity = Yii::$app->session->get(self::class);
