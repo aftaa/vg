@@ -69,7 +69,7 @@ class MysqliDbService
     public function getDbTest()
     {
         if (!$this->dbTest) {
-            $this->dbTest = new mysqli('localhost', 'vg_dev', 'vg_dev', 'vg_dev');
+            $this->dbTest = new mysqli('localhost', 'vg_prod', 'vg_prod', 'vsetig_test1');
             if ($this->dbTest->errno) {
                 throw new Exception($this->dbTest->error);
             }

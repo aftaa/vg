@@ -27,14 +27,14 @@ return [
         ],
         'dbVsetigTest'    => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=localhost;dbname=vsetig_test',
-            'username' => 'vg_dev',
-            'password' => 'vg_dev',
+            'dsn'      => 'mysql:host=localhost;dbname=vsetig_test1',
+            'username' => 'vg_prod',
+            'password' => 'vg_prod',
             'charset'  => 'utf8',
         ],
         'dbVsetigInfoCom' => [
             'class'    => 'yii\db\Connection',
-            'dsn'      => 'mysql:host=localhost;dbname=vsetig_info_com',
+            'dsn'      => 'mysql:host=localhost;dbname=vsetig_info_com1',
             'username' => 'vg_dev',
             'password' => 'vg_dev',
             'charset'  => 'utf8',

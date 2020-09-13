@@ -30,29 +30,29 @@ class ImportController extends Controller
         $this->truncateTables();
         echo "\ndone.\n\n";
 
-        echo "Import areas... ";
-        $this->importAreas();
-        echo "done.\n\n";
+//        echo "Import areas... ";
+//        $this->importAreas();
+//        echo "done.\n\n";
 
         echo "Create root and admin users... ";
         $this->createRootAndAdmin();
         echo "done.\n\n";
 
-        echo "Import company categories... ";
-        $this->importCompanyCategories();
-        echo "done.\n\n";
+//        echo "Import company categories... ";
+//        $this->importCompanyCategories();
+//        echo "done.\n\n";
 
         $this->importUsersAndMembers();
 
-        $this->importCompaniesAndTheirParams();
-
-        echo "Import product categories... ";
-        $this->importProductCategories();
-        echo "done.\n\n";
-
-        echo "Import products... \n";
-        $this->importProducts();
-        echo "done.\n\n";
+//        $this->importCompaniesAndTheirParams();
+//
+//        echo "Import product categories... ";
+//        $this->importProductCategories();
+//        echo "done.\n\n";
+//
+//        echo "Import products... \n";
+//        $this->importProducts();
+//        echo "done.\n\n";
 
         Yii::$app->db->createCommand('SET foreign_key_checks = 1')->execute();
     }
@@ -63,15 +63,15 @@ class ImportController extends Controller
     private function truncateTables()
     {
         $tables = [
-            'area',
+//            'area',
             'user',
             'member',
-            'company',
-            'company_param',
-            'company_param_value',
-            'company_category',
-            'product_category',
-            'product',
+//            'company',
+//            'company_param',
+//            'company_param_value',
+//            'company_category',
+//            'product_category',
+//            'product',
         ];
 
         foreach ($tables as $table) {
@@ -105,7 +105,7 @@ class ImportController extends Controller
         }
 
         if (!preg_match('/^http/', $thumb)) {
-            $thumb = 'http://vseti-goroda.ru/' . $thumb;
+            $thumb = 'https://vseti-goroda.ru/' . $thumb;
         }
 
         $thumb = trim($thumb);

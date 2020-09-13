@@ -45,8 +45,8 @@ class PasswordTest extends \Codeception\Test\Unit
             expect_that(false);
         }
 
-        $formModel = new VgLoginForm;
-        ($formModel->load([
+        expect_that($formModel = new VgLoginForm);
+        expect_that($formModel->load([
             'username' => 'admin',
             'password' => $newPassword,
         ]));
